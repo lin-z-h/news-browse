@@ -168,11 +168,11 @@ button { font: inherit; }
 .meta {
   max-width: 904px;
   margin: 0 auto;
-  padding: 5px 18px 7px;
+  padding: 4px 18px 6px;
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 24px;
+  height: 30px; /* 固定高度：筛选/收藏切换时 dock 不跳动 */
   font-size: 11px;
   color: var(--muted);
 }
@@ -180,8 +180,9 @@ button { font: inherit; }
 .meta .filters { letter-spacing: .03em; color: var(--accent); }
 .meta .clear {
   margin-left: auto;
-  width: 22px;
-  height: 22px;
+  flex: none;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: none;
   background: transparent;

@@ -5,6 +5,7 @@
         savedBtn = $("#savedToggle"), viewBtn = $("#viewToggle"), themeBtn = $("#themeToggle"),
         sourceTrack = $("#sourceTrack"), topicTrack = $("#topicTrack"),
         readerEl = $("#reader"), rTitle = $("#rTitle"), rMeta = $("#rMeta"), rBody = $("#rBody");
+  let readerCtrl = null;
 
   const I = {
     bookmark: '<svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg>',
@@ -148,74 +149,119 @@
   const READER_DROP = {
     "news.tvb.com": [/^\d+\.\s[\s\S]*\d+\.\s/, /^publish[:：]/i, /^by[:：]/i],
   };
+  // 错误页/验证页特征：jina 会把 403 页面当"内容"带回来，必须识别拒绝
+  const GARBAGE_RE = /are you a robot|access denied|just a moment|unusual traffic|verify (?:you are )?human|403 forbidden|captcha|enable javascript and cookies|are you human/i;
 
-  function renderReaderBody(md, host) {
+  function _host(u) { try { return new URL(u).host; } catch (e) { return ""; } }
+
+  // 清洗 jina markdown → 文本块/图片块。返回 null = 垃圾（错误页/太短），上层换下一个来源。
+  function denoiseReader(md, host) {
     let body = md;
     const cut = body.indexOf("Markdown Content:");
     if (cut >= 0) body = body.slice(cut + "Markdown Content:".length);
+    if (GARBAGE_RE.test(body.slice(0, 3000))) return null;
     const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
-    // 先清洗 markdown（jina 的图片是死 blob 链接、链接里的点号会干扰句子判定），再做去噪
-    let blocks = body.split(/\n{2,}/).map(s => s.trim()).filter(Boolean)
-      .map(b => b.replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-                 .replace(/\[[^\]]*\]\([^)]*\)/g, "")
-                 .replace(/\*\*([^*]+)\*\*/g, "$1")
-                 .replace(/^[-*]\s+/gm, "· ")
-                 .trim())
-      .filter(Boolean);
-    // 从首个"句子块"（含句末标点）开始，跳过导航/面包屑；站点噪音块（如第二个面包屑）作为文章结束边界
+    const raw = body.split(/\n{2,}/).map(s => s.trim()).filter(Boolean);
+    const clean = [];
+    for (let b of raw) {
+      const im = b.match(/^!\[[^\]]*\]\((https?:[^)\s]+)/); // 独立图片块：只留 http 真图（blob: 是死链）
+      if (im) { clean.push({ img: im[1] }); continue; }
+      b = b.replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+           .replace(/\[[^\]]*\]\([^)]*\)/g, "")
+           .replace(/\*\*([^*]+)\*\*/g, "$1")
+           .replace(/^#+\s*/gm, "")
+           .replace(/^[-*]\s+/gm, "· ")
+           .trim();
+      if (b) clean.push({ text: b });
+    }
+    // 从首个"句子块"（导航/面包屑无句号）开始；站点噪音块作为结束边界
     const isSentence = b => /[。！？]/.test(b) || (/[.!?]/.test(b) && b.length > 90);
     let dropRes = null;
     try { dropRes = READER_DROP[host]; } catch (e) {}
-    const startIdx = blocks.findIndex(b => isSentence(b) && b.length >= 20);
-    let endIdx = -1;
-    if (startIdx >= 0 && dropRes) {
-      endIdx = blocks.findIndex((b, i) => i > startIdx && dropRes.some(rx => rx.test(b)));
+    const textPos = [];
+    clean.forEach((x, i) => { if (x.text) textPos.push(i); });
+    const ttexts = textPos.map(i => clean[i].text);
+    const sRel = ttexts.findIndex(b => isSentence(b) && b.length >= 20);
+    let eRel = -1;
+    if (sRel >= 0 && dropRes) eRel = ttexts.findIndex((b, i) => i > sRel && dropRes.some(rx => rx.test(b)));
+    if (sRel < 0) {
+      if (ttexts.length < 2 || ttexts.join("").length < 400) return null;
+      return { blocks: clean, esc };
     }
-    let keep = blocks.slice(startIdx >= 0 ? startIdx : 0, endIdx > startIdx ? endIdx : undefined);
-    keep = keep.filter(b => b.length >= 14);
+    const kept = ttexts.slice(sRel, eRel >= 0 ? eRel : undefined).join("").length;
+    const keptN = (eRel >= 0 ? eRel : ttexts.length) - sRel;
+    if (kept < 40 || keptN < 1) return null;
+    const lo = textPos[sRel];
+    const hi = eRel >= 0 ? textPos[eRel] : clean.length;
+    const blocks = clean.slice(lo, hi).filter(b => (b.img && !/^blob:/i.test(b.img)) || (b.text && b.text.length >= 14));
+    return { blocks, esc };
+  }
+
+  function renderReaderBody(den) {
+    const esc = den.esc;
     const out = [];
-    for (let b of keep) {
-      let tag = "p";
-      const h = b.match(/^(#{1,4})\s+(.*)$/s);
-      if (h) { b = h[2]; tag = "h" + Math.min(4, h[1].length + 1); }
-      if (b) out.push(`<${tag}>${esc(b)}</${tag}>`);
+    for (const b of den.blocks) {
+      if (b.img) { out.push(`<img class="rimg" loading="lazy" referrerpolicy="no-referrer" src="${esc(b.img)}" alt="">`); continue; }
+      let t = b.text, tag = "p";
+      const h = t.match(/^(#{1,4})\s+(.*)$/s);
+      if (h) { t = h[2]; tag = "h" + Math.min(4, h[1].length + 1); }
+      if (t) out.push(`<${tag}>${esc(t)}</${tag}>`);
     }
     rBody.innerHTML = out.join("");
   }
 
   async function openReader(it) {
+    let host = _host(it.url);
     const hit = readCache[it.url];
     readerEl.hidden = false;
     document.body.style.overflow = "hidden";
     rTitle.textContent = it.title;
     rMeta.textContent = [it.source, it.topic !== "General" ? it.topic : "", relTime(tsOf(it))].filter(Boolean).join(" · ");
-    if (hit && hit.md) { renderReaderBody(hit.md, it.url); return; }
+    if (hit && hit.md) {
+      const den = denoiseReader(hit.md, host);
+      if (den) { renderReaderBody(den); return; }
+    }
     rBody.innerHTML = '<div class="rspin"></div>';
     const ctrl = new AbortController();
+    readerCtrl = ctrl;
+    // 正文获取链：发布者原文 → Wayback 快照 → archive.today 镜像，取首个质量达标者
+    const candidates = [it.url, "https://web.archive.org/web/2/" + it.url, "https://archive.md/" + it.url];
     try {
-      let sel = null;
-      try { sel = READER_SELECTORS[new URL(it.url).host]; } catch (e) {}
-      const res = await fetch("https://r.jina.ai/" + it.url, {
-        signal: ctrl.signal,
-        headers: sel ? { "x-target-selector": sel } : undefined,
-      });
-      if (!res.ok) throw new Error(String(res.status));
-      const md = await res.text();
-      if (md.length < 200) throw new Error("empty");
-      renderReaderBody(md, it.url);
-      readCache[it.url] = { ts: Date.now(), md };
-      const old = Object.entries(readCache).sort((a, b) => a[1].ts - b[1].ts);
-      while (old.length > 30) { const [k] = old.shift(); delete readCache[k]; }
-      try { localStorage.setItem(RKEY, JSON.stringify(readCache)); } catch (e) {}
+      for (const cu of candidates) {
+        let md = null;
+        try {
+          const sel = READER_SELECTORS[_host(cu)];
+          const res = await fetch("https://r.jina.ai/" + cu, {
+            signal: ctrl.signal,
+            headers: sel ? { "x-target-selector": sel } : undefined,
+          });
+          if (!res.ok) continue;
+          md = await res.text();
+        } catch (e) {
+          if (ctrl.signal.aborted) throw e;
+          continue;
+        }
+        const den = denoiseReader(md, host);
+        if (!den) continue;
+        renderReaderBody(den);
+        readCache[it.url] = { ts: Date.now(), md, src: cu };
+        const old = Object.entries(readCache).sort((a, b) => a[1].ts - b[1].ts);
+        while (old.length > 30) { const [k] = old.shift(); delete readCache[k]; }
+        try { localStorage.setItem(RKEY, JSON.stringify(readCache)); } catch (e) {}
+        return;
+      }
+      throw new Error("no usable source");
     } catch (e) {
+      if (ctrl.signal.aborted) return;
       readerEl.hidden = true;
       document.body.style.overflow = "";
       showToast(I.x);
-      open(archiveTarget(it)); // 阅读失败 → 照旧走人工归档兜底
+      open(archiveTarget(it)); // 全部渠道失败 → 照旧走人工归档兜底
     }
   }
 
   function closeReader() {
+    if (readerCtrl) readerCtrl.abort();
     readerEl.hidden = true;
     document.body.style.overflow = "";
   }
@@ -386,11 +432,11 @@
       f.textContent = picked.join(" · ");
       metaEl.appendChild(f);
     }
-    if (active) {
-      const clear = el(`<button class="clear" aria-label="Clear filters">${I.x}</button>`);
-      clear.addEventListener("click", clearFilters);
-      metaEl.appendChild(clear);
-    }
+    // 清除按钮常驻占位（ inactive 时隐藏），保证 meta 行高度恒定、dock 不跳动
+    const clear = el(`<button class="clear" aria-label="Clear filters">${I.x}</button>`);
+    clear.addEventListener("click", clearFilters);
+    if (!active) clear.style.visibility = "hidden";
+    metaEl.appendChild(clear);
 
     list.innerHTML = "";
     if (!state.items.length) {
