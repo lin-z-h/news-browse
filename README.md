@@ -6,6 +6,14 @@
 
 **源（11 个）**：Bloomberg、NYT、Economist、Guardian、WSJ、Financial Times、TIME、SCMP、Washington Post、Reuters、联合早报英文版。Reuters 与联合早报无官方 RSS，经 Google News 检索 + [googlenewsdecoder](https://pypi.org/project/googlenewsdecoder/) 解码还原原文链接；TVB 暂缺（无可用的公开 RSS/索引，后续可换方案补）。
 
+新闻源会随时间陆续死亡（停更/清空/改版，如 WSJ 官方 feed 冻结在 2025-01、NYT 体育部裁撤后源变空）。定期跑一次体检脚本可揪出"活着但冻结/为空"的源：
+
+```bash
+.venv\Scripts\python scripts\feed_checkup.py   # 走代理时先 set HTTPS_PROXY=http://127.0.0.1:7890
+```
+
+输出每个源的条数与最新文章距今年龄，发现异常后编辑 `config/sources.json` 换源即可。
+
 ## 页面交互约定
 
 - 点卡片 / 回车 = 打开存档（快照 → Wayback → archive.today 验证页）
