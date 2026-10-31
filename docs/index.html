@@ -17,7 +17,22 @@
   <h1>Journal</h1>
   <p id="date-line"></p>
 </header>
-<nav id="chips" class="chips" aria-label="Sources"></nav>
+<section class="tools">
+  <label class="search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+    <input id="q" type="search" placeholder="Search" autocomplete="off" aria-label="Search stories">
+  </label>
+  <button id="savedToggle" class="tool" aria-pressed="false" aria-label="Saved stories">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg>
+  </button>
+  <button id="viewToggle" class="tool" aria-pressed="false" aria-label="Compact view">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+  </button>
+</section>
+<div class="dock">
+  <div class="chips" id="chips" role="group" aria-label="Filters"></div>
+  <div class="meta" id="meta"></div>
+</div>
 <main id="list" class="list"></main>
 <footer class="foot" id="foot"></footer>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>

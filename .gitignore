@@ -4,4 +4,9 @@ __pycache__/
 venv/
 .pytest_cache/
 .tmp/
+.env
 .DS_Store
+apk/.gradle/
+apk/build/
+apk/app/build/
+apk/local.properties

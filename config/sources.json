@@ -1,30 +1,37 @@
 {
-  "max_per_source": 20,
-  "max_total": 60,
+  "max_per_source": 40,
+  "max_total": 120,
   "sources": [
     {
       "name": "Bloomberg",
       "feeds": [
-        "https://feeds.bloomberg.com/markets/news.rss",
-        "https://feeds.bloomberg.com/technology/news.rss"
+        {"url": "https://feeds.bloomberg.com/markets/news.rss", "topic": "Markets"},
+        {"url": "https://feeds.bloomberg.com/technology/news.rss", "topic": "Tech"},
+        {"url": "https://feeds.bloomberg.com/politics/news.rss", "topic": "Politics"},
+        {"url": "https://feeds.bloomberg.com/wealth/news.rss", "topic": "Wealth"}
       ]
     },
     {
       "name": "The New York Times",
       "feeds": [
-        "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
-        "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
-        "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml", "topic": "Top"},
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "topic": "World"},
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml", "topic": "Business"},
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml", "topic": "Tech"},
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "topic": "Science"},
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml", "topic": "Sports"}
       ]
     },
     {
       "name": "The Economist",
       "feeds": [
-        "https://www.economist.com/leaders/rss.xml",
-        "https://www.economist.com/business/rss.xml",
-        "https://www.economist.com/finance-and-economics/rss.xml",
-        "https://www.economist.com/science-and-technology/rss.xml",
-        "https://www.economist.com/china/rss.xml"
+        {"url": "https://www.economist.com/leaders/rss.xml", "topic": "Opinion"},
+        {"url": "https://www.economist.com/business/rss.xml", "topic": "Business"},
+        {"url": "https://www.economist.com/finance-and-economics/rss.xml", "topic": "Finance"},
+        {"url": "https://www.economist.com/science-and-technology/rss.xml", "topic": "Science"},
+        {"url": "https://www.economist.com/china/rss.xml", "topic": "China"},
+        {"url": "https://www.economist.com/international/rss.xml", "topic": "World"},
+        {"url": "https://www.economist.com/culture/rss.xml", "topic": "Culture"}
       ]
     }
   ]

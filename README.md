@@ -1,6 +1,13 @@
 # Journal — 个人新闻聚合阅读
 
-个人自用：把彭博社、纽约时报、经济学人的 RSS 标题聚合成一个手机友好的静态页面，点开优先走 [archive.today](https://archive.today) 快照；没有现成快照时打开 archive.today 的人机验证页，人工通过验证后可直接看已有快照或顺手存档（不再直接跳原文，原文走"打开原文"按钮）。
+个人自用：把彭博社、纽约时报、经济学人的 RSS 标题聚合成一个手机友好的静态页面，点开优先走 [archive.today](https://archive.today) 快照；没有现成快照时打开 archive.today 的人机验证页（`/newest/` 直达最新快照），人工通过验证后可直接看已有快照或顺手存档（不再直接跳原文，原文走"打开原文"按钮）。
+
+**功能**：搜索；来源 × 话题双维度筛选（话题来自 RSS 源配置）；收藏/稍后读（localStorage 持久化）；紧凑/舒适视图切换；RSS 缩略图（无图时用来源首字母色块）；结果计数 + 清除筛选；相对时间每分钟自动刷新；深色模式。
+
+## 页面交互约定
+
+- 点卡片 / 回车 = 打开存档（快照 → Wayback → archive.today 验证页）
+- 卡片右侧图标：书签=收藏 · 箭头=打开原文 · 方框=复制链接 · 红色方框=存档版（与点卡片等效）
 
 > **边界声明**：仅抓取并存储标题、来源、发布时间、链接等元数据，不抓取、不存储任何新闻正文；不提供绕过付费墙的功能；仅供个人使用，不分发。
 
@@ -89,12 +96,15 @@ archive.today 的 Cloudflare 挑战 / CAPTCHA 是**常态而非异常**，由 `v
 
 手机访问 `https://<你的用户名>.github.io/news-browse/` 即可使用。
 
-## APK 封装（可选）
+## APK 封装（已自动化）
 
-页面是纯静态站，用 WebView 封装服务即可：
+仓库内置 WebView 壳工程（`apk/`，纯 Java、无第三方依赖），GitHub Actions 在每次 update-news 成功后自动构建签名 APK 并发布到 Releases：
 
-1. 打开 [webtoapp.design](https://webtoapp.design)，粘贴 Pages 网址，按向导生成 APK（自动启用 JavaScript），下载后传到安卓手机安装（允许"安装未知应用"）。
-2. 备选：[Median](https://median.co)（原 GoNative）或 PWABuilder（页面已带 `manifest.webmanifest`）。
+- 下载：<https://github.com/lin-z-h/news-browse/releases/download/apk-latest/Journal.apk>
+- 安装：传到安卓手机直接安装（允许"安装未知应用"）；更新版本可直接覆盖安装（签名一致，versionCode 按构建时间自增）
+- 签名 keystore 首次构建时由 CI 自动生成并提交回仓库（`apk/signing/release.jks`，个人自用场景，仅用于保证覆盖安装签名一致，不含敏感内容）
+- 修改 `docs/**` 或 `apk/**` 后 push 会自动重建 APK；也可在 Actions 页手动 Run workflow
+- 备选：webtoapp.design / Median 等在线封装服务（粘贴 Pages 网址即可），或 PWABuilder
 
 ## 隐私与合规
 

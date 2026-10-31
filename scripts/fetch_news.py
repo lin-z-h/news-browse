@@ -110,23 +110,48 @@ def fetch_entries(feed_url: str) -> list:
     return list(parsed.entries)
 
 
+def _entry_image(entry) -> str | None:
+    """从 RSS 条目里提取缩略图 URL（media:content / media:thumbnail / enclosure）。"""
+    for key in ("media_thumbnail", "media_content"):
+        for m in entry.get(key) or []:
+            u = (m.get("url") or "").strip()
+            if u:
+                return u
+    for link in entry.get("links") or []:
+        if link.get("rel") == "enclosure" and str(link.get("type") or "").startswith("image/"):
+            u = (link.get("href") or "").strip()
+            if u:
+                return u
+    return None
+
+
 def collect_items(config: dict) -> list:
-    """抓取全部源 → 清洗 → 去重 → 按时间排序 → 截断。"""
-    max_per_source = int(config.get("max_per_source", _env_int("MAX_PER_SOURCE", 20)))
-    max_total = int(config.get("max_total", _env_int("MAX_TOTAL", 60)))
+    """抓取全部源 → 清洗 → 去重 → 按时间排序 → 截断。
+
+    feed 配置支持字符串（仅 URL）或对象 {"url": ..., "topic": ...}，
+    topic 用于前端的话题/分类筛选。
+    """
+    max_per_source = int(config.get("max_per_source", _env_int("MAX_PER_SOURCE", 40)))
+    max_total = int(config.get("max_total", _env_int("MAX_TOTAL", 120)))
     dedup = {}
     allowed = set()
 
     for source in config.get("sources", []):
         name = source.get("name", "unknown")
-        got = 0
-        for feed_url in source.get("feeds", []):
+        for feed in source.get("feeds", []):
+            if isinstance(feed, str):
+                feed_url, topic = feed, None
+            else:
+                feed_url, topic = (feed.get("url") or "").strip(), feed.get("topic")
+            if not feed_url:
+                continue
+            topic = (topic or "General").strip()
             try:
                 entries = fetch_entries(feed_url)
             except Exception as exc:  # 单个源失败不影响整体
                 _log(f"[warn] 源不可用: {name} {feed_url} ({type(exc).__name__}: {exc})")
                 continue
-            _log(f"[rss] {name} {len(entries)} 条 ← {feed_url}")
+            _log(f"[rss] {name} [{topic}] {len(entries)} 条 ← {feed_url}")
             for entry in entries:
                 raw_link = (entry.get("link") or "").strip()
                 title = _WS_RE.sub(" ", entry.get("title") or "").strip()
@@ -138,8 +163,10 @@ def collect_items(config: dict) -> list:
                     "id": hashlib.sha1(url.encode("utf-8")).hexdigest()[:12],
                     "title": title,
                     "source": name,
+                    "topic": topic,
                     "published": published.strftime("%Y-%m-%dT%H:%M:%SZ") if published else None,
                     "_ts": calendar.timegm(published.timetuple()) if published else 0,
+                    "image": _entry_image(entry),
                     "url": url,
                 }
                 old = dedup.get(url)

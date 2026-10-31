@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+}
+
+// versionCode 用构建分钟数自增，保证侧载覆盖安装时始终升级
+def vc = (System.currentTimeMillis() / 60000L) as int
+
+android {
+    namespace 'com.linz.journal'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.linz.journal"
+        minSdk 24
+        targetSdk 34
+        versionCode vc
+        versionName new Date().format("yyyy.MM.dd")
+    }
+
+    signingConfigs {
+        release {
+            // keystore 首次由 CI 自动生成并提交回仓库（个人自用，签名仅用于
+            // 保证"覆盖安装不换签名"，不含任何敏感内容）
+            storeFile rootProject.file("signing/release.jks")
+            storePassword "journal123"
+            keyAlias "journal"
+            keyPassword "journal123"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
