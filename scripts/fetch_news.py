@@ -186,6 +186,14 @@ def run_probe(url: str) -> dict:
         sys.stderr.write(proc.stderr)  # 透传子进程日志（含"需要人工验证"提示）
     if proc.returncode == EXIT_CHALLENGE:
         _log(f"[probe] 验证待处理: {url}")
+        # 退出码 75 = 验证待处理；stdout 里可能带有 Wayback 兜底结果，一并采用
+        try:
+            lines = [ln for ln in proc.stdout.splitlines() if ln.strip()]
+            data = json.loads(lines[-1])
+            if isinstance(data, dict) and data.get("status") == "challenge":
+                return data
+        except (IndexError, json.JSONDecodeError):
+            pass
         return {"status": "challenge"}
     if proc.returncode == 0:
         try:

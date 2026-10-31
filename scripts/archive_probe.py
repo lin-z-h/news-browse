@@ -190,6 +190,13 @@ def probe_link(url: str) -> dict:
                 f"  nopecha 返回令牌（长度 {len(token)}），但纯 HTTP 会话无法直接"
                 f"换取 cf_clearance，仍需人工验证 / 注入 ARCHIVE_COOKIE"
             )
+        # 被 archive.today 验证页拦下时仍尝试 Wayback 兜底，尽量给出可用快照；
+        # status 保持 challenge（12h 后自动重试 archive.today），exit 75 语义不变
+        wb = probe_wayback(url)
+        print(json.dumps(
+            {"url": url, "status": "challenge", "archive_url": None, "wayback_url": wb},
+            ensure_ascii=False,
+        ))
         verify_guard.bail_out(url, blocked.challenge)  # stderr 提示 + exit 75
     if snap:
         return {"url": url, "status": "archive", "archive_url": snap, "wayback_url": None}

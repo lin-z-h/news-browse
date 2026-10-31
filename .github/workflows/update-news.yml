@@ -34,6 +34,8 @@ jobs:
           ARCHIVE_UA: ${{ secrets.ARCHIVE_UA }}
           # 可选：nopecha 打码服务 key（小规模自动解题尝试）
           NOPECHA_API_KEY: ${{ secrets.NOPECHA_API_KEY }}
+          # 每轮最多探测的新链接数（首次运行/缓存清空时覆盖全部条目）
+          MAX_PROBES_PER_RUN: "60"
         run: python scripts/fetch_news.py
 
       - name: Commit news.json & cache

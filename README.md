@@ -69,7 +69,7 @@ set HTTPS_PROXY=http://127.0.0.1:7890
 archive.today 的 Cloudflare 挑战 / CAPTCHA 是**常态而非异常**，由 `verify_guard.py` + `archive_probe.py` 独立处理：
 
 1. **验证页检测**：模式匹配 `security check` / `captcha` / `recaptcha` / `cloudflare…challenge` 等关键词；同时校验行数、字符数是否达到"实质内容"阈值。弱关键词只在内容单薄时判定，防止把"正文讨论 CAPTCHA 的正常归档页"误判；而 `recaptcha/api.js`、`data-sitekey=` 等真实验证组件标记则为强特征（archive.today 限速页内容很厚，必须靠组件标记识别）。
-2. **人工介入信号**：先识别类型（cloudflare / captcha），再用 nopecha 小规模尝试（需 `NOPECHA_API_KEY`，每个链接最多 1 个任务）；失败则向 stderr 输出触发验证的 URL 和"需要人工验证"提示，并以**退出码 75**（EX_TEMPFAIL）终止当前链接的探测。上层 `fetch_news.py` 以子进程调用探测环节，看到 75 就把该条新闻标记为"验证待处理"（`status=challenge`），整体流程继续，不会崩溃。单个链接也可手动验证：`python scripts/archive_probe.py <URL>`。
+2. **人工介入信号**：先识别类型（cloudflare / captcha），再用 nopecha 小规模尝试（需 `NOPECHA_API_KEY`，每个链接最多 1 个任务）；失败则向 stderr 输出触发验证的 URL 和"需要人工验证"提示，并以**退出码 75**（EX_TEMPFAIL）终止当前链接的探测。上层 `fetch_news.py` 以子进程调用探测环节，看到 75 就把该条新闻标记为"验证待处理"（`status=challenge`），整体流程继续，不会崩溃；标记前仍会尝试 Wayback 兜底，尽量给出可用的快照链接。单个链接也可手动验证：`python scripts/archive_probe.py <URL>`。
 3. **cf_clearance 复用**：设置 secret/环境变量 `ARCHIVE_COOKIE`（支持 `cf_clearance=值` 或完整 Cookie 串），探测请求会自动携带。注意：cf_clearance 通常**绑定 IP 和 User-Agent**，过期后需要重新获取，因此这是"可改善但非永久"的方案——如同时配置 `ARCHIVE_UA`，务必与取 cookie 时浏览器的 UA 一致。
 4. **429 限速**：视为未命中，暂停后轮换下一个镜像，不崩溃。
 
