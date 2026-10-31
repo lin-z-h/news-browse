@@ -71,7 +71,7 @@
     {
       "name": "The Washington Post",
       "feeds": [
-        {"url": "https://www.washingtonpost.com/arc/outboundfeeds/rss/?outputType=xml", "topic": "Top"}
+        {"url": "https://news.google.com/rss/search?q=site:washingtonpost.com+when:2d&hl=en-US&gl=US&ceid=US:en", "topic": "Top"}
       ]
     },
     {
