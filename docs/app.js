@@ -127,7 +127,7 @@
 
     c.addEventListener("click", e => {
       const btn = e.target.closest(".act");
-      if (!btn) return (it.archive_url || it.wayback_url) ? open(archiveTarget(it)) : openReader(it);
+      if (!btn) return openReader(it);
       e.stopPropagation();
       const act = btn.dataset.act;
       if (act === "orig") open(it.url);
@@ -135,7 +135,7 @@
       else if (act === "save") toggleSave(it, btn);
       else copyLink(it.url);
     });
-    c.addEventListener("keydown", e => { if (e.key === "Enter") (it.archive_url || it.wayback_url) ? open(archiveTarget(it)) : openReader(it); });
+    c.addEventListener("keydown", e => { if (e.key === "Enter") openReader(it); });
     return c;
   }
 
@@ -157,15 +157,30 @@
   // 清洗 jina markdown → 文本块/图片块。返回 null = 垃圾（错误页/太短），上层换下一个来源。
   function denoiseReader(md, host) {
     let body = md;
+    // "URL Source:" 是 jina 实际抓取的最终页面，作为相对图片地址的解析基准
+    let base = "";
+    const bm = body.match(/URL Source: (\S+)/);
+    if (bm) { try { base = new URL(bm[1]).origin; } catch (e) {} }
     const cut = body.indexOf("Markdown Content:");
     if (cut >= 0) body = body.slice(cut + "Markdown Content:".length);
     if (GARBAGE_RE.test(body.slice(0, 3000))) return null;
     const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+    const absImg = u => {
+      if (!u) return null;
+      if (/^blob:/i.test(u)) return null;
+      if (/^https?:\/\//i.test(u)) return u;
+      if (u.startsWith("//")) return "https:" + u;
+      if (u.startsWith("/") && base) return base + u;
+      return null;
+    };
     const raw = body.split(/\n{2,}/).map(s => s.trim()).filter(Boolean);
     const clean = [];
     for (let b of raw) {
-      const im = b.match(/^!\[[^\]]*\]\((https?:[^)\s]+)/); // 独立图片块：只留 http 真图（blob: 是死链）
-      if (im) { clean.push({ img: im[1] }); continue; }
+      const im = b.match(/^!\[[^\]]*\]\(([^)\s]+)/); // 独立图片块：http/相对真图保留，blob: 死链剔除
+      if (im) {
+        const u = absImg(im[1]);
+        if (u) { clean.push({ img: u }); continue; }
+      }
       b = b.replace(/!\[[^\]]*\]\([^)]*\)/g, "")
            .replace(/\[[^\]]*\]\([^)]*\)/g, "")
            .replace(/\*\*([^*]+)\*\*/g, "$1")
@@ -224,8 +239,11 @@
     rBody.innerHTML = '<div class="rspin"></div>';
     const ctrl = new AbortController();
     readerCtrl = ctrl;
-    // 正文获取链：发布者原文 → Wayback 快照 → archive.today 镜像，取首个质量达标者
-    const candidates = [it.url, "https://web.archive.org/web/2/" + it.url, "https://archive.md/" + it.url];
+    // 正文获取链：已有快照 → 发布者原文 → Wayback → archive.today 镜像，取首个质量达标者
+    const candidates = [];
+    if (it.archive_url) candidates.push(it.archive_url);
+    if (it.wayback_url) candidates.push(it.wayback_url);
+    candidates.push(it.url, "https://web.archive.org/web/2/" + it.url, "https://archive.md/" + it.url);
     try {
       for (const cu of candidates) {
         let md = null;
