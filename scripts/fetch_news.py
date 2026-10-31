@@ -110,18 +110,65 @@ def fetch_entries(feed_url: str) -> list:
     return list(parsed.entries)
 
 
+_IMG_IN_HTML_RE = re.compile(r'<img[^>]+src=["\']([^"\']+)["\']', re.I)
+_OG_RE = re.compile(r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]*content=["\']([^"\']{10,})["\']', re.I)
+_TW_RE = re.compile(r'<meta[^>]+name=["\']twitter:image["\'][^>]*content=["\']([^"\']{10,})["\']', re.I)
+
+
+def _norm_image_url(u: str) -> str | None:
+    u = (u or "").strip()
+    if not u:
+        return None
+    if u.startswith("//"):
+        return "https:" + u
+    if u.startswith("http"):
+        return u
+    return None
+
+
 def _entry_image(entry) -> str | None:
-    """从 RSS 条目里提取缩略图 URL（media:content / media:thumbnail / enclosure）。"""
+    """从 RSS 条目提取缩略图：media 字段 → enclosure → 正文第一个 <img>。"""
     for key in ("media_thumbnail", "media_content"):
         for m in entry.get(key) or []:
-            u = (m.get("url") or "").strip()
+            u = _norm_image_url(m.get("url"))
             if u:
                 return u
     for link in entry.get("links") or []:
         if link.get("rel") == "enclosure" and str(link.get("type") or "").startswith("image/"):
-            u = (link.get("href") or "").strip()
+            u = _norm_image_url(link.get("href"))
             if u:
                 return u
+    bodies = [(entry.get("content") or [{}])[0].get("value", ""), entry.get("summary", "")]
+    for body in bodies:
+        if not body:
+            continue
+        m = _IMG_IN_HTML_RE.search(body)
+        if m:
+            u = _norm_image_url(m.group(1))
+            if u:
+                return u
+    return None
+
+
+def fetch_og_image(url: str) -> str | None:
+    """抓文章页 <meta og:image> 作为缩略图兜底。
+
+    只提取图片元数据，不抓取正文；浏览器指纹直连（部分源在 Cloudflare 后面）。
+    """
+    try:
+        from curl_cffi import requests as creq
+
+        resp = creq.get(url, impersonate="safari17_0", timeout=15,
+                        headers={"Accept": "text/html,application/xhtml+xml"})
+        if resp.status_code == 200 and len(resp.content) > 500:
+            for rx in (_OG_RE, _TW_RE, _IMG_IN_HTML_RE):
+                m = rx.search(resp.text)
+                if m:
+                    u = _norm_image_url(m.group(1))
+                    if u and not u.endswith((".svg", ".ico")):
+                        return u
+    except Exception:
+        pass
     return None
 
 
@@ -285,6 +332,29 @@ def main() -> int:
 
     now = datetime.now(timezone.utc).timestamp()
     now_iso = _utc_now_iso()
+
+    # og:image 回填：给无缩略图的条目抓文章页 og:image（仅元数据），
+    # 结果（含失败）缓存 30 天；每轮限量，几轮之内逐步补齐。
+    img_budget = _env_int("OG_IMAGE_BUDGET", 25)
+    img_cutoff = now - 30 * 86400
+    for item in items:
+        if item.get("image"):
+            continue
+        key = "img:" + item["url"]
+        cached = cache.get(key)
+        if isinstance(cached, dict):
+            ts = cache_store.parse_iso(cached.get("checked_at"))
+            if ts and now - ts < 30 * 86400:
+                item["image"] = cached.get("image")
+                continue
+        if img_budget <= 0:
+            continue
+        img_budget -= 1
+        og = fetch_og_image(item["url"])
+        cache[key] = {"image": og, "checked_at": now_iso}
+        if og:
+            item["image"] = og
+            _log(f"[img] og:image ← {item['url'][:80]}")
     budget = _env_int("MAX_PROBES_PER_RUN", 30)
     status_count = {}
 

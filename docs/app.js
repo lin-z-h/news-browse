@@ -24,6 +24,7 @@
   let saved = {};
   try { saved = JSON.parse(localStorage.getItem(SKEY) || "{}") || {}; } catch (e) { saved = {}; }
   const persist = () => { try { localStorage.setItem(SKEY, JSON.stringify(saved)); } catch (e) {} };
+  const savedObj = v => (v && typeof v === "object") ? v : { ts: Number(v) || 0 }; // 兼容旧版仅存时间戳
   let view = "cozy";
   try { if (localStorage.getItem(VKEY) === "compact") view = "compact"; } catch (e) {}
 
@@ -137,11 +138,64 @@
   }
 
   function toggleSave(it, btn) {
-    if (saved[it.id]) { delete saved[it.id]; btn.setAttribute("aria-pressed", "false"); }
-    else { saved[it.id] = Date.now(); btn.setAttribute("aria-pressed", "true"); }
+    if (saved[it.id]) {
+      delete saved[it.id];
+      btn.setAttribute("aria-pressed", "false");
+    } else {
+      saved[it.id] = {
+        ts: Date.now(),
+        title: it.title, source: it.source, topic: it.topic || "General",
+        published: it.published || null, url: it.url,
+        image: it.image || null,
+        archive_url: it.archive_url || null, wayback_url: it.wayback_url || null,
+      };
+      btn.setAttribute("aria-pressed", "true");
+    }
     persist();
     showToast(saved[it.id] ? I.check : I.bookmark);
     if (state.savedOnly && !saved[it.id]) render();
+  }
+
+  // 收藏条目与最新 news.json 同步：后台探测到更好的快照（archive/wayback）时自动更新本地记录
+  function syncSavedFromItems() {
+    const byId = new Map(state.items.map(i => [i.id, i]));
+    let dirty = false;
+    for (const [id, v] of Object.entries(saved)) {
+      const fresh = byId.get(id);
+      if (!fresh) continue;
+      const obj = savedObj(v);
+      let changed = false;
+      for (const k of ["title", "source", "topic", "published", "url", "image"]) {
+        if (fresh[k] != null && fresh[k] !== "" && obj[k] !== fresh[k]) { obj[k] = fresh[k]; changed = true; }
+      }
+      if (fresh.archive_url && obj.archive_url !== fresh.archive_url) { obj.archive_url = fresh.archive_url; changed = true; }
+      if (fresh.wayback_url && obj.wayback_url !== fresh.wayback_url) { obj.wayback_url = fresh.wayback_url; changed = true; }
+      if (changed) { saved[id] = obj; dirty = true; }
+    }
+    if (dirty) persist();
+  }
+
+  // 稍后读视图完全从本地渲染：文章掉出 news.json 后收藏依然可看
+  function savedItems() {
+    const byId = new Map(state.items.map(i => [i.id, i]));
+    return Object.entries(saved)
+      .map(([id, v]) => {
+        const obj = savedObj(v);
+        const fresh = byId.get(id);
+        return {
+          id,
+          title: (fresh && fresh.title) || obj.title || "Saved story",
+          source: (fresh && fresh.source) || obj.source || "",
+          topic: (fresh && fresh.topic) || obj.topic || "General",
+          published: (fresh && fresh.published) || obj.published || null,
+          image: (fresh && fresh.image) || obj.image || null,
+          url: (fresh && fresh.url) || obj.url || "",
+          archive_url: (fresh && fresh.archive_url) || obj.archive_url || null,
+          wayback_url: (fresh && fresh.wayback_url) || obj.wayback_url || null,
+          _savedTs: obj.ts || 0,
+        };
+      })
+      .sort((a, b) => b._savedTs - a._savedTs);
   }
 
   async function copyLink(url) {
@@ -217,12 +271,12 @@
   // —— 列表 ——
   function visible() {
     const q = state.q.trim().toLowerCase();
-    return state.items.filter(it =>
+    const match = it =>
       (!state.source || it.source === state.source) &&
       (!state.topic || (it.topic || "General") === state.topic) &&
-      (!state.savedOnly || saved[it.id]) &&
-      (!q || `${it.title} ${it.source} ${it.topic || ""}`.toLowerCase().includes(q))
-    );
+      (!q || `${it.title} ${it.source} ${it.topic || ""}`.toLowerCase().includes(q));
+    if (state.savedOnly) return savedItems().filter(match);
+    return state.items.filter(match);
   }
 
   function clearFilters() {
@@ -272,7 +326,7 @@
     }
     let lastDay = "";
     for (const it of shown) {
-      const day = dayLabel(it.published);
+      const day = state.savedOnly ? "" : dayLabel(it.published); // 稍后读按收藏时间排序，不按日期分组
       if (day && day !== lastDay) {
         const d = el('<div class="day"></div>');
         d.textContent = day;
@@ -342,6 +396,7 @@
         .map(e => e[0]);
       state.generatedAt = data.generated_at || null;
     } catch (e) { /* 数据缺失时显示空态图标 */ }
+    syncSavedFromItems();
     buildTrack(sourceTrack, [{ label: "All", value: null }, ...state.sources.map(s => ({ label: s, value: s }))]);
     buildTrack(topicTrack, [{ label: "All", value: null }, ...state.topics.map(t => ({ label: t, value: t }))]);
     render();

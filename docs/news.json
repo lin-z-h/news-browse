@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T13:53:50Z",
+ "generated_at": "2026-10-31T14:34:20Z",
  "sources": [
   "Bloomberg",
   "The New York Times",
@@ -15,6 +15,198 @@
  ],
  "items": [
   {
+   "id": "d5fbd6c8f974",
+   "title": "Here is the latest.",
+   "source": "The New York Times",
+   "topic": "World",
+   "published": "2026-10-31T14:24:01Z",
+   "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31france-protests-promo1/31france-protests-twlh-facebookJumbo.jpg",
+   "url": "https://www.nytimes.com/live/2026/10/31/world/france-student-protests-halloween/france-student-protests-halloween",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "558a783e9bd9",
+   "title": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+   "source": "The New York Times",
+   "topic": "Top",
+   "published": "2026-10-31T14:22:20Z",
+   "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-iran-assess-1-vjkm/31int-iran-assess-1-vjkm-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "749f0a703712",
+   "title": "Taipei mayor gets angry reception at Pride after gay bar raid - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-10-31T14:20:44Z",
+   "image": null,
+   "url": "https://www.reuters.com/world/china/taipei-mayor-gets-angry-reception-pride-after-gay-bar-raid-2026-10-31/",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "be4683e2306f",
+   "title": "France and Germany braced for unrest with hundreds of demonstrations get under way – Europe live",
+   "source": "The Guardian",
+   "topic": "World",
+   "published": "2026-10-31T14:19:47Z",
+   "image": "https://i.guim.co.uk/img/media/f9f7507a6177e3a3d0cd9ea0ed7f44b07f739f79/568_0_4958_3967/master/4958.jpg?width=140&quality=85&auto=format&fit=max&s=8ab2bf2ce576c2ace1f677c25cd7004c",
+   "url": "https://www.theguardian.com/world/live/2026/oct/31/france-germany-protests-paris-europe-latest-news-updates",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "595ce950e8a5",
+   "title": "Rep. Meeks Puts Affordability Atop Democrats’ Agenda",
+   "source": "Bloomberg",
+   "topic": "Politics",
+   "published": "2026-10-31T14:17:03Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/videos/2026-10-31/rep-meeks-puts-affordability-atop-democrats-agenda-video",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "adebf824deb8",
+   "title": "Iran’s supreme leader warns US, Israel against war",
+   "source": "SCMP",
+   "topic": "Top",
+   "published": "2026-10-31T14:16:26Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/9d83694f-57fd-466d-aa2d-31ce14f66a1e_848d1b03.jpg?itok=T8285_Wu&v=1793456180",
+   "url": "https://www.scmp.com/news/world/middle-east/article/3372847/irans-supreme-leader-warns-us-israel-against-war",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "ece0b1c71b32",
+   "title": "Train Disaster Is Blow to Spain’s Leader, Already Election Underdog",
+   "source": "The New York Times",
+   "topic": "World",
+   "published": "2026-10-31T14:14:18Z",
+   "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-spain-crash-politics-1-fwzt/31int-spain-crash-politics-1-fwzt-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "1b293c2f8087",
+   "title": "In Australia, Halloween Means Spring, Sunshine and Skepticism",
+   "source": "The New York Times",
+   "topic": "World",
+   "published": "2026-10-31T14:11:38Z",
+   "image": null,
+   "url": "https://www.nytimes.com/2026/10/31/world/australia/australia-halloween-america-influence.html",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "ede3ae9d57fd",
+   "title": "Poland Deploys Riot Police in Standoff Over Country’s Top Court",
+   "source": "The New York Times",
+   "topic": "World",
+   "published": "2026-10-31T14:08:06Z",
+   "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-poland-court-hgvz/31int-poland-court-hgvz-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/10/31/world/europe/poland-court-police-president.html",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "3727aacd6ac1",
+   "title": "The AI Backlash Uniting Voters",
+   "source": "Bloomberg",
+   "topic": "Politics",
+   "published": "2026-10-31T14:03:31Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/videos/2026-10-31/the-ai-backlash-uniting-voters-video",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "0a0c18215b77",
+   "title": "Darren Gough backs Hong Kong Sixes global expansion, slams England’s 2-year demise",
+   "source": "SCMP",
+   "topic": "Top",
+   "published": "2026-10-31T14:00:14Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/cc5bc1de-3055-42fe-b7e0-851a0034ec6a_3ba37136.jpg?itok=uHSZ5y9Z&v=1793450281",
+   "url": "https://www.scmp.com/sport/cricket/article/3372844/darren-gough-backs-hong-kong-sixes-global-expansion-slams-englands-2-year-demise",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "ba71226b9c22",
+   "title": "Publicidad política en español cae antes de elecciones de EE.UU.",
+   "source": "Bloomberg",
+   "topic": "Politics",
+   "published": "2026-10-31T14:00:12Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/articles/2026-10-31/publicidad-politica-en-espanol-cae-antes-de-elecciones-de-ee-uu",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "6438a5411b25",
+   "title": "China narrows the path to elite official training scheme for citizens graduating overseas",
+   "source": "SCMP",
+   "topic": "Top",
+   "published": "2026-10-31T14:00:09Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/c44fa692-2118-43c7-9575-eb103c59c93b_04fba6a7.jpg?itok=MgznL7UA&v=1793437995",
+   "url": "https://www.scmp.com/news/china/politics/article/3372827/china-narrows-path-elite-official-training-scheme-citizens-graduating-overseas",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "6fae7d7e43ba",
+   "title": "Investors trim growth bets over fears of US economy’s AI exposure",
+   "source": "Financial Times",
+   "topic": "Top",
+   "published": "2026-10-31T14:00:02Z",
+   "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F28148ebf-75f7-42b7-a37e-83a7f80efe78.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "url": "https://www.ft.com/content/56b0d5fa-829c-47b1-b07b-b4be18f60151?syn-25a6b1a6=1",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "71c8453c2e91",
+   "title": "Midterm Elections 2026: Spending surge is leaving out Spanish-language ads",
+   "source": "Bloomberg",
+   "topic": "Politics",
+   "published": "2026-10-31T14:00:00Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/articles/2026-10-31/midterm-elections-2026-spending-surge-is-leaving-out-spanish-language-ads",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "466f426255a7",
+   "title": "Stadiums Rethink the Women’s Restroom",
+   "source": "Bloomberg",
+   "topic": "Markets",
+   "published": "2026-10-31T13:48:28Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/videos/2026-10-31/stadiums-rethink-the-women-s-restroom-video",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
    "id": "d01b296f31eb",
    "title": "Iran warns it will retaliate without ‘geographical limitations’ if attacked",
    "source": "Financial Times",
@@ -22,7 +214,19 @@
    "published": "2026-10-31T13:38:29Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F52baab06-101d-46d2-a4a5-704069d34fc2.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/77370477-62df-4499-9ab6-4063d3e361bd?syn-25a6b1a6=1",
-   "status": "challenge",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "f34f9a06d51a",
+   "title": "D.C. and Virginia sue to block Trump’s proposed triumphal arch - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-10-31T13:36:03Z",
+   "image": null,
+   "url": "https://www.washingtonpost.com/dc-md-va/2026/10/31/dc-virginia-sue-block-trumps-proposed-triumphal-arch/",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -34,7 +238,7 @@
    "published": "2026-10-31T13:34:43Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/videos/2026-10-31/haunted-attractions-help-revive-neighborhoods-video",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -58,7 +262,7 @@
    "published": "2026-10-31T13:32:51Z",
    "image": null,
    "url": "https://www.washingtonpost.com/business/2026/10/31/heres-one-biggest-financial-mistakes-people-make-when-getting-divorced/",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -70,7 +274,7 @@
    "published": "2026-10-31T13:32:25Z",
    "image": "https://i.guim.co.uk/img/media/2df1a932d5a77e5e53620563f07fe2cb3f6cd414/0_0_1350_1080/master/1350.jpg?width=140&quality=85&auto=format&fit=max&s=8bd9daeb20bcf3ec65b38d147c729d17",
    "url": "https://www.theguardian.com/politics/2026/oct/31/keir-starmer-uk-europe-us-relationship-trump",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -94,7 +298,7 @@
    "published": "2026-10-31T13:30:43Z",
    "image": "https://i.guim.co.uk/img/media/da413c8e483f048ad1e80da805cbdd9e228cf475/500_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=68743efb62a49332df218e6bbbd0ca49",
    "url": "https://www.theguardian.com/uk-news/2026/oct/31/uk-police-should-not-have-let-us-force-take-over-airbase-trial-mod-documents-show",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -106,7 +310,7 @@
    "published": "2026-10-31T13:30:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/3e66acc2-a203-4d8d-9311-15a1677c158d_7b1b7243.jpg?itok=-laIrGAY&v=1793445914",
    "url": "https://www.scmp.com/news/china/science/article/3372841/chinese-archaeologists-set-hi-tech-excavations-ai-and-deep-sea-robots",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -123,6 +327,18 @@
    "wayback_url": null
   },
   {
+   "id": "0d47cfdee34e",
+   "title": "What to Know About Fighting Between Ethiopia and Rebels in Tigray",
+   "source": "The New York Times",
+   "topic": "World",
+   "published": "2026-10-31T13:22:39Z",
+   "image": "https://static01.nyt.com/images/2026/10/03/multimedia/03int-ethiopia-wtk-1-btwq/03int-ethiopia-wtk-1-btwq-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/10/02/world/africa/ethiopia-tigray-conflict.html",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
    "id": "e90e5991ba22",
    "title": "The NYC Marathon Is as Popular as Ever. It Remains Inaccessible to Many.",
    "source": "The New York Times",
@@ -135,14 +351,14 @@
    "wayback_url": null
   },
   {
-   "id": "be4683e2306f",
-   "title": "France and Germany braced for unrest with hundreds of demonstrations planned – Europe live",
-   "source": "The Guardian",
-   "topic": "World",
-   "published": "2026-10-31T13:20:28Z",
-   "image": "https://i.guim.co.uk/img/media/f9f7507a6177e3a3d0cd9ea0ed7f44b07f739f79/568_0_4958_3967/master/4958.jpg?width=140&quality=85&auto=format&fit=max&s=8ab2bf2ce576c2ace1f677c25cd7004c",
-   "url": "https://www.theguardian.com/world/live/2026/oct/31/france-germany-protests-paris-europe-latest-news-updates",
-   "status": "challenge",
+   "id": "5e2cd646bc5f",
+   "title": "13 public libraries open earlier, admitting visitors from 9am - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-10-31T13:16:11Z",
+   "image": "https://cassette.sphdigital.com.sg/image/zaobao/a66704b34213acb6698f50780ff27a4cd775beaa79c2c4208fcfda12f0ec1704",
+   "url": "https://www.zaobao.com.sg/en/news/singapore/13-public-libraries-open-earlier-admitting-visitors-9am",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -154,7 +370,7 @@
    "published": "2026-10-31T13:15:03Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/videos/2026-10-31/eu-foreign-policy-chief-warns-against-normalizing-russia-video",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -166,7 +382,7 @@
    "published": "2026-10-31T13:05:05Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/2026/10/31/win.jpeg?itok=yZJhi1Ae",
    "url": "https://www.scmp.com/sport/racing/article/3372846/scmp-best-bets-danicas-right-choice-punters-valley",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -178,7 +394,7 @@
    "published": "2026-10-31T13:00:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/3b0b8297-2177-461c-a192-2c8d8d21c1f9_6dcab10f.jpg?itok=D7tFgncs&v=1793445677",
    "url": "https://www.scmp.com/news/china/diplomacy/article/3372840/soft-power-display-chinas-first-lady-peng-liyuan-hosts-german-counterpart",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -190,19 +406,7 @@
    "published": "2026-10-31T13:00:00Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/ai-enthusiasm-is-collapsing-and-tech-earnings-just-made-it-worse",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "d5fbd6c8f974",
-   "title": "Here is the latest.",
-   "source": "The New York Times",
-   "topic": "World",
-   "published": "2026-10-31T12:58:04Z",
-   "image": null,
-   "url": "https://www.nytimes.com/live/2026/10/31/world/france-student-protests-halloween/france-student-protests-halloween",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -219,14 +423,14 @@
    "wayback_url": null
   },
   {
-   "id": "749f0a703712",
-   "title": "Taipei mayor gets angry reception at Pride after gay bar raid - Reuters",
+   "id": "47ad5d3f6446",
+   "title": "Residents of Russian-controlled Ukrainian town arrive in Belarus - Reuters",
    "source": "Reuters",
    "topic": "Wire",
-   "published": "2026-10-31T12:53:15Z",
+   "published": "2026-10-31T12:55:51Z",
    "image": null,
-   "url": "https://www.reuters.com/world/china/taipei-mayor-gets-angry-reception-pride-after-gay-bar-raid-2026-10-31/",
-   "status": "challenge",
+   "url": "https://www.reuters.com/world/europe/three-planes-carrying-residents-evacuated-oleshky-arrive-belarus-news-agency-2026-10-31/",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -251,6 +455,18 @@
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/a6ca7a85-e13c-4b07-bfac-3932ca45da47_c8944854.jpg?itok=fL1t82v7&v=1793450361",
    "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3372845/wine-and-dine-festival-vendors-report-halloween-boost-sales-and-footfall",
    "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "004a8c905f6f",
+   "title": "Poland's president accuses Tusk of forced takeover of country's top court - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-10-31T12:43:43Z",
+   "image": null,
+   "url": "https://www.reuters.com/world/polands-president-accuses-tusk-forced-takeover-countrys-top-court-2026-10-31/",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -298,7 +514,7 @@
    "published": "2026-10-31T12:30:00Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt39be7cc1b8b06346/6ae4e559376c360bbd0d1310/GettyImages-2288050691.jpg?branch=production",
    "url": "https://time.com/article/2026/10/31/americans-lost-nearly-18-billion-last-year-to-cyberscams-is-washington-doing-enough-to-help-them-get-it-back-/",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -310,31 +526,7 @@
    "published": "2026-10-31T12:27:56Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/senegal-lawmakers-reject-budget-again-putting-imf-deal-at-risk",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "558a783e9bd9",
-   "title": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-10-31T12:26:58Z",
-   "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-iran-assess-1-vjkm/31int-iran-assess-1-vjkm-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "47ad5d3f6446",
-   "title": "Residents of Russian-controlled Ukrainian town arrive in Belarus - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-10-31T12:14:27Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/europe/three-planes-carrying-residents-evacuated-oleshky-arrive-belarus-news-agency-2026-10-31/",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -358,7 +550,7 @@
    "published": "2026-10-31T12:12:26Z",
    "image": null,
    "url": "https://www.reuters.com/world/middle-east/iran-provincial-official-says-us-attacked-fishing-boats-off-qeshm-island-state-2026-10-31/",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -579,18 +771,6 @@
    "wayback_url": null
   },
   {
-   "id": "ece0b1c71b32",
-   "title": "Train Disaster Is a Blow to Spain’s Leader, Already an Election Underdog",
-   "source": "The New York Times",
-   "topic": "World",
-   "published": "2026-10-31T11:42:16Z",
-   "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-spain-crash-politics-1-fwzt/31int-spain-crash-politics-1-fwzt-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "ff077107a48c",
    "title": "Norwegian Firm Has $100 Million Riding on Mercuria’s Baltic Case",
    "source": "Bloomberg",
@@ -772,7 +952,7 @@
   },
   {
    "id": "0c598f15953c",
-   "title": "Hong Kong may raise GDP forecast as growth poised for 5-year high: Paul Chan",
+   "title": "Hong Kong may raise GDP forecast as growth could hit 5-year high: Paul Chan",
    "source": "SCMP",
    "topic": "Top",
    "published": "2026-10-31T10:20:59Z",
@@ -922,7 +1102,7 @@
    "published": "2026-10-31T09:58:16Z",
    "image": null,
    "url": "https://www.nytimes.com/2026/10/31/briefing/stage-fright.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -934,9 +1114,9 @@
    "published": "2026-10-31T09:44:32Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/10/30/early-voting-surpasses-2022-levels-pope-has-cast-his-ballot/",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
-   "wayback_url": "http://web.archive.org/web/20261031094933/https://www.washingtonpost.com/politics/2026/10/30/early-voting-surpasses-2022-levels-pope-has-cast-his-ballot/"
+   "wayback_url": null
   },
   {
    "id": "265806993c53",
@@ -946,7 +1126,7 @@
    "published": "2026-10-31T09:39:45Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/angola-plans-to-cut-fuel-subsidies-without-price-increases",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -958,7 +1138,7 @@
    "published": "2026-10-31T09:30:11Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/4ff00ae5-450c-43fc-8f10-4c83f960f771_dbbf730a.jpg?itok=8M7Jp4aa&v=1793435982",
    "url": "https://www.scmp.com/sport/tennis/article/3372824/leylah-fernandez-hails-mental-fortitude-after-reaching-pan-pacific-open-final-tokyo",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -970,7 +1150,7 @@
    "published": "2026-10-31T09:30:09Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/2026/10/29/cover-cms.jpg?itok=6u0vklXy&v=1793267107",
    "url": "https://www.scmp.com/infographics/hong-kong/article/3372592/summary-tai-po",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -982,7 +1162,7 @@
    "published": "2026-10-31T09:22:22Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/5a25eb8e-f0a6-4438-ab94-9831b5d257ad_a0d977f4.jpg?itok=o80UU5s4&v=1793452790",
    "url": "https://www.scmp.com/news/world/russia-central-asia/article/3372828/russia-occupied-oleshky-evacuees-arrive-belarus-ukraine-next",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -994,7 +1174,7 @@
    "published": "2026-10-31T09:19:29Z",
    "image": "https://static01.nyt.com/images/2026/11/30/multimedia/30int-uk-slavery-apology-mhgb/30int-uk-slavery-apology-mhgb-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/30/world/europe/britain-burnham-charles-apology-slavery.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1006,7 +1186,7 @@
    "published": "2026-10-31T09:15:07Z",
    "image": "https://static01.nyt.com/images/2026/11/08/magazine/08mag-interview-mcdonagh-04/08mag-interview-mcdonagh-04-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/magazine/martin-mcdonagh-interview.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1018,7 +1198,7 @@
    "published": "2026-10-31T09:13:22Z",
    "image": "https://i.guim.co.uk/img/media/f9bcca919390196c72d4b51a3bee7cfc21271ac9/356_0_6772_5418/master/6772.jpg?width=140&quality=85&auto=format&fit=max&s=5715ad8fcfcd8353438cc59f7867a9fc",
    "url": "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1030,7 +1210,7 @@
    "published": "2026-10-31T09:06:09Z",
    "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31pol-haley-stevens-01-lqvt/31pol-haley-stevens-01-lqvt-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/us/haley-stevens-abdul-el-sayed.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1042,7 +1222,7 @@
    "published": "2026-10-31T09:05:39Z",
    "image": "https://static01.nyt.com/images/2026/10/31/business/31int-france-street-top-fdcd/31int-france-street-top-fdcd-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/world/europe/france-riots-protests-paris-rue-beaurepaire.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1054,7 +1234,7 @@
    "published": "2026-10-31T09:05:31Z",
    "image": "https://static01.nyt.com/images/2026/10/30/multimedia/2026-10-23-fl-mn-sc-nebraska/2026-10-23-fl-mn-sc-nebraska-mediumSquareAt3X-v5.jpg",
    "url": "https://www.nytimes.com/2026/10/31/us/politics/nebraska-senate-poll.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1066,7 +1246,7 @@
    "published": "2026-10-31T09:05:21Z",
    "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31pol-gop-attacks-01-hgzl/31pol-gop-attacks-01-hgzl-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/us/politics/trump-republicans-personal-attacks-midterms.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1078,7 +1258,7 @@
    "published": "2026-10-31T09:02:43Z",
    "image": "https://static01.nyt.com/images/2026/10/30/multimedia/30biz-alt-protein-01-hvcq/30biz-alt-protein-01-hvcq-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/business/beef-prices-protein.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1090,7 +1270,7 @@
    "published": "2026-10-31T09:02:09Z",
    "image": "https://static01.nyt.com/images/2026/10/28/multimedia/00Biz-sheikhbreederscup-wpvt/00Biz-sheikhbreederscup-wpvt-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/business/breeders-cup-thoroughbreds-keeneland-saratoga-sales.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1102,7 +1282,7 @@
    "published": "2026-10-31T09:01:51Z",
    "image": "https://static01.nyt.com/images/2026/11/03/well/31Well-NOA-Social-Security/31Well-NOA-Social-Security-mediumSquareAt3X-v4.jpg",
    "url": "https://www.nytimes.com/2026/10/31/well/whats-behind-a-recent-spike-in-early-social-security-claims.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1114,7 +1294,7 @@
    "published": "2026-10-31T09:01:45Z",
    "image": "https://static01.nyt.com/images/2026/10/22/multimedia/00sci-Ukraine-infections-04-bfqh/00sci-Ukraine-infections-04-bfqh-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/science/ukraine-soldiers-infection-treatment.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1126,7 +1306,7 @@
    "published": "2026-10-31T09:01:34Z",
    "image": null,
    "url": "https://www.nytimes.com/video/business/100000011219428/what-does-running-the-nyc-marathon-sound-like.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1138,7 +1318,7 @@
    "published": "2026-10-31T09:00:54Z",
    "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31BIZ-SF-DATING-1-04-mwjv/31BIZ-SF-DATING-1-04-mwjv-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/technology/san-francisco-ai-boom-dating.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1150,7 +1330,7 @@
    "published": "2026-10-31T09:00:18Z",
    "image": null,
    "url": "https://www.nytimes.com/2026/10/31/science/mummy-sale-facebook-ill.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1162,7 +1342,7 @@
    "published": "2026-10-31T08:56:09Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/38ba69a2-dd10-4e6b-8be5-1f672397183b_51bb9f32.jpg?itok=YGfLLYAA&v=1793436962",
    "url": "https://www.scmp.com/news/hong-kong/society/article/3372825/appeal-private-flight-bring-critically-ill-british-baby-home-hong-kong",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1174,7 +1354,7 @@
    "published": "2026-10-31T08:48:16Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/softbank-backed-opay-halts-ipo-to-respond-to-regulatory-inquiry",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1186,7 +1366,7 @@
    "published": "2026-10-31T08:36:19Z",
    "image": null,
    "url": "https://www.reuters.com/world/middle-east/jordan-stops-fighters-attempting-enter-syria-armed-forces-say-2026-10-31/",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1198,7 +1378,7 @@
    "published": "2026-10-31T08:30:08Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/29/4ac9ae32-dae3-4ba7-8d0d-6adb549acc34_20da864c.jpg?itok=FhZRHNip&v=1793256263",
    "url": "https://www.scmp.com/opinion/asia-opinion/article/3372553/both-japan-and-china-can-help-bangladesh-reach-its-full-potential",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1210,7 +1390,7 @@
    "published": "2026-10-31T08:21:43Z",
    "image": null,
    "url": "https://www.reuters.com/world/middle-east/egypt-fears-escalation-iran-war-would-be-more-destructive-foreign-minister-says-2026-10-31/",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1222,7 +1402,7 @@
    "published": "2026-10-31T08:15:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/cf84d42f-6dff-468f-8f60-90f4fd41310a_a65ba2e4.jpg?itok=yWGGMLdR&v=1793355064",
    "url": "https://www.scmp.com/lifestyle/arts/article/3372718/hong-kong-pianist-john-lee-does-justice-rachmaninov-and-more-despite-dry-acoustics",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1234,7 +1414,7 @@
    "published": "2026-10-31T08:00:37Z",
    "image": "https://i.guim.co.uk/img/media/8ef959f19537963b274f4bf76e4fd4c6e85e3c75/599_0_4164_3333/master/4164.jpg?width=140&quality=85&auto=format&fit=max&s=b50cad423dfefdbc225fc4ebbb2e0c10",
    "url": "https://www.theguardian.com/world/2026/oct/31/mouria-historic-athens-cafe-closes-exarchia-gentrifies",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1246,7 +1426,7 @@
    "published": "2026-10-31T08:00:37Z",
    "image": "https://i.guim.co.uk/img/media/2d96ff893b43e6d48d9bdbb100b32e39e4f77ecc/0_0_5187_4150/master/5187.jpg?width=140&quality=85&auto=format&fit=max&s=a115b579b45dd4f8606794384ea2b7bb",
    "url": "https://www.theguardian.com/commentisfree/2026/oct/31/ai-rely-brain-new-tech-product-lives-boredom",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1258,7 +1438,7 @@
    "published": "2026-10-31T08:00:09Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/7105f9b7-5f35-4a55-a8ee-e3ba55d67c16_a4df1042.jpg?itok=WI8K6X_A&v=1793347118",
    "url": "https://www.scmp.com/business/climate-and-energy/article/3372711/can-battery-swapping-and-energy-storage-power-catls-next-phase-growth",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1270,19 +1450,7 @@
    "published": "2026-10-31T08:00:00Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/the-betting-coup-that-rocked-london-s-bookmakers-goes-unsolved",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "8252ea93d566",
-   "title": "Hong Kong has released the full report on Tai Po fire tragedy. Here’s all you need to know",
-   "source": "SCMP",
-   "topic": "Top",
-   "published": "2026-10-31T07:30:08Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/99d0369e-f347-4e56-a234-6d79a3e94625_f8ee3892.jpg?itok=CZDUVKou&v=1793432631",
-   "url": "https://www.scmp.com/news/hong-kong/society/article/3372768/hong-kong-has-released-full-report-tai-po-fire-tragedy-heres-all-you-need-know",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1294,7 +1462,7 @@
    "published": "2026-10-31T07:20:13Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/finance/singapore/justco-falls-60-below-ipo-price-rate-hike-expectations-may-be-factor-says-analyst?ai-allowed=1",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1306,7 +1474,7 @@
    "published": "2026-10-31T07:18:22Z",
    "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31obit-liu-02-wcfq/31obit-liu-02-wcfq-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/world/asia/liu-yandong-dead.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1318,19 +1486,7 @@
    "published": "2026-10-31T07:11:54Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/finance/singapore/singapore-leads-asean-brand-value-grab-grows-more-fourfold-three-years",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "44118f70c7f0",
-   "title": "China joins global race to reawaken brain-injury patients through ultrasound therapy",
-   "source": "SCMP",
-   "topic": "Top",
-   "published": "2026-10-31T07:00:06Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/0ece54a4-c48c-4710-9ca4-ca72ef5f3a18_bcb3dc8a.jpg?itok=nK79p_0Q&v=1793367339",
-   "url": "https://www.scmp.com/tech/tech-trends/article/3372779/china-joins-global-race-reawaken-brain-injury-patients-through-ultrasound-therapy",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1342,31 +1498,7 @@
    "published": "2026-10-31T07:00:00Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/sanchez-rethinks-reelection-plan-after-spain-rail-disaster-socialist-party",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "cfccc8f85d14",
-   "title": "Malaysia’s Melaka poll begins as 79 cleared in test for Anwar’s coalition",
-   "source": "SCMP",
-   "topic": "Top",
-   "published": "2026-10-31T06:57:03Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/086d6cda-323c-4b5c-8108-eea59b9dcfdb_a4c20104.jpg?itok=KrGk3o7w&v=1793429820",
-   "url": "https://www.scmp.com/week-asia/politics/article/3372821/malaysias-melaka-poll-begins-79-cleared-test-anwars-coalition",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "82217416b591",
-   "title": "CCP fifth plenum promotes only four born in 1970s - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T06:41:59Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/news/china/ccp-fifth-plenum-promotes-only-four-born-1970s",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1378,7 +1510,7 @@
    "published": "2026-10-31T06:40:29Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/openai-sam-altman-samsung-executives-memory-crunch-deepens",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1390,7 +1522,7 @@
    "published": "2026-10-31T06:05:20Z",
    "image": "https://i.guim.co.uk/img/media/deb23aebbe0b6f74547fd907a3cd8662f017bd91/551_0_5523_4417/master/5523.jpg?width=140&quality=85&auto=format&fit=max&s=5e6491e440d26d80753b0d95a5e85b2c",
    "url": "https://www.theguardian.com/australia-news/2026/oct/31/weather-bom-storm-warnings-melbourne-canberra-sydney-brisbane",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1402,7 +1534,7 @@
    "published": "2026-10-31T06:00:38Z",
    "image": "https://i.guim.co.uk/img/media/11868ad73140bf3aff8df903a25904192892087f/0_0_5906_4724/master/5906.jpg?width=140&quality=85&auto=format&fit=max&s=111dce97acda93ab8bf5440c06a4f319",
    "url": "https://www.theguardian.com/commentisfree/2026/oct/31/black-history-month-debate-nativists",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1414,7 +1546,7 @@
    "published": "2026-10-31T06:00:35Z",
    "image": "https://i.guim.co.uk/img/media/89e3c5c5400f7c250a1d5133dd481269618fc273/44_0_2356_1884/master/2356.jpg?width=140&quality=85&auto=format&fit=max&s=20dc9f2b3488e162c05bf36486b8e375",
    "url": "https://www.theguardian.com/commentisfree/2026/oct/31/black-history-month-panel-arlo-parks-eunice-olumide-ade-adepitan-vanley-burke",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1426,19 +1558,7 @@
    "published": "2026-10-31T06:00:00Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/andy-burnham-uk-premier-budget-labour-britain",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "96b20f6494f5",
-   "title": "How One Country Became the Unlikely Crossroads of the Global A.I. Boom",
-   "source": "The New York Times",
-   "topic": "Business",
-   "published": "2026-10-31T05:24:45Z",
-   "image": "https://static01.nyt.com/images/2026/10/30/multimedia/Biz-Malaysia-Video-Still-bvqt/Biz-Malaysia-Video-Still-bvqt-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/10/30/business/malaysia-data-center-china.html",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
@@ -1450,9 +1570,9 @@
    "published": "2026-10-31T05:01:09Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F9bca4a2e-bf59-4962-ba0b-105f8b898404.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/74c46706-a4d9-4c8b-a2e7-7ff6ad811ec0?syn-25a6b1a6=1",
-   "status": "challenge",
+   "status": "original",
    "archive_url": null,
-   "wayback_url": "http://web.archive.org/web/20261031090951/https://www.ft.com/content/74c46706-a4d9-4c8b-a2e7-7ff6ad811ec0?syn-25a6b1a6=1"
+   "wayback_url": null
   },
   {
    "id": "16ef7fdceec3",
@@ -1527,18 +1647,6 @@
    "wayback_url": null
   },
   {
-   "id": "37b89259b4e5",
-   "title": "Tension remains after bitter primary as Rep. Haley Stevens again criticizes El-Sayed - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-10-31T04:57:45Z",
-   "image": null,
-   "url": "https://www.washingtonpost.com/politics/2026/10/30/tension-remains-after-bitter-primary-rep-haley-stevens-again-criticizes-el-sayed/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "717a1bb1a61d",
    "title": "Indonesia remains a key market despite stock market pressure and policy tightening: UOB FDI advisory head - 联合早报",
    "source": "Lianhe Zaobao (EN)",
@@ -1563,18 +1671,6 @@
    "wayback_url": null
   },
   {
-   "id": "1cb7aa3a6a30",
-   "title": "[Opinion] Debunking the myth that high salaries ensure clean government - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T04:27:47Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/forum/views/opinion-debunking-myth-high-salaries-ensure-clean-government",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "5f0e1fb044fc",
    "title": "Riot police deployed to Poland’s constitutional court after judge suspended",
    "source": "The Guardian",
@@ -1587,18 +1683,6 @@
    "wayback_url": null
   },
   {
-   "id": "ad94d9dda137",
-   "title": "Singapore and Cambodia police recover nearly S$17 million lost by petrochemical firm to email scam - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T04:14:23Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/news/sea/singapore-and-cambodia-police-recover-nearly-s17-million-lost-petrochemical-firm-email-scam",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "b32efbf53843",
    "title": "Luigi Mangione’s lawyers file to dismiss state charges, citing double jeopardy law",
    "source": "The Guardian",
@@ -1606,30 +1690,6 @@
    "published": "2026-10-31T04:09:50Z",
    "image": "https://i.guim.co.uk/img/media/52b86e6b5d88b4c7ebca5b536c9b8b4938517c3d/648_0_6480_5184/master/6480.jpg?width=140&quality=85&auto=format&fit=max&s=ef67e86fc11d7f5ffeb61c81e672997f",
    "url": "https://www.theguardian.com/us-news/2026/oct/31/luigi-mangione-new-york-case",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "f87630948391",
-   "title": "Will Digging Up Vietnam’s War Dead Heal Old Wounds or Reopen Them?",
-   "source": "The New York Times",
-   "topic": "World",
-   "published": "2026-10-31T04:01:13Z",
-   "image": "https://static01.nyt.com/images/2026/10/27/multimedia/00int-vietnam-graves-mtjp/00int-vietnam-graves-mtjp-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/10/31/world/asia/vietnam-missing-war-dead.html",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "689f40e36402",
-   "title": "Wanted: New Central Bank Chief. Expertise and Political Acumen Required.",
-   "source": "The New York Times",
-   "topic": "Business",
-   "published": "2026-10-31T04:01:06Z",
-   "image": "https://static01.nyt.com/images/2026/10/30/multimedia/30Biz-ECB-Next-01-cqtz/30Biz-ECB-Next-01-cqtz-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/10/31/business/european-central-bank-lagarde-succession.html",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1671,6 +1731,18 @@
    "wayback_url": null
   },
   {
+   "id": "37b89259b4e5",
+   "title": "Tension remains after bitter primary as Rep. Haley Stevens again criticizes El-Sayed - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-10-31T03:00:00Z",
+   "image": null,
+   "url": "https://www.washingtonpost.com/politics/2026/10/30/tension-remains-after-bitter-primary-rep-haley-stevens-again-criticizes-el-sayed/",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
    "id": "33831d6de50a",
    "title": "Judge orders Trump administration to cease threats to prosecute election officials - Reuters",
    "source": "Reuters",
@@ -1690,6 +1762,18 @@
    "published": "2026-10-31T02:40:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/food/interactive/2026/10/30/is-cheesecake-factory-decor-really-so-bad-we-discuss-over-giant-margaritas/",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "38e638a3f158",
+   "title": "Singapore deepens cooperation with China and South Korea on food security and smart farming - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-10-31T02:28:16Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/news/singapore/singapore-deepens-cooperation-china-and-south-korea-food-security-and-smart-farming",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1743,18 +1827,6 @@
    "wayback_url": null
   },
   {
-   "id": "52a3ffe70358",
-   "title": "Chinese tycoon denies promising former employees 10% profit share, says he signed documents blindly out of trust - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T01:36:53Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/news/singapore/chinese-tycoon-denies-promising-former-employees-10-profit-share-says-he-signed-documents-blindly",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "b1f5fcaa8422",
    "title": "War Is Hell—And The Mosquito Bowl Won’t Let Us Forget It",
    "source": "TIME",
@@ -1762,30 +1834,6 @@
    "published": "2026-10-31T01:33:07Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/bltd044ca223c416096/6ae53659c44d5d5a120cb44c/MB_20251002_26313_R3.jpg?branch=production",
    "url": "https://time.com/article/2026/10/31/the-mosquito-bowl-review/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "99611928ca8c",
-   "title": "Australian PM Set to Visit Beijing After APEC Meeting, SCMP Says",
-   "source": "Bloomberg",
-   "topic": "Politics",
-   "published": "2026-10-31T01:27:39Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/articles/2026-10-31/australia-pm-anthony-albanese-xi-jinping-visit-beijing-apec-meeting",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "ac9e29d48bf7",
-   "title": "National Neuroscience Institute outpatient clinic to offer acupuncture from March 2027 - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T01:15:41Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/news/singapore/national-neuroscience-institute-outpatient-clinic-offer-acupuncture-march-2027",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1923,18 +1971,6 @@
    "wayback_url": null
   },
   {
-   "id": "e8098cc9f1a9",
-   "title": "Singapore and Pakistan can work together to boost trade and investment: Dr Vivian Balakrishnan - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T00:02:09Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/news/singapore/singapore-and-pakistan-can-work-together-boost-trade-and-investment-dr-vivian-balakrishnan",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "b529be7b48e5",
    "title": "Florida election officials alarmed at slow delivery of mail-in ballots - The Washington Post",
    "source": "The Washington Post",
@@ -1983,18 +2019,6 @@
    "wayback_url": null
   },
   {
-   "id": "6de2e433b2d7",
-   "title": "Wall Street Week | Affordability, Data Center Divide, Debt Hits Households, Capitalism on the Ballot",
-   "source": "Bloomberg",
-   "topic": "Politics",
-   "published": "2026-10-30T23:13:26Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/videos/2026-10-30/wall-street-week-affordability-data-center-divide-video",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "d1fe75e5e8d4",
    "title": "Alaska prosecutor investigates alleged Democratic plot to confuse voters with second Dan Sullivan",
    "source": "The Guardian",
@@ -2002,18 +2026,6 @@
    "published": "2026-10-30T23:13:17Z",
    "image": "https://i.guim.co.uk/img/media/50d55bb9df7e127eca8443fde8a04dd7b0850aaf/395_0_2612_2090/master/2612.jpg?width=140&quality=85&auto=format&fit=max&s=47c36a5da8fe898b5b14213f2a259617",
    "url": "https://www.theguardian.com/us-news/2026/oct/30/alaska-democrat-senate-mary-peltola-dan-sullivan",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "433ab387cd06",
-   "title": "DOJ Ramps Up Criminal Probe Amid Tight Alaska Senate Race",
-   "source": "Bloomberg",
-   "topic": "Politics",
-   "published": "2026-10-30T23:06:55Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/videos/2026-10-30/balance-of-power-late-edition-10-30-2026-video",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2038,30 +2050,6 @@
    "published": "2026-10-30T22:55:43Z",
    "image": null,
    "url": "https://www.reuters.com/world/russias-lavrov-says-inviting-poland-attend-g20-meeting-breaks-diplomatic-rules-2026-10-30/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "3b978a947a93",
-   "title": "Trump Energy Council’s Latest Hire to Focus on Oil, Gas Projects",
-   "source": "Bloomberg",
-   "topic": "Politics",
-   "published": "2026-10-30T22:52:02Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/articles/2026-10-30/trump-energy-council-s-latest-hire-to-focus-on-oil-gas-projects",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "3d3c4a6c0d5d",
-   "title": "NYSE Owner Plans Hyperliquid Perpetuals Market in US",
-   "source": "Bloomberg",
-   "topic": "Tech",
-   "published": "2026-10-30T22:49:08Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/videos/2026-10-30/nyse-owner-plans-hyperliquid-perpetuals-market-in-us-video",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2247,13 +2235,13 @@
    "wayback_url": null
   },
   {
-   "id": "1d166503d217",
+   "id": "be74746c70e8",
    "title": "A resumed Iran war after midterms would put fragile gains in Hormuz to the test - The Washington Post",
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-10-30T19:06:06Z",
    "image": null,
-   "url": "https://www.washingtonpost.com/world/2026/10/30/resumed-iran-war-after-midterms-would-put-fragile-gains-hormuz-test/",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQlhHVWx5Um1HLXNrSExCVlpjcXFEdGlYSmZsRmVydTRKd3VNcGdVVzA0dGJxMkduZVFNM1IzeTloX0QtRWdLQS1wSzl1QVpXX1ZNQ3dXbFBlUlBVQjRid2M1bmhfZ0VmOER2NEFBODhxVG1qRHJGS29fRFpXa21yVXpVMDh2NEdkZ2RpX183R054UmdUUmlROVJPWWg0c0NBOHZiWGVJT1dRd0M2ejZYbjQ5Q2M2THc?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2422,18 +2410,6 @@
    "published": "2026-10-30T16:49:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/mass-protests-sweep-italy-during-nationwide-strike-2026-10-30/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "582916c454c8",
-   "title": "G20 foreign ministers skip photo-op amid objections over Russia - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-10-30T16:47:44Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/g20-foreign-ministers-skip-photo-op-amid-objections-over-russia-2026-10-30/",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2643,13 +2619,37 @@
    "wayback_url": null
   },
   {
-   "id": "ca98ffcd0345",
+   "id": "b0b3ed3b076e",
    "title": "Man kicks masseuse in face, strikes her forehead with phone - 联合早报",
    "source": "Lianhe Zaobao (EN)",
    "topic": "Singapore",
    "published": "2026-10-30T09:40:51Z",
    "image": null,
-   "url": "https://www.zaobao.com.sg/en/news/singapore/man-kicks-masseuse-face-strikes-her-forehead-phone",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcFRyMndRblpWVnpNRVZXeE5fTFpCbGtoZHkzQmZaX0h1YUJONGRGdVYxd2M5OXg5TXdHc1hUbXo4bnJLakdSZnRGbzRMam5GSnJNWVpqemVjR0swcWlEeVo1eTZFYjJFNzlkbmlVOVo1VWZTUWxCcTQzLUJ3ZEZ6SEdYcUNSeXg2aUo1LThCRGFiRUhQWGNsOG9B?oc=5",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "471dfe2ba04c",
+   "title": "Opinion | California’s high-speed rail chief departs ahead of schedule - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-10-30T05:38:52Z",
+   "image": null,
+   "url": "https://www.washingtonpost.com/opinions/2026/10/29/california-misses-real-waste-its-high-speed-rail-project/",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "c4b3c1c324f2",
+   "title": "Netanyahu alleges stolen election as he seeks political survival amid uncertainty - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-10-30T05:35:54Z",
+   "image": null,
+   "url": "https://www.washingtonpost.com/world/2026/10/29/netanyahu-alleges-stolen-election-he-seeks-political-survival-amid-uncertainty/",
    "status": "original",
    "archive_url": null,
    "wayback_url": null

@@ -37,7 +37,7 @@ def save(path, data: dict) -> None:
     os.replace(tmp, path)
 
 
-def _parse_iso(value) -> Optional[float]:
+def parse_iso(value) -> Optional[float]:
     if not value:
         return None
     try:
@@ -46,12 +46,15 @@ def _parse_iso(value) -> Optional[float]:
         return None
 
 
+_parse_iso = parse_iso  # 兼容旧名
+
+
 def fresh_entry(cache: dict, url: str, now_ts: float) -> Optional[dict]:
     """返回未过期的缓存条目；缺失/损坏/过期返回 None。"""
     entry = cache.get(url)
     if not isinstance(entry, dict) or "status" not in entry:
         return None
-    checked = _parse_iso(entry.get("checked_at"))
+    checked = parse_iso(entry.get("checked_at"))
     if checked is None:
         return None
     ttl = TTL_SECONDS.get(entry.get("status"), 86400)
