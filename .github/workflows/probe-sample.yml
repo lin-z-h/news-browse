@@ -1,0 +1,49 @@
+name: Probe sample
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "要探测的原文链接，用英文逗号分隔"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Probe sample URLs
+        env:
+          ARCHIVE_COOKIE: ${{ secrets.ARCHIVE_COOKIE }}
+          ARCHIVE_UA: ${{ secrets.ARCHIVE_UA }}
+          NOPECHA_API_KEY: ${{ secrets.NOPECHA_API_KEY }}
+          URLS: ${{ inputs.urls }}
+        run: |
+          IFS=',' read -ra URLS <<< "$URLS"
+          for u in "${URLS[@]}"; do
+            u="$(echo "$u" | xargs)"
+            [ -z "$u" ] && continue
+            echo "=================================================="
+            echo "PROBE: $u"
+            set +e
+            OUT="$(python scripts/archive_probe.py "$u" 2>/tmp/err.log)"
+            RC=$?
+            set -e
+            sed 's/^/  stderr| /' /tmp/err.log || true
+            echo "  JSON : $OUT"
+            echo "  EXIT : $RC   (0=命中/未命中, 75=验证待处理)"
+          done
