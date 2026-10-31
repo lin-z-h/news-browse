@@ -1,0 +1,31 @@
+{
+  "max_per_source": 20,
+  "max_total": 60,
+  "sources": [
+    {
+      "name": "Bloomberg",
+      "feeds": [
+        "https://feeds.bloomberg.com/markets/news.rss",
+        "https://feeds.bloomberg.com/technology/news.rss"
+      ]
+    },
+    {
+      "name": "The New York Times",
+      "feeds": [
+        "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+      ]
+    },
+    {
+      "name": "The Economist",
+      "feeds": [
+        "https://www.economist.com/leaders/rss.xml",
+        "https://www.economist.com/business/rss.xml",
+        "https://www.economist.com/finance-and-economics/rss.xml",
+        "https://www.economist.com/science-and-technology/rss.xml",
+        "https://www.economist.com/china/rss.xml"
+      ]
+    }
+  ]
+}

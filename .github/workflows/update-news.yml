@@ -1,0 +1,49 @@
+name: Update news
+
+on:
+  schedule:
+    - cron: "0 */2 * * *" # 每 2 小时（UTC）；GitHub 定时可能有几分钟延迟
+  workflow_dispatch: # 支持手动触发
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch RSS & probe archives
+        env:
+          # 可选：手动获取的 cf_clearance（见 README「机器验证处理」）
+          ARCHIVE_COOKIE: ${{ secrets.ARCHIVE_COOKIE }}
+          ARCHIVE_UA: ${{ secrets.ARCHIVE_UA }}
+          # 可选：nopecha 打码服务 key（小规模自动解题尝试）
+          NOPECHA_API_KEY: ${{ secrets.NOPECHA_API_KEY }}
+        run: python scripts/fetch_news.py
+
+      - name: Commit news.json & cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/news.json data/cache.json
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "update news & cache"
+            git push
+          fi
