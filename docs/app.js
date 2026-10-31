@@ -15,7 +15,7 @@
   let items = [];
   let filter = null;
 
-  const preferred = it => it.archive_url || it.wayback_url || it.url;
+  // 点卡片/回车的目标：快照 → Wayback → archive.today 人机验证页（可看已有快照或顺手存档）
   const archiveTarget = it => it.archive_url || it.wayback_url || "https://archive.ph/" + it.url;
   const open = url => window.open(url, "_blank", "noopener");
 
@@ -66,13 +66,13 @@
     c.querySelector(".title").textContent = it.title;
     c.addEventListener("click", e => {
       const btn = e.target.closest(".act");
-      if (!btn) return open(preferred(it));
+      if (!btn) return open(archiveTarget(it));
       e.stopPropagation();
       if (btn.dataset.act === "orig") open(it.url);
       else if (btn.dataset.act === "arch") open(archiveTarget(it));
       else copyLink(it.url);
     });
-    c.addEventListener("keydown", e => { if (e.key === "Enter") open(preferred(it)); });
+    c.addEventListener("keydown", e => { if (e.key === "Enter") open(archiveTarget(it)); });
     return c;
   }
 
