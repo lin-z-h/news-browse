@@ -3,7 +3,8 @@
   const list = $("#list"), metaEl = $("#meta"), foot = $("#foot"),
         toastEl = $("#toast"), dateLine = $("#date-line"), qInput = $("#q"),
         savedBtn = $("#savedToggle"), viewBtn = $("#viewToggle"), themeBtn = $("#themeToggle"),
-        sourceTrack = $("#sourceTrack"), topicTrack = $("#topicTrack");
+        sourceTrack = $("#sourceTrack"), topicTrack = $("#topicTrack"),
+        readerEl = $("#reader"), rTitle = $("#rTitle"), rMeta = $("#rMeta"), rBody = $("#rBody");
 
   const I = {
     bookmark: '<svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg>',
@@ -125,7 +126,7 @@
 
     c.addEventListener("click", e => {
       const btn = e.target.closest(".act");
-      if (!btn) return open(archiveTarget(it));
+      if (!btn) return (it.archive_url || it.wayback_url) ? open(archiveTarget(it)) : openReader(it);
       e.stopPropagation();
       const act = btn.dataset.act;
       if (act === "orig") open(it.url);
@@ -133,9 +134,93 @@
       else if (act === "save") toggleSave(it, btn);
       else copyLink(it.url);
     });
-    c.addEventListener("keydown", e => { if (e.key === "Enter") open(archiveTarget(it)); });
+    c.addEventListener("keydown", e => { if (e.key === "Enter") (it.archive_url || it.wayback_url) ? open(archiveTarget(it)) : openReader(it); });
     return c;
   }
+
+  // —— 阅读模式：无快照时经开源 Jina Reader 按需取正文（一次一篇，本地缓存，不存公开仓库）——
+  const RKEY = "journal.read";
+  let readCache = {};
+  try { readCache = JSON.parse(localStorage.getItem(RKEY) || "{}") || {}; } catch (e) { readCache = {}; }
+  // 各站点正文容器选择器（jina x-target-selector，服务器端有效、浏览器 CORS 下会被忽略）
+  const READER_SELECTORS = { "news.tvb.com": ".module_left" };
+  // 各站点噪音块过滤（浏览器端兜底）
+  const READER_DROP = {
+    "news.tvb.com": [/^\d+\.\s[\s\S]*\d+\.\s/, /^publish[:：]/i, /^by[:：]/i],
+  };
+
+  function renderReaderBody(md, host) {
+    let body = md;
+    const cut = body.indexOf("Markdown Content:");
+    if (cut >= 0) body = body.slice(cut + "Markdown Content:".length);
+    const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+    // 先清洗 markdown（jina 的图片是死 blob 链接、链接里的点号会干扰句子判定），再做去噪
+    let blocks = body.split(/\n{2,}/).map(s => s.trim()).filter(Boolean)
+      .map(b => b.replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+                 .replace(/\[[^\]]*\]\([^)]*\)/g, "")
+                 .replace(/\*\*([^*]+)\*\*/g, "$1")
+                 .replace(/^[-*]\s+/gm, "· ")
+                 .trim())
+      .filter(Boolean);
+    // 从首个"句子块"（含句末标点）开始，跳过导航/面包屑；站点噪音块（如第二个面包屑）作为文章结束边界
+    const isSentence = b => /[。！？]/.test(b) || (/[.!?]/.test(b) && b.length > 90);
+    let dropRes = null;
+    try { dropRes = READER_DROP[host]; } catch (e) {}
+    const startIdx = blocks.findIndex(b => isSentence(b) && b.length >= 20);
+    let endIdx = -1;
+    if (startIdx >= 0 && dropRes) {
+      endIdx = blocks.findIndex((b, i) => i > startIdx && dropRes.some(rx => rx.test(b)));
+    }
+    let keep = blocks.slice(startIdx >= 0 ? startIdx : 0, endIdx > startIdx ? endIdx : undefined);
+    keep = keep.filter(b => b.length >= 14);
+    const out = [];
+    for (let b of keep) {
+      let tag = "p";
+      const h = b.match(/^(#{1,4})\s+(.*)$/s);
+      if (h) { b = h[2]; tag = "h" + Math.min(4, h[1].length + 1); }
+      if (b) out.push(`<${tag}>${esc(b)}</${tag}>`);
+    }
+    rBody.innerHTML = out.join("");
+  }
+
+  async function openReader(it) {
+    const hit = readCache[it.url];
+    readerEl.hidden = false;
+    document.body.style.overflow = "hidden";
+    rTitle.textContent = it.title;
+    rMeta.textContent = [it.source, it.topic !== "General" ? it.topic : "", relTime(tsOf(it))].filter(Boolean).join(" · ");
+    if (hit && hit.md) { renderReaderBody(hit.md, it.url); return; }
+    rBody.innerHTML = '<div class="rspin"></div>';
+    const ctrl = new AbortController();
+    try {
+      let sel = null;
+      try { sel = READER_SELECTORS[new URL(it.url).host]; } catch (e) {}
+      const res = await fetch("https://r.jina.ai/" + it.url, {
+        signal: ctrl.signal,
+        headers: sel ? { "x-target-selector": sel } : undefined,
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      const md = await res.text();
+      if (md.length < 200) throw new Error("empty");
+      renderReaderBody(md, it.url);
+      readCache[it.url] = { ts: Date.now(), md };
+      const old = Object.entries(readCache).sort((a, b) => a[1].ts - b[1].ts);
+      while (old.length > 30) { const [k] = old.shift(); delete readCache[k]; }
+      try { localStorage.setItem(RKEY, JSON.stringify(readCache)); } catch (e) {}
+    } catch (e) {
+      readerEl.hidden = true;
+      document.body.style.overflow = "";
+      showToast(I.x);
+      open(archiveTarget(it)); // 阅读失败 → 照旧走人工归档兜底
+    }
+  }
+
+  function closeReader() {
+    readerEl.hidden = true;
+    document.body.style.overflow = "";
+  }
+  $("#readerClose").addEventListener("click", closeReader);
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !readerEl.hidden) closeReader(); });
 
   function toggleSave(it, btn) {
     if (saved[it.id]) {

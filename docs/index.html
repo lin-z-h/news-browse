@@ -37,6 +37,18 @@
 </div>
 <main id="list" class="list"></main>
 <footer class="foot" id="foot"></footer>
+<div id="reader" class="reader" hidden>
+  <div class="rhead">
+    <button id="readerClose" class="tool" aria-label="Close reader">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="rwrap">
+    <h1 id="rTitle" class="rtitle"></h1>
+    <div id="rMeta" class="rmeta"></div>
+    <div id="rBody" class="rbody"></div>
+  </div>
+</div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="app.js"></script>
 </body>
