@@ -1,6 +1,6 @@
 {
-  "max_per_source": 40,
-  "max_total": 120,
+  "max_per_source": 30,
+  "max_total": 220,
   "sources": [
     {
       "name": "Bloomberg",
@@ -32,6 +32,58 @@
         {"url": "https://www.economist.com/china/rss.xml", "topic": "China"},
         {"url": "https://www.economist.com/international/rss.xml", "topic": "World"},
         {"url": "https://www.economist.com/culture/rss.xml", "topic": "Culture"}
+      ]
+    },
+    {
+      "name": "The Guardian",
+      "feeds": [
+        {"url": "https://www.theguardian.com/world/rss", "topic": "World"},
+        {"url": "https://www.theguardian.com/business/rss", "topic": "Business"},
+        {"url": "https://www.theguardian.com/technology/rss", "topic": "Tech"},
+        {"url": "https://www.theguardian.com/opinion/rss", "topic": "Opinion"}
+      ]
+    },
+    {
+      "name": "WSJ",
+      "feeds": [
+        {"url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml", "topic": "World"},
+        {"url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml", "topic": "Markets"}
+      ]
+    },
+    {
+      "name": "Financial Times",
+      "feeds": [
+        {"url": "https://www.ft.com/rss/home/uk", "topic": "Top"}
+      ]
+    },
+    {
+      "name": "TIME",
+      "feeds": [
+        {"url": "https://time.com/feed/", "topic": "Top"}
+      ]
+    },
+    {
+      "name": "SCMP",
+      "feeds": [
+        {"url": "https://www.scmp.com/rss/feed", "topic": "Top"}
+      ]
+    },
+    {
+      "name": "The Washington Post",
+      "feeds": [
+        {"url": "https://www.washingtonpost.com/arc/outboundfeeds/rss/?outputType=xml", "topic": "Top"}
+      ]
+    },
+    {
+      "name": "Reuters",
+      "feeds": [
+        {"url": "https://news.google.com/rss/search?q=site:reuters.com+when:2d&hl=en-GB&gl=GB&ceid=GB:en", "topic": "Wire"}
+      ]
+    },
+    {
+      "name": "Lianhe Zaobao (EN)",
+      "feeds": [
+        {"url": "https://news.google.com/rss/search?q=zaobao.sg+when:3d&hl=en-SG&gl=SG&ceid=SG:en", "topic": "Singapore"}
       ]
     }
   ]

@@ -1,8 +1,9 @@
 (() => {
   const $ = (s, el = document) => el.querySelector(s);
-  const list = $("#list"), chipRow = $("#chips"), metaEl = $("#meta"), foot = $("#foot"),
+  const list = $("#list"), metaEl = $("#meta"), foot = $("#foot"),
         toastEl = $("#toast"), dateLine = $("#date-line"), qInput = $("#q"),
-        savedBtn = $("#savedToggle"), viewBtn = $("#viewToggle");
+        savedBtn = $("#savedToggle"), viewBtn = $("#viewToggle"), themeBtn = $("#themeToggle"),
+        sourceTrack = $("#sourceTrack"), topicTrack = $("#topicTrack");
 
   const I = {
     bookmark: '<svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg>',
@@ -14,6 +15,9 @@
     news: '<svg viewBox="0 0 24 24"><path d="M4 5h13a1 1 0 0 1 1 1v12a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2V5z"/><path d="M18 14h2V9h-2"/><path d="M7 9h8M7 13h8M7 17h5"/></svg>',
     search: '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>',
     x: '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+    sun: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    moon: '<svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>',
+    auto: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/></svg>',
   };
 
   const SKEY = "journal.saved.v1", VKEY = "journal.view";
@@ -166,36 +170,47 @@
     toastTimer = setTimeout(() => toastEl.classList.remove("show"), 1100);
   }
 
-  // —— 筛选 chips（来源 · | · 话题）——
-  function renderChips() {
-    chipRow.innerHTML = "";
-    const add = (label, value, kind) => {
+  // —— 筛选 chips（来源 / 话题 两行，循环滚动）——
+  function buildTrack(trackEl, entries) {
+    trackEl.innerHTML = "";
+    const kind = trackEl.dataset.kind;
+    const make = (label, value) => {
       const b = el(`<button class="chip ${kind}"></button>`);
       b.textContent = label;
       b.dataset.kind = kind;
       b.dataset.v = value ?? "";
       b.setAttribute("aria-pressed", "false");
-      b.addEventListener("click", () => {
-        if (kind === "source") state.source = state.source === value ? null : value;
-        else state.topic = state.topic === value ? null : value;
-        render();
-      });
-      chipRow.appendChild(b);
+      return b;
     };
-    add("All", null, "source");
-    state.sources.forEach(s => add(s, s, "source"));
-    if (state.topics.length) {
-      chipRow.appendChild(el('<span class="divider" role="presentation"></span>'));
-      add("All", null, "topic");
-      state.topics.forEach(t => add(t, t, "topic"));
-    }
-    syncChips();
+    const chips = entries.map(e => make(e.label, e.value));
+    chips.forEach(c => trackEl.appendChild(c));
+    chips.forEach(c => trackEl.appendChild(c.cloneNode(true))); // 复制一份实现无缝循环
+    trackEl.style.setProperty("--speed", Math.max(30, Math.round(trackEl.scrollWidth / 42)) + "s");
+    trackEl.addEventListener("click", e => {
+      const b = e.target.closest(".chip");
+      if (!b) return;
+      const value = b.dataset.v === "" ? null : b.dataset.v;
+      if (kind === "source") state.source = state.source === value ? null : value;
+      else state.topic = state.topic === value ? null : value;
+      render();
+    });
+    // 触屏没有 hover：按下时暂停滚动几秒，方便点选
+    trackEl.addEventListener("pointerdown", () => {
+      trackEl.classList.add("hold");
+      clearTimeout(trackEl._holdT);
+      trackEl._holdT = setTimeout(() => trackEl.classList.remove("hold"), 4000);
+    });
   }
 
   function syncChips() {
-    chipRow.querySelectorAll(".chip").forEach(b => {
-      const on = b.dataset.kind === "source" ? state.source : state.topic;
-      b.setAttribute("aria-pressed", (on ?? "") === b.dataset.v ? "true" : "false");
+    document.querySelectorAll(".track").forEach(trackEl => {
+      const kind = trackEl.dataset.kind;
+      const cur = (kind === "source" ? state.source : state.topic) ?? "";
+      trackEl.querySelectorAll(".chip").forEach(b => {
+        b.setAttribute("aria-pressed", cur === b.dataset.v ? "true" : "false");
+      });
+      // 选中某项时该行暂停滚动，便于看清当前筛选
+      trackEl.classList.toggle("paused", !!cur);
     });
   }
 
@@ -327,13 +342,37 @@
         .map(e => e[0]);
       state.generatedAt = data.generated_at || null;
     } catch (e) { /* 数据缺失时显示空态图标 */ }
-    renderChips();
+    buildTrack(sourceTrack, [{ label: "All", value: null }, ...state.sources.map(s => ({ label: s, value: s }))]);
+    buildTrack(topicTrack, [{ label: "All", value: null }, ...state.topics.map(t => ({ label: t, value: t }))]);
     render();
     if (state.generatedAt) {
       foot.innerHTML = I.clock + "<span></span>";
       updateFoot();
     }
   }
+
+  // —— 主题：system / light / dark 循环 ——
+  const TKEY = "journal.theme";
+  const THEMES = ["system", "light", "dark"];
+  let theme = "system";
+  try {
+    const t = localStorage.getItem(TKEY);
+    if (THEMES.includes(t)) theme = t;
+  } catch (e) {}
+  function applyTheme() {
+    const root = document.documentElement;
+    if (theme === "system") root.removeAttribute("data-theme");
+    else root.dataset.theme = theme;
+    themeBtn.innerHTML = theme === "light" ? I.sun : theme === "dark" ? I.moon : I.auto;
+    themeBtn.setAttribute("aria-label", "Theme: " + theme);
+    themeBtn.setAttribute("aria-pressed", theme === "system" ? "false" : "true");
+    try { localStorage.setItem(TKEY, theme); } catch (e) {}
+  }
+  themeBtn.addEventListener("click", () => {
+    theme = THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length];
+    applyTheme();
+  });
+  applyTheme();
 
   load();
 })();

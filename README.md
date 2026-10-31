@@ -2,7 +2,9 @@
 
 个人自用：把彭博社、纽约时报、经济学人的 RSS 标题聚合成一个手机友好的静态页面，点开优先走 [archive.today](https://archive.today) 快照；没有现成快照时打开 archive.today 的人机验证页（`/newest/` 直达最新快照），人工通过验证后可直接看已有快照或顺手存档（不再直接跳原文，原文走"打开原文"按钮）。
 
-**功能**：搜索；来源 × 话题双维度筛选（话题来自 RSS 源配置）；收藏/稍后读（localStorage 持久化）；紧凑/舒适视图切换；RSS 缩略图（无图时用来源首字母色块）；结果计数 + 清除筛选；相对时间每分钟自动刷新；深色模式。
+**功能**：搜索；来源 × 话题双维度筛选（chips 双行循环滚动，悬停/触按/选中时暂停）；亮色 / 暗色 / 系统主题切换；收藏/稍后读（localStorage 持久化）；紧凑/舒适视图切换；RSS 缩略图（无图时用来源首字母色块）；结果计数 + 清除筛选；相对时间每分钟自动刷新。
+
+**源（11 个）**：Bloomberg、NYT、Economist、Guardian、WSJ、Financial Times、TIME、SCMP、Washington Post、Reuters、联合早报英文版。Reuters 与联合早报无官方 RSS，经 Google News 检索 + [googlenewsdecoder](https://pypi.org/project/googlenewsdecoder/) 解码还原原文链接；TVB 暂缺（无可用的公开 RSS/索引，后续可换方案补）。
 
 ## 页面交互约定
 

@@ -28,9 +28,11 @@
   <button id="viewToggle" class="tool" aria-pressed="false" aria-label="Compact view">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
   </button>
+  <button id="themeToggle" class="tool" aria-label="Theme: system"></button>
 </section>
 <div class="dock">
-  <div class="chips" id="chips" role="group" aria-label="Filters"></div>
+  <div class="chipsrow"><div class="track" id="sourceTrack" data-kind="source"></div></div>
+  <div class="chipsrow"><div class="track" id="topicTrack" data-kind="topic"></div></div>
   <div class="meta" id="meta"></div>
 </div>
 <main id="list" class="list"></main>

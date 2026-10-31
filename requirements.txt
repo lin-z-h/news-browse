@@ -1,4 +1,5 @@
 feedparser>=6.0.11
 requests>=2.31.0
 curl-cffi>=0.7.0
+googlenewsdecoder>=1.1.0
 pytest>=8.0

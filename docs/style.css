@@ -8,9 +8,21 @@
   --accent-ink: #fffdf9;
   --thumb: 64px;
   --shadow: 0 1px 2px rgba(27, 25, 21, .05), 0 2px 8px rgba(27, 25, 21, .04);
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #0f0f11;
+  --card: #18181b;
+  --ink: #eae8e2;
+  --muted: #8e8b84;
+  --line: #26262b;
+  --accent: #d49494;
+  --accent-ink: #17171a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+  color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0f0f11;
     --card: #18181b;
     --ink: #eae8e2;
@@ -19,6 +31,7 @@
     --accent: #d49494;
     --accent-ink: #17171a;
     --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+    color-scheme: dark;
   }
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -109,17 +122,31 @@ button { font: inherit; }
   border-bottom: 1px solid var(--line);
   padding-top: calc(8px + env(safe-area-inset-top));
 }
-.chips {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  overflow-x: auto;
-  padding: 2px 16px;
+.chipsrow {
   max-width: 904px;
   margin: 0 auto;
-  scrollbar-width: none;
+  overflow: hidden;
+  padding: 2px 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 20px), transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 20px), transparent);
 }
-.chips::-webkit-scrollbar { display: none; }
+.track {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  animation: slide var(--speed, 45s) linear infinite;
+}
+.track .chip { margin-right: 6px; }
+.track:hover, .track:focus-within, .track.hold, .track.paused { animation-play-state: paused; }
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .track { animation: none; }
+  .chipsrow { overflow-x: auto; scrollbar-width: none; }
+  .chipsrow::-webkit-scrollbar { display: none; }
+}
 .chip {
   flex: none;
   padding: 6px 12px;
@@ -138,7 +165,6 @@ button { font: inherit; }
   color: var(--accent);
   border-color: var(--accent);
 }
-.divider { flex: none; width: 1px; height: 16px; background: var(--line); margin: 0 4px; }
 .meta {
   max-width: 904px;
   margin: 0 auto;

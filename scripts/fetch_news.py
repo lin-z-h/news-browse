@@ -125,6 +125,26 @@ def _entry_image(entry) -> str | None:
     return None
 
 
+def _unwrap_google_news(url: str) -> str:
+    """Google News RSS 的 <link> 是 news.google.com 跳转链接，无法直接探测/存档。
+
+    用开源的 googlenewsdecoder 解码还原原文链接；解码失败时保留跳转链接
+    （仍可点开阅读，只是存档探测不理想），绝不让单条解码失败影响整体。
+    """
+    if "news.google.com" not in url:
+        return url
+    try:
+        from googlenewsdecoder import gnewsdecoder
+
+        result = gnewsdecoder(url, interval=1)
+        decoded = result.get("decoded_url") if isinstance(result, dict) else result
+        if isinstance(decoded, str) and decoded.startswith("http"):
+            return decoded
+    except Exception:
+        pass
+    return url
+
+
 def collect_items(config: dict) -> list:
     """抓取全部源 → 清洗 → 去重 → 按时间排序 → 截断。
 
@@ -146,6 +166,7 @@ def collect_items(config: dict) -> list:
             if not feed_url:
                 continue
             topic = (topic or "General").strip()
+            gnews_left = 40  # gnews 源只解码前 N 条（后续条目反正会被截断丢弃）
             try:
                 entries = fetch_entries(feed_url)
             except Exception as exc:  # 单个源失败不影响整体
@@ -158,6 +179,11 @@ def collect_items(config: dict) -> list:
                 if not raw_link or not title:
                     continue
                 url = strip_tracking(raw_link)
+                if "news.google.com" in url:
+                    if gnews_left <= 0:
+                        continue
+                    url = _unwrap_google_news(url)
+                    gnews_left -= 1
                 published = _entry_time(entry)
                 item = {
                     "id": hashlib.sha1(url.encode("utf-8")).hexdigest()[:12],
