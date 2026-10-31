@@ -7,8 +7,7 @@
       "feeds": [
         {"url": "https://feeds.bloomberg.com/markets/news.rss", "topic": "Markets"},
         {"url": "https://feeds.bloomberg.com/technology/news.rss", "topic": "Tech"},
-        {"url": "https://feeds.bloomberg.com/politics/news.rss", "topic": "Politics"},
-        {"url": "https://feeds.bloomberg.com/wealth/news.rss", "topic": "Wealth"}
+        {"url": "https://feeds.bloomberg.com/politics/news.rss", "topic": "Politics"}
       ]
     },
     {
@@ -18,8 +17,7 @@
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "topic": "World"},
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml", "topic": "Business"},
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml", "topic": "Tech"},
-        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "topic": "Science"},
-        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml", "topic": "Sports"}
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "topic": "Science"}
       ]
     },
     {
