@@ -46,8 +46,7 @@
     {
       "name": "WSJ",
       "feeds": [
-        {"url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml", "topic": "World"},
-        {"url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml", "topic": "Markets"}
+        {"url": "https://news.google.com/rss/search?q=site:wsj.com+when:2d&hl=en-US&gl=US&ceid=US:en", "topic": "Top"}
       ]
     },
     {
