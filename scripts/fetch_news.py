@@ -23,7 +23,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import feedparser
@@ -150,6 +150,72 @@ def _entry_image(entry) -> str | None:
     return None
 
 
+# ---------------------------------------------------------------------------
+# TVB 自定义源：news.tvb.com 无 RSS，首页为 Nuxt SPA，文章数据内嵌在
+# __NUXT_DATA__（devalue 扁平化格式）里。此处只做轻量解析：定位含
+# title_hk / publish_at / cover 的文章对象，按引用还原字段，不碰正文。
+# ---------------------------------------------------------------------------
+_NUXT_DATA_RE = re.compile(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>', re.S)
+
+
+def _tvb_deref(arr, idx):
+    """devalue 格式：对象/数组里的整数值是对 arr 下标的引用（0 除外）。"""
+    if isinstance(idx, int) and 0 < idx < len(arr):
+        return arr[idx]
+    return idx
+
+
+def _tvb_parse(html: str) -> list:
+    m = _NUXT_DATA_RE.search(html)
+    if not m:
+        return []
+    try:
+        arr = json.loads(m.group(1))
+    except ValueError:
+        return []
+    articles = {}
+    for v in arr:
+        if not (isinstance(v, dict) and "title_hk" in v and "publish_at" in v and "id" in v):
+            continue
+        try:
+            aid = _tvb_deref(arr, v.get("id"))
+            if not isinstance(aid, int) or aid in articles:
+                continue
+            title = _tvb_deref(arr, v.get("title_hk")) or _tvb_deref(arr, v.get("title")) or ""
+            publish_at = _tvb_deref(arr, v.get("publish_at"))
+            image = None
+            cover = _tvb_deref(arr, v.get("cover"))
+            if isinstance(cover, list):  # cover 编码为 [图片对象引用] 的单元素数组
+                covers = [_tvb_deref(arr, x) for x in cover]
+                cover = covers[0] if covers else None
+            if isinstance(cover, dict) and "url" in cover:
+                image = _tvb_deref(arr, cover["url"])
+            articles[aid] = {"id": aid, "title": str(title).strip(), "publish_at": publish_at, "image": image}
+        except (KeyError, TypeError, ValueError):
+            continue
+    return list(articles.values())
+
+
+def fetch_tvb_entries(list_url: str) -> list:
+    """抓 TVB 新闻列表页，产出与 feedparser entries 同形的条目字典。"""
+    html = _http_get(list_url).decode("utf-8", errors="replace")
+    entries = []
+    for a in _tvb_parse(html):
+        pub_struct = None
+        try:
+            dt = datetime.strptime(a["publish_at"], "%Y-%m-%d %H:%M")
+            pub_struct = dt.replace(tzinfo=timezone(timedelta(hours=8))).astimezone(timezone.utc).timetuple()
+        except (ValueError, TypeError):
+            pass
+        entries.append({
+            "title": a["title"],
+            "link": f"https://news.tvb.com/en/{a['id']}",
+            "published_parsed": pub_struct,
+            "media_content": [{"url": a["image"]}] if a.get("image") else [],
+        })
+    return entries
+
+
 def fetch_og_image(url: str) -> str | None:
     """抓文章页 <meta og:image> 作为缩略图兜底。
 
@@ -215,7 +281,10 @@ def collect_items(config: dict) -> list:
             topic = (topic or "General").strip()
             gnews_left = 40  # gnews 源只解码前 N 条（后续条目反正会被截断丢弃）
             try:
-                entries = fetch_entries(feed_url)
+                if isinstance(feed, dict) and feed.get("type") == "tvb":
+                    entries = fetch_tvb_entries(feed_url)
+                else:
+                    entries = fetch_entries(feed_url)
             except Exception as exc:  # 单个源失败不影响整体
                 _log(f"[warn] 源不可用: {name} {feed_url} ({type(exc).__name__}: {exc})")
                 continue

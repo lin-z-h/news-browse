@@ -72,6 +72,12 @@
       ]
     },
     {
+      "name": "TVB",
+      "feeds": [
+        {"type": "tvb", "url": "https://news.tvb.com/tc", "topic": "Hong Kong"}
+      ]
+    },
+    {
       "name": "Reuters",
       "feeds": [
         {"url": "https://news.google.com/rss/search?q=site:reuters.com+when:2d&hl=en-GB&gl=GB&ceid=GB:en", "topic": "Wire"}
