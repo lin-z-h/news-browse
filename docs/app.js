@@ -339,6 +339,14 @@
     document.body.style.overflow = "";
   }
   $("#readerClose").addEventListener("click", closeReader);
+  $("#readerExport").addEventListener("click", () => {
+    // 打印导出 PDF：先把惰性图片强制加载完，再调起系统打印（可另存为 PDF）
+    const imgs = [...rBody.querySelectorAll("img")];
+    imgs.forEach(im => { im.loading = "eager"; });
+    Promise.all(imgs.map(im => im.complete ? Promise.resolve() :
+      new Promise(r => { im.onload = im.onerror = r; setTimeout(r, 3000); })))
+      .then(() => setTimeout(() => window.print(), 120));
+  });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && !readerEl.hidden) closeReader(); });
 
   // 收藏清单同步到私有仓库：CI 读取后优先为收藏文章补正文（保证 15 天后仍可读）
