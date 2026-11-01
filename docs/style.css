@@ -35,7 +35,8 @@
   }
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html { color-scheme: light dark; }
+html { color-scheme: light dark; scrollbar-width: none; -ms-overflow-style: none; }
+::-webkit-scrollbar { width: 0; height: 0; display: none; }
 body {
   margin: 0;
   background: var(--bg);

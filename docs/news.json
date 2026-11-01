@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T02:09:31Z",
+ "generated_at": "2026-11-01T02:27:41Z",
  "sources": [
   "Bloomberg",
   "The New York Times",
@@ -15,6 +15,78 @@
   "TVB"
  ],
  "items": [
+  {
+   "id": "2421f8629baf",
+   "title": "多份本地報章本月起加價 《明報》今起每份加至15元",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-01T02:16:00Z",
+   "image": null,
+   "url": "https://news.tvb.com/en/1203990",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "207a9c660ba3",
+   "title": "Gadi Eisenkot is the bereaved general trying to outmaneuver Netanyahu - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-01T02:04:46Z",
+   "image": null,
+   "url": "https://www.washingtonpost.com/world/2026/10/31/gadi-eisenkot-is-bereaved-general-trying-outmaneuver-netanyahu/",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "20019246bb1c",
+   "title": "Neighbors Feud Over Front-Yard Horror Shows as Halloween Keeps Getting Scarier - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-01T02:01:11Z",
+   "image": null,
+   "url": "https://www.wsj.com/lifestyle/halloween-decorations-yard-neighbors-ac70eb8c",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "d0de6024512e",
+   "title": "‘Flirtatious’ US$2,500 photo shoots for ‘lonely’ middle-aged women spark backlash in China",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-01T02:00:21Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/01/dfd8a1e1-436a-4d35-b936-43bb288dddfd_6d0a39ab.jpg?itok=YBaaBI6M&v=1793496151",
+   "url": "https://www.scmp.com/news/people-culture/trending-china/article/3372860/flirtatious-us2500-photo-shoots-lonely-middle-aged-women-spark-backlash-china",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "9a8fed8d5415",
+   "title": "Russia surpasses France in African youth appeal, still trails China: survey",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-01T02:00:17Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/15b65ec9-b8b0-454c-b13b-188307585c4b_f826d4ac.jpg?itok=39E5SaH6&v=1793448938",
+   "url": "https://www.scmp.com/news/china/diplomacy/article/3372843/russia-surpasses-france-african-youth-appeal-still-trails-china-survey",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "304257a5f196",
+   "title": "South Korea’s latest chart sensation has a secret: the singer isn’t human",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-01T02:00:14Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/10d2f8fa-953d-44e4-b147-ae30dcb49c8f_b1d593aa.jpg?itok=XEplukL8&v=1793361864",
+   "url": "https://www.scmp.com/week-asia/lifestyle-culture/article/3372767/south-koreas-latest-chart-sensation-has-secret-singer-isnt-human",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
   {
    "id": "ba764c55974e",
    "title": "蝦乾鮑魚雞粒煲仔飯食譜 簡單做出香脆飯焦",
@@ -88,25 +160,13 @@
    "wayback_url": null
   },
   {
-   "id": "7b00ca10ae7d",
-   "title": "Gadi Eisenkot is the bereaved general trying to outmaneuver Netanyahu - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-01T01:29:16Z",
-   "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNDZLNFNiZU1leENmdkdfc19CcW9GbTZjeG8yTHBLUHZZMkRSSi1BQ2Y5TmR3X1MxNUExZGhSOE5hNGtnR0w1M1JQMGRfU1JqajBuYlozZTdodUIxTDMyRlRkdWY2ZXNKdEl3Q0RYOE1xN3d4dUU2bXdHQlZCNWJCcFgyQXU0cFVoSG9LZmNfTi1DSnJwX0s2UUZaeFV6REJtOU9TWlNtbFJYcUJwM0dVaw?oc=5",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "f9328a074216",
+   "id": "51c3d50a4c07",
    "title": "Zelensky presses U.S. for more urgent shipments of Patriot missiles for Ukraine - The Washington Post",
    "source": "The Washington Post",
    "topic": "Top",
-   "published": "2026-11-01T01:29:06Z",
-   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CTSZYQEAYMI63BZY5VZBPXRHOU_size-normalized.jpg&amp;w=1440",
-   "url": "https://www.washingtonpost.com/national-security/2026/10/31/zelensky-presses-urgent-shipments-patriot-missiles-us/",
+   "published": "2026-11-01T01:29:59Z",
+   "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQTNiNFpPck5pMTFGZ3JrOFVlN0tjSVAxa2JoTkYyNjlRd200UUdNdTNKTXBXUzVQQXY5VXExZlc0eTZIZmRrQ3Z1RXVDemxZRGVmM00wXy1GQlBYUHpiaGpKMVlsUm43ZE5mVkpCY0lNSk9wa3A5YWNyZlVTZFpOVnVwbm1SS3JIQWFCQThrRmlmM3BZUGJSV3FuWE9fbjlWMkZvWGNIR2MzWjRmMjR6LThLd3Y?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -143,6 +203,18 @@
    "published": "2026-11-01T01:00:07Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/7d44398e-6e0d-4c72-8aaf-75e39c66065f_1df5202a.jpg?itok=NB516x6X&v=1793353975",
    "url": "https://www.scmp.com/economy/china-economy/article/3372741/hormuz-woes-climate-change-boost-chinas-green-energy-sales-canton-fair",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "28936e8f61a7",
+   "title": "Toyota-backed truckmaker bets on aftersales service to fend off Chinese EV rivals",
+   "source": "Financial Times",
+   "topic": "World",
+   "published": "2026-11-01T01:00:06Z",
+   "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F13149cf2-e9bc-4a3c-a6f8-6531ebb78ebc.jpg?source=next-barrier-page&amp;fit=scale-down&amp;quality=highest&amp;width=700&amp;dpr=1",
+   "url": "https://www.ft.com/content/7e749777-dcee-4c11-9bdc-7f81bee80455?syn-25a6b1a6=1",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -472,25 +544,13 @@
    "wayback_url": null
   },
   {
-   "id": "6f89f8809e28",
-   "title": "US midterm campaign enters final weekend as Alaska, California ballot fights heat up - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-10-31T22:59:51Z",
-   "image": null,
-   "url": "https://www.reuters.com/legal/government/us-campaign-control-congress-enters-final-weekend-2026-10-31/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "7b9d46c0cbfe",
+   "id": "02920156a1a4",
    "title": "Judge ends Trump's attempts to sue Wall Street Journal over Epstein reporting - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T22:58:33Z",
    "image": null,
-   "url": "https://www.reuters.com/world/us-judge-dismisses-trumps-lawsuit-against-wall-street-journal-with-prejudice-2026-10-31/",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWDh2Tk1SWVpMWE1Mc1NmZ2JHUlFDOEFqVjg4T29yc1BLNXBibGFRSWNDUEhadDZiaEhiZXg4UFlfNV8tRVM3UVdfTkdzRzZVR2dmN2JwWjlIc3BHeVU0eVlJR0h1UThmaXhVWS1GcHZqb0c1NGR0VWoxU3k0Q3dLYU1hQVExZVJJd2FxZHpWOXc0NDRJWlZvUDk2Rm5GRUh1bXFITDBUZGFVWjY4T3VTWGh2NlFKaVBKLWc?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -640,18 +700,6 @@
    "wayback_url": null
   },
   {
-   "id": "fe8c96bdc420",
-   "title": "社評摘要｜文匯：以專業服務內企「出海」／東方：霸王硬上收業權",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-10-31T22:20:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026xpLTxeh8ry1793486942.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1203978",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "501269b9996e",
    "title": "How Binance’s $6.3 Billion Hack Went Down",
    "source": "The New York Times",
@@ -724,25 +772,25 @@
    "wayback_url": null
   },
   {
-   "id": "4bb80f42ec54",
+   "id": "aeac25540e02",
    "title": "North Korea says defence research institutes tested major weapon system - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T21:48:05Z",
    "image": null,
-   "url": "https://www.reuters.com/business/aerospace-defense/north-korea-says-defence-research-institutes-tested-major-weapon-system-2026-10-31/",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOa2szXzlwbFhuTl8xcVFPLU9JTTFnUTYtT1pYWGxTbEFhUmxWV1E5NkxvbTZvOEtETEp4YjdMaEhDbG1MSzIweE5kYXpSM3FWVEpUWEFFNUZTUFdaNzN2UldqMHlVdDZsT3NaNm9PQl9xSFpfMm1FR3JCUTA0Z2hiQ0EtUXpKZ3MwLThwQmZ3R0JxZ2lRZ2hjcEpkWjI0R2FyUGdIQ3VZZUVwRl96UVByZklTSm1KY1RVRExaSlptRUtLbHRld0FVN2lEYUcwbUU?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
   {
-   "id": "0d8a966636ff",
+   "id": "aac949def3af",
    "title": "FBI links North Korea to theft of $6 billion from Binance - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T21:44:23Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/fbi-links-north-korea-theft-6-billion-from-binance-2026-10-31/",
+   "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQT0F3bEEtREZiMG5WVnJMQlVHUDdaaHJQTno1VUJJRENOT2MySEZDcmpCYm41YnpkMS1Ub1l1ZThqSUJSa214ay1Gb3E3NFFNNWRZZDJtVjZSWU91M1NFVkRWZjJPdG9nN2ZCTm12RnhFVWFTTkhpMnBnRU5XZDhmRTRYNFZ0V1lKSkc3N1htMnRLbHhFWlo0?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -755,6 +803,18 @@
    "published": "2026-10-31T21:43:34Z",
    "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-ukraine-oleshky-zcvf/31int-ukraine-oleshky-zcvf-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/todayspaper/we-are-coming-from-hell-a-ukrainian-citys-evacuees-tell-survival-stories.html",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "d455de0453f6",
+   "title": "ICE raids in a California toss-up district spark accusations of voter intimidation - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-10-31T21:38:51Z",
+   "image": null,
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMkk2Tk5vZ2RHMENmbGFkZjJrWjJIS2xkbDZrQW5hUS1abHlzOVNWendQdHNfZTdZcHFnWkFKUURwMDVmYnhlN3ZPeEctbHBmeE9KcVp0T1JCVGVNN3NrbXZMd1ZmcVZOcHQ5X3JIWHJuOHpJcThkbTdmQTItSlE1MXJ4ektHQ3Ytd3I1dGVhSTFSVHlQQ05iaHdzd2drWXhoTEphUVRTUUh3cWU3cDJ2ak1GQkNMb0NTV3VZeG5GdEFZNThORFE?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -928,13 +988,13 @@
    "wayback_url": null
   },
   {
-   "id": "4a6b3f658d80",
+   "id": "20d9626139bd",
    "title": "Real, Mbappe have moved on from China controversy, says Mourinho - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T20:16:59Z",
    "image": null,
-   "url": "https://www.reuters.com/sports/soccer/real-mbappe-have-moved-china-controversy-says-mourinho-2026-10-31/",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYkdaRjdrN052cWJ6QXRmSWJheXBJS3A3dFVTNFZyREY1NE52QlpEWDNoLUNzTWF2d0RpOENKRS1rUXh0a19saUpSMExybzVYdmJFRU9TZmZncTMxTDAzVlVGRmdrZ2dVNU9RcVZ4UFhPYkwtbjhFYXhDUXdmNXN0NmZSWEJndzdkRFBpb056d3NjRlVvYmxjdDBZT2tEZ1E0b0tmcFZIVQ?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -988,13 +1048,13 @@
    "wayback_url": null
   },
   {
-   "id": "e390e9646fab",
+   "id": "ea9cb0258602",
    "title": "Ghana says Russia to back 2,000 MW nuclear plant, deepen ties - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T19:45:43Z",
    "image": null,
-   "url": "https://www.reuters.com/world/africa/ghana-says-russia-back-2000-mw-nuclear-plant-deepen-ties-2026-10-31/",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVEU1TzJ6c1lISFlURGdCYlJscFltNmo3ay1SblgxNEtKU1lwcEhEcHZpMjg3TWE0VkVrdEtwSFF0dzhxRExVdUQtZTlkU2pENWpTRkdER3FHWEk1RzNRdFA2QlFVcmdzWWNSZ044MjNBejRPeFFNX3dwRUItTXRndW1UaXJxdHJkcThxUUtsVFo2d19MdFZVbVJFM245bW9iSEZwZENCQWk?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1084,18 +1144,6 @@
    "wayback_url": null
   },
   {
-   "id": "e11b74740861",
-   "title": "Indo-Pacific Quad ministers work on supply chains, denounce arbitrary export restrictions - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-10-31T18:41:19Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/china/rubio-host-meeting-indo-pacific-quad-wrap-up-g20-gathering-2026-10-31/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "be4683e2306f",
    "title": "Protests under way in Germany and France as minister warns against use of Halloween masks – as it happened",
    "source": "The Guardian",
@@ -1132,13 +1180,13 @@
    "wayback_url": null
   },
   {
-   "id": "4cd7d64a637e",
+   "id": "01db2fb14de0",
    "title": "US Senate candidate El-Sayed wants Democratic rival to stay away, source says - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T18:20:00Z",
    "image": null,
-   "url": "https://www.reuters.com/world/us/us-senate-candidate-el-sayed-wants-democratic-rival-stay-away-source-says-2026-10-31/",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZk1TVThad3BBcnFwSU44RFlBSjU5NWNaOUxuTEFVQnp2c0tjU3h2Qmc3eUh1RWZGZVpnenlXRk5jcXczZmVhUENIcm53dFBPVm1pQnZxdDhGbmRRRHBXaTdBeHlaRjl3X05USjI3X1ViamRPX19Lc0ZrendnN2N0allNR0tLekhuM0ZCZFpmeWJROTdYY0YtbkdoZ2VEXzFiMlBIRzkwUUpxNXFPdFJERTNxRzNLMzZRUWc?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1168,13 +1216,13 @@
    "wayback_url": null
   },
   {
-   "id": "7160505ca291",
+   "id": "9ff8075aa385",
    "title": "It’s Time to Try a Playful Hat - WSJ",
    "source": "WSJ",
    "topic": "Top",
    "published": "2026-10-31T18:00:34Z",
    "image": null,
-   "url": "https://www.wsj.com/style/fashion/playful-hats-c2aeada8",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBHSDBLcERjOHRodHV4QzJGWmdESkV6UTRmdUk0NTBxTFI2YXh4VTBrYXhjejM3dFdxYmJfUmNWY1hrWXl1RTY2VHFEaThFRjdJUVZMRE90dWZUUlJmaGpTWHFfRGM1QQ?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1348,25 +1396,25 @@
    "wayback_url": null
   },
   {
-   "id": "7d55dd04be9c",
+   "id": "036e58d44baf",
    "title": "Opinion | An environmentalist’s case for permitting reform - The Washington Post",
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-10-31T16:45:00Z",
    "image": null,
-   "url": "https://www.washingtonpost.com/opinions/2026/10/31/permitting-reform-can-help-protect-environment-here-how/",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWGswek5yLVNzSUcxOHREcEFqcmJUWHFYSkItOGQxRG9RVmU1OEl5bU0zTFdiUXN1Ym1tQTNTMzE5ZXhjN01vc1h6TmRxRFpXSkVraE5OUi1RNjBqT2IwNW5pSDFLYWt0SUx3akpENzV6dU1KSzdOOVdkQ0ZzMmFhbktBM2ZvTGs3dDd0WUpOY0ZHMkhmUnF0bElCa0drUWJuT2ZLMGVCQk1zXzA?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
   {
-   "id": "3d8893c42752",
+   "id": "44e8d86d9bfa",
    "title": "FSB says US warned Russia of possible Moscow attack - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T16:37:08Z",
    "image": null,
-   "url": "https://www.reuters.com/world/fsb-says-us-warned-russia-possible-moscow-attack-2026-10-31/",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN01mVmZKa0N0UWNiYkxZaDY4a0J5ekhBX2NKVi1xUDh5cmpEeHhzX3U3VE9GU21KUjlvQ0FuWGVlalZMVjJTY1FnVlJxR0YxNHpLMl9YTG5hNW9yQUVzbzB2RkFHV3JRTTVUVVdwRUkyeE9KRVBVdTQ5R3NYM1p6dF9lZFU0TkNCTVJWb2UyZ2h3eXAx?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1379,18 +1427,6 @@
    "published": "2026-10-31T16:30:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20265IgMYcI8Ft1793463745.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1203967",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "c3aab458cb90",
-   "title": "Starved residents of Russian-occupied Oleshky return to Ukraine during a rare local ceasefire - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-10-31T16:26:58Z",
-   "image": null,
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWFpDMzF1UGlpLV9sdTZxWXRVLW04dWROZEtPTXE2V0JpNDM1c1pjOS1HbVlUNnd0THlRNnkzQTJfa1JxY3ZmR1llTHJTMnFpcll4SjN5TWdKMnY3VWRVWklVTkFxbkFJSEl5X3owR1FoU0RJZE9oUUJpTl9CUXpoV0k2al81eHpfWGNjclVrZU5lOXEyUnA4Y0JSd1dwVnR4LWVscXlza19fbF9nZmMwYlBITndMREZZTUlweF8tcTJSWDg?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1504,25 +1540,25 @@
    "wayback_url": null
   },
   {
-   "id": "828e5405d897",
+   "id": "3796e7d4b790",
    "title": "Column | Husband’s ex won’t let my teen stepdaughter see me while he’s away - The Washington Post",
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-10-31T16:00:00Z",
    "image": null,
-   "url": "https://www.washingtonpost.com/advice/2026/10/31/husbands-ex-wont-let-my-teen-stepdaughter-see-me-while-hes-away/",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXB6b21VczAySDdfRUxaV1Z3YVZYeUszV0NrZUZlb0RhUTg5MG1HQV82dkpCdUp1elllWklpaTRkS1c0Qm9FbmhjLU1ncjlMeEdWc3ZxWUxuTzhaSUxYVmlOdnhNQXhrNHpzOGRlMl9WWV9IbFkyblF0UFRsYWlZanpGaTVxeHc3VjI2WU1ULVBzenEwTFBUZlRsN294eUNZWUR4M1hQT2hRMlhGUnFnd1lHRQ?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
   {
-   "id": "de1857eb737b",
+   "id": "f33a86007607",
    "title": "Column | Here’s one of the biggest financial mistakes people make when getting divorced - The Washington Post",
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-10-31T16:00:00Z",
    "image": null,
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMFFFeVlwQVhuWHFqTzhvRTliWlZ6eXRweHJmcHJ2OVBmajJzV0R3M1RxRGtMX1M3RHZPbmo4bGYtc0tCN0xyYllSQm55bjBkWkVtNDRPUExEZURQeDQ1V2sxX1JiQ2JDVHJMR2RNNFQ0WGZLU1RvbENnWVlWV04tU1pRQUg1Y1V6YjFsWDcyX2VtODNGYmgtMUVMeFE4VzgxalVEVEFIRjhmeDZac3RtUHF2NkdocEhxbXlIVENNZw?oc=5",
+   "url": "https://www.washingtonpost.com/business/2026/10/31/heres-one-biggest-financial-mistakes-people-make-when-getting-divorced/",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1840,13 +1876,13 @@
    "wayback_url": null
   },
   {
-   "id": "289a56d54c4b",
+   "id": "c8b13d7ca1af",
    "title": "The Grand Plan to Build America’s Most Expensive Neighborhood Is Collapsing - WSJ",
    "source": "WSJ",
    "topic": "Top",
    "published": "2026-10-31T14:41:48Z",
    "image": null,
-   "url": "https://www.wsj.com/real-estate/luxury-homes/scott-gillen-the-case-malibu-18c1cb0e",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUzJOSHBNS1VHX2JWSlBQaERqR1pVRndKbVBybTNybjNMNExtdGlPeU9OUXBaODJYM1l4dFJPZEpxNUt2T2hNSzViaXdhdzh5ZE5ISWRHZHBlMExnWDdUQzQ2VlNLRkZRdVJKTTJvalV4UzVMaDJTSVh2VG5WcHk5ZEhubXkzRGhMNkE?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -1876,13 +1912,13 @@
    "wayback_url": null
   },
   {
-   "id": "1595fbbd060d",
+   "id": "749f0a703712",
    "title": "Taipei mayor gets angry reception at Pride after gay bar raid - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T14:20:44Z",
    "image": null,
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQjZsazFEZmdnZlpvX1EtdzlPbFF1THhFMkkxamJpVHRfek5DYUtoemVsbnJ5X2FCNWo3eDJxOXZhRHNzS1g0YWQ5ck9vTEo0OUhpVHB6cTRSRzVrUlZGVUNXTy1QVU4tbXhINENEb0xuNDBtQkw1QjZwWXZKaloxNDRlaGNOVFR6SUNGR3M4NEpVbGN3UWRFbk04RWJWLUlUdExyanJfSVRaQQ?oc=5",
+   "url": "https://www.reuters.com/world/china/taipei-mayor-gets-angry-reception-pride-after-gay-bar-raid-2026-10-31/",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2116,6 +2152,18 @@
    "wayback_url": null
   },
   {
+   "id": "a652141eb31d",
+   "title": "13 public libraries open earlier, admitting visitors from 9am - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-10-31T13:16:11Z",
+   "image": null,
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbzJOMU1IRGdQQVZyNDRDcHlRVlpUT0ZXQTllbmt4QlN1dHpMTHZhZTlNZ2d6bXk3Y2RGZDdHeEhVXzdEUlRkcU5lRm5mQzQ2LTZDcV92S0kxNFJCT1RRMTlLeTNOdi16ZjB2WDlHR0VOc1NETXVPRlVETHpQZlBmVnR0TVp3MFQ3S2hCYVFocmxTd3dZYUZVd25KYXA3eGJK?oc=5",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
    "id": "620659ed6bcf",
    "title": "EU Foreign Policy Chief Warns Against Normalizing Russia",
    "source": "Bloomberg",
@@ -2159,6 +2207,18 @@
    "published": "2026-10-31T13:00:00Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-10-31/ai-enthusiasm-is-collapsing-and-tech-earnings-just-made-it-worse",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "c34ae6fdb2c0",
+   "title": "China’s leading chefs bring regional flavours to Singapore - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-10-31T13:00:00Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/lifestyle/food/chinas-leading-chefs-bring-regional-flavours-singapore",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2416,13 +2476,13 @@
    "wayback_url": null
   },
   {
-   "id": "813140a25c3d",
+   "id": "dacd00428729",
    "title": "Bangladesh death toll from dengue rises, unlikely to ease before December - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T11:39:47Z",
    "image": null,
-   "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/bangladesh-death-toll-dengue-rises-unlikely-ease-before-december-2026-10-31/",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcGhJWWhSQmlnbnVWNzVkN18yWnhPUEg5LTlOZVpQQXZVcF8yWU5CMGJ6QVVUbzJUa2UwXzlJeS1TU1IteEdfdGVIVmRZcTJuSDllOE96YjAtLWlfR3JvblFzZE9tenFGRVdwdkMtYzU4bldVS2ZzX3NxaEF5Q2x5RS1MVVl2OTdsTG5peGd0VlJDYWgtOUZ4Q3dKb01KTE1pYzJ5Sjljdk1WajJRR1VOVGIzMkNpcmd2QkV3RTVMbW9qS20xTkZuYUFGaFd4bFFwNWc?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2524,25 +2584,25 @@
    "wayback_url": null
   },
   {
-   "id": "0c51fedff8ab",
+   "id": "862ce3856512",
    "title": "‘Doll Dressing’ Review: Fashion’s Miniature Models - WSJ",
    "source": "WSJ",
    "topic": "Top",
    "published": "2026-10-31T11:00:00Z",
    "image": null,
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOczMxaWE1OVhHUG9oaUpiU1Y1cmFXZHdmamFfU243N3hpUFpLQlV1WldfZmlCbjJRc2xhZ0dHdkVaTjFFbVRJZlJjQlY0Z25vbVFBX0Y2bWVSd2hZM2h2STZMLWJuV29PTVR6UV9ZYkpHOXhpY2JSc294enctVlBJSXd5SjdyNkRfbWs0TXRQaWxxUUk?oc=5",
+   "url": "https://www.wsj.com/style/fashion/doll-dressing-review-fashions-miniature-models-80182c54",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
   {
-   "id": "871cf1fa30c1",
+   "id": "748fc9321bc4",
    "title": "Power bills and data centers cast rare spotlight on utilities in US midterms - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T10:56:10Z",
    "image": null,
-   "url": "https://www.reuters.com/business/energy/power-bills-data-centers-cast-rare-spotlight-utilities-us-midterms-2026-10-31/",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdDZvZzZVcVBUX1dLclJCcVpTNkdSbnZsaWVDT3ZPTXM4ZG50RkY1XzdfWDR0WVk0elUzNWVlSHJSdDFlbkVTZE8tVW5mQWRuaTl3b3I4SjBDRmVuMVozMXNSMEdCZU9MV0c4RHR6T3NiTk5NRVFkenFId3hvc2JsUkpZUVVUYmJJYkp2cmprY2J5b1JSRnR3Zk1KUVNtR3I1b2oybW9nUVRKS282dU02UnVGVURTdjM5SVE?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2608,49 +2668,25 @@
    "wayback_url": null
   },
   {
-   "id": "50692b629c49",
+   "id": "d6a676e2fd11",
    "title": "Real Huang, who earns S$1.17 million a year in royalties, to move family to Singapore - 联合早报",
    "source": "Lianhe Zaobao (EN)",
    "topic": "Singapore",
    "published": "2026-10-31T10:24:55Z",
    "image": null,
-   "url": "https://www.zaobao.com.sg/en/entertainment/real-huang-who-earns-s1-17-million-year-royalties-move-family-singapore",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPLW9TT0REaDZHUWlIYXlkdWk0c1Y5Q01CTDgyQ0ZMME1zYjFuU0xlNTNfS0lCdGppMEdiRmppV2FMdElkVTlISzNibGtrR2NkbmpiMk9TbDdLZnBsekd2cElXTkt4UEk4RDN5SURPb0V1dUFGVU1QMnZFVENBWUVTQTNGbHdpTFZTUExJcXVjcHFfclhKUXIzZ0ljYlRFd3JvNHVrT2ZjeWcwbWYwc0J4a2xaSFg?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
   {
-   "id": "0c598f15953c",
-   "title": "Hong Kong may raise GDP forecast as growth could hit 5-year high: Paul Chan",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-10-31T10:20:59Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/6e9e7be0-b1cd-4ac1-bc48-bfd398bc91f4_13cab58b.jpg?itok=FYSkY4IN&v=1793440647",
-   "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3372830/hong-kong-may-raise-gdp-forecast-growth-poised-5-year-high-paul-chan",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "fbb5830ff5ac",
-   "title": "Why the Chinese immigrant story Thousand Pieces of Gold (1991) is a lost Old West classic",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-10-31T10:15:07Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/a4e7fb74-8488-4069-9780-7e3b5bc2f32e_d69c477d.jpg?itok=jZEHlKm-&v=1793328884",
-   "url": "https://www.scmp.com/lifestyle/entertainment/article/3372574/why-chinese-immigrant-story-thousand-pieces-gold-1991-lost-old-west-classic",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "27754c604e02",
-   "title": "Africa suffering in ‘strongmen’ era, says governance watchdog",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-10-31T10:06:23Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/b23e9f67-a00c-4356-836d-aaf43a41a0a4_69dd949d.jpg?itok=b8DSmcOQ&v=1793441181",
-   "url": "https://www.scmp.com/news/world/africa/article/3372832/africa-suffering-strongmen-era-says-governance-watchdog",
+   "id": "46cafc63d81a",
+   "title": "US midterm campaign enters final weekend as Alaska, California ballot fights heat up - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-10-31T10:08:00Z",
+   "image": null,
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWDRaNDJmRmxia1RPY2l4Z1ZIRTFHVU1pNHUydFRRUUhZVlZpUGVnZUVqUm82NFVfZXpsNVdWam5UNTVMc1RNWXZPbjJsTzlucDNWcmJxbjJLSWNwclRrWmFuVVBzb2lYcUFkbDRRc1JjbV94SFh3aG5majlaODVxTFNTUXhNUWZQWmR6bU4wS3hNQjNSUk9mN2hFQURQR1hMUmU5Rw?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2692,13 +2728,13 @@
    "wayback_url": null
   },
   {
-   "id": "60ae1db24902",
+   "id": "ea8f778e47df",
    "title": "Elizabeth Holmes Still Can’t Escape the Black Turtleneck - WSJ",
    "source": "WSJ",
    "topic": "Top",
    "published": "2026-10-31T10:00:00Z",
    "image": null,
-   "url": "https://www.wsj.com/style/fashion/elizabeth-holmes-still-cant-escape-the-black-turtleneck-873e834e",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWlZyV0k2X3RqanJlSUNZYTByckJYSnNUUmtOVHk1OVNIMTNfWC1aUmgwUVM5MFlrR0pYOVJzVmg0VE00MWVJNjg5T3VQWkMtQ2d2TGlqelJmNW1SdGpKbzlOaW1XUHZGbHppU0ZEbGM3ZjQ3bDFWdlZWU1lYTk53bVV6T0hvM3RFam5JeDlRc2tuWHlpWktjMDhOVkdGdGc?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2752,13 +2788,13 @@
    "wayback_url": null
   },
   {
-   "id": "02f52dc02a70",
+   "id": "aa1444a70e58",
    "title": "Kia Has Perfected the Three-Row Family Cruiser - WSJ",
    "source": "WSJ",
    "topic": "Top",
    "published": "2026-10-31T09:30:00Z",
    "image": null,
-   "url": "https://www.wsj.com/lifestyle/cars/2027-kia-telluride-review-9cba2c7e",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5aRm0wbXdEV0c3ZGJWenlZbjdaTFpUV2lKQ1o2bDRVSnlWZFV3WlpRb3lqM05nbENqQkZRanl6VDVlRXkyUlgyWlBMVU5adENMazFxQWN2MUN3YzBnYzY2ODFwOXZlLVB6OWFzU3pjWXBRSllGcmVZWA?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2908,6 +2944,18 @@
    "wayback_url": null
   },
   {
+   "id": "610c4dae1cd9",
+   "title": "JustCo falls nearly 60% below IPO price: rate hike expectations may be a factor, says analyst | Lianhe Zaobao - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-10-31T07:20:13Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/finance/singapore/justco-falls-60-below-ipo-price-rate-hike-expectations-may-be-factor-says-analyst?ai-allowed=1",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
    "id": "e3a9780b69c4",
    "title": "Liu Yandong, Rare Woman Among China’s Political Elite, Dies at 80",
    "source": "The New York Times",
@@ -2915,6 +2963,18 @@
    "published": "2026-10-31T07:18:23Z",
    "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31obit-liu-02-wcfq/31obit-liu-02-wcfq-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/10/31/world/asia/liu-yandong-dead.html",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
+   "id": "dc97ebb9f5bb",
+   "title": "Singapore leads ASEAN in brand value as Grab grows more than fourfold in three years - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-10-31T07:11:54Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/finance/singapore/singapore-leads-asean-brand-value-grab-grows-more-fourfold-three-years",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -2968,13 +3028,13 @@
    "wayback_url": null
   },
   {
-   "id": "ef922d48ef96",
+   "id": "690fa10fc020",
    "title": "She spoke about her husband’s ICE custody death. Now she could face deportation. - The Washington Post",
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-10-31T05:50:46Z",
    "image": null,
-   "url": "https://www.washingtonpost.com/dc-md-va/2026/10/30/she-spoke-about-her-husbands-ice-custody-death-now-she-could-face-deportation/",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObUlUSmhLRmR6QnJvLTFMQjg1ZHVVeWw1LTg2ZHRCMzZ2blJJVkdGbkwwWFF5bDBaTzJLeVlScmlIdmRTYnI0RDJveUdqazBzM0w5X28yRTg3M1ZSdGRORVo4UTc1RVVoTVdONENGYTZvaG9iZ2NicWE1dWRqVEdLQ195aWNNZms5cDNNLUlSWldLaWdHWmJhMlBBWndWbUQ2bTFtc05xcHdqd1hCVXdqdGVoY0JWVDEzVjZXWk5COV84b0tJd1dBaw?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -3148,18 +3208,6 @@
    "wayback_url": null
   },
   {
-   "id": "7797b38037e9",
-   "title": "Saying nothing in Northern Ireland",
-   "source": "Financial Times",
-   "topic": "World",
-   "published": "2026-10-31T05:00:31Z",
-   "image": null,
-   "url": "https://www.ft.com/content/df052f2b-c2f2-4669-a852-dbe6e307ab81",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
    "id": "0e070d7ff76b",
    "title": "The great Airbnb chore reprieve",
    "source": "Financial Times",
@@ -3256,13 +3304,13 @@
    "wayback_url": null
   },
   {
-   "id": "416a13f37a3a",
+   "id": "f85cfed44811",
    "title": "Teachers union sues Trump over public service loan forgiveness - The Washington Post",
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-10-31T04:23:52Z",
    "image": null,
-   "url": "https://www.washingtonpost.com/nation/2026/10/30/teachers-union-sues-trump-over-public-service-loan-forgiveness/",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcEZKQktwbkF3Zl9OdXo3RHpjV2t4cjdyMGgxQTExbkN2cjRvT3V3R2k1bFBSYlVyRHdiWXJiV3Z0dzdNb29Bam1Yai03Q28xLV9KX2VOaHNreFZXeE01LW9CZU1EUkYzWGozOU9kWVFZSmZ4RGJ6OFd3bW9ucXBGZVJ3cGstMzMzWkdibFFEeTRLYlF6bnREMXliSVIzbTVReDlTLThrc1ZPU1ZwWVo4ZUZ3?oc=5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -3316,6 +3364,18 @@
    "wayback_url": null
   },
   {
+   "id": "64b1cfc1c151",
+   "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-10-31T02:56:00Z",
+   "image": null,
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw?oc=5",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null
+  },
+  {
    "id": "5796699022a1",
    "title": "Judge orders Trump administration to cease threats to prosecute election officials - Reuters",
    "source": "Reuters",
@@ -3340,49 +3400,37 @@
    "wayback_url": null
   },
   {
-   "id": "5570b3f1e738",
+   "id": "3b167799ac89",
    "title": "Japanese bodybuilder, 90, flexes ageless ambition on Spanish stage - Reuters",
    "source": "Reuters",
    "topic": "Wire",
    "published": "2026-10-31T02:09:00Z",
    "image": null,
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU2ZtZmQ0bllJZjVSMnJyLW45ZHBSc2RyeVVUX1BCTnM1cFhxMm9qLV9qbjEtOGJMU2NsNVNQVnNfZUo2NGphQThnRWVkNTR5ajNLTVlrU2dwRm13OXhtUFNHTXJVRWlGTG1CRHVoQ3k0aEZBZy1ocF9CUDlQWm14RV9KV3N6Rjktb1ZWVk12aWJyZW9WTXJOWXprR3E2VGc3am1BSHZLMA?oc=5",
+   "url": "https://www.reuters.com/sports/japanese-bodybuilder-90-flexes-ageless-ambition-spanish-stage-2026-10-31/",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
   {
-   "id": "f308abeff2b3",
+   "id": "ed8c27127415",
    "title": "AI stock rout drags down Singapore tech shares; analyst warns semiconductor stocks could fall further - 联合早报",
    "source": "Lianhe Zaobao (EN)",
    "topic": "Singapore",
    "published": "2026-10-31T02:03:20Z",
    "image": null,
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcnp5ajQ3WlM1N05OTFJISVFHTVd2UEdlMUlxak5lOFlZLTE5TjRnc1EyenBZVTZpOGlrMEF2YXBtbHJKS04zeFN3WXUxNDRFMUNFT0J0UjBvdmx4ekcwb0xLOXM2dTlaZ2kxQk1IUEFncXMyeDFSTjJxVmNLTVN6YVcyY0RZU2E1QjBPY0p1M3UtZ2dsQUVfaXhUbzllNEx5QWNwVy1qN2NGUWZKM3VwNjlFbmVoVDQ1Q1VUdjByNWRQNWNFTVpCY2hlNkJ5STBPbXZweEhoNk9tcURWVzFpUA?oc=5",
+   "url": "https://www.zaobao.com.sg/en/finance/singapore/ai-stock-rout-drags-down-singapore-tech-shares-analyst-warns-semiconductor-stocks-could-fall-further",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
   },
   {
-   "id": "511bb4825e7d",
+   "id": "a53d88058970",
    "title": "The Smartest People in AI Believe This Is the World’s Most Important Chart - WSJ",
    "source": "WSJ",
    "topic": "Top",
    "published": "2026-10-31T02:00:00Z",
    "image": null,
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdlRTSktsR1lfYmNBOURrNzZSbDJRcG55dmhHQ2E3d1JQSXNQMjRrdVpHdTlUcHotNF9UaVdnX0QzRlVONWtPSmsteUtQSTc0cTRxRjVjOXM1WWExcTdkdkJqLTdmc19seXlxYXd3ZGlZejREMTJTeUsxWFVaVHFjemkwQVVZTk0?oc=5",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "b112e6ada6a0",
-   "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-10-31T01:56:25Z",
-   "image": null,
-   "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+   "url": "https://www.wsj.com/tech/ai/ai-anthropic-rsi-recursive-self-improvement-bff4e815",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
@@ -3467,42 +3515,6 @@
    "published": "2026-10-31T00:29:28Z",
    "image": "https://i.guim.co.uk/img/media/94e76fb3f040c70be5f1c43fa81c443afb9943dd/1924_1239_3101_2483/master/3101.jpg?width=140&quality=85&auto=format&fit=max&s=6b1eedaa160a8b30de7f331c40f2ceeb",
    "url": "https://www.theguardian.com/world/2026/oct/31/us-cancels-g20-family-photo-after-australia-uk-and-others-refuse-to-appear-with-russia",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "7fee18ae3ddd",
-   "title": "Crypto exchanges call for quick moves to bolster defenses after Binance heist - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-10-31T00:26:00Z",
-   "image": null,
-   "url": "https://www.reuters.com/legal/government/crypto-exchanges-call-quick-moves-bolster-defenses-after-binance-heist-2026-10-31/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "0b0864919340",
-   "title": "OpenAI slashes funding target by $10 billion amid tech rout, FT reports - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-10-31T00:17:00Z",
-   "image": null,
-   "url": "https://www.reuters.com/business/openai-cuts-funding-target-by-10-billion-ft-reports-2026-10-31/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null
-  },
-  {
-   "id": "22bd22c6a2b3",
-   "title": "The True Story of Tragedy and Perseverance Behind Everest: The Other Side",
-   "source": "TIME",
-   "topic": "Top",
-   "published": "2026-10-31T00:09:18Z",
-   "image": "https://static.time.com/v3/assets/bltea6093859af6183b/bltcd66b18b1ab78a76/6ae5279022fa535fb46758d6/ARC_P31036_viaJM_2018-03_Jim_Hil_Selfie_Ironclads_CO.jpg?branch=production",
-   "url": "https://time.com/article/2026/10/31/everest-the-other-side-documentary/",
    "status": "original",
    "archive_url": null,
    "wayback_url": null
