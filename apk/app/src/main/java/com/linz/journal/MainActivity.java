@@ -13,6 +13,7 @@ import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.JavascriptInterface;
 import android.webkit.JsPromptResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -39,8 +40,11 @@ public class MainActivity extends Activity {
 
     private static final String SITE_URL = "https://lin-z-h.github.io/news-browse/";
     private static final String VERSION_URL = SITE_URL + "app-version.json";
-    private static final String APK_URL =
-            "https://github.com/lin-z-h/news-browse/releases/download/apk-latest/Journal.apk";
+    // 下载源按顺序尝试：Pages 与应用同源（可达性=站点本身），GitHub Release 为备用
+    private static final String[] APK_URLS = {
+            SITE_URL + "Journal.apk",
+            "https://github.com/lin-z-h/news-browse/releases/download/apk-latest/Journal.apk",
+    };
 
     private WebView web;
     private FrameLayout root;
@@ -49,6 +53,10 @@ public class MainActivity extends Activity {
     private final Handler ui = new Handler(Looper.getMainLooper());
     private boolean updateAvailable = false;
     private volatile boolean downloading = false;
+    private String capturingFor = null;
+    private String capturingTitle = "";
+    private String pendingCaptureJs = null;
+    private boolean captureInjecting = false;
 
     private int dp(float v) {
         return (int) (v * getResources().getDisplayMetrics().density + 0.5f);
@@ -63,17 +71,31 @@ public class MainActivity extends Activity {
         root.addView(web, new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
+        web.enableSlowWholeDocumentDraw(); // 打印/导出 PDF 需要完整文档绘制
         WebSettings s = web.getSettings();
         s.setJavaScriptEnabled(true);
         s.setDomStorageEnabled(true);
         s.setLoadWithOverviewMode(true);
         s.setUseWideViewPort(true);
-        web.setWebViewClient(new WebViewClient());
-        // onJsPrompt：页面里双击报头设置 Jina key 时，用原生对话框承接（WebView 默认不弹 prompt）
+        web.setVerticalScrollBarEnabled(false); // 滚动条隐藏，与网页端一致
+        web.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                // 人工验证完成后回到应用首页时，把提取的正文写入 localStorage 并刷新
+                if (captureInjecting && url.startsWith(SITE_URL)) {
+                    view.evaluateJavascript(pendingCaptureJs, r -> {
+                        captureInjecting = false;
+                        pendingCaptureJs = null;
+                        view.evaluateJavascript("location.reload()", null);
+                    });
+                }
+            }
+        });
         web.setWebChromeClient(new WebChromeClient() {
             @Override
             public boolean onJsPrompt(WebView view, String url, String message,
                                       String defaultValue, JsPromptResult result) {
+                // 页面双击报头设置 Jina key 时，用原生对话框承接（WebView 默认不弹 prompt）
                 final EditText input = new EditText(MainActivity.this);
                 input.setInputType(InputType.TYPE_CLASS_TEXT);
                 input.setText(defaultValue);
@@ -86,6 +108,41 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
+        // JS ↔ 原生桥：阅读模式开/关时隐藏/恢复右上角更新按钮
+        web.addJavascriptInterface(new Object() {
+            @android.webkit.JavascriptInterface
+            public void hideUpdate(boolean hide) {
+                ui.post(() -> {
+                    if (downloading) return; // 下载进行中不打断
+                    updateBtn.setVisibility(hide ? View.GONE : View.VISIBLE);
+                });
+            }
+
+            @android.webkit.JavascriptInterface
+            public void exportPage() {
+                ui.post(() -> {
+                    try {
+                        android.print.PrintManager pm = (android.print.PrintManager) getSystemService(PRINT_SERVICE);
+                        android.print.PrintDocumentAdapter adapter = web.createPrintDocumentAdapter("Journal");
+                        pm.print("Journal", adapter, new android.print.PrintAttributes.Builder().build());
+                    } catch (Exception ignored) {
+                    }
+                });
+            }
+
+            @android.webkit.JavascriptInterface
+            public void captureFor(String id, String url, String title) {
+                ui.post(() -> {
+                    capturingFor = id;
+                    capturingTitle = title == null ? "" : title;
+                    updateAvailable = false;
+                    updateBtn.setColorFilter(0xFF1A73E8); // 蓝色 = 待提取
+                    updateBtn.setVisibility(View.VISIBLE);
+                    updateBar.setVisibility(View.GONE);
+                    web.loadUrl("https://archive.ph/newest/" + url);
+                });
+            }
+        }, "Android");
         web.loadUrl(SITE_URL);
 
         // 右上角更新按钮：圆形外框 + 上箭头；默认灰色，有更新时箭头变蓝
@@ -93,7 +150,10 @@ public class MainActivity extends Activity {
         updateBtn.setImageResource(R.drawable.ic_update);
         updateBtn.setColorFilter(0xFF8D867A);
         updateBtn.setBackground(circleBg(0x66FFFFFF, 0x33888888));
-        updateBtn.setOnClickListener(v -> { if (updateAvailable && !downloading) startDownload(); });
+        updateBtn.setOnClickListener(v -> {
+            if (capturingFor != null) { extractCaptured(); return; }
+            if (updateAvailable && !downloading) startDownload();
+        });
         FrameLayout.LayoutParams blp = new FrameLayout.LayoutParams(dp(40), dp(40));
         blp.gravity = Gravity.TOP | Gravity.END;
         blp.topMargin = dp(12);
@@ -168,49 +228,64 @@ public class MainActivity extends Activity {
         va.start();
         new Thread(() -> {
             File apk = new File(getCacheDir(), "journal-update.apk");
-            try {
-                HttpURLConnection c = (HttpURLConnection) new URL(APK_URL).openConnection();
-                c.setInstanceFollowRedirects(true);
-                c.setConnectTimeout(15000);
-                c.setReadTimeout(30000);
-                long total = c.getContentLengthLong();
-                InputStream in = c.getInputStream();
-                FileOutputStream out = new FileOutputStream(apk);
-                byte[] buf = new byte[8192];
-                long done = 0;
-                int n;
-                int lastP = -1;
-                while ((n = in.read(buf)) > 0) {
-                    out.write(buf, 0, n);
-                    done += n;
-                    if (total > 0) {
-                        int p = (int) (done * 100 / total);
-                        if (p != lastP) {
-                            final int pp = p;
-                            ui.post(() -> updateBar.setProgress(pp));
-                            lastP = pp;
+            boolean ok = false;
+            String lastErr = null;
+            for (String url : APK_URLS) { // 多源依次尝试：Pages 同源 → GitHub Release
+                try {
+                    HttpURLConnection c = (HttpURLConnection) new URL(url).openConnection();
+                    c.setInstanceFollowRedirects(true);
+                    c.setConnectTimeout(15000);
+                    c.setReadTimeout(30000);
+                    long total = c.getContentLengthLong();
+                    InputStream in = c.getInputStream();
+                    FileOutputStream out = new FileOutputStream(apk);
+                    byte[] buf = new byte[8192];
+                    long done = 0;
+                    int n;
+                    int lastP = -1;
+                    while ((n = in.read(buf)) > 0) {
+                        out.write(buf, 0, n);
+                        done += n;
+                        if (total > 0) {
+                            int p = (int) (done * 100 / total);
+                            if (p != lastP) {
+                                final int pp = p;
+                                ui.post(() -> updateBar.setProgress(pp));
+                                lastP = pp;
+                            }
                         }
                     }
+                    out.close();
+                    in.close();
+                    if (apk.length() > 100 * 1024) { // 明显小于正常体积视为失败
+                        ok = true;
+                        break;
+                    }
+                } catch (Exception e) {
+                    lastErr = type(e) + ": " + String.valueOf(e.getMessage()).substring(0, Math.min(60, String.valueOf(e.getMessage()).length()));
                 }
-                out.close();
-                in.close();
-                ui.post(() -> {
-                    downloading = false;
+                if (downloading) break; // 被关闭/中止
+            }
+            final boolean okF = ok;
+            ui.post(() -> {
+                downloading = false;
+                if (okF) {
                     install(apk);
                     setUpdateAvailable(false); // 更新成功，恢复灰色圆角
                     updateBtn.setVisibility(View.VISIBLE);
                     updateBar.setVisibility(View.GONE);
-                });
-            } catch (Exception e) {
-                ui.post(() -> {
-                    downloading = false;
-                    Toast.makeText(MainActivity.this, "下载失败，点箭头重试", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(MainActivity.this, "下载失败，请检查网络后点箭头重试", Toast.LENGTH_LONG).show();
                     setUpdateAvailable(true);
                     updateBtn.setVisibility(View.VISIBLE);
                     updateBar.setVisibility(View.GONE);
-                });
-            }
+                }
+            });
         }).start();
+    }
+
+    private String type(Throwable t) {
+        return t.getClass().getSimpleName();
     }
 
     private void install(File apk) {
@@ -222,6 +297,24 @@ public class MainActivity extends Activity {
             startActivity(i);
         } catch (Exception ignored) {
         }
+    }
+
+    private void extractCaptured() {
+        final String fid = capturingFor == null ? "" : capturingFor;
+        final String ftitle = capturingTitle;
+        web.evaluateJavascript("(document.body ? document.body.innerText : '')", value -> {
+            String text = "";
+            try {
+                Object o = new org.json.JSONTokener(value).nextValue();
+                if (o instanceof String) text = (String) o;
+            } catch (Exception ignored) {}
+            String textJson = org.json.JSONObject.quote(text);
+            String titleJson = org.json.JSONObject.quote(ftitle);
+            pendingCaptureJs = "try{localStorage.setItem('journal.captureRaw', JSON.stringify({id:'"
+                    + fid + "', title:" + titleJson + ", text:" + textJson + "}))}catch(e){}";
+            captureInjecting = true;
+            web.loadUrl(SITE_URL);
+        });
     }
 
     private void restoreButton() {

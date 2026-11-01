@@ -101,15 +101,29 @@ jobs:
           gradle wrapper --gradle-version 8.9 --no-daemon
           ./gradlew --no-daemon assembleRelease
 
-      - name: Publish APK to release
+      - name: Publish APK（Pages 同源下载 + Release；仅当 APK 变化时）
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          SHA=$(sha256sum apk/app/build/outputs/apk/release/app-release.apk | cut -d' ' -f1)
+          OLD=$(python -c "import json;print(json.load(open('docs/app-version.json')).get('apkSha256',''))" 2>/dev/null || echo "")
+          if [ "$SHA" = "$OLD" ]; then echo "APK 未变化，跳过发布"; exit 0; fi
+          VC=$(grep versionCode apk/version.properties | cut -d= -f2)
+          VN=$(grep versionName apk/version.properties | cut -d= -f2)
+          cp apk/app/build/outputs/apk/release/app-release.apk docs/Journal.apk
+          printf '{"versionCode": %s, "versionName": "%s", "apkSha256": "%s"}\n' "$VC" "$VN" "$SHA" > docs/app-version.json
+          git add docs/Journal.apk docs/app-version.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: publish apk [skip ci]"
+          git pull --rebase origin main
+          for i in 1 2 3; do git push && break || sleep 20; done
           cp apk/app/build/outputs/apk/release/app-release.apk Journal.apk
           gh release delete apk-latest --yes --cleanup-tag 2>/dev/null || true
-          gh release create apk-latest Journal.apk \
+          gh release create apk-latest Journal.apk docs/Journal.apk \
             --title "Journal APK ($(date -u +%Y.%m.%d))" \
-            --notes "自动构建于 commit ${GITHUB_SHA::7}。下载 Journal.apk 侧载安装；更新可直接覆盖安装（同一签名）。"
+            --notes "自动构建于 commit ${GITHUB_SHA::7}。应用内更新按钮会自动下载安装；也可手动下载 Journal.apk 侧载。"
 
       - name: Publish app-version.json (APK 更新检测用)
         run: |

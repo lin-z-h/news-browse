@@ -274,6 +274,7 @@
     rBody.innerHTML = '<div class="rspin"></div>';
     const ctrl = new AbortController();
     readerCtrl = ctrl;
+    try { window.Android && Android.hideUpdate(true); } catch (e) {} // APK：阅读模式下隐藏更新按钮
     // 私有缓存优先（CI 抓好的正文，仅 token 持有者可读）
     if (CACHE_TOKEN) {
       try {
@@ -328,8 +329,14 @@
       if (ctrl.signal.aborted) return;
       readerEl.hidden = true;
       document.body.style.overflow = "";
+      if (window.Android && Android.captureFor) {
+        // APK：进入人工验证捕获流程——过完验证点浮窗箭头，正文回传阅读模式
+        try { Android.captureFor(it.id, it.url, it.title || ""); } catch (e2) {}
+        showToast(I.arch);
+        return;
+      }
       showToast(I.x);
-      open(archiveTarget(it)); // 全部渠道失败 → 照旧走人工归档兜底
+      open(archiveTarget(it)); // 浏览器：照旧走人工归档兜底
     }
   }
 
@@ -337,6 +344,7 @@
     if (readerCtrl) readerCtrl.abort();
     readerEl.hidden = true;
     document.body.style.overflow = "";
+    try { window.Android && Android.hideUpdate(false); } catch (e) {}
   }
   $("#readerClose").addEventListener("click", closeReader);
   $("#readerExport").addEventListener("click", () => {
@@ -345,7 +353,10 @@
     imgs.forEach(im => { im.loading = "eager"; });
     Promise.all(imgs.map(im => im.complete ? Promise.resolve() :
       new Promise(r => { im.onload = im.onerror = r; setTimeout(r, 3000); })))
-      .then(() => setTimeout(() => window.print(), 120));
+      .then(() => setTimeout(() => {
+        try { if (window.Android && Android.exportPage) { Android.exportPage(); return; } } catch (e) {}
+        window.print(); // 浏览器：系统打印（可另存 PDF）
+      }, 120));
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && !readerEl.hidden) closeReader(); });
 
@@ -607,6 +618,35 @@
   });
 
   // —— 启动 ——
+  // 人工验证捕获：APK 从 archive 页面提取的正文，启动时渲染成阅读模式
+  try {
+    const capRaw = localStorage.getItem("journal.captureRaw");
+    if (capRaw) {
+      localStorage.removeItem("journal.captureRaw");
+      const cap = JSON.parse(capRaw);
+      if (cap.text && cap.text.length > 80) {
+        const lines = cap.text.split(/\n+/).map(x => x.trim()).filter(x => x.length >= 14);
+        const seenCap = new Set();
+        const paras = [];
+        for (const t of lines) {
+          const k = t.replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
+          if (!k || seenCap.has(k)) continue;
+          seenCap.add(k);
+          paras.push(t);
+        }
+        if (paras.length) {
+          readerEl.hidden = false;
+          document.body.style.overflow = "hidden";
+          rTitle.textContent = cap.title || "已提取文章";
+          rMeta.textContent = "提取正文 · " + new Date().toLocaleDateString();
+          const escC = x => x.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+          rBody.innerHTML = paras.map(t => `<p>${escC(t)}</p>`).join("");
+          try { window.Android && Android.hideUpdate(true); } catch (e2) {}
+        }
+      }
+    }
+  } catch (e) {}
+
   // 双击报头 → 设置 Jina key（手机上没有控制台，这是唯一入口）
   $(".masthead h1").addEventListener("dblclick", () => {
     const cur = (() => { try { return localStorage.getItem("journal.jinakey") || ""; } catch (e) { return ""; } })();
