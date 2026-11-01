@@ -143,6 +143,11 @@
   const RKEY = "journal.read";
   let readCache = {};
   try { readCache = JSON.parse(localStorage.getItem(RKEY) || "{}") || {}; } catch (e) { readCache = {}; }
+  // Jina Reader key：提升配额并尝试解锁 wayback 域（匿名被 jina 封禁）；localStorage("journal.jinakey") 可覆盖
+  const JINA_KEY = (() => {
+    try { return localStorage.getItem("journal.jinakey") || "jina_bbf50b631b094a139a820f8898cb9705XThsFBK4isyGN0CPZY9wIPBM64Pi"; }
+    catch (e) { return "jina_bbf50b631b094a139a820f8898cb9705XThsFBK4isyGN0CPZY9wIPBM64Pi"; }
+  })();
   // 各站点正文容器选择器（jina x-target-selector，服务器端有效、浏览器 CORS 下会被忽略）
   const READER_SELECTORS = { "news.tvb.com": ".module_left" };
   // 各站点噪音块过滤（浏览器端兜底）
@@ -273,10 +278,17 @@
         let md = null;
         try {
           const sel = READER_SELECTORS[_host(cu)];
-          const res = await fetch("https://r.jina.ai/" + cu, {
-            signal: ctrl.signal,
-            headers: sel ? { "x-target-selector": sel } : undefined,
-          });
+          const headers = {};
+          if (sel) headers["x-target-selector"] = sel;
+          if (JINA_KEY) headers["Authorization"] = "Bearer " + JINA_KEY;
+          let res;
+          try {
+            res = await fetch("https://r.jina.ai/" + cu, { signal: ctrl.signal, headers });
+          } catch (e) {
+            if (ctrl.signal.aborted || !JINA_KEY) throw e;
+            delete headers.Authorization; // 预检失败退回匿名
+            res = await fetch("https://r.jina.ai/" + cu, { signal: ctrl.signal, headers });
+          }
           if (!res.ok) continue;
           md = await res.text();
         } catch (e) {
