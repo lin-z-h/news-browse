@@ -143,10 +143,11 @@
   const RKEY = "journal.read";
   let readCache = {};
   try { readCache = JSON.parse(localStorage.getItem(RKEY) || "{}") || {}; } catch (e) { readCache = {}; }
-  // Jina Reader key：提升配额并尝试解锁 wayback 域（匿名被 jina 封禁）；localStorage("journal.jinakey") 可覆盖
+  // Jina Reader key：仅存本地（localStorage("journal.jinakey")，双击报头可设置），不进仓库。
+  // 作用：提升配额并尝试解锁 wayback 域（匿名被 jina 封禁）。
   const JINA_KEY = (() => {
-    try { return localStorage.getItem("journal.jinakey") || "jina_bbf50b631b094a139a820f8898cb9705XThsFBK4isyGN0CPZY9wIPBM64Pi"; }
-    catch (e) { return "jina_bbf50b631b094a139a820f8898cb9705XThsFBK4isyGN0CPZY9wIPBM64Pi"; }
+    try { return localStorage.getItem("journal.jinakey") || ""; }
+    catch (e) { return ""; }
   })();
   // 各站点正文容器选择器（jina x-target-selector，服务器端有效、浏览器 CORS 下会被忽略）
   const READER_SELECTORS = { "news.tvb.com": ".module_left" };
@@ -559,6 +560,18 @@
   });
 
   // —— 启动 ——
+  // 双击报头 → 设置 Jina key（手机上没有控制台，这是唯一入口）
+  $(".masthead h1").addEventListener("dblclick", () => {
+    const cur = (() => { try { return localStorage.getItem("journal.jinakey") || ""; } catch (e) { return ""; } })();
+    const k = window.prompt("Jina API key（留空则清除）:", cur);
+    if (k === null) return;
+    try {
+      if (k.trim()) localStorage.setItem("journal.jinakey", k.trim());
+      else localStorage.removeItem("journal.jinakey");
+      location.reload();
+    } catch (e) {}
+  });
+
   async function load() {
     dateLine.textContent = new Date().toLocaleDateString(undefined, {
       weekday: "long", year: "numeric", month: "long", day: "numeric",

@@ -2,19 +2,23 @@ package com.linz.journal;
 
 import android.animation.ValueAnimator;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.JsPromptResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
@@ -65,7 +69,23 @@ public class MainActivity extends Activity {
         s.setLoadWithOverviewMode(true);
         s.setUseWideViewPort(true);
         web.setWebViewClient(new WebViewClient());
-        web.setWebChromeClient(new WebChromeClient());
+        // onJsPrompt：页面里双击报头设置 Jina key 时，用原生对话框承接（WebView 默认不弹 prompt）
+        web.setWebChromeClient(new WebChromeClient() {
+            @Override
+            public boolean onJsPrompt(WebView view, String url, String message,
+                                      String defaultValue, JsPromptResult result) {
+                final EditText input = new EditText(MainActivity.this);
+                input.setInputType(InputType.TYPE_CLASS_TEXT);
+                input.setText(defaultValue);
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle(message)
+                        .setView(input)
+                        .setPositiveButton("OK", (d, w) -> result.confirm(input.getText().toString()))
+                        .setNegativeButton("Cancel", (d, w) -> result.cancel())
+                        .show();
+                return true;
+            }
+        });
         web.loadUrl(SITE_URL);
 
         // 右上角更新按钮：圆形外框 + 上箭头；默认灰色，有更新时箭头变蓝
