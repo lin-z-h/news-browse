@@ -1,6 +1,6 @@
 {
-  "max_per_source": 30,
-  "max_total": 220,
+  "max_per_source": 40,
+  "max_total": 300,
   "sources": [
     {
       "name": "Bloomberg",
@@ -12,6 +12,7 @@
     },
     {
       "name": "The New York Times",
+      "hide_unarchived": true,
       "feeds": [
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml", "topic": "Top"},
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "topic": "World"},
@@ -29,7 +30,11 @@
         {"url": "https://www.economist.com/science-and-technology/rss.xml", "topic": "Science"},
         {"url": "https://www.economist.com/china/rss.xml", "topic": "China"},
         {"url": "https://www.economist.com/international/rss.xml", "topic": "World"},
-        {"url": "https://www.economist.com/culture/rss.xml", "topic": "Culture"}
+        {"url": "https://www.economist.com/culture/rss.xml", "topic": "Culture"},
+        {"url": "https://www.economist.com/europe/rss.xml", "topic": "World"},
+        {"url": "https://www.economist.com/asia/rss.xml", "topic": "Asia"},
+        {"url": "https://www.economist.com/britain/rss.xml", "topic": "World"},
+        {"url": "https://www.economist.com/middle-east-and-africa/rss.xml", "topic": "World"}
       ]
     },
     {
@@ -43,6 +48,7 @@
     },
     {
       "name": "WSJ",
+      "hide_unarchived": true,
       "feeds": [
         {"url": "https://news.google.com/rss/search?q=site:wsj.com+when:2d&hl=en-US&gl=US&ceid=US:en", "topic": "Top"}
       ]
@@ -50,43 +56,53 @@
     {
       "name": "Financial Times",
       "feeds": [
-        {"url": "https://www.ft.com/rss/home/uk", "topic": "Top"}
+        {"url": "https://www.ft.com/rss/home/uk", "topic": "Top"},
+        {"url": "https://www.ft.com/rss/world", "topic": "World"},
+        {"url": "https://www.ft.com/rss/markets", "topic": "Markets"},
+        {"url": "https://www.ft.com/rss/tech", "topic": "Tech"},
+        {"url": "https://www.ft.com/rss/opinion", "topic": "Opinion"}
       ]
     },
     {
       "name": "TIME",
       "feeds": [
-        {"url": "https://time.com/feed/", "topic": "Top"}
+        {"url": "https://time.com/feed/", "topic": "Top"},
+        {"url": "https://time.com/politics/feed/", "topic": "Politics"},
+        {"url": "https://time.com/business/feed/", "topic": "Business"},
+        {"url": "https://time.com/tech/feed/", "topic": "Tech"},
+        {"url": "https://time.com/entertainment/feed/", "topic": "Culture"}
       ]
     },
     {
       "name": "SCMP",
       "feeds": [
-        {"url": "https://www.scmp.com/rss/feed", "topic": "Top"}
+        {"url": "https://www.scmp.com/rss/feed", "topic": "Hong Kong"}
       ]
     },
     {
       "name": "The Washington Post",
+      "hide_unarchived": true,
       "feeds": [
         {"url": "https://news.google.com/rss/search?q=site:washingtonpost.com+when:2d&hl=en-US&gl=US&ceid=US:en", "topic": "Top"}
+      ]
+    },
+    {
+      "name": "Reuters",
+      "hide_unarchived": true,
+      "feeds": [
+        {"url": "https://news.google.com/rss/search?q=site:reuters.com+when:3d&hl=en-GB&gl=GB&ceid=GB:en", "topic": "Wire"}
+      ]
+    },
+    {
+      "name": "Lianhe Zaobao (EN)",
+      "feeds": [
+        {"url": "https://news.google.com/rss/search?q=zaobao.sg+when:7d&hl=en-SG&gl=SG&ceid=SG:en", "topic": "Singapore"}
       ]
     },
     {
       "name": "TVB",
       "feeds": [
         {"type": "tvb", "url": "https://news.tvb.com/tc", "topic": "Hong Kong"}
-      ]
-    },
-    {
-      "name": "Reuters",
-      "feeds": [
-        {"url": "https://news.google.com/rss/search?q=site:reuters.com+when:2d&hl=en-GB&gl=GB&ceid=GB:en", "topic": "Wire"}
-      ]
-    },
-    {
-      "name": "Lianhe Zaobao (EN)",
-      "feeds": [
-        {"url": "https://news.google.com/rss/search?q=zaobao.sg+when:3d&hl=en-SG&gl=SG&ceid=SG:en", "topic": "Singapore"}
       ]
     }
   ]

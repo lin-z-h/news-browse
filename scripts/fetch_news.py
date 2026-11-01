@@ -279,7 +279,7 @@ def collect_items(config: dict) -> list:
             if not feed_url:
                 continue
             topic = (topic or "General").strip()
-            gnews_left = 40  # gnews 源只解码前 N 条（后续条目反正会被截断丢弃）
+            gnews_left = 60  # gnews 源只解码前 N 条（后续条目反正会被截断丢弃）
             try:
                 if isinstance(feed, dict) and feed.get("type") == "tvb":
                     entries = fetch_tvb_entries(feed_url)
@@ -449,6 +449,22 @@ def main() -> int:
             item["wayback_url"] = None
 
         status_count[item["status"]] = status_count.get(item["status"], 0) + 1
+
+    # 隐藏规则：墙源（hide_unarchived）里"探测确认无快照"的文章先不上页面——
+    # 点进去既无快照也读不了正文，是死胡同；等 12h 验证重试或镜像站收录后自动回归。
+    # 只隐藏探测确认过的（cache 有记录）；被人机验证卡住的（challenge）保留展示。
+    hide_map = {s.get("name"): bool(s.get("hide_unarchived")) for s in config.get("sources", [])}
+    visible = []
+    hidden = 0
+    for it in items:
+        if (hide_map.get(it["source"]) and it["status"] == "original"
+                and not it.get("archive_url") and not it.get("wayback_url") and it["url"] in cache):
+            hidden += 1
+            continue
+        visible.append(it)
+    if hidden:
+        _log(f"[main] 隐藏无快照的墙源文章 {hidden} 条（后续快照出现会自动回归）")
+    items = visible
 
     payload = {
         "generated_at": now_iso,
