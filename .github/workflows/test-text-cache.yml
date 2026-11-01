@@ -1,0 +1,59 @@
+name: Test text cache
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "抽取条数"
+        default: "3"
+        type: string
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch via jina -> denoise -> store news-cache -> read back
+        env:
+          NEWS_CACHE_TOKEN: ${{ secrets.NEWS_CACHE_TOKEN }}
+          COUNT: ${{ inputs.count }}
+        run: |
+          python -X utf8 - <<'PY'
+          import json, os, sys
+          sys.path.insert(0, "scripts")
+          import readability as rd
+
+          data = json.load(open("docs/news.json", encoding="utf-8"))
+          n = int(os.environ.get("COUNT", "3"))
+          items = data["items"][:n]
+          token = os.environ["NEWS_CACHE_TOKEN"]
+          repo = "lin-z-h/news-cache"
+          for it in items:
+              blocks = rd.fetch_text(it["url"])
+              stored = False
+              if blocks:
+                  payload = {"url": it["url"], "title": it["title"], "fetched_at": "ci-test",
+                             "blocks": blocks}
+                  stored = rd.cache_put(token, repo, it["id"] + ".json", payload)
+              print(f"[fetch] {it['source'][:20]:<20} blocks={len(blocks or [])} stored={stored} | {it['title'][:36]}")
+              back = rd.cache_read(token, repo, it["id"] + ".json")
+              paras = sum(1 for b in (back or {}).get("blocks", []) if "text" in b)
+              head = ""
+              for b in (back or {}).get("blocks", []):
+                  if "text" in b:
+                      head = b["text"][:60]
+                      break
+              print(f"[read-back] paras={paras} | {head}")
+              print("---")
+          print("DONE")
+          PY
