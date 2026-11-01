@@ -27,6 +27,15 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Debug jina on wayback (with key)
+        env:
+          JINA_KEY: ${{ secrets.JINA_KEY }}
+        run: |
+          curl -s -o /tmp/w.md -w "http:%{http_code} bytes:%{size_download}\n" -m 90 \
+            -H "Authorization: Bearer $JINA_KEY" \
+            "https://r.jina.ai/https://web.archive.org/web/2/https://www.wsj.com/articles/%E4%B8%AD%E5%9B%BD%E5%AF%B9%E5%8F%B0%E6%B9%BE%E5%86%9B%E6%BC%94"
+          head -c 300 /tmp/w.md 2>/dev/null; echo
+
       - name: Fetch via jina -> denoise -> store news-cache -> read back
         env:
           NEWS_CACHE_TOKEN: ${{ secrets.NEWS_CACHE_TOKEN }}
