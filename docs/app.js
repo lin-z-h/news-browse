@@ -154,6 +154,22 @@
     catch (e) { return ""; }
   })();
   const CACHE_REPO = "lin-z-h/news-cache";
+  // 正文链失败记忆（url → 失败时间）：24h 内不再慢试全链，直接给人工兜底入口
+  const FAILKEY = "journal.readfail";
+  let failMem = {};
+  try { failMem = JSON.parse(localStorage.getItem(FAILKEY) || "{}") || {}; } catch (e) { failMem = {}; }
+  for (const k of Object.keys(failMem)) {
+    if (Date.now() - (failMem[k] || 0) > 7 * 864e5) delete failMem[k];
+  }
+  const persistFails = () => { try { localStorage.setItem(FAILKEY, JSON.stringify(failMem)); } catch (e) {} };
+  // 人工捕获正文缓存（id → {ts, title, paras}）：APK 提取并清洗过的内容，30 天有效，再次打开秒出
+  const CAPKEY = "journal.capture";
+  let capCache = {};
+  try { capCache = JSON.parse(localStorage.getItem(CAPKEY) || "{}") || {}; } catch (e) { capCache = {}; }
+  for (const k of Object.keys(capCache)) {
+    if (Date.now() - ((capCache[k] || {}).ts || 0) > 30 * 864e5) delete capCache[k];
+  }
+  const persistCaps = () => { try { localStorage.setItem(CAPKEY, JSON.stringify(capCache)); } catch (e) {} };
   // 各站点正文容器选择器（jina x-target-selector，服务器端有效、浏览器 CORS 下会被忽略）
   const READER_SELECTORS = { "news.tvb.com": ".module_left" };
   // 各站点噪音块过滤（浏览器端兜底）
@@ -260,13 +276,95 @@
     rBody.innerHTML = out.join("");
   }
 
+  const escText = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+  // 带单候选超时的 fetch：超时只废弃这一跳，外层 ctrl（用户关闭阅读器）仍可整体中止
+  function fetchTimeout(url, opts, ms, outer) {
+    const ac = new AbortController();
+    const relay = () => ac.abort();
+    if (outer) {
+      if (outer.aborted) ac.abort();
+      else outer.addEventListener("abort", relay, { once: true });
+    }
+    const t = setTimeout(() => ac.abort(), ms);
+    return fetch(url, Object.assign({}, opts, { signal: ac.signal }))
+      .finally(() => { clearTimeout(t); if (outer) outer.removeEventListener("abort", relay); });
+  }
+
+  function renderPlainParas(paras) {
+    rBody.innerHTML = paras.map(t => `<p>${escText(t)}</p>`).join("");
+  }
+
+  // APK 捕获文本的垃圾特征：人机验证页 / archive 工具条。原生已做过第一道把关，这里兜底
+  const CAP_GARBAGE_RE = /completing the captcha|proves you are (?:a )?human|are you a robot|verify(?:ing)? (?:that )?you are (?:a )?human|security check to access|just a moment|enable javascript and cookies/i;
+  const CAP_DROP_RE = /^(https?:\/\/|www\.)\S+$|^[\w.-]+\.(?:com|net|org|ph|is|li|vn|md|fo|tc|today)(?:\/\S*)?$|^archive\.(?:ph|today|is|li|vn|md|fo|tc)\b|^webpage capture|^saved from|^all \d+|^my blogs|^telegram$|^vk$|^(search|share|report|close|menu|donate|subscribe|newsletter|advertising|cookies?)\b/i;
+
+  // 清洗 APK 提取的纯文本：去 URL 行/工具条行/重复行/与标题重复的行。
+  // 达不到正文量（≥3 段且 ≥120 字，中文短讯也覆盖）返回空 = 拒绝渲染
+  function cleanCaptureText(text, title) {
+    if (CAP_GARBAGE_RE.test(text)) return [];
+    const tnorm = String(title || "").replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
+    const seen = new Set([tnorm]);
+    const out = [];
+    for (let line of String(text).split(/\n+/)) {
+      line = line.trim();
+      if (line.length < 14 || CAP_DROP_RE.test(line)) continue;
+      const k = line.replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
+      if (!k || seen.has(k)) continue;
+      seen.add(k);
+      out.push(line);
+    }
+    return out.join("").length >= 120 && out.length >= 3 ? out : [];
+  }
+
+  // 链路重复失败时的阅读器内错误态：不再自动跳转，把选择权交给用户
+  function renderReaderError(it) {
+    const wrap = document.createElement("div");
+    wrap.className = "rerr";
+    const p = document.createElement("p");
+    p.textContent = "暂时无法获取正文：没有可用快照，或来源拒绝抓取。可以去归档页人工过验证后提取，也可以直接打开原文。";
+    const row = document.createElement("div");
+    row.className = "rerrbtns";
+    const mk = (label, primary, fn) => {
+      const b = el(`<button class="rbtn${primary ? " primary" : ""}"></button>`);
+      b.textContent = label;
+      b.addEventListener("click", fn);
+      return b;
+    };
+    row.appendChild(mk("去归档页提取", true, () => {
+      if (window.Android && Android.captureFor) { try { Android.captureFor(it.id, it.url, it.title || ""); } catch (e) {} }
+      else open(archiveTarget(it));
+    }));
+    row.appendChild(mk("重试", false, () => {
+      delete failMem[it.url];
+      persistFails();
+      openReader(it);
+    }));
+    row.appendChild(mk("打开原文", false, () => open(it.url)));
+    wrap.appendChild(p);
+    wrap.appendChild(row);
+    rBody.innerHTML = "";
+    rBody.appendChild(wrap);
+  }
+
+
   async function openReader(it) {
-    let host = _host(it.url);
-    const hit = readCache[it.url];
     readerEl.hidden = false;
     document.body.style.overflow = "hidden";
     rTitle.textContent = it.title;
     rMeta.textContent = [it.source, it.topic !== "General" ? it.topic : "", relTime(tsOf(it))].filter(Boolean).join(" · ");
+    // APK：阅读模式下隐藏右上角按钮——必须在所有早退分支之前，否则缓存命中路径会漏隐藏、压住 ×
+    try { window.Android && Android.hideUpdate(true); } catch (e) {}
+    const host = _host(it.url);
+    // 1) 人工捕获正文（APK 提取并清洗过）优先——用户亲验内容，最可信且零延迟
+    const cap = capCache[it.id];
+    if (cap && cap.paras && cap.paras.length) {
+      rMeta.textContent += " · 提取正文 " + relTime(cap.ts);
+      renderPlainParas(cap.paras);
+      return;
+    }
+    // 2) 本地 jina 抓取缓存
+    const hit = readCache[it.url];
     if (hit && hit.md) {
       const den = denoiseReader(hit.md, host, it.title);
       if (den) { renderReaderBody(den); return; }
@@ -274,8 +372,7 @@
     rBody.innerHTML = '<div class="rspin"></div>';
     const ctrl = new AbortController();
     readerCtrl = ctrl;
-    try { window.Android && Android.hideUpdate(true); } catch (e) {} // APK：阅读模式下隐藏更新按钮
-    // 私有缓存优先（CI 抓好的正文，仅 token 持有者可读）
+    // 3) 私有缓存（CI 抓好的正文，仅 token 持有者可读）
     if (CACHE_TOKEN) {
       try {
         const r = await fetch("https://api.github.com/repos/" + CACHE_REPO + "/contents/" + it.id + ".json?ref=main",
@@ -283,16 +380,22 @@
         if (r.ok) {
           const j = JSON.parse(new TextDecoder().decode(
             Uint8Array.from(atob((await r.json()).content.replace(/\s/g, "")), c => c.charCodeAt(0))));
-          renderReaderBody({ blocks: j.blocks, esc: s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])) });
+          renderReaderBody({ blocks: j.blocks, esc: escText });
           return;
         }
       } catch (e) { /* 缓存不可用则照旧走链 */ }
     }
-    // 正文获取链：已有快照 → 发布者原文 → Wayback → archive.today 镜像，取首个质量达标者
+    // 4) 失败记忆：24h 内全链失败过 → 不再慢试，直接给人工兜底入口（修“没快照就很卡”）
+    if (Date.now() - (failMem[it.url] || 0) < 864e5) {
+      renderReaderError(it);
+      return;
+    }
+    // 正文获取链：已有快照 → 发布者原文 → archive.today 镜像，取首个质量达标者
+    // （wayback 域已被 jina 封禁，不再浪费一跳；每候选 20s 超时兜底）
     const candidates = [];
     if (it.archive_url) candidates.push(it.archive_url);
     if (it.wayback_url) candidates.push(it.wayback_url);
-    candidates.push(it.url, "https://web.archive.org/web/2/" + it.url, "https://archive.md/" + it.url);
+    candidates.push(it.url, "https://archive.md/" + it.url);
     try {
       for (const cu of candidates) {
         let md = null;
@@ -303,11 +406,12 @@
           if (JINA_KEY) headers["Authorization"] = "Bearer " + JINA_KEY;
           let res;
           try {
-            res = await fetch("https://r.jina.ai/" + cu, { signal: ctrl.signal, headers });
+            res = await fetchTimeout("https://r.jina.ai/" + cu, { headers }, 20000, ctrl.signal);
           } catch (e) {
-            if (ctrl.signal.aborted || !JINA_KEY) throw e;
+            if (ctrl.signal.aborted) throw e;
+            if (!JINA_KEY) continue;
             delete headers.Authorization; // 预检失败退回匿名
-            res = await fetch("https://r.jina.ai/" + cu, { signal: ctrl.signal, headers });
+            res = await fetchTimeout("https://r.jina.ai/" + cu, { headers }, 20000, ctrl.signal);
           }
           if (!res.ok) continue;
           md = await res.text();
@@ -322,22 +426,27 @@
         const old = Object.entries(readCache).sort((a, b) => a[1].ts - b[1].ts);
         while (old.length > 30) { const [k] = old.shift(); delete readCache[k]; }
         try { localStorage.setItem(RKEY, JSON.stringify(readCache)); } catch (e) {}
+        delete failMem[it.url];
+        persistFails();
         return;
       }
-      throw new Error("no usable source");
     } catch (e) {
-      if (ctrl.signal.aborted) return;
+      if (ctrl.signal.aborted) return; // 用户已关闭阅读器
+    }
+    // 全链失败：记忆 24h，首次失败自动进入人工兜底（APK=捕获流程，浏览器=归档页）
+    failMem[it.url] = Date.now();
+    persistFails();
+    if (ctrl.signal.aborted) return;
+    if (window.Android && Android.captureFor) {
       readerEl.hidden = true;
       document.body.style.overflow = "";
-      if (window.Android && Android.captureFor) {
-        // APK：进入人工验证捕获流程——过完验证点浮窗箭头，正文回传阅读模式
-        try { Android.captureFor(it.id, it.url, it.title || ""); } catch (e2) {}
-        showToast(I.arch);
-        return;
-      }
-      showToast(I.x);
-      open(archiveTarget(it)); // 浏览器：照旧走人工归档兜底
+      try { Android.hideUpdate(false); } catch (e2) {}
+      // APK：进入人工验证捕获流程——过完验证点底部“完成验证 · 提取正文”
+      try { Android.captureFor(it.id, it.url, it.title || ""); } catch (e2) {}
+      showToast(I.arch);
+      return;
     }
+    open(archiveTarget(it)); // 浏览器：照旧走人工归档兜底
   }
 
   function closeReader() {
@@ -618,31 +727,24 @@
   });
 
   // —— 启动 ——
-  // 人工验证捕获：APK 从 archive 页面提取的正文，启动时渲染成阅读模式
+  // 人工验证捕获：APK 在 archive 域上提取并过原生校验后回传的正文；JS 再清洗一道，垃圾直接丢弃
   try {
     const capRaw = localStorage.getItem("journal.captureRaw");
     if (capRaw) {
       localStorage.removeItem("journal.captureRaw");
       const cap = JSON.parse(capRaw);
-      if (cap.text && cap.text.length > 80) {
-        const lines = cap.text.split(/\n+/).map(x => x.trim()).filter(x => x.length >= 14);
-        const seenCap = new Set();
-        const paras = [];
-        for (const t of lines) {
-          const k = t.replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
-          if (!k || seenCap.has(k)) continue;
-          seenCap.add(k);
-          paras.push(t);
-        }
-        if (paras.length) {
-          readerEl.hidden = false;
-          document.body.style.overflow = "hidden";
-          rTitle.textContent = cap.title || "已提取文章";
-          rMeta.textContent = "提取正文 · " + new Date().toLocaleDateString();
-          const escC = x => x.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
-          rBody.innerHTML = paras.map(t => `<p>${escC(t)}</p>`).join("");
-          try { window.Android && Android.hideUpdate(true); } catch (e2) {}
-        }
+      const paras = cleanCaptureText(cap.text || "", cap.title);
+      if (cap.id && paras.length) {
+        capCache[cap.id] = { ts: Date.now(), title: cap.title || "", paras };
+        const ces = Object.entries(capCache).sort((a, b) => a[1].ts - b[1].ts);
+        while (ces.length > 20) { const [k] = ces.shift(); delete capCache[k]; }
+        persistCaps();
+        readerEl.hidden = false;
+        document.body.style.overflow = "hidden";
+        rTitle.textContent = cap.title || "已提取文章";
+        rMeta.textContent = "提取正文 · " + relTime(Date.now());
+        renderPlainParas(paras);
+        try { window.Android && Android.hideUpdate(true); } catch (e2) {}
       }
     }
   } catch (e) {}

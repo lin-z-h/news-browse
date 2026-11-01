@@ -19,6 +19,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
@@ -35,6 +36,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.regex.Pattern;
 
 public class MainActivity extends Activity {
 
@@ -45,15 +47,36 @@ public class MainActivity extends Activity {
             SITE_URL + "Journal.apk",
             "https://github.com/lin-z-h/news-browse/releases/download/apk-latest/Journal.apk",
     };
+    // archive.today 全部镜像域：只有落在这些域上才允许提取正文
+    private static final String[] ARCHIVE_HOSTS = {
+            "archive.ph", "archive.today", "archive.is", "archive.li",
+            "archive.vn", "archive.md", "archive.fo", "archive.tc",
+    };
+    // 提取文本的垃圾特征：人机验证页被当正文抓回来时直接拒绝
+    private static final Pattern CAPTCHA_RE = Pattern.compile(
+            "completing the captcha|proves you are (a )?human|are you a robot|verif(y|ying) (that )?you are (a )?human|security check to access|just a moment|enable javascript and cookies",
+            Pattern.CASE_INSENSITIVE);
+    // archive.today 快照页正文在 iframe 里（与主页面同源），工具条文字在 body——优先取更长的那个
+    private static final String EXTRACT_JS =
+            "(function(){var best='';var fr=document.getElementsByTagName('iframe');" +
+            "for(var i=0;i<fr.length;i++){try{var d=fr[i].contentDocument;" +
+            "if(d&&d.body){var t=d.body.innerText||'';if(t.length>best.length)best=t;}}catch(e){}}" +
+            "try{var b=document.body?document.body.innerText:'';if(b.length>best.length)best=b;}catch(e){}" +
+            "return best;})()";
 
     private WebView web;
     private FrameLayout root;
     private ImageButton updateBtn;
     private ProgressBar updateBar;
+    private Button captureBtn;
     private final Handler ui = new Handler(Looper.getMainLooper());
     private boolean updateAvailable = false;
     private volatile boolean downloading = false;
+    // 两个互斥的浮层状态：阅读模式开着（JS 通过 hideUpdate 桥告知）/ 捕获流程进行中
+    private boolean readerOpen = false;
+    private boolean captureMode = false;
     private String capturingFor = null;
+    private String capturingUrl = "";
     private String capturingTitle = "";
     private String pendingCaptureJs = null;
     private boolean captureInjecting = false;
@@ -81,13 +104,20 @@ public class MainActivity extends Activity {
         web.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
-                // 人工验证完成后回到应用首页时，把提取的正文写入 localStorage 并刷新
-                if (captureInjecting && url.startsWith(SITE_URL)) {
-                    view.evaluateJavascript(pendingCaptureJs, r -> {
-                        captureInjecting = false;
-                        pendingCaptureJs = null;
-                        view.evaluateJavascript("location.reload()", null);
-                    });
+                if (url.startsWith(SITE_URL)) {
+                    if (captureInjecting) {
+                        // 人工验证完成、点了提取按钮后回到首页：写入正文并刷新
+                        view.evaluateJavascript(pendingCaptureJs, r -> {
+                            captureInjecting = false;
+                            pendingCaptureJs = null;
+                            view.evaluateJavascript("location.reload()", null);
+                        });
+                    } else if (captureMode) {
+                        // 用户没提取就退回了首页：取消捕获态，恢复更新按钮
+                        captureMode = false;
+                        capturingFor = null;
+                        applyButtons();
+                    }
                 }
             }
         });
@@ -108,13 +138,13 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
-        // JS ↔ 原生桥：阅读模式开/关时隐藏/恢复右上角更新按钮
+        // JS ↔ 原生桥：阅读模式开/关时收敛浮层按钮（更新按钮与捕获按钮互不干扰）
         web.addJavascriptInterface(new Object() {
             @android.webkit.JavascriptInterface
             public void hideUpdate(boolean hide) {
                 ui.post(() -> {
-                    if (downloading) return; // 下载进行中不打断
-                    updateBtn.setVisibility(hide ? View.GONE : View.VISIBLE);
+                    readerOpen = hide;
+                    applyButtons();
                 });
             }
 
@@ -133,25 +163,24 @@ public class MainActivity extends Activity {
             @android.webkit.JavascriptInterface
             public void captureFor(String id, String url, String title) {
                 ui.post(() -> {
+                    captureMode = true;
                     capturingFor = id;
+                    capturingUrl = url == null ? "" : url;
                     capturingTitle = title == null ? "" : title;
-                    updateAvailable = false;
-                    updateBtn.setColorFilter(0xFF1A73E8); // 蓝色 = 待提取
-                    updateBtn.setVisibility(View.VISIBLE);
-                    updateBar.setVisibility(View.GONE);
+                    readerOpen = false;
+                    applyButtons();
                     web.loadUrl("https://archive.ph/newest/" + url);
                 });
             }
         }, "Android");
         web.loadUrl(SITE_URL);
 
-        // 右上角更新按钮：圆形外框 + 上箭头；默认灰色，有更新时箭头变蓝
+        // 右上角更新按钮：只管应用更新。圆形外框 + 上箭头，默认灰色，有更新时变蓝
         updateBtn = new ImageButton(this);
         updateBtn.setImageResource(R.drawable.ic_update);
         updateBtn.setColorFilter(0xFF8D867A);
         updateBtn.setBackground(circleBg(0x66FFFFFF, 0x33888888));
         updateBtn.setOnClickListener(v -> {
-            if (capturingFor != null) { extractCaptured(); return; }
             if (updateAvailable && !downloading) startDownload();
         });
         FrameLayout.LayoutParams blp = new FrameLayout.LayoutParams(dp(40), dp(40));
@@ -172,8 +201,37 @@ public class MainActivity extends Activity {
         plp.rightMargin = dp(12);
         root.addView(updateBar, plp);
 
+        // 捕获确认按钮：与更新按钮彻底分开。只在捕获流程中出现在底部中央，文字说明用途
+        captureBtn = new Button(this);
+        captureBtn.setText("完成验证 · 提取正文");
+        captureBtn.setAllCaps(false);
+        captureBtn.setTextSize(14);
+        captureBtn.setTextColor(0xFFFFFFFF);
+        captureBtn.setMinWidth(0);
+        captureBtn.setMinHeight(0);
+        captureBtn.setPadding(dp(20), 0, dp(20), 0);
+        GradientDrawable capBg = new GradientDrawable();
+        capBg.setCornerRadius(dp(22));
+        capBg.setColor(0xFF1A73E8);
+        captureBtn.setBackground(capBg);
+        captureBtn.setOnClickListener(v -> extractCaptured());
+        FrameLayout.LayoutParams clp = new FrameLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT, dp(44));
+        clp.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+        clp.bottomMargin = dp(28);
+        root.addView(captureBtn, clp);
+
+        applyButtons();
         setContentView(root);
         checkUpdate();
+    }
+
+    // 浮层按钮可见性的唯一裁决处：更新按钮只在「无更新弹窗下载、非阅读模式、非捕获态」时显示
+    private void applyButtons() {
+        boolean showUpdate = !readerOpen && !captureMode && !downloading;
+        updateBtn.setVisibility(showUpdate ? View.VISIBLE : View.GONE);
+        updateBar.setVisibility(downloading ? View.VISIBLE : View.GONE);
+        captureBtn.setVisibility(captureMode ? View.VISIBLE : View.GONE);
     }
 
     private GradientDrawable circleBg(int fill, int stroke) {
@@ -214,8 +272,7 @@ public class MainActivity extends Activity {
 
     private void startDownload() {
         downloading = true;
-        updateBtn.setVisibility(View.GONE);
-        updateBar.setVisibility(View.VISIBLE);
+        applyButtons();
         updateBar.setProgress(0);
         // 圆 → 圆角长框的变形动画
         ValueAnimator va = ValueAnimator.ofInt(dp(40), dp(170));
@@ -229,7 +286,6 @@ public class MainActivity extends Activity {
         new Thread(() -> {
             File apk = new File(getCacheDir(), "journal-update.apk");
             boolean ok = false;
-            String lastErr = null;
             for (String url : APK_URLS) { // 多源依次尝试：Pages 同源 → GitHub Release
                 try {
                     HttpURLConnection c = (HttpURLConnection) new URL(url).openConnection();
@@ -261,31 +317,23 @@ public class MainActivity extends Activity {
                         ok = true;
                         break;
                     }
-                } catch (Exception e) {
-                    lastErr = type(e) + ": " + String.valueOf(e.getMessage()).substring(0, Math.min(60, String.valueOf(e.getMessage()).length()));
+                } catch (Exception ignored) {
                 }
-                if (downloading) break; // 被关闭/中止
+                if (!downloading) break; // 被关闭/中止
             }
             final boolean okF = ok;
             ui.post(() -> {
                 downloading = false;
+                applyButtons();
                 if (okF) {
                     install(apk);
-                    setUpdateAvailable(false); // 更新成功，恢复灰色圆角
-                    updateBtn.setVisibility(View.VISIBLE);
-                    updateBar.setVisibility(View.GONE);
+                    setUpdateAvailable(false); // 更新成功，恢复灰色
                 } else {
                     Toast.makeText(MainActivity.this, "下载失败，请检查网络后点箭头重试", Toast.LENGTH_LONG).show();
                     setUpdateAvailable(true);
-                    updateBtn.setVisibility(View.VISIBLE);
-                    updateBar.setVisibility(View.GONE);
                 }
             });
         }).start();
-    }
-
-    private String type(Throwable t) {
-        return t.getClass().getSimpleName();
     }
 
     private void install(File apk) {
@@ -299,27 +347,54 @@ public class MainActivity extends Activity {
         }
     }
 
+    private boolean isArchivePage(String u) {
+        if (u == null) return false;
+        try {
+            String h = new URL(u).getHost();
+            if (h == null) return false;
+            for (String a : ARCHIVE_HOSTS) {
+                if (h.equals(a) || h.endsWith("." + a)) return true;
+            }
+        } catch (Exception ignored) {
+        }
+        return false;
+    }
+
+    // 捕获确认：当前页必须是 archive 镜像域，提取文本要过验证页/长度关，否则提示用户留在原地重试
     private void extractCaptured() {
-        final String fid = capturingFor == null ? "" : capturingFor;
-        final String ftitle = capturingTitle;
-        web.evaluateJavascript("(document.body ? document.body.innerText : '')", value -> {
+        if (!captureMode) return;
+        if (!isArchivePage(web.getUrl())) {
+            Toast.makeText(this, "请先在归档页完成人机验证后再提取", Toast.LENGTH_LONG).show();
+            return;
+        }
+        web.evaluateJavascript(EXTRACT_JS, value -> {
             String text = "";
             try {
                 Object o = new org.json.JSONTokener(value).nextValue();
                 if (o instanceof String) text = (String) o;
             } catch (Exception ignored) {}
-            String textJson = org.json.JSONObject.quote(text);
-            String titleJson = org.json.JSONObject.quote(ftitle);
-            pendingCaptureJs = "try{localStorage.setItem('journal.captureRaw', JSON.stringify({id:'"
-                    + fid + "', title:" + titleJson + ", text:" + textJson + "}))}catch(e){}";
+            // 工具条/验证页行都很短：正文至少有 3 行 ≥24 字符（中文短讯一条就够长），验证页另有特征词把关
+            int longLines = 0;
+            for (String ln : text.split("\n")) {
+                if (ln.trim().length() >= 24) longLines++;
+            }
+            boolean garbage = text.length() < 200 || longLines < 3 || CAPTCHA_RE.matcher(text).find();
+            if (garbage) {
+                Toast.makeText(this, "未提取到正文：请先完成人机验证，等快照页加载完再点", Toast.LENGTH_LONG).show();
+                return; // 留在归档页，捕获按钮保持可按，用户过完验证再点
+            }
+            String textJson = JSONObject.quote(text);
+            String titleJson = JSONObject.quote(capturingTitle);
+            String idJson = JSONObject.quote(capturingFor == null ? "" : capturingFor);
+            String urlJson = JSONObject.quote(capturingUrl);
+            pendingCaptureJs = "try{localStorage.setItem('journal.captureRaw', JSON.stringify({id:"
+                    + idJson + ", title:" + titleJson + ", url:" + urlJson + ", text:" + textJson + "}))}catch(e){}";
             captureInjecting = true;
+            captureMode = false;
+            capturingFor = null;
+            applyButtons();
             web.loadUrl(SITE_URL);
         });
-    }
-
-    private void restoreButton() {
-        updateBar.setVisibility(View.GONE);
-        updateBtn.setVisibility(View.VISIBLE);
     }
 
     @Override
