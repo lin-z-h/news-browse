@@ -341,6 +341,26 @@
   $("#readerClose").addEventListener("click", closeReader);
   document.addEventListener("keydown", e => { if (e.key === "Escape" && !readerEl.hidden) closeReader(); });
 
+  // 收藏清单同步到私有仓库：CI 读取后优先为收藏文章补正文（保证 15 天后仍可读）
+  function syncFavoritesRemote() {
+    if (!CACHE_TOKEN) return;
+    const list = Object.entries(saved).map(([id, v]) => {
+      const o = savedObj(v);
+      return { id, url: o.url || "", ts: o.ts || 0 };
+    }).filter(x => x.url);
+    const json = JSON.stringify({ updated_at: new Date().toISOString(), items: list });
+    const headers = { Authorization: "Bearer " + CACHE_TOKEN, Accept: "application/vnd.github+json" };
+    const api = "https://api.github.com/repos/" + CACHE_REPO + "/contents/favorites.json";
+    fetch(api, { headers })
+      .then(r => r.ok ? r.json() : null)
+      .then(j => {
+        const body = { message: "favorites sync", content: btoa(unescape(encodeURIComponent(json))) };
+        if (j && j.sha) body.sha = j.sha;
+        return fetch(api, { method: "PUT", headers, body: JSON.stringify(body) });
+      })
+      .catch(() => {});
+  }
+
   function toggleSave(it, btn) {
     if (saved[it.id]) {
       delete saved[it.id];
@@ -356,6 +376,7 @@
       btn.setAttribute("aria-pressed", "true");
     }
     persist();
+    syncFavoritesRemote();
     showToast(saved[it.id] ? I.check : I.bookmark);
     if (state.savedOnly && !saved[it.id]) render();
   }
@@ -621,6 +642,7 @@
         .map(e => e[0]);
       state.generatedAt = data.generated_at || null;
     } catch (e) { /* 数据缺失时显示空态图标 */ }
+    syncFavoritesRemote();
     syncSavedFromItems();
     buildTrack(sourceTrack, [{ label: "All", value: null }, ...state.sources.map(s => ({ label: s, value: s }))]);
     buildTrack(topicTrack, [{ label: "All", value: null }, ...state.topics.map(t => ({ label: t, value: t }))]);

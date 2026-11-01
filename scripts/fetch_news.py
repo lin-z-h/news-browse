@@ -472,7 +472,8 @@ def main() -> int:
     cache_token = os.environ.get("NEWS_CACHE_TOKEN", "").strip()
     jina_key = os.environ.get("JINA_KEY", "").strip()
     text_budget = _env_int("READ_TEXT_BUDGET", 40)
-    if cache_token and text_budget > 0:
+    fav_budget = _env_int("FAV_TEXT_BUDGET", 20)
+    if cache_token:
         import readability as rd
         stored = 0
         try:
@@ -495,6 +496,39 @@ def main() -> int:
                 time.sleep(1)
             if stored:
                 _log(f"[text] 正文缓存新增 {stored} 条 → lin-z-h/news-cache")
+
+            # 收藏保障：读取私有仓库里的收藏清单，为掉出 news.json 的收藏文章补正文
+            # （收藏 = 用户明确要长期可读的内容，独立预算，优先级高于普通文章）
+            try:
+                fav = rd.cache_read(cache_token, "lin-z-h/news-cache", "favorites.json")
+            except Exception:
+                fav = None
+            fav_list = (fav or {}).get("items") or []
+            if fav_list:
+                fav_ok = 0
+                for f in fav_list:
+                    if fav_budget <= 0:
+                        break
+                    u = (f.get("url") or "").strip()
+                    fid = f.get("id")
+                    if not u or not fid or not re.match(r"^https?://", u):
+                        continue
+                    marker = cache.get("text:" + u)
+                    if marker and cache_store.parse_iso(marker.get("at")):
+                        age = now - cache_store.parse_iso(marker.get("at"))
+                        if age < (180 * 86400 if marker.get("ok") else 3 * 86400):
+                            continue
+                    fav_budget -= 1
+                    blocks = rd.fetch_text(u, key=jina_key or None)
+                    payload = {"url": u, "title": f.get("title") or fid, "fetched_at": now_iso,
+                               "blocks": blocks or []}
+                    ok = rd.cache_put(cache_token, "lin-z-h/news-cache", fid + ".json", payload)
+                    cache["text:" + u] = {"at": now_iso, "ok": 1 if ok else 0}
+                    if ok:
+                        fav_ok += 1
+                    time.sleep(1)
+                if fav_ok:
+                    _log(f"[text] 收藏文章正文补齐 {fav_ok} 条")
         except Exception as exc:
             _log(f"[warn] 正文缓存失败: {type(exc).__name__}: {str(exc)[:80]}")
 

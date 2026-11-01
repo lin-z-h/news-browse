@@ -113,6 +113,8 @@ jobs:
 
       - name: Publish app-version.json (APK 更新检测用)
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           VC=$(grep versionCode apk/version.properties | cut -d= -f2)
           VN=$(grep versionName apk/version.properties | cut -d= -f2)
           printf '{"versionCode": %s, "versionName": "%s"}\n' "$VC" "$VN" > docs/app-version.json
