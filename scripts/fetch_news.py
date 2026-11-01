@@ -482,7 +482,7 @@ def main() -> int:
                 marker = cache.get("text:" + it["url"])
                 if marker and cache_store.parse_iso(marker.get("at")):
                     age = now - cache_store.parse_iso(marker.get("at"))
-                    if age < (180 * 86400 if marker.get("ok") else 3 * 86400):
+                    if age < (30 * 86400 if marker.get("ok") else 3 * 86400):
                         continue
                 text_budget -= 1
                 blocks = rd.fetch_text(it["url"], key=jina_key or None)
