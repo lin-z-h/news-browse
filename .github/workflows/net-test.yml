@@ -1,0 +1,22 @@
+name: Net test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  net:
+    runs-on: ubuntu-latest
+    steps:
+      - name: r.jina.ai 连通性（发布者 + wayback 域）
+        run: |
+          echo "--- 1) publisher via jina ---"
+          curl -s -o /tmp/r.md -w "http:%{http_code} bytes:%{size_download} time:%{time_total}s\n" -m 90 \
+            "https://r.jina.ai/https://www.theguardian.com/world/2026/oct/31/police-clash-rioters-after-largely-peaceful-protests-across-france" || echo "curl failed"
+          head -c 180 /tmp/r.md 2>/dev/null; echo
+          echo "--- 2) wayback domain via jina (anonymous) ---"
+          curl -s -o /tmp/w.md -w "http:%{http_code} bytes:%{size_download}\n" -m 90 \
+            "https://r.jina.ai/https://web.archive.org/web/2/https://www.nytimes.com/2024/11/06/world/europe/germany-coalition-collapse-scholz.html" || echo "curl failed"
+          head -c 180 /tmp/w.md 2>/dev/null; echo
+          echo "--- 3) web.archive.org 直连（不经 jina）---"
+          curl -s -o /dev/null -w "http:%{http_code} time:%{time_total}s\n" -m 60 \
+            -L "https://web.archive.org/web/2/https://www.nytimes.com/2024/11/06/world/europe/germany-coalition-collapse-scholz.html" || echo "curl failed"
