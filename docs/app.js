@@ -150,13 +150,15 @@
     "news.tvb.com": [/^\d+\.\s[\s\S]*\d+\.\s/, /^publish[:：]/i, /^by[:：]/i],
   };
   // 错误页/验证页特征：jina 会把 403 页面当"内容"带回来，必须识别拒绝
-  const GARBAGE_RE = /are you a robot|access denied|just a moment|unusual traffic|verify (?:you are )?human|403 forbidden|captcha|enable javascript and cookies|are you human/i;
+  const GARBAGE_RE = /are you a robot|access denied|just a moment|unusual traffic|verify (?:you are )?human|403 forbidden|captcha|enable javascript and cookies|are you human|error code|request id|we apologise for any inconvenience|for help please visit/i;
+  // 全局噪音块（任何站点、任何位置出现即丢弃）
+  const READER_NOISE_RE = /^enter your email|after newsletter promotion|^free newsletter|^sign up to |^gift this article|^add us on google|^terms and conditions|^copyright \d{4}|^thanks for sharing|^download now|^most viewed|^related storie|^advertisement/i;
 
   function _host(u) { try { return new URL(u).host; } catch (e) { return ""; } }
 
   // 清洗 jina markdown → 文本块/图片块。返回 null = 垃圾（错误页/太短），上层换下一个来源。
   // 结束边界标记：命中即认为正文结束（募捐区/推荐区/页脚）
-  const READER_END_RE = /^#{0,4}\s*(most viewed|related storie|more from|explore more on these topics|topics in this article|reuse this content|advertisement|year-end fundraiser|at this unsettling time|now live|please contribute|was this helpful|sign up for our email|fund independent)/i;
+  const READER_END_RE = /^#{0,4}\s*(most viewed|related storie|more from|explore more on these topics|topics in this article|reuse this content|advertisement|year-end fundraiser|at this unsettling time|now live|please contribute|was this helpful|sign up for our email|fund independent|what readers are saying|do not sell or share|get unlimited access|we've updated our terms|claim this offer|©\s*20\d\d|already have an account|two ways to read)/i;
 
   // 清洗 jina markdown → 文本块/图片块。返回 null = 垃圾（错误页/太短），上层换下一个来源。
   // title 用于剔除与卡片标题重复的正文标题，避免双标题。
@@ -190,7 +192,7 @@
       const head = /^#{1,3}\s/.test(b);
       b = b.replace(/^#{1,4}\s+/gm, "")
            .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-           .replace(/\[[^\]]*\]\([^)]*\)/g, "")
+           .replace(/\[[^\]]*\]\([^)]*\)/g, "$1")
            .replace(/\*\*([^*]+)\*\*/g, "$1")
            .replace(/^[-*]\s+/gm, "· ")
            .trim();
@@ -218,11 +220,16 @@
     for (const x of clean.slice(lo, hi)) {
       if (x.img) { kept.push(x); continue; }
       if (x.text.length < 14) continue;
+      if (READER_NOISE_RE.test(x.text)) continue;
+      if (/cookie/i.test(x.text)) continue; // cookie 同意墙
+      if (/^[·\s—–-]+$/.test(x.text)) continue; // 纯分隔符
+      if (/^what readers are saying/i.test(x.text)) continue; // 评论摘要
       const k = norm(x.text);
       if (!k || seen.has(k)) continue;
       seen.add(k);
       kept.push(x);
     }
+    while (kept.length && kept[0].text && kept[0].text.length < 40) kept.shift(); // 开头家具修剪
     const total = kept.filter(x => x.text).map(x => x.text).join("").length;
     if (total < 40) return null;
     return { blocks: kept, esc };
