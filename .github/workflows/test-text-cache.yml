@@ -60,6 +60,7 @@ jobs:
                                     "id": hashlib.sha1(u.encode()).hexdigest()[:12]})
           else:
               items = data["items"][:n]
+          repo = "lin-z-h/news-cache"
           token = os.environ["NEWS_CACHE_TOKEN"]
           jkey = os.environ.get("JINA_KEY", "").strip() or None
           print(f"jina key: {'已配置' if jkey else '未配置（匿名）'}")
@@ -69,7 +70,7 @@ jobs:
               if blocks:
                   payload = {"url": it["url"], "title": it["title"], "fetched_at": "ci-test",
                              "blocks": blocks}
-                  stored = rd.cache_put(token, repo := "lin-z-h/news-cache", it["id"] + ".json", payload)
+                  stored = rd.cache_put(token, repo, it["id"] + ".json", payload)
               print(f"[fetch] blocks={len(blocks or [])} stored={stored} | {it['url'][:70]}")
               back = rd.cache_read(token, repo, it["id"] + ".json")
               paras = sum(1 for b in (back or {}).get("blocks", []) if "text" in b)
