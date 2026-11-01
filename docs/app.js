@@ -155,7 +155,12 @@
   function _host(u) { try { return new URL(u).host; } catch (e) { return ""; } }
 
   // 清洗 jina markdown → 文本块/图片块。返回 null = 垃圾（错误页/太短），上层换下一个来源。
-  function denoiseReader(md, host) {
+  // 结束边界标记：命中即认为正文结束（募捐区/推荐区/页脚）
+  const READER_END_RE = /^#{0,4}\s*(most viewed|related storie|more from|explore more on these topics|topics in this article|reuse this content|advertisement|year-end fundraiser|at this unsettling time|now live|please contribute|was this helpful|sign up for our email|fund independent)/i;
+
+  // 清洗 jina markdown → 文本块/图片块。返回 null = 垃圾（错误页/太短），上层换下一个来源。
+  // title 用于剔除与卡片标题重复的正文标题，避免双标题。
+  function denoiseReader(md, host, title) {
     let body = md;
     // "URL Source:" 是 jina 实际抓取的最终页面，作为相对图片地址的解析基准
     let base = "";
@@ -173,6 +178,7 @@
       if (u.startsWith("/") && base) return base + u;
       return null;
     };
+    const norm = s => String(s).replace(/[\s·•—–'"",.。！？!?:：()（）「」『』|#[\]]/g, "").toLowerCase();
     const raw = body.split(/\n{2,}/).map(s => s.trim()).filter(Boolean);
     const clean = [];
     for (let b of raw) {
@@ -181,35 +187,45 @@
         const u = absImg(im[1]);
         if (u) { clean.push({ img: u }); continue; }
       }
-      b = b.replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+      const head = /^#{1,3}\s/.test(b);
+      b = b.replace(/^#{1,4}\s+/gm, "")
+           .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
            .replace(/\[[^\]]*\]\([^)]*\)/g, "")
            .replace(/\*\*([^*]+)\*\*/g, "$1")
-           .replace(/^#+\s*/gm, "")
            .replace(/^[-*]\s+/gm, "· ")
            .trim();
-      if (b) clean.push({ text: b });
+      if (b) clean.push({ text: b, head });
     }
-    // 从首个"句子块"（导航/面包屑无句号）开始；站点噪音块作为结束边界
     const isSentence = b => /[。！？]/.test(b) || (/[.!?]/.test(b) && b.length > 90);
+    const isNoiseHead = b => /^(support|sign in|sign|share|search|menu|close|fund independent|most viewed|related|live)/i.test(b);
     let dropRes = null;
     try { dropRes = READER_DROP[host]; } catch (e) {}
-    const textPos = [];
-    clean.forEach((x, i) => { if (x.text) textPos.push(i); });
-    const ttexts = textPos.map(i => clean[i].text);
-    const sRel = ttexts.findIndex(b => isSentence(b) && b.length >= 20);
-    let eRel = -1;
-    if (sRel >= 0 && dropRes) eRel = ttexts.findIndex((b, i) => i > sRel && dropRes.some(rx => rx.test(b)));
-    if (sRel < 0) {
-      if (ttexts.length < 2 || ttexts.join("").length < 400) return null;
-      return { blocks: clean, esc };
+    const tnorm = norm(title);
+    // 起点：首个像文章标题的标题块（较长且非站点噪音），否则首个句子块
+    let startIdx = clean.findIndex(x => x.head && x.text.length >= 25 && !isNoiseHead(x.text));
+    if (startIdx < 0) startIdx = clean.findIndex(x => x.text && isSentence(x.text) && x.text.length >= 20);
+    let endIdx = -1;
+    if (startIdx >= 0) {
+      endIdx = clean.findIndex((x, i) => i > startIdx && (
+        (dropRes && dropRes.some(rx => rx.test(x.text))) ||
+        (x.text && READER_END_RE.test(x.text))));
     }
-    const kept = ttexts.slice(sRel, eRel >= 0 ? eRel : undefined).join("").length;
-    const keptN = (eRel >= 0 ? eRel : ttexts.length) - sRel;
-    if (kept < 40 || keptN < 1) return null;
-    const lo = textPos[sRel];
-    const hi = eRel >= 0 ? textPos[eRel] : clean.length;
-    const blocks = clean.slice(lo, hi).filter(b => (b.img && !/^blob:/i.test(b.img)) || (b.text && b.text.length >= 14));
-    return { blocks, esc };
+    // 终裁：切出正文区间 → 去重（含与卡片标题重复者）→ 丢弃短噪声块
+    const seen = new Set([tnorm]);
+    const lo = startIdx >= 0 ? startIdx : 0;
+    const hi = endIdx > startIdx ? endIdx : clean.length;
+    const kept = [];
+    for (const x of clean.slice(lo, hi)) {
+      if (x.img) { kept.push(x); continue; }
+      if (x.text.length < 14) continue;
+      const k = norm(x.text);
+      if (!k || seen.has(k)) continue;
+      seen.add(k);
+      kept.push(x);
+    }
+    const total = kept.filter(x => x.text).map(x => x.text).join("").length;
+    if (total < 40) return null;
+    return { blocks: kept, esc };
   }
 
   function renderReaderBody(den) {
@@ -218,6 +234,7 @@
     for (const b of den.blocks) {
       if (b.img) { out.push(`<img class="rimg" loading="lazy" referrerpolicy="no-referrer" src="${esc(b.img)}" alt="">`); continue; }
       let t = b.text, tag = "p";
+      if (b.head) tag = "h2";
       const h = t.match(/^(#{1,4})\s+(.*)$/s);
       if (h) { t = h[2]; tag = "h" + Math.min(4, h[1].length + 1); }
       if (t) out.push(`<${tag}>${esc(t)}</${tag}>`);
@@ -233,7 +250,7 @@
     rTitle.textContent = it.title;
     rMeta.textContent = [it.source, it.topic !== "General" ? it.topic : "", relTime(tsOf(it))].filter(Boolean).join(" · ");
     if (hit && hit.md) {
-      const den = denoiseReader(hit.md, host);
+      const den = denoiseReader(hit.md, host, it.title);
       if (den) { renderReaderBody(den); return; }
     }
     rBody.innerHTML = '<div class="rspin"></div>';
@@ -259,7 +276,7 @@
           if (ctrl.signal.aborted) throw e;
           continue;
         }
-        const den = denoiseReader(md, host);
+        const den = denoiseReader(md, host, it.title);
         if (!den) continue;
         renderReaderBody(den);
         readCache[it.url] = { ts: Date.now(), md, src: cu };

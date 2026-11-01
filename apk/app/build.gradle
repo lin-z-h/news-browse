@@ -2,8 +2,13 @@ plugins {
     id 'com.android.application'
 }
 
-// versionCode 用构建分钟数自增，保证侧载覆盖安装时始终升级
-def vc = (System.currentTimeMillis() / 60000L) as int
+// versionCode 优先读 CI 写入的 version.properties（保证线上 app-version.json 与
+// APK 内部版本一致，用于更新检测）；本地直接构建时退化为"构建分钟数"。
+def vcProps = new Properties()
+def vpFile = rootProject.file("version.properties")
+if (vpFile.exists()) vcProps.load(new FileInputStream(vpFile))
+def vc = (vcProps.getProperty("versionCode") ?: "${(System.currentTimeMillis() / 60000L) as int}") as int
+def vName = vcProps.getProperty("versionName") ?: new Date().format("yyyy.MM.dd")
 
 android {
     namespace 'com.linz.journal'
@@ -14,7 +19,7 @@ android {
         minSdk 24
         targetSdk 34
         versionCode vc
-        versionName new Date().format("yyyy.MM.dd")
+        versionName vName
     }
 
     signingConfigs {
@@ -42,4 +47,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.13.1' // FileProvider：更新包安装
 }

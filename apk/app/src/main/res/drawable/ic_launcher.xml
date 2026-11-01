@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <corners android:radius="22dp"/>
-            <solid android:color="#1B1915"/>
-        </shape>
-    </item>
-    <item android:top="32dp" android:bottom="66dp" android:left="28dp" android:right="28dp">
-        <shape android:shape="rectangle">
-            <solid android:color="#F6F4EF"/>
-        </shape>
-    </item>
-    <item android:top="52dp" android:bottom="46dp" android:left="28dp" android:right="28dp">
-        <shape android:shape="rectangle">
-            <solid android:color="#F6F4EF"/>
-        </shape>
-    </item>
-    <item android:top="72dp" android:bottom="26dp" android:left="28dp" android:right="48dp">
-        <shape android:shape="rectangle">
-            <solid android:color="#F6F4EF"/>
-        </shape>
-    </item>
-</layer-list>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 白底（Bloomberg 式：纯色方块 + 衬线字母） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0h108v108h-108z"/>
+    <!-- 黑色 J：衬线顶横 + 竖干 + 底部左钩 -->
+    <path
+        android:strokeColor="#111111"
+        android:strokeWidth="12"
+        android:strokeLineCap="square"
+        android:pathData="M46,28 H74"/>
+    <path
+        android:strokeColor="#111111"
+        android:strokeWidth="12"
+        android:strokeLineCap="butt"
+        android:pathData="M62,28 V66 A18,18 0 0 1 28,66 V58"/>
+</vector>
