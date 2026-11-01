@@ -23,6 +23,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -465,6 +466,37 @@ def main() -> int:
     if hidden:
         _log(f"[main] 隐藏无快照的墙源文章 {hidden} 条（后续快照出现会自动回归）")
     items = visible
+
+    # 正文缓存（私有仓库 news-cache，仅 token 持有者可见）：CI 抓正文并存入，
+    # 阅读模式优先读取，摆脱对本地网络的依赖。只存清洗后的段落与图片地址。
+    cache_token = os.environ.get("NEWS_CACHE_TOKEN", "").strip()
+    jina_key = os.environ.get("JINA_KEY", "").strip()
+    text_budget = _env_int("READ_TEXT_BUDGET", 40)
+    if cache_token and text_budget > 0:
+        import readability as rd
+        stored = 0
+        try:
+            for it in items:
+                if text_budget <= 0:
+                    break
+                marker = cache.get("text:" + it["url"])
+                if marker and cache_store.parse_iso(marker.get("at")):
+                    age = now - cache_store.parse_iso(marker.get("at"))
+                    if age < (180 * 86400 if marker.get("ok") else 3 * 86400):
+                        continue
+                text_budget -= 1
+                blocks = rd.fetch_text(it["url"], key=jina_key or None)
+                payload = {"url": it["url"], "title": it["title"], "fetched_at": now_iso,
+                           "blocks": blocks or []}
+                ok = rd.cache_put(cache_token, "lin-z-h/news-cache", it["id"] + ".json", payload)
+                cache["text:" + it["url"]] = {"at": now_iso, "ok": 1 if ok else 0}
+                if ok:
+                    stored += 1
+                time.sleep(1)
+            if stored:
+                _log(f"[text] 正文缓存新增 {stored} 条 → lin-z-h/news-cache")
+        except Exception as exc:
+            _log(f"[warn] 正文缓存失败: {type(exc).__name__}: {str(exc)[:80]}")
 
     payload = {
         "generated_at": now_iso,

@@ -37,6 +37,10 @@ jobs:
           ARCHIVE_UA: ${{ secrets.ARCHIVE_UA }}
           # 可选：nopecha 打码服务 key（小规模自动解题尝试）
           NOPECHA_API_KEY: ${{ secrets.NOPECHA_API_KEY }}
+          # 可选：jina key（提升正文抓取配额）+ 私有正文缓存 token
+          JINA_KEY: ${{ secrets.JINA_KEY }}
+          NEWS_CACHE_TOKEN: ${{ secrets.NEWS_CACHE_TOKEN }}
+          READ_TEXT_BUDGET: "40"
           # 每轮最多探测的新链接数
           MAX_PROBES_PER_RUN: "60"
         run: python scripts/fetch_news.py

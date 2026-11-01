@@ -149,6 +149,11 @@
     try { return localStorage.getItem("journal.jinakey") || ""; }
     catch (e) { return ""; }
   })();
+  const CACHE_TOKEN = (() => {
+    try { return localStorage.getItem("journal.cachetoken") || ""; }
+    catch (e) { return ""; }
+  })();
+  const CACHE_REPO = "lin-z-h/news-cache";
   // 各站点正文容器选择器（jina x-target-selector，服务器端有效、浏览器 CORS 下会被忽略）
   const READER_SELECTORS = { "news.tvb.com": ".module_left" };
   // 各站点噪音块过滤（浏览器端兜底）
@@ -269,6 +274,19 @@
     rBody.innerHTML = '<div class="rspin"></div>';
     const ctrl = new AbortController();
     readerCtrl = ctrl;
+    // 私有缓存优先（CI 抓好的正文，仅 token 持有者可读）
+    if (CACHE_TOKEN) {
+      try {
+        const r = await fetch("https://api.github.com/repos/" + CACHE_REPO + "/contents/" + it.id + ".json?ref=main",
+          { headers: { Authorization: "Bearer " + CACHE_TOKEN, Accept: "application/vnd.github+json" } });
+        if (r.ok) {
+          const j = JSON.parse(new TextDecoder().decode(
+            Uint8Array.from(atob((await r.json()).content.replace(/\s/g, "")), c => c.charCodeAt(0))));
+          renderReaderBody({ blocks: j.blocks, esc: s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])) });
+          return;
+        }
+      } catch (e) { /* 缓存不可用则照旧走链 */ }
+    }
     // 正文获取链：已有快照 → 发布者原文 → Wayback → archive.today 镜像，取首个质量达标者
     const candidates = [];
     if (it.archive_url) candidates.push(it.archive_url);
@@ -564,12 +582,21 @@
   $(".masthead h1").addEventListener("dblclick", () => {
     const cur = (() => { try { return localStorage.getItem("journal.jinakey") || ""; } catch (e) { return ""; } })();
     const k = window.prompt("Jina API key（留空则清除）:", cur);
-    if (k === null) return;
-    try {
-      if (k.trim()) localStorage.setItem("journal.jinakey", k.trim());
-      else localStorage.removeItem("journal.jinakey");
-      location.reload();
-    } catch (e) {}
+    if (k !== null) {
+      try {
+        if (k.trim()) localStorage.setItem("journal.jinakey", k.trim());
+        else localStorage.removeItem("journal.jinakey");
+      } catch (e) {}
+    }
+    const curT = (() => { try { return localStorage.getItem("journal.cachetoken") || ""; } catch (e) { return ""; } })();
+    const t = window.prompt("私有正文缓存 token（fine-grained PAT，留空则清除）:", curT);
+    if (t !== null) {
+      try {
+        if (t.trim()) localStorage.setItem("journal.cachetoken", t.trim());
+        else localStorage.removeItem("journal.cachetoken");
+      } catch (e) {}
+    }
+    location.reload();
   });
 
   async function load() {
