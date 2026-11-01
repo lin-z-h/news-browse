@@ -278,8 +278,8 @@
 
   const escText = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
 
-  // 带单候选超时的 fetch：超时只废弃这一跳，外层 ctrl（用户关闭阅读器）仍可整体中止
-  function fetchTimeout(url, opts, ms, outer) {
+  // 带总超时的 fetch→text：头和体共用一个时限，超时/失败返回 {ok:false}，外层 ctrl（用户关闭阅读器）仍可整体中止
+  async function fetchTextTimeout(url, opts, ms, outer) {
     const ac = new AbortController();
     const relay = () => ac.abort();
     if (outer) {
@@ -287,12 +287,47 @@
       else outer.addEventListener("abort", relay, { once: true });
     }
     const t = setTimeout(() => ac.abort(), ms);
-    return fetch(url, Object.assign({}, opts, { signal: ac.signal }))
-      .finally(() => { clearTimeout(t); if (outer) outer.removeEventListener("abort", relay); });
+    try {
+      const res = await fetch(url, Object.assign({}, opts, { signal: ac.signal }));
+      if (!res.ok) return { ok: false, status: res.status };
+      const text = await res.text();
+      return { ok: true, text };
+    } finally {
+      clearTimeout(t);
+      if (outer) outer.removeEventListener("abort", relay);
+    }
   }
 
   function renderPlainParas(paras) {
     rBody.innerHTML = paras.map(t => `<p>${escText(t)}</p>`).join("");
+  }
+
+  // Wayback 快照直接抓取的解析：jina 永久封禁 web.archive.org 域，经 jina 必失败，
+  // 而 wayback 页面本身支持 CORS，直接 fetch + DOM 提取正文（剔除 wayback 工具条与站点家具）
+  function denoiseWaybackDoc(html, title) {
+    let doc;
+    try { doc = new DOMParser().parseFromString(html, "text/html"); } catch (e) { return null; }
+    const bodyText = doc.body ? doc.body.textContent : "";
+    if (GARBAGE_RE.test(bodyText.slice(0, 3000))) return null;
+    doc.querySelectorAll("script,style,noscript,iframe,svg,form,nav,header,footer,aside,#wm-ipp-base,#wm-ipp,[id^='wm-ipp']")
+      .forEach(e => e.remove());
+    const root = doc.querySelector("article") || doc.querySelector("main")
+      || doc.querySelector("[role='main']") || doc.body;
+    if (!root) return null;
+    const tnorm = String(title || "").replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
+    const seen = new Set([tnorm]);
+    const blocks = [];
+    for (const el of root.querySelectorAll("p,h1,h2,h3,li,blockquote,figcaption")) {
+      const t = (el.textContent || "").replace(/\s+/g, " ").trim();
+      if (t.length < 14 || READER_NOISE_RE.test(t) || /cookie/i.test(t)) continue;
+      const k = t.replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
+      if (!k || seen.has(k)) continue;
+      seen.add(k);
+      blocks.push({ text: t, head: /^h[1-3]$/i.test(el.tagName) });
+    }
+    while (blocks.length && blocks[0].text.length < 40) blocks.shift(); // 开头家具修剪
+    if (blocks.map(b => b.text).join("").length < 120) return null;
+    return { blocks, esc: escText };
   }
 
   // APK 捕获文本的垃圾特征：人机验证页 / archive 工具条。原生已做过第一道把关，这里兜底
@@ -348,6 +383,32 @@
   }
 
 
+  // APK 原生 wayback 通道：调 Android.fetchSnapshot 后台抓 HTML，原生完成后回调 __wbDeliver。
+  // 30s 内无回话（或原生不可用）返回 null，外层继续走兜底
+  function nativeWayback(it, ctrl) {
+    return new Promise(resolve => {
+      if (!(window.Android && Android.fetchSnapshot)) return resolve(null);
+      let done = false;
+      const finish = v => {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        if (ctrl.signal) ctrl.signal.removeEventListener("abort", onAbort);
+        try { delete window.__wbDeliver; } catch (e) {}
+        resolve(v);
+      };
+      const timer = setTimeout(() => finish(null), 30000);
+      const onAbort = () => finish(null);
+      ctrl.signal.addEventListener("abort", onAbort, { once: true });
+      window.__wbDeliver = (wid, html) => {
+        if (wid !== it.id) return;
+        finish(html || null);
+      };
+      try { Android.fetchSnapshot(it.id, it.url, it.wayback_url || ""); }
+      catch (e) { finish(null); }
+    });
+  }
+
   async function openReader(it) {
     readerEl.hidden = false;
     document.body.style.overflow = "hidden";
@@ -363,23 +424,23 @@
       renderPlainParas(cap.paras);
       return;
     }
-    // 2) 本地 jina 抓取缓存
+    // 2) 本地抓取缓存（md=jina markdown；kind=wb 存的是 wayback HTML）
     const hit = readCache[it.url];
     if (hit && hit.md) {
-      const den = denoiseReader(hit.md, host, it.title);
+      const den = hit.kind === "wb" ? denoiseWaybackDoc(hit.md, it.title) : denoiseReader(hit.md, host, it.title);
       if (den) { renderReaderBody(den); return; }
     }
-    rBody.innerHTML = '<div class="rspin"></div>';
+    rBody.innerHTML = '<div class="rspin"></div><div class="rstat" id="rstat">正在获取正文…</div>';
+    const setStatus = t => { const e = document.getElementById("rstat"); if (e) e.textContent = t; };
     const ctrl = new AbortController();
     readerCtrl = ctrl;
-    // 3) 私有缓存（CI 抓好的正文，仅 token 持有者可读）
+    // 3) 私有缓存（CI 抓好的正文，仅 token 持有者可读；15s 超时防挂）
     if (CACHE_TOKEN) {
       try {
-        const r = await fetch("https://api.github.com/repos/" + CACHE_REPO + "/contents/" + it.id + ".json?ref=main",
-          { headers: { Authorization: "Bearer " + CACHE_TOKEN, Accept: "application/vnd.github+json" } });
+        const r = await fetchTextTimeout("https://api.github.com/repos/" + CACHE_REPO + "/contents/" + it.id + ".json?ref=main",
+          { headers: { Authorization: "Bearer " + CACHE_TOKEN, Accept: "application/vnd.github+json" } }, 15000, ctrl.signal);
         if (r.ok) {
-          const j = JSON.parse(new TextDecoder().decode(
-            Uint8Array.from(atob((await r.json()).content.replace(/\s/g, "")), c => c.charCodeAt(0))));
+          const j = JSON.parse(r.text);
           renderReaderBody({ blocks: j.blocks, esc: escText });
           return;
         }
@@ -390,42 +451,50 @@
       renderReaderError(it);
       return;
     }
-    // 正文获取链：已有快照 → 发布者原文 → archive.today 镜像，取首个质量达标者
-    // （wayback 域已被 jina 封禁，不再浪费一跳；每候选 20s 超时兜底）
-    const candidates = [];
-    if (it.archive_url) candidates.push(it.archive_url);
-    if (it.wayback_url) candidates.push(it.wayback_url);
-    candidates.push(it.url, "https://archive.md/" + it.url);
+    // 正文获取链。浏览器 fetch 受 CORS 限制读不到任何快照内容（wayback 实测无 ACAO 头），
+    // 而 jina 对 wayback 永久封禁、对 archive.today 家族只会拿到验证页——快照类候选全是无效等待，
+    // 直接收敛为：发布者原文(jina, 20s) → APK 原生 wayback 直连（无 CORS 限制）→ 失败兜底
+    let den = null, gotText = "", via = "";
     try {
-      for (const cu of candidates) {
-        let md = null;
-        try {
-          const sel = READER_SELECTORS[_host(cu)];
-          const headers = {};
-          if (sel) headers["x-target-selector"] = sel;
-          if (JINA_KEY) headers["Authorization"] = "Bearer " + JINA_KEY;
-          let res;
-          try {
-            res = await fetchTimeout("https://r.jina.ai/" + cu, { headers }, 20000, ctrl.signal);
-          } catch (e) {
-            if (ctrl.signal.aborted) throw e;
-            if (!JINA_KEY) continue;
-            delete headers.Authorization; // 预检失败退回匿名
-            res = await fetchTimeout("https://r.jina.ai/" + cu, { headers }, 20000, ctrl.signal);
-          }
-          if (!res.ok) continue;
-          md = await res.text();
-        } catch (e) {
-          if (ctrl.signal.aborted) throw e;
-          continue;
+      const headers = {};
+      const sel = READER_SELECTORS[host];
+      if (sel) headers["x-target-selector"] = sel;
+      if (JINA_KEY) headers["Authorization"] = "Bearer " + JINA_KEY;
+      setStatus("正在获取正文 · 1/2");
+      let r = null;
+      try {
+        r = await fetchTextTimeout("https://r.jina.ai/" + it.url, { headers }, 20000, ctrl.signal);
+        if (!r.ok && ctrl.signal.aborted) throw new Error("aborted");
+        if (!r.ok && JINA_KEY) {
+          delete headers.Authorization; // 预检失败退回匿名
+          r = await fetchTextTimeout("https://r.jina.ai/" + it.url, { headers }, 20000, ctrl.signal);
         }
-        const den = denoiseReader(md, host, it.title);
-        if (!den) continue;
+      } catch (e) {
+        if (ctrl.signal.aborted) throw e;
+      }
+      if (r && r.ok) {
+        den = denoiseReader(r.text, host, it.title);
+        if (den) { gotText = r.text; via = "md"; }
+      }
+      // APK：原生通道直连 wayback（wayback_url 优先，web/2/ 重定向兜底），无 CORS 限制
+      if (!den && window.Android && Android.fetchSnapshot && !ctrl.signal.aborted) {
+        setStatus("正在获取正文 · 快照通道");
+        const html = await nativeWayback(it, ctrl);
+        if (ctrl.signal.aborted) throw new Error("aborted");
+        if (html) {
+          den = denoiseWaybackDoc(html, it.title);
+          if (den) { gotText = html; via = "wb"; }
+        }
+      }
+      if (den) {
         renderReaderBody(den);
-        readCache[it.url] = { ts: Date.now(), md, src: cu };
-        const old = Object.entries(readCache).sort((a, b) => a[1].ts - b[1].ts);
-        while (old.length > 30) { const [k] = old.shift(); delete readCache[k]; }
-        try { localStorage.setItem(RKEY, JSON.stringify(readCache)); } catch (e) {}
+        // 大 HTML 不入 localStorage 配额（wayback 页可达数 MB），只缓存够小的
+        if (gotText.length < 900000) {
+          readCache[it.url] = { ts: Date.now(), md: gotText, src: via === "wb" ? "native-wayback" : "jina:" + it.url, kind: via };
+          const old = Object.entries(readCache).sort((a, b) => a[1].ts - b[1].ts);
+          while (old.length > 30) { const [k] = old.shift(); delete readCache[k]; }
+          try { localStorage.setItem(RKEY, JSON.stringify(readCache)); } catch (e) {}
+        }
         delete failMem[it.url];
         persistFails();
         return;
@@ -433,7 +502,7 @@
     } catch (e) {
       if (ctrl.signal.aborted) return; // 用户已关闭阅读器
     }
-    // 全链失败：记忆 24h，首次失败自动进入人工兜底（APK=捕获流程，浏览器=归档页）
+    // 全链失败：记忆 24h。APK 首次失败自动进入人工捕获流程；浏览器给出错误态（不再自动甩快照页）
     failMem[it.url] = Date.now();
     persistFails();
     if (ctrl.signal.aborted) return;
@@ -446,7 +515,7 @@
       showToast(I.arch);
       return;
     }
-    open(archiveTarget(it)); // 浏览器：照旧走人工归档兜底
+    renderReaderError(it); // 浏览器：按钮自选，不强制跳转
   }
 
   function closeReader() {

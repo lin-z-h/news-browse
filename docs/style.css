@@ -382,6 +382,7 @@ button { font: inherit; }
   animation: spin 1s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+.rstat { text-align: center; color: var(--muted); font-size: 12px; letter-spacing: .06em; margin: 6px 0 40px; }
 
 /* 阅读器错误态：正文链重复失败时给出的人工兜底入口 */
 .rerr { margin: 70px auto 0; max-width: 420px; text-align: center; color: var(--muted); }

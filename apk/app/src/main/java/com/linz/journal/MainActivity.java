@@ -172,6 +172,49 @@ public class MainActivity extends Activity {
                     web.loadUrl("https://archive.ph/newest/" + url);
                 });
             }
+
+            // Wayback 快照原生通道：浏览器 fetch 受 CORS 限制读不到快照内容，原生层没有这个限制。
+            // 依次试 wayback_url 和 web/2/ 重定向猜测，抓到的 HTML 通过 __wbDeliver 推回页面。
+            @android.webkit.JavascriptInterface
+            public void fetchSnapshot(String id, String url, String waybackUrl) {
+                new Thread(() -> {
+                    String html = null;
+                    String[] tries = {
+                            (waybackUrl == null || waybackUrl.isEmpty()) ? null : waybackUrl,
+                            "https://web.archive.org/web/2/" + (url == null ? "" : url),
+                    };
+                    for (String u : tries) {
+                        if (u == null) continue;
+                        try {
+                            HttpURLConnection c = (HttpURLConnection) new URL(u).openConnection();
+                            c.setInstanceFollowRedirects(true);
+                            c.setConnectTimeout(10000);
+                            c.setReadTimeout(15000);
+                            if (c.getResponseCode() != 200) continue;
+                            java.io.InputStream in = c.getInputStream();
+                            java.io.ByteArrayOutputStream bos = new java.io.ByteArrayOutputStream();
+                            byte[] buf = new byte[8192];
+                            int n;
+                            while ((n = in.read(buf)) > 0 && bos.size() < 3 * 1024 * 1024) bos.write(buf, 0, n);
+                            in.close();
+                            String s = bos.toString("UTF-8");
+                            if (s.length() > 5000) { html = s; break; }
+                        } catch (Exception ignored) {
+                        }
+                    }
+                    final String fh = html;
+                    final String fid = id == null ? "" : id;
+                    ui.post(() -> {
+                        try {
+                            String js = "try{if(window.__wbDeliver)__wbDeliver("
+                                    + org.json.JSONObject.quote(fid) + ","
+                                    + (fh == null ? "null" : org.json.JSONObject.quote(fh)) + ");}catch(e){}";
+                            web.evaluateJavascript(js, null);
+                        } catch (Exception ignored) {
+                        }
+                    });
+                }).start();
+            }
         }, "Android");
         web.loadUrl(SITE_URL);
 
