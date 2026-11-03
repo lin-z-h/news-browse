@@ -139,19 +139,21 @@ jobs:
           git pull --rebase origin main
           for i in 1 2 3; do git push && break || sleep 20; done
           cp apk/app/build/outputs/apk/release/app-release.apk Journal.apk
-          # 就地更新 Release，绝不删除 tag 重建（delete+create 会撞资产上传 404 竞态）：
-          # 已存在 → upload --clobber + edit；不存在 → create（失败退避重试，重试会先再查一次存在性）
+          # 就地更新 Release，绝不删除 tag 重建；一次只上传一个资产文件——
+          # gh 对同一命令里两个同名文件（Journal.apk + docs/Journal.apk）会在
+          # uploads.github.com 上持续 404（2026-11-01..03 连续 14 次 run 失败的根因，
+          # 本机用户 token 可稳定复现，与 GITHUB_TOKEN/runner 无关）
           TITLE="Journal APK ($VN)"
           NOTES="自动构建于 commit ${GITHUB_SHA::7}。应用内更新按钮会自动下载安装；也可手动下载 Journal.apk 侧载。"
           ok=0
           for i in 1 2 3 4 5; do
             if gh release view apk-latest >/dev/null 2>&1; then
-              if gh release upload apk-latest Journal.apk docs/Journal.apk --clobber && \
+              if gh release upload apk-latest Journal.apk --clobber && \
                  gh release edit apk-latest --title "$TITLE" --notes "$NOTES" >/dev/null; then
                 ok=1
               fi
             else
-              if gh release create apk-latest Journal.apk docs/Journal.apk \
+              if gh release create apk-latest Journal.apk \
                 --title "$TITLE" --notes "$NOTES"; then
                 ok=1
               fi

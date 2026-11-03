@@ -1,0 +1,46 @@
+name: Release publish test
+
+# 一次性验证（workflow_dispatch 手动触发）：用与 update-news.yml apk job 完全相同的
+# 就地更新命令（单资产 + --clobber + edit）发布 apk-latest，验证 GITHUB_TOKEN 在
+# Actions runner 上传资产不再 404。2026-11-01..03 的连续失败根因是同一命令里传了
+# 两个同名文件（Journal.apk + docs/Journal.apk）。
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish apk-latest（与 update-news.yml 相同的单资产就地更新路径）
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp docs/Journal.apk Journal.apk
+          TITLE="Journal APK ($(date -u +%Y.%m.%d))"
+          NOTES="自动构建于 commit ${GITHUB_SHA::7}（release-test 验证）。应用内更新按钮会自动下载安装；也可手动下载 Journal.apk 侧载。"
+          ok=0
+          for i in 1 2 3 4 5; do
+            if gh release view apk-latest >/dev/null 2>&1; then
+              if gh release upload apk-latest Journal.apk --clobber && \
+                 gh release edit apk-latest --title "$TITLE" --notes "$NOTES" >/dev/null; then
+                ok=1
+              fi
+            else
+              if gh release create apk-latest Journal.apk \
+                --title "$TITLE" --notes "$NOTES"; then
+                ok=1
+              fi
+            fi
+            if [ "$ok" = "1" ]; then break; fi
+            echo "Release 发布第 $i 次失败，30s 后重试"
+            sleep 30
+          done
+          if [ "$ok" != "1" ]; then echo "::error::Release 发布反复失败"; exit 1; fi
+          gh release view apk-latest --json assets --jq '"assets: " + ([.assets[].name] | join(", "))'
