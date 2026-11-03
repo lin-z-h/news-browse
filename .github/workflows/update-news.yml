@@ -72,7 +72,24 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      - name: Check apk source change (源码没变就跳过构建与发布，避免每轮定时任务都弹更新)
+        id: srcgate
+        run: |
+          SRC_SHA=$(find apk -type f \
+            ! -path 'apk/build/*' ! -path 'apk/.gradle/*' ! -path 'apk/app/build/*' \
+            ! -name 'version.properties' ! -name 'local.properties' \
+            -print0 | sort -z | xargs -0 sha256sum | sha256sum | cut -d' ' -f1)
+          OLD=$(python -c "import json;print(json.load(open('docs/app-version.json')).get('apkSrcSha256',''))" 2>/dev/null || echo "")
+          echo "sha=$SRC_SHA" >> "$GITHUB_OUTPUT"
+          if [ "$SRC_SHA" = "$OLD" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "APK 源码未变化，跳过构建与发布"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Ensure signing keystore (首次构建自动生成并提交回仓库)
+        if: steps.srcgate.outputs.changed == 'true'
         run: |
           if [ ! -f apk/signing/release.jks ]; then
             mkdir -p apk/signing
@@ -89,6 +106,7 @@ jobs:
           fi
 
       - name: Compute version (供 APK 与更新检测共用)
+        if: steps.srcgate.outputs.changed == 'true'
         run: |
           VC=$(( $(date -u +%s) / 60 ))
           { echo "versionCode=$VC"
@@ -96,44 +114,50 @@ jobs:
           } > apk/version.properties
 
       - name: Build release APK
+        if: steps.srcgate.outputs.changed == 'true'
         working-directory: apk
         run: |
           gradle wrapper --gradle-version 8.9 --no-daemon
           ./gradlew --no-daemon assembleRelease
 
-      - name: Publish APK（Pages 同源下载 + Release；仅当 APK 变化时）
+      - name: Publish APK（Pages 同源下载 + Release，就地更新）
+        if: steps.srcgate.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          SHA=$(sha256sum apk/app/build/outputs/apk/release/app-release.apk | cut -d' ' -f1)
-          OLD=$(python -c "import json;print(json.load(open('docs/app-version.json')).get('apkSha256',''))" 2>/dev/null || echo "")
-          if [ "$SHA" = "$OLD" ]; then echo "APK 未变化，跳过发布"; exit 0; fi
           VC=$(grep versionCode apk/version.properties | cut -d= -f2)
           VN=$(grep versionName apk/version.properties | cut -d= -f2)
+          SHA=$(sha256sum apk/app/build/outputs/apk/release/app-release.apk | cut -d' ' -f1)
+          SRC_SHA="${{ steps.srcgate.outputs.sha }}"
           cp apk/app/build/outputs/apk/release/app-release.apk docs/Journal.apk
-          printf '{"versionCode": %s, "versionName": "%s", "apkSha256": "%s"}\n' "$VC" "$VN" "$SHA" > docs/app-version.json
+          printf '{"versionCode": %s, "versionName": "%s", "apkSha256": "%s", "apkSrcSha256": "%s"}\n' "$VC" "$VN" "$SHA" "$SRC_SHA" > docs/app-version.json
           git add docs/Journal.apk docs/app-version.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "chore: publish apk [skip ci]"
           git pull --rebase origin main
           for i in 1 2 3; do git push && break || sleep 20; done
           cp apk/app/build/outputs/apk/release/app-release.apk Journal.apk
-          gh release delete apk-latest --yes --cleanup-tag 2>/dev/null || true
-          gh release create apk-latest Journal.apk docs/Journal.apk \
-            --title "Journal APK ($(date -u +%Y.%m.%d))" \
-            --notes "自动构建于 commit ${GITHUB_SHA::7}。应用内更新按钮会自动下载安装；也可手动下载 Journal.apk 侧载。"
-
-      - name: Publish app-version.json (APK 更新检测用)
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          VC=$(grep versionCode apk/version.properties | cut -d= -f2)
-          VN=$(grep versionName apk/version.properties | cut -d= -f2)
-          printf '{"versionCode": %s, "versionName": "%s"}\n' "$VC" "$VN" > docs/app-version.json
-          git add docs/app-version.json
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m "chore: app version [skip ci]"
-          git pull --rebase origin main
-          for i in 1 2 3; do git push && break || sleep 20; done
+          # 就地更新 Release，绝不删除 tag 重建（delete+create 会撞资产上传 404 竞态）：
+          # 已存在 → upload --clobber + edit；不存在 → create（失败退避重试，重试会先再查一次存在性）
+          TITLE="Journal APK ($VN)"
+          NOTES="自动构建于 commit ${GITHUB_SHA::7}。应用内更新按钮会自动下载安装；也可手动下载 Journal.apk 侧载。"
+          ok=0
+          for i in 1 2 3 4 5; do
+            if gh release view apk-latest >/dev/null 2>&1; then
+              if gh release upload apk-latest Journal.apk docs/Journal.apk --clobber && \
+                 gh release edit apk-latest --title "$TITLE" --notes "$NOTES" >/dev/null; then
+                ok=1
+              fi
+            else
+              if gh release create apk-latest Journal.apk docs/Journal.apk \
+                --title "$TITLE" --notes "$NOTES"; then
+                ok=1
+              fi
+            fi
+            if [ "$ok" = "1" ]; then break; fi
+            echo "Release 发布第 $i 次失败，30s 后重试"
+            sleep 30
+          done
+          if [ "$ok" != "1" ]; then echo "::error::Release 发布反复失败"; exit 1; fi
