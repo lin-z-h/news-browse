@@ -17,6 +17,7 @@ import socket
 import time
 import urllib.parse
 import xml.etree.ElementTree as ET
+from datetime import datetime
 from typing import Iterable, Optional
 
 import requests
@@ -184,14 +185,28 @@ def _provider_for(url: str, provider_ids: Iterable[str]) -> Optional[dict]:
     return None
 
 
+def _date_ts(value) -> Optional[float]:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(str(value).replace("Z", "+00:00")).timestamp()
+    except ValueError:
+        return None
+
+
 def _try_copy(real: str, cand_title: str, title: str, provider: dict,
-              deadline: Optional[float]) -> Optional[dict]:
+              deadline: Optional[float], published: str = "") -> Optional[dict]:
     html = rd.fetch_html(real, deadline=deadline)
     if not html:
         return None
     art = rd.extract_article_html(html, cand_title, real)
     if not art or not rd.quality_ok(art["blocks"], title):
         return None
+    # 同标题不同日期的旧文（如 “19 months” vs “Two Years”）必须拒绝
+    if published and art.get("published"):
+        a, b = _date_ts(published), _date_ts(art.get("published"))
+        if a and b and abs(a - b) > 3 * 86400:
+            return None
     found_title = art.get("title") or cand_title
     overlap = _tokens(title) & _tokens(found_title)
     if len(overlap) < min(4, len(_tokens(title))):
@@ -208,7 +223,8 @@ def _try_copy(real: str, cand_title: str, title: str, provider: dict,
 
 
 def find_copy(title: str, provider_ids: Iterable[str] = DEFAULT_ORDER,
-              deadline: Optional[float] = None, max_candidates: int = 8) -> Optional[dict]:
+              deadline: Optional[float] = None, max_candidates: int = 8,
+              published: str = "") -> Optional[dict]:
     """按标题检索转载版；返回 {provider, url, title, image, blocks} 或 None。
 
     先做一次通用检索（转载版标题常被改写，如 “China Extends Gold-Buying Streak
@@ -242,7 +258,7 @@ def find_copy(title: str, provider_ids: Iterable[str] = DEFAULT_ORDER,
         if not provider:
             continue
         tried += 1
-        res = _try_copy(real, cand_title, title, provider, deadline)
+        res = _try_copy(real, cand_title, title, provider, deadline, published)
         if res:
             return res
 
@@ -268,7 +284,7 @@ def find_copy(title: str, provider_ids: Iterable[str] = DEFAULT_ORDER,
             if not _host_ok(real, provider["hosts"]):
                 continue
             tried += 1
-            res = _try_copy(real, cand_title, title, provider, deadline)
+            res = _try_copy(real, cand_title, title, provider, deadline, published)
             if res:
                 return res
     return None

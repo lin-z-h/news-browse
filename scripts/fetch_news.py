@@ -560,6 +560,7 @@ def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
             res = syndication.find_copy(
                 item["title"], providers,
                 deadline=min(stage_deadline, time.monotonic() + 45),
+                published=item.get("published") or "",
             )
         except Exception as exc:
             _log(f"[synd] 解析失败: {type(exc).__name__}: {str(exc)[:80]}")

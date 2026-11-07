@@ -441,6 +441,10 @@ def extract_article_html(html: str, title: str = "", url: str = "") -> Optional[
         meta_image = re.search(r'<meta[^>]+name=["\']twitter:image["\'][^>]*content=["\']([^"\']+)', html, re.I)
     out_title = htmllib.unescape(meta_title.group(1)).strip() if meta_title else title
     out_image = _abs_img(meta_image.group(1)) if meta_image else None
+    meta_pub = re.search(
+        r'<meta[^>]+(?:property|name)=["\'](?:article:published_time|datePublished|og:published_time)["\'][^>]*content=["\']([^"\']+)',
+        html, re.I)
+    out_published = htmllib.unescape(meta_pub.group(1)).strip() if meta_pub else None
 
     # 1) JSON-LD articleBody（最干净）
     for x in _jsonld_objects(html):
@@ -461,7 +465,8 @@ def extract_article_html(html: str, title: str = "", url: str = "") -> Optional[
             continue
         blocks = _finish(blocks, _origin(x.get("url") or url), out_title or title)
         if blocks:
-            return {"title": out_title or title, "image": _ld_image(x) or out_image, "blocks": blocks}
+            return {"title": out_title or title, "image": _ld_image(x) or out_image,
+                    "published": x.get("datePublished") or out_published, "blocks": blocks}
 
     # 2) 页面段落（跳过 nav/footer/script）
     parser = _BlockParser()
@@ -487,7 +492,8 @@ def extract_article_html(html: str, title: str = "", url: str = "") -> Optional[
     blocks = _finish(filtered, _origin(url), out_title or title)
     if not blocks:
         return None
-    return {"title": out_title or title, "image": out_image, "blocks": blocks}
+    return {"title": out_title or title, "image": out_image,
+            "published": out_published, "blocks": blocks}
 
 
 # ---------------------------------------------------------------------------
