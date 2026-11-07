@@ -16,16 +16,18 @@
 | 变量 | 默认 | 作用 |
 |---|---|---|
 | `NEWS_BUDGET_SECONDS` | `2400`（40 分钟） | 整轮墙钟上限，到点停止网络任务并写出结果 |
-| `MAX_PROBES_PER_RUN` | `35` | 本轮最多探测多少条新链接 |
-| `PROBE_WORKERS` | `2` | 快照探测并发（archive.today 限速，别调太高） |
-| `PROBE_TOTAL_TIMEOUT` | `45` | 单条探测子进程上限（自动存档时放宽到 75） |
-| `AUTO_ARCHIVE_BUDGET` | `6` | 本轮最多自动 “archive this url” 条数 |
-| `SYND_BUDGET` | `6` | 本轮最多解析转载版条数 |
-| `DIRECT_TEXT_BUDGET` | `16` | 本轮最多直连正文条数（优先于 archive） |
-| `DIRECT_TEXT_WORKERS` | `2` | 直连正文并发 |
-| `READ_TEXT_BUDGET` | `20` | 本轮最多抓正文条数 |
-| `TEXT_WORKERS` | `2` | 正文抓取并发 |
-| `OG_IMAGE_BUDGET` | `15` | 本轮最多回填多少张 og:image |
+| `MAX_PROBES_PER_RUN` | `140` | 本轮最多探测多少条新链接 |
+| `PROBE_WORKERS` | `4` | 快照探测并发（archive.today 限速，别调太高） |
+| `PROBE_TOTAL_TIMEOUT` | `30` | 单条探测子进程上限（自动存档时放宽到 75） |
+| `AUTO_ARCHIVE_BUDGET` | `24` | 本轮最多自动 “archive this url” 条数 |
+| `SYND_BUDGET` | `24` | 本轮最多解析转载版条数 |
+| `SYND_WORKERS` | `4` | 转载版检索并发 |
+| `DIRECT_TEXT_BUDGET` | `64` | 本轮最多直连正文条数（优先于 archive） |
+| `DIRECT_TEXT_WORKERS` | `4` | 直连正文并发 |
+| `READ_TEXT_BUDGET` | `80` | 本轮最多抓正文条数 |
+| `TEXT_WORKERS` | `4` | 正文抓取并发 |
+| `GNEWS_DECODE_PER_FEED` | `48` | 每个 Google News feed 最多解码条数 |
+| `OG_IMAGE_BUDGET` | `30` | 本轮最多回填多少张 og:image |
 
 工作流侧：`update` job `timeout-minutes: 60`、抓取 step `timeout-minutes: 50`；提交 step
 使用 `if: always()`，即使抓取被 kill 也会提交已完成部分。

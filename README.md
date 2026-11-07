@@ -123,13 +123,13 @@ set ARCHIVE_PROXY=http://127.0.0.1:7890
 | 变量 | 默认 | 作用 |
 |---|---|---|
 | `NEWS_BUDGET_SECONDS` | 2400 | 整轮上限（40 分钟） |
-| `MAX_PROBES_PER_RUN` | 35 | 本轮最多探测条数 |
-| `PROBE_WORKERS` | 2 | 探测并发 |
-| `PROBE_TOTAL_TIMEOUT` | 45 | 单条探测上限（自动存档 75） |
-| `AUTO_ARCHIVE_BUDGET` | 6 | 本轮自动存档条数 |
-| `SYND_BUDGET` / `DIRECT_TEXT_BUDGET` | 6 / 16 | 转载版、直连正文条数（直连优先于 archive） |
-| `READ_TEXT_BUDGET` | 20 | 兜底正文抓取条数 |
-| `TEXT_WORKERS` | 2 | 正文抓取并发 |
+| `MAX_PROBES_PER_RUN` | 140 | 本轮最多探测条数 |
+| `PROBE_WORKERS` | 4 | 探测并发 |
+| `PROBE_TOTAL_TIMEOUT` | 30 | 单条探测上限（自动存档 75） |
+| `AUTO_ARCHIVE_BUDGET` | 24 | 本轮自动存档条数 |
+| `SYND_BUDGET` / `DIRECT_TEXT_BUDGET` | 24 / 64 | 转载版、直连正文条数（直连优先于 archive） |
+| `READ_TEXT_BUDGET` | 80 | 兜底正文抓取条数 |
+| `TEXT_WORKERS` | 4 | 正文抓取并发 |
 
 ## 机器验证处理（独立环节）
 

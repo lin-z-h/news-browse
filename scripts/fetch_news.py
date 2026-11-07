@@ -11,13 +11,15 @@ news-cache（仅 token 持有者可见）。
 
 时间预算（解决 CI 超时）：
     NEWS_BUDGET_SECONDS  整轮墙钟预算（默认 2400s = 40min）
-    MAX_PROBES_PER_RUN   本轮最多探测条数（默认 35）
-    PROBE_WORKERS        探测并发（默认 2）
-    PROBE_TOTAL_TIMEOUT  单条探测上限（默认 45s）
-    AUTO_ARCHIVE_BUDGET  本轮最多自动存档条数（默认 6）
-    SYND_BUDGET          本轮最多解析转载版条数（默认 8）
-    READ_TEXT_BUDGET     本轮最多抓正文条数（默认 20）
-    TEXT_WORKERS         正文抓取并发（默认 2）
+    MAX_PROBES_PER_RUN   本轮最多探测条数（默认 140）
+    PROBE_WORKERS        探测并发（默认 4）
+    PROBE_TOTAL_TIMEOUT  单条探测上限（默认 30s）
+    AUTO_ARCHIVE_BUDGET  本轮最多自动存档条数（默认 24）
+    SYND_BUDGET          本轮最多解析转载版条数（默认 24）
+    DIRECT_TEXT_BUDGET   本轮最多直连正文条数（默认 64）
+    READ_TEXT_BUDGET     本轮最多抓正文条数（默认 80）
+    TEXT_WORKERS / DIRECT_TEXT_WORKERS   正文/直连并发（默认 4）
+    GNEWS_DECODE_PER_FEED 每 feed 最多解码条数（默认 48）
 
 阶段到点即停、已抓到的结果照常写出；CI 的提交步骤用 if: always() 兜底，
 超时也不会丢进度。
@@ -75,7 +77,7 @@ _WS_RE = re.compile(r"\s+")
 # 设置全局 socket 超时，避免单个解码拖垮整轮 CI。
 socket.setdefaulttimeout(15)
 _auto_lock = threading.Lock()
-_auto_left = int(os.environ.get("AUTO_ARCHIVE_BUDGET", "6") or 6)
+_auto_left = int(os.environ.get("AUTO_ARCHIVE_BUDGET", "24") or 24)
 
 
 def _remaining() -> float:
@@ -340,7 +342,7 @@ def collect_items(config: dict, deadline: float | None = None) -> list:
                 continue
             topic = (topic or "General").strip()
             # gnews 源只解码前 N 条（后续条目反正会被截断丢弃）；解码是整轮最慢的一步
-            gnews_left = _env_int("GNEWS_DECODE_PER_FEED", 12)
+            gnews_left = _env_int("GNEWS_DECODE_PER_FEED", 48)
             try:
                 entries = _feed_entries(source, feed if isinstance(feed, dict) else {"url": feed_url})
             except Exception as exc:  # 单个源失败不影响整体
@@ -407,7 +409,8 @@ def run_probe(url: str, auto_archive: bool = False) -> dict:
     """子进程调用探测环节；任何异常都以 original 兜底，不崩溃。"""
     env = os.environ.copy()
     env["PYTHONIOENCODING"] = "utf-8"
-    cap = 75.0 if auto_archive else 45.0
+    base = float(os.environ.get("PROBE_TOTAL_TIMEOUT", "30"))
+    cap = max(base, 75.0) if auto_archive else base
     timeout = max(5.0, min(cap, _remaining()))
     cmd = [sys.executable, "-X", "utf8", str(PROBE_CLI), url]
     if auto_archive:
@@ -457,7 +460,7 @@ def apply_entry(item: dict, entry: dict) -> None:
 
 def probe_stage(items: list, cache: dict, now: float, now_iso: str, paywalled: set) -> None:
     """快照探测：缓存优先；未命中/过期条目按预算并发探测（付费墙源可自动存档）。"""
-    budget = _env_int("MAX_PROBES_PER_RUN", 35)
+    budget = _env_int("MAX_PROBES_PER_RUN", 140)
     pending = []
     for item in items:
         # 直连/转载版正文已经进 news-cache：优先它，不再为这条探测 archive
@@ -480,7 +483,7 @@ def probe_stage(items: list, cache: dict, now: float, now_iso: str, paywalled: s
 
     if not pending:
         return
-    workers = max(1, _env_int("PROBE_WORKERS", 2))
+    workers = max(1, _env_int("PROBE_WORKERS", 4))
     _log(f"[probe] 待探测 {len(pending)} 条，并发 {workers}")
     results = {}
     with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -527,15 +530,14 @@ def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
 
     返回 {原文url: 本次已解析的转载结果}，供正文阶段直接复用，避免重复检索。
     """
-    budget = _env_int("SYND_BUDGET", 6)
+    budget = _env_int("SYND_BUDGET", 24)
     payloads = {}
     stage_deadline = min(DEADLINE, time.monotonic() + 300)
+    todo = []
     for item in items:
         if budget <= 0 or time.monotonic() >= stage_deadline:
             break
         if item["source"] not in paywalled:
-            continue
-        if item.get("image") and item.get("syndicated_url"):
             continue
         key = "synd:" + item["url"]
         marker = cache.get(key)
@@ -548,6 +550,12 @@ def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
             continue
         providers = providers_by_source.get(item["source"]) or list(syndication.DEFAULT_ORDER)
         budget -= 1
+        todo.append((item, providers))
+
+    if not todo:
+        return payloads
+
+    def work(item: dict, providers: list):
         try:
             res = syndication.find_copy(
                 item["title"], providers,
@@ -556,18 +564,31 @@ def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
         except Exception as exc:
             _log(f"[synd] 解析失败: {type(exc).__name__}: {str(exc)[:80]}")
             res = None
-        if res:
-            item["syndicated_url"] = res["url"]
-            item["syndicated_title"] = res.get("title")
-            if not item.get("image") and res.get("image"):
-                item["image"] = res["image"]
-            payloads[item["url"]] = res
-            cache[key] = {"at": now_iso, "ok": 1, "url": res["url"],
-                          "title": res.get("title"), "image": res.get("image"),
-                          "provider": res.get("provider")}
-            _log(f"[synd] {item['source']} ← {res.get('provider')}: {res['url'][:80]}")
-        else:
-            cache[key] = {"at": now_iso, "ok": 0}
+        return item, res
+
+    workers = max(1, _env_int("SYND_WORKERS", 4))
+    _log(f"[synd] 转载版检索 {len(todo)} 条，并发 {workers}")
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(work, item, providers) for item, providers in todo]
+        for fut in as_completed(futures):
+            try:
+                item, res = fut.result()
+            except Exception as exc:
+                _log(f"[synd] 异常: {type(exc).__name__}: {str(exc)[:80]}")
+                continue
+            key = "synd:" + item["url"]
+            if res:
+                item["syndicated_url"] = res["url"]
+                item["syndicated_title"] = res.get("title")
+                if not item.get("image") and res.get("image"):
+                    item["image"] = res["image"]
+                payloads[item["url"]] = res
+                cache[key] = {"at": now_iso, "ok": 1, "url": res["url"],
+                              "title": res.get("title"), "image": res.get("image"),
+                              "provider": res.get("provider")}
+                _log(f"[synd] {item['source']} ← {res.get('provider')}: {res['url'][:80]}")
+            else:
+                cache[key] = {"at": now_iso, "ok": 0}
     return payloads
 
 
@@ -605,7 +626,7 @@ def direct_stage(items: list, cache: dict, now: float, now_iso: str,
         return 0
     jina_key = os.environ.get("JINA_KEY", "").strip() or None
     repo = os.environ.get("NEWS_CACHE_REPO", "lin-z-h/news-cache")
-    budget = _env_int("DIRECT_TEXT_BUDGET", 16)
+    budget = _env_int("DIRECT_TEXT_BUDGET", 64)
     todo = []
     for item in items:
         if budget <= 0 or time.monotonic() >= DEADLINE:
@@ -634,7 +655,7 @@ def direct_stage(items: list, cache: dict, now: float, now_iso: str,
         return item, blocks
 
     stored = 0
-    workers = max(1, _env_int("DIRECT_TEXT_WORKERS", 2))
+    workers = max(1, _env_int("DIRECT_TEXT_WORKERS", 4))
     _log(f"[direct] 直连正文 {len(todo)} 条，并发 {workers}")
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = [pool.submit(work, it) for it in todo]
@@ -674,7 +695,7 @@ def text_stage(items: list, cache: dict, now: float, now_iso: str,
         return 0
     jina_key = os.environ.get("JINA_KEY", "").strip() or None
     repo = os.environ.get("NEWS_CACHE_REPO", "lin-z-h/news-cache")
-    budget = _env_int("READ_TEXT_BUDGET", 20)
+    budget = _env_int("READ_TEXT_BUDGET", 80)
     todo = []
     for item in items:
         if budget <= 0 or time.monotonic() >= DEADLINE:
@@ -688,7 +709,7 @@ def text_stage(items: list, cache: dict, now: float, now_iso: str,
         todo.append(item)
     if not todo:
         return 0
-    workers = max(1, _env_int("TEXT_WORKERS", 2))
+    workers = max(1, _env_int("TEXT_WORKERS", 4))
     _log(f"[text] 待抓正文 {len(todo)} 条，并发 {workers}")
 
     def work(item: dict):
@@ -805,7 +826,7 @@ def main() -> int:
 
         # og:image 回填：给无缩略图的条目抓文章页 og:image（仅元数据），
         # 结果（含失败）缓存 30 天；每轮限量，几轮之内逐步补齐。
-        img_budget = _env_int("OG_IMAGE_BUDGET", 15)
+        img_budget = _env_int("OG_IMAGE_BUDGET", 30)
         for item in items:
             if img_budget <= 0 or time.monotonic() >= DEADLINE:
                 break

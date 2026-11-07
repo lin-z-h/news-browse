@@ -1,6 +1,6 @@
 {
-  "max_per_source": 40,
-  "max_total": 300,
+  "max_per_source": 160,
+  "max_total": 1200,
   "sources": [
     {
       "name": "Bloomberg",

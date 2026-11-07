@@ -46,17 +46,19 @@ jobs:
           NEWS_CACHE_TOKEN: ${{ secrets.NEWS_CACHE_TOKEN }}
           # 整轮墙钟预算：到点停止网络任务并写出已完成部分（解决 CI 超时）
           NEWS_BUDGET_SECONDS: "2400"
-          # 各阶段预算（单条/单轮）
-          MAX_PROBES_PER_RUN: "35"
-          PROBE_WORKERS: "2"
-          PROBE_TOTAL_TIMEOUT: "45"
-          AUTO_ARCHIVE_BUDGET: "6"
-          SYND_BUDGET: "6"
-          DIRECT_TEXT_BUDGET: "16"
-          DIRECT_TEXT_WORKERS: "2"
-          READ_TEXT_BUDGET: "20"
-          TEXT_WORKERS: "2"
-          OG_IMAGE_BUDGET: "15"
+          # 各阶段预算（单条/单轮，4x 数据量）
+          MAX_PROBES_PER_RUN: "140"
+          PROBE_WORKERS: "4"
+          PROBE_TOTAL_TIMEOUT: "30"
+          AUTO_ARCHIVE_BUDGET: "24"
+          SYND_BUDGET: "24"
+          SYND_WORKERS: "4"
+          DIRECT_TEXT_BUDGET: "64"
+          DIRECT_TEXT_WORKERS: "4"
+          READ_TEXT_BUDGET: "80"
+          TEXT_WORKERS: "4"
+          GNEWS_DECODE_PER_FEED: "48"
+          OG_IMAGE_BUDGET: "30"
         run: python scripts/fetch_news.py
 
       - name: Commit news.json & cache (also after timeout)
