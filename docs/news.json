@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T09:36:21Z",
+ "generated_at": "2026-11-07T09:44:00Z",
  "sources": [
   "Bloomberg",
   "The New York Times",
@@ -16,6 +16,19 @@
  ],
  "items": [
   {
+   "id": "d6da9e6704af",
+   "title": "David Eustace out for more feature race success as Silvery Breeze leads Sha Tin squad",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T09:40:51Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/16001da0-90eb-4dc2-8983-ebc0466a341d_72ebbe56.jpg?itok=9ECQlCKY&v=1794044445",
+   "url": "https://www.scmp.com/sport/racing/article/3373647/david-eustace-out-more-feature-race-success-silvery-breeze-leads-sha-tin-squad",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "a87e5db297bc",
    "title": "匹克球中巡賽首度落戶香港 12月初展開",
    "source": "TVB",
@@ -23,7 +36,8 @@
    "published": "2026-11-07T09:34:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026uWjRVZLpkI1794044143.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205099",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -49,7 +63,8 @@
    "published": "2026-11-07T09:30:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20266mmillAmP71793886264.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204810",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -62,7 +77,8 @@
    "published": "2026-11-07T09:28:18Z",
    "image": "https://i.guim.co.uk/img/media/ca0da5faecb3c527577fc78ebfc856aa865bc8d6/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=842242f69139eccf98f50148f27a190a",
    "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -75,7 +91,8 @@
    "published": "2026-11-07T09:20:29Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/a0b878d0-26bd-4755-bb91-2bab5c3529b7_23f23338.jpg?itok=9cn2__eV&v=1794043080",
    "url": "https://www.scmp.com/news/hong-kong/transport/article/3373646/mtr-corporation-halts-unauthorised-remedial-works-station-after-column-concerns",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -101,7 +118,8 @@
    "published": "2026-11-07T09:15:35Z",
    "image": "https://i.guim.co.uk/img/media/838ba7f69956d265d77e9f70e4f810129f1225ec/0_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=359a51ab4e53c21874955230fb8034c0",
    "url": "https://www.theguardian.com/politics/2026/nov/07/home-office-sued-the3million-eu-citizens-right-to-live-in-uk-pre-settled",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -114,7 +132,8 @@
    "published": "2026-11-07T09:14:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026TtgqMt0CJ41794043500.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205096",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -127,7 +146,8 @@
    "published": "2026-11-07T09:14:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026SmvvpiqCWp1794043207.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205095",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -140,7 +160,8 @@
    "published": "2026-11-07T09:03:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026VLYtRMvrjw1794043251.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205092",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -153,7 +174,8 @@
    "published": "2026-11-07T09:02:37Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/14d7b5f4-4268-402f-8dfb-48ab2ed73ecc_4d7c178a.jpg?itok=D2pSZURb&v=1794042144",
    "url": "https://www.scmp.com/sport/hong-kong/article/3373645/hong-kongs-bailee-brown-calls-triathlon-brutal-unforgiving-after-world-cup-setback",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -166,7 +188,8 @@
    "published": "2026-11-07T09:01:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026HO40yJVXMk1794042351.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205091",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -179,7 +202,8 @@
    "published": "2026-11-07T09:00:07Z",
    "image": "https://i.guim.co.uk/img/media/4c15ad088ea9124f8235261941f6a598cbe96eb1/0_0_2500_2001/master/2500.jpg?width=140&quality=85&auto=format&fit=max&s=49db3bd2ae088c593641c5fcdf9fe21d",
    "url": "https://www.theguardian.com/technology/2026/nov/07/tiktok-sex-industry-girls-onlyfans",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -192,7 +216,8 @@
    "published": "2026-11-07T09:00:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026saNpKFUS8K1793886366.jpeg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204811",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -205,7 +230,8 @@
    "published": "2026-11-07T08:58:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026RKYQ80rXPR1794042358.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205090",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -231,7 +257,8 @@
    "published": "2026-11-07T08:49:43Z",
    "image": "https://i.guim.co.uk/img/media/f0e8acc5ff9e24724878c25106cb3494ac318760/149_0_1807_1446/master/1807.jpg?width=140&quality=85&auto=format&fit=max&s=a8a8468f7601eb8a03986edb9cefa0ed",
    "url": "https://www.theguardian.com/culture/2026/nov/06/russell-brand-barrister-ian-winter-reports-himself-bar-watchdog-confronting-sunday-times-journalist",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -257,7 +284,8 @@
    "published": "2026-11-07T08:30:05Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/af80520e-442b-4b87-8f19-8591bd5c2d9b_3f77e22d.jpg?itok=2r5CDhlt&v=1793935878",
    "url": "https://www.scmp.com/opinion/china-opinion/article/3373279/us-and-china-must-join-hands-measure-rising-ai-tide",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -270,7 +298,8 @@
    "published": "2026-11-07T08:30:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026wG25rMHAsh1793885909.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204806",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -283,7 +312,8 @@
    "published": "2026-11-07T08:28:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/file/2026/11/2026dSUcAUj8ps1793953837.webp?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204935",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -296,7 +326,8 @@
    "published": "2026-11-07T08:17:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026c1QFmt86zK1794039871.png?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205089",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -309,7 +340,8 @@
    "published": "2026-11-07T08:15:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/05/44cbd77f-5071-47f6-801f-805bb67554a7_8376ec90.jpg?itok=fNnPrzgm&v=1793853559",
    "url": "https://www.scmp.com/lifestyle/arts/article/3373342/artist-oscar-chan-examines-religion-myth-and-trauma-haunting-hong-kong-exhibition",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -374,7 +406,8 @@
    "published": "2026-11-07T08:00:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/b5b78eaf-fcd6-4ee0-95d3-41fff1191f39_288347d0.jpg?itok=F9efTVsD&v=1793945854",
    "url": "https://www.scmp.com/news/china/diplomacy/article/3373514/why-china-investing-heavily-african-push-bring-mineral-processing-home",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -387,7 +420,8 @@
    "published": "2026-11-07T08:00:05Z",
    "image": "https://i.guim.co.uk/img/media/80385020d94d243f8032ef48efef7f99aa23dc68/1228_0_5436_4349/master/5436.jpg?width=140&quality=85&auto=format&fit=max&s=71969e223ee776d365161bf935a38a48",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/07/moscow-novaya-gazeta-journalism-russia-newspaper",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -400,7 +434,8 @@
    "published": "2026-11-07T08:00:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026nNMYc4Smu41793886145.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204808",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -413,7 +448,8 @@
    "published": "2026-11-07T07:36:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20260FWeb70Utx1794039654.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205087",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -465,7 +501,8 @@
    "published": "2026-11-07T07:30:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026PMqugPV4e61793885756.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204805",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -478,7 +515,8 @@
    "published": "2026-11-07T07:19:06Z",
    "image": "https://cassette.sphdigital.com.sg/image/zaobao/e4f6f05b26c1f9de40d6058289b6dc361ba36ae36166b1dbcdb33fc2245fe7c1",
    "url": "https://www.zaobao.com.sg/en/forum/talk/forum-redefining-singapores-5cs",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -504,7 +542,8 @@
    "published": "2026-11-07T07:04:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026RZ7I0B4EqK1794036434.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205085",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -530,7 +569,8 @@
    "published": "2026-11-07T07:02:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026TgbxTev8qC1794037217.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205083",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -543,7 +583,8 @@
    "published": "2026-11-07T07:01:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026mgGyAjAjlB1794037683.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205081",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -556,7 +597,8 @@
    "published": "2026-11-07T07:01:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026CITpOIl8pc1794035513.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205080",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -569,7 +611,8 @@
    "published": "2026-11-07T07:00:07Z",
    "image": "https://i.guim.co.uk/img/media/a602f8453b41164785519bbae64ff4051677f8c0/857_0_4341_3471/master/4341.jpg?width=140&quality=85&auto=format&fit=max&s=47ecc5e9548baf664bfe201f305c4dde",
    "url": "https://www.theguardian.com/money/2026/nov/07/can-ai-save-you-money-heating-bill",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -582,7 +625,8 @@
    "published": "2026-11-07T07:00:06Z",
    "image": "https://i.guim.co.uk/img/media/4b57b694b949008711a87e4890edbd60e9277ccd/807_0_4640_3712/master/4640.jpg?width=140&quality=85&auto=format&fit=max&s=35b02db84a5c5caefea316148429e1a4",
    "url": "https://www.theguardian.com/society/2026/nov/07/early-release-prisoners-street-homelessness-england",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -595,7 +639,8 @@
    "published": "2026-11-07T07:00:06Z",
    "image": "https://i.guim.co.uk/img/media/5356268d0933f18536c664abd0dfbeb019a680f6/456_0_4560_3648/master/4560.jpg?width=140&quality=85&auto=format&fit=max&s=fabe016f51700df4d0649d4edbc40266",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/07/pineapple-pizza-italian-food-insult-chef-sacked",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -608,7 +653,8 @@
    "published": "2026-11-07T07:00:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/ede08a16-6cca-4f2d-9c0d-1d53d83d16db_b2640eb3.jpg?itok=7HOWKLAh&v=1794033113",
    "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3373639/ex-husbands-dna-found-hammer-allegedly-used-kill-abby-choi-prosecution-says",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -621,7 +667,8 @@
    "published": "2026-11-07T07:00:05Z",
    "image": "https://i.guim.co.uk/img/media/963b9fb283b70d3463b4d4d901c1c5231806e169/568_0_4594_3676/master/4594.jpg?width=140&quality=85&auto=format&fit=max&s=eeaf31aecc7f71bcc7e93b2291402bb8",
    "url": "https://www.theguardian.com/money/2026/nov/07/nationwide-savings-account-market-leading-interest-rate",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -634,7 +681,8 @@
    "published": "2026-11-07T07:00:04Z",
    "image": "https://i.guim.co.uk/img/media/e3e106cee8c7a119858472afd76f5d130e4d43b6/1722_527_3180_2545/master/3180.jpg?width=140&quality=85&auto=format&fit=max&s=c72bd7888aaa9fe83477f32594d1988a",
    "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -647,7 +695,8 @@
    "published": "2026-11-07T07:00:04Z",
    "image": "https://i.guim.co.uk/img/media/c4ab352229a9553522afe3e33aaa405141978fb4/781_95_1724_1380/master/1724.jpg?width=140&quality=85&auto=format&fit=max&s=a76aedad354b9a23642fbc9bedce6e64",
    "url": "https://www.theguardian.com/politics/2026/nov/07/reform-uk-councillor-promoted-alleged-ponzi-scheme-hyperverse",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -673,7 +722,8 @@
    "published": "2026-11-07T07:00:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026VRGHtHaDRQ1793885643.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204803",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -686,7 +736,8 @@
    "published": "2026-11-07T06:44:42Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/3e97c612-b5aa-4f96-92bb-c6fd384a2455_61c378df.jpg?itok=_2xglCFH&v=1794033868",
    "url": "https://www.scmp.com/news/china/diplomacy/article/3373640/chinese-consulate-melbourne-demands-justice-after-fatal-stabbing-delivery-worker",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -699,7 +750,8 @@
    "published": "2026-11-07T06:31:27Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/8cced664-248d-4fa5-85c3-e35a2caae8e0_ce07c1a1.jpg?itok=4ot-7att&v=1794033072",
    "url": "https://www.scmp.com/news/hong-kong/politics/article/3373638/hypocritical-hong-kong-hits-back-criticism-joshua-wongs-sentence",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -712,7 +764,8 @@
    "published": "2026-11-07T06:30:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026o8SrrCKEyL1793885333.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204802",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -738,7 +791,8 @@
    "published": "2026-11-07T06:16:00Z",
    "image": "https://pro-vod-cdn.tvb.com/3c9160ef7edc4342a1f064150aa71b42/snapshots/de251174e43945a3b18b07fbc8c8120f-00003.jpg",
    "url": "https://news.tvb.com/en/1205077",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -751,7 +805,8 @@
    "published": "2026-11-07T06:13:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026wHJq9IupkR1794032087.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205076",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -764,7 +819,8 @@
    "published": "2026-11-07T06:12:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026HnmBEvHwyw1794031998.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205075",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -777,7 +833,8 @@
    "published": "2026-11-07T06:11:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026ffSbmgktTl1794031934.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205074",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -842,7 +899,8 @@
    "published": "2026-11-07T06:00:05Z",
    "image": "https://i.guim.co.uk/img/media/0312d200602b299fe774847a5f06b6f25056098c/1238_380_2087_1670/master/2087.jpg?width=140&quality=85&auto=format&fit=max&s=dd428f0d2cf0916b6671dbe6560b0245",
    "url": "https://www.theguardian.com/news/ng-interactive/2026/nov/07/the-end-of-maga-as-we-know-it",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -855,7 +913,8 @@
    "published": "2026-11-07T06:00:05Z",
    "image": "https://i.guim.co.uk/img/media/bcbe33019144d919dd5320a3d34584709608210b/450_0_4500_3600/master/4500.jpg?width=140&quality=85&auto=format&fit=max&s=3b36b24a41b9a1b7d30fba4a3fb4225e",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/07/andy-burnham-take-control-small-measures-ebikes",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1362,7 +1421,7 @@
    "published": "2026-11-07T04:30:00Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-07/why-india-s-stock-markets-hold-a-session-on-diwali-explainer",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1375,9 +1434,9 @@
    "published": "2026-11-07T04:25:50Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/0933f6ae-bad4-4d0a-bbb9-4bcccb1f7a43_4e35d704.jpg?itok=UjPjNRif&v=1794025548",
    "url": "https://www.scmp.com/news/world/middle-east/article/3373633/trump-confirms-fresh-iran-strikes-days-after-voters-punish-war-polls",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107051141/https://www.scmp.com/news/world/middle-east/article/3373633/trump-confirms-fresh-iran-strikes-days-after-voters-punish-war-polls",
    "cover_only": false
   },
   {
@@ -1388,7 +1447,7 @@
    "published": "2026-11-07T04:25:50Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/f5faacbd-257c-474c-b661-b9a81200ac19_6f28f544.jpg?itok=3a0w1E9O&v=1794025542",
    "url": "https://www.scmp.com/news/hong-kong/society/article/3373606/test-trust-hong-kongs-new-housing-checks-unit-after-wang-fuk-court-blaze",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1401,7 +1460,7 @@
    "published": "2026-11-07T04:23:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/middle-east/qatar-says-its-mediation-efforts-between-us-iran-continue-prevent-escalation-2026-11-07/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1414,7 +1473,7 @@
    "published": "2026-11-07T04:13:54Z",
    "image": "https://cassette.sphdigital.com.sg/image/zaobao/b42ae8a3c72b58710150e6b871168f4bbbed695e43a3b12c6c9fa4bb0508786e",
    "url": "https://www.zaobao.com.sg/en/finance/singapore/us-firm-equinix-opens-sixth-singapore-data-centre-investment-over-s370-million?ref=today-newsen-section-card-1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1427,7 +1486,7 @@
    "published": "2026-11-07T04:09:13Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/4ede178c-c187-448c-b9b6-d40533fd028b_f7734bbf.jpg?itok=hezutNgk&v=1794024471",
    "url": "https://www.scmp.com/economy/policy/article/3373632/china-airs-serious-concern-over-us-sanctions-ahead-xi-trump-apec-meeting-shenzhen",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1440,7 +1499,7 @@
    "published": "2026-11-07T04:07:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026dDplKgkOas1794029365.png?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205069",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1453,7 +1512,7 @@
    "published": "2026-11-07T04:00:13Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/e2b63702-daf3-46fa-ab90-979ec469e8c0_3a2c7f1f.jpg?itok=AFJnXbaF&v=1794020393",
    "url": "https://www.scmp.com/sport/cricket/article/3373628/former-australian-cricketer-usman-khawaja-claims-entire-team-knew-about-sandpapergate",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1466,7 +1525,7 @@
    "published": "2026-11-07T04:00:11Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/0d51e577-1025-46fe-a6bd-c25cbae61c94_295a1914.jpg?itok=smumfwlv&v=1793961629",
    "url": "https://www.scmp.com/week-asia/opinion/article/3373573/thailand-once-had-economic-miracle-it-needs-another",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1479,9 +1538,9 @@
    "published": "2026-11-07T04:00:09Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/67069218-de60-4fba-9455-8b80b8fe3230_13c8c013.jpg?itok=EqVwR3w1&v=1793955609",
    "url": "https://www.scmp.com/news/china/politics/article/3373546/china-narrow-scope-contentious-designated-location-surveillance-measure",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107080101/https://www.scmp.com/news/china/politics/article/3373546/china-narrow-scope-contentious-designated-location-surveillance-measure",
    "cover_only": false
   },
   {
@@ -1492,7 +1551,7 @@
    "published": "2026-11-07T04:00:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20266t7ykJKZOf1793954764.png?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204941",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1505,7 +1564,7 @@
    "published": "2026-11-07T03:36:07Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-07/former-malaysia-pm-najib-s-house-arrest-delayed-pending-review",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1518,7 +1577,7 @@
    "published": "2026-11-07T03:35:18Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/8f1557d3-c632-41d0-9c30-84ce4bd4afc6_a5fb303c.jpg?itok=pz8H-5fu&v=1794022517",
    "url": "https://www.scmp.com/news/world/united-states-canada/article/3373631/us-regulator-investigates-tumour-risk-children-given-novartis-gene-therapy",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1531,7 +1590,7 @@
    "published": "2026-11-07T03:30:08Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/04/c18935cb-3970-4dae-a0ec-782f5db31a01_4f41b81b.jpg?itok=3yP9CDZK&v=1793759658",
    "url": "https://www.scmp.com/opinion/letters/article/3373197/hong-kong-cant-afford-lose-healthcare-workers-it-trained",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1544,7 +1603,7 @@
    "published": "2026-11-07T03:27:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20262qg2zyJoIg1794023002.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205065",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1557,7 +1616,7 @@
    "published": "2026-11-07T03:26:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026lSlaRTOiOW1794023637.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205063",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1570,7 +1629,7 @@
    "published": "2026-11-07T03:25:23Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/dc6850b5-b110-4885-800c-18c3495f1dfb_b10a567c.jpg?itok=3-mxozJf&v=1794021855",
    "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3373630/domestic-helper-arrested-after-allegedly-spitting-4-year-old-girls-food",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1583,7 +1642,7 @@
    "published": "2026-11-07T03:09:53Z",
    "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06dc-homeless-drop-02-gzwf/06dc-homeless-drop-02-gzwf-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/06/us/politics/homeless-population-drop.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1596,7 +1655,7 @@
    "published": "2026-11-07T03:07:01Z",
    "image": "https://i.guim.co.uk/img/media/25f4aae3e6af6bcaedf563ee3e0b174bd7a2de94/466_0_4645_3718/master/4645.jpg?width=140&quality=85&auto=format&fit=max&s=43a5ac1a97cd0bf0f1ee113a55feaeea",
    "url": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1609,7 +1668,7 @@
    "published": "2026-11-07T03:02:26Z",
    "image": "https://i.guim.co.uk/img/media/f9722987baf4b5522f5f6efd1409295823e842e7/1157_0_6660_5331/master/6660.jpg?width=140&quality=85&auto=format&fit=max&s=06c8c454d7b539adc847dede55eb8ea3",
    "url": "https://www.theguardian.com/us-news/live/2026/nov/06/us-midterm-elections-2026-democrats-blue-wave-congress-latest-news-updates",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1622,7 +1681,7 @@
    "published": "2026-11-07T03:02:09Z",
    "image": null,
    "url": "https://www.nytimes.com/2026/11/06/us/atlanta-pandas.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1635,9 +1694,9 @@
    "published": "2026-11-07T03:01:34Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/7421ddc8-21de-4899-a775-43a76c52c925_afd6934e.jpg?itok=6XJ3t4eM&v=1794020386",
    "url": "https://www.scmp.com/news/asia/east-asia/article/3373627/how-north-korea-turns-child-prodigies-crypto-thieves",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107040820/https://www.scmp.com/news/asia/east-asia/article/3373627/how-north-korea-turns-child-prodigies-crypto-thieves",
    "cover_only": false
   },
   {
@@ -1648,7 +1707,7 @@
    "published": "2026-11-07T03:00:10Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/1e8ec8e9-0fa3-44d7-abba-ac9ff1b3b2e2_1979b0ec.jpg?itok=ui5IYbsW&v=1793959944",
    "url": "https://www.scmp.com/economy/china-economy/article/3373565/former-evergrande-economist-faces-wechat-gag-order-after-buy-dip-call",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1661,7 +1720,7 @@
    "published": "2026-11-07T03:00:00Z",
    "image": null,
    "url": "https://www.wsj.com/politics/policy/elon-musk-texas-midterm-elections-b993e58d",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1674,7 +1733,7 @@
    "published": "2026-11-07T02:55:47Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/2026-11-04-insider-trading-index/2026-11-04-insider-trading-index-mediumSquareAt3X.png",
    "url": "https://www.nytimes.com/2026/11/06/technology/kalshi-polymarket-nyt-siena-poll-bets.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1687,7 +1746,7 @@
    "published": "2026-11-07T02:54:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/346ac311-6b91-4c35-a608-c727119392fd_0d1c7aa7.jpg?itok=uWixJMH9&v=1794019513",
    "url": "https://www.scmp.com/news/hong-kong/education/article/3373626/hkust-president-nancy-ip-wins-unesco-prize-alzheimers-research",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1700,7 +1759,7 @@
    "published": "2026-11-07T02:36:39Z",
    "image": "https://cassette.sphdigital.com.sg/image/zaobao/2bd0a6979f8252b0a0b006a6a54ec7216f2c03a1e3881ad1c358e2b1fe54ba2b",
    "url": "https://www.zaobao.com.sg/en/news/singapore/government-step-public-education-lianhe-zaobao-poll-finds-gaps-understanding-nuclear-energy",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1713,9 +1772,9 @@
    "published": "2026-11-07T02:33:26Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F1ed6c0f3-c692-4ded-bbe5-a309ff2020c9.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/a55a2a22-4479-4f93-a445-6147a5c6d790?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107040704/https://www.ft.com/content/a55a2a22-4479-4f93-a445-6147a5c6d790?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -1726,7 +1785,7 @@
    "published": "2026-11-07T02:33:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/file/2026/11/2026FGBVtTk6pZ1793953966.webp?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204936",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1739,7 +1798,7 @@
    "published": "2026-11-07T02:27:47Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-07/hong-kong-arrests-28-in-building-bid-rigging-probe-rthk-says",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1752,7 +1811,7 @@
    "published": "2026-11-07T02:26:22Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-07/china-extends-gold-buying-streak-to-two-years-as-prices-drop",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1765,7 +1824,7 @@
    "published": "2026-11-07T02:18:42Z",
    "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06dc-Spy-Chip-qtkm/06dc-Spy-Chip-qtkm-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/06/us/politics/chinese-spy-agency-nvidia-jensen-huang.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1778,7 +1837,7 @@
    "published": "2026-11-07T02:04:14Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/8978bea8-0a55-4eee-a57d-1bf9253ea02e_0d415751.jpg?itok=1vO7f1y9&v=1794017043",
    "url": "https://www.scmp.com/news/world/united-states-canada/article/3373625/irans-nuclear-programme-us-offers-us20-million-reward-information",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1791,7 +1850,7 @@
    "published": "2026-11-07T02:00:31Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/9962d89a-6c35-4be5-b7f1-195fb19b7bb1_10f9cce1.jpg?itok=f6Dydl7O&v=1794008134",
    "url": "https://www.scmp.com/news/people-culture/china-personalities/article/3373622/ai-generated-cats-showcasing-rural-life-chinese-cuisine-land-major-brand-sponsorships",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -2010,7 +2069,7 @@
    "source": "Financial Times",
    "topic": "World",
    "published": "2026-11-07T01:00:00Z",
-   "image": null,
+   "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb6d10900-6ab9-45af-8414-40422c2f8c9f.jpg?source=next-barrier-page&amp;fit=scale-down&amp;quality=highest&amp;width=700&amp;dpr=1",
    "url": "https://www.ft.com/content/ac76efa6-a309-41c6-ab51-b64225f2c18b?syn-25a6b1a6=1",
    "status": "original",
    "archive_url": null,
@@ -2036,7 +2095,7 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-07T00:59:05Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WXDWYNL7UCT47FKASYNIPKVX3M_size-normalized.jpg&amp;w=1440",
    "url": "https://www.washingtonpost.com/style/2026/11/06/does-anyone-dress-appropriately-anymore/",
    "status": "original",
    "archive_url": null,
@@ -2233,19 +2292,6 @@
    "published": "2026-11-07T00:00:17Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/d5593ea1-3c60-415b-969c-673c2e418f8d_e9244a53.jpg?itok=rVHt_d7r&v=1793949119",
    "url": "https://www.scmp.com/sport/hong-kong/article/3373522/hong-kong-grows-popularity-open-water-swimmers-some-logistics-issues-remain",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "d18abe994d71",
-   "title": "By all memes: why Asia’s Gen Z are revolting",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:00:14Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/cb9d6243-54a7-4721-b1d9-6486e67b6553_29f583f8.jpg?itok=GYn1cgxA&v=1793961174",
-   "url": "https://www.scmp.com/week-asia/politics/article/3373473/all-memes-why-asias-gen-z-are-revolting",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
