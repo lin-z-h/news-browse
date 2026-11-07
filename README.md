@@ -138,7 +138,7 @@ archive.today 的 Cloudflare 挑战 / CAPTCHA 是**常态而非异常**，由 `v
 2. **人工介入信号**：先识别类型（cloudflare / captcha），再用 nopecha 小规模尝试（需 `NOPECHA_API_KEY`，每个链接最多 1 个任务）；失败则向 stderr 输出触发验证的 URL 和"需要人工验证"提示，并以**退出码 75**（EX_TEMPFAIL）终止当前链接的探测。上层 `fetch_news.py` 以子进程调用探测环节，看到 75 就把该条新闻标记为"验证待处理"（`status=challenge`），整体流程继续，不会崩溃；标记前仍会尝试 Wayback 兜底。
 3. **无快照 → 自动存档**：付费墙源在预算内自动提交一次 “archive this url” 并轮询 40–75s；成功则 `status=archive`，失败标记 `unarchived`（12h 后重试）。自动存档被人机验证拦下时仍按 `challenge` 处理，不重试。
 4. **前端降级**：`challenge` / `unarchived` 且没有正文缓存的付费墙文章只渲染封面；用户点“开始阅读”后，APK 会打开归档页并（无快照时）自动点一次存档链接，等快照生成后点“完成验证 · 提取正文”；浏览器则手动打开归档页。
-5. **cf_clearance 复用**：设置 secret/环境变量 `ARCHIVE_COOKIE`（支持 `cf_clearance=值` 或完整 Cookie 串），探测请求会自动携带。注意：cf_clearance 通常**绑定 IP 和 User-Agent**，过期后需要重新获取，因此这是"可改善但非永久"的方案——如同时配置 `ARCHIVE_UA`，务必与取 cookie 时浏览器的 UA 一致。
+5. **cf_clearance 复用**：设置 secret/环境变量 `ARCHIVE_COOKIE`（支持 `cf_clearance=值` 或完整 Cookie 串），探测请求会自动携带。注意：cf_clearance 绑定 **IP + User-Agent**；cookie 里的 IP 是本机代理出口（如 `143.244.189.0`），GitHub Actions runner 的出口 IP 不同，**CI 里通常无法复用**，请以 Jina 快照 + 转载版为主。若同时配置 `ARCHIVE_UA`，务必与取 cookie 时浏览器的 UA 一致。
 6. **429 限速**：视为未命中，暂停 5s 后轮换下一个镜像，不崩溃。
 7. **本机 7890 代理**：archive.today 常返回 reCAPTCHA 页（代理 IP 被标记），探测判为 `challenge`；正文阶段会再用 Jina Reader 的出口 IP 读 `archive.ph/newest/<url>` 快照兜底，拿到全文则正常缓存。
 

@@ -67,6 +67,8 @@ RSS 拿不到图时，`PUT og:image` 回填（限额 15 条/轮，结果缓存 3
 - **本机走 7890 代理时** archive.today 常见返回 reCAPTCHA 页（proxy IP 被标记），
   探测会判为 `challenge`；正文阶段另有 Jina 快照通道兜底（见下）。
   只给 archive 走代理可设 `ARCHIVE_PROXY=http://127.0.0.1:7890`（其他源仍直连）。
+- cf_clearance 绑定 **IP + UA**：cookie 里的 IP 是代理出口，GitHub runner 出口不同，
+  CI 里通常无法复用；CI 以 Jina 快照 + 转载版为主，本机才可能直接读 archive.today。
 
 ## 4. 阶段 C：正文（转载版优先）
 
