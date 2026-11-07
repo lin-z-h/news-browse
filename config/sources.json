@@ -85,7 +85,9 @@
         {"url": "https://www.ft.com/rss/opinion", "topic": "Opinion"},
         {"url": "https://www.ft.com/rss/companies", "topic": "Companies"},
         {"url": "https://www.ft.com/rss/economy", "topic": "Economy"},
-        {"url": "https://www.ft.com/rss/management", "topic": "Management"}
+        {"url": "https://www.ft.com/rss/management", "topic": "Management"},
+        {"url": "https://www.ft.com/rss/world/us", "topic": "US"},
+        {"url": "https://www.ft.com/rss/world/uk", "topic": "UK"}
       ]
     },
     {

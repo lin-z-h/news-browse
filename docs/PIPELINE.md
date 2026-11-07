@@ -26,7 +26,7 @@
 | `DIRECT_TEXT_WORKERS` | `4` | 直连正文并发 |
 | `READ_TEXT_BUDGET` | `80` | 本轮最多抓正文条数 |
 | `TEXT_WORKERS` | `4` | 正文抓取并发 |
-| `GNEWS_DECODE_PER_FEED` | `80` | 每个 Google News feed 最多解码条数 |
+| `GNEWS_DECODE_PER_FEED` | `100` | 每个 Google News feed 最多解码条数 |
 | `OG_IMAGE_BUDGET` | `30` | 本轮最多回填多少张 og:image |
 
 工作流侧：`update` job `timeout-minutes: 60`、抓取 step `timeout-minutes: 50`；提交 step
