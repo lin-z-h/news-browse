@@ -127,7 +127,7 @@ set ARCHIVE_PROXY=http://127.0.0.1:7890
 | `PROBE_WORKERS` | 4 | 探测并发 |
 | `PROBE_TOTAL_TIMEOUT` | 30 | 单条探测上限（自动存档 75） |
 | `AUTO_ARCHIVE_BUDGET` | 24 | 本轮自动存档条数 |
-| `SYND_BUDGET` / `DIRECT_TEXT_BUDGET` | 24 / 64 | 转载版、直连正文条数（直连优先于 archive） |
+| `SYND_BUDGET` / `DIRECT_TEXT_BUDGET` | 60 / 64 | 转载版、直连正文条数（直连优先于 archive） |
 | `READ_TEXT_BUDGET` | 80 | 兜底正文抓取条数 |
 | `TEXT_WORKERS` | 4 | 正文抓取并发 |
 

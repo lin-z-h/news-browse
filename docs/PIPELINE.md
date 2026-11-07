@@ -20,7 +20,7 @@
 | `PROBE_WORKERS` | `4` | 快照探测并发（archive.today 限速，别调太高） |
 | `PROBE_TOTAL_TIMEOUT` | `30` | 单条探测子进程上限（自动存档时放宽到 75） |
 | `AUTO_ARCHIVE_BUDGET` | `24` | 本轮最多自动 “archive this url” 条数 |
-| `SYND_BUDGET` | `24` | 本轮最多解析转载版条数 |
+| `SYND_BUDGET` | `60` | 本轮最多解析转载版条数 |
 | `SYND_WORKERS` | `4` | 转载版检索并发 |
 | `DIRECT_TEXT_BUDGET` | `64` | 本轮最多直连正文条数（优先于 archive） |
 | `DIRECT_TEXT_WORKERS` | `4` | 直连正文并发 |

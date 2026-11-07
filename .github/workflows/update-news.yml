@@ -51,7 +51,7 @@ jobs:
           PROBE_WORKERS: "4"
           PROBE_TOTAL_TIMEOUT: "30"
           AUTO_ARCHIVE_BUDGET: "24"
-          SYND_BUDGET: "24"
+          SYND_BUDGET: "60"
           SYND_WORKERS: "4"
           DIRECT_TEXT_BUDGET: "64"
           DIRECT_TEXT_WORKERS: "4"

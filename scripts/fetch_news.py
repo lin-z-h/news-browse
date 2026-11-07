@@ -530,9 +530,9 @@ def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
 
     返回 {原文url: 本次已解析的转载结果}，供正文阶段直接复用，避免重复检索。
     """
-    budget = _env_int("SYND_BUDGET", 24)
+    budget = _env_int("SYND_BUDGET", 60)
     payloads = {}
-    stage_deadline = min(DEADLINE, time.monotonic() + 300)
+    stage_deadline = min(DEADLINE, time.monotonic() + 420)
     todo = []
     for item in items:
         if budget <= 0 or time.monotonic() >= stage_deadline:
@@ -889,6 +889,7 @@ def main() -> int:
             it["cover_only"] = bool(
                 it["source"] in paywalled
                 and it["status"] not in ("archive", "wayback")
+                and not it.get("syndicated_url")
             )
             status_count[it["status"]] = status_count.get(it["status"], 0) + 1
     except Exception as exc:

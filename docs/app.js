@@ -381,14 +381,15 @@
     return { blocks, esc: escText };
   }
 
-  // APK 捕获文本的垃圾特征：人机验证页 / archive 工具条。原生已做过第一道把关，这里兜底
+  // APK 捕获文本的垃圾特征：人机验证页 / archive 工具条 / “没有快照”帮助页。原生已做过第一道把关，这里兜底
   const CAP_GARBAGE_RE = /completing the captcha|proves you are (?:a )?human|are you a robot|verify(?:ing)? (?:that )?you are (?:a )?human|security check to access|just a moment|enable javascript and cookies/i;
+  const CAP_HELP_RE = /搜索所有来自此域名|根据精确网址查询存档|查询以此网址开头的网页|You may want to|archive this url|立即存档|存档此网址|No results|not archived/i;
   const CAP_DROP_RE = /^(https?:\/\/|www\.)\S+$|^[\w.-]+\.(?:com|net|org|ph|is|li|vn|md|fo|tc|today)(?:\/\S*)?$|^archive\.(?:ph|today|is|li|vn|md|fo|tc)\b|^webpage capture|^saved from|^all \d+|^my blogs|^telegram$|^vk$|^(search|share|report|close|menu|donate|subscribe|newsletter|advertising|cookies?)\b/i;
 
   // 清洗 APK 提取的纯文本：去 URL 行/工具条行/重复行/与标题重复的行。
   // 达不到正文量（≥3 段且 ≥120 字，中文短讯也覆盖）返回空 = 拒绝渲染
   function cleanCaptureText(text, title) {
-    if (CAP_GARBAGE_RE.test(text) || looksLikePaywall(text)) return [];
+    if (CAP_GARBAGE_RE.test(text) || CAP_HELP_RE.test(text) || looksLikePaywall(text)) return [];
     const tnorm = String(title || "").replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
     const seen = new Set([tnorm]);
     const out = [];
@@ -548,6 +549,19 @@
           }
         }
       } catch (e) { /* 缓存不可用则照旧走链 */ }
+    }
+    // 3.4) 转载版直读：news.json 里带 syndicated_url 时，不需要私有缓存 token 也能读
+    if (it.syndicated_url && !ctrl.signal.aborted) {
+      setStatus("正在获取转载版正文…");
+      const h = JINA_KEY ? { Authorization: "Bearer " + JINA_KEY } : {};
+      try {
+        const sr = await fetchTextTimeout("https://r.jina.ai/" + it.syndicated_url,
+          { headers: h }, 25000, ctrl.signal);
+        if (sr && sr.ok) {
+          const sden = denoiseReader(sr.text, _host(it.syndicated_url), it.title);
+          if (sden) { renderReaderBody(sden); return; }
+        }
+      } catch (e) { if (ctrl.signal.aborted) return; }
     }
     // 3.5) 封面模式：付费墙源且无快照/正文缓存 → 只渲染封面，等用户点“开始阅读”
     if (it.cover_only && !force) { renderCover(it); return; }

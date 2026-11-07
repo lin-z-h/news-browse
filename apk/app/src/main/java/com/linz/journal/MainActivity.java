@@ -56,6 +56,11 @@ public class MainActivity extends Activity {
     private static final Pattern CAPTCHA_RE = Pattern.compile(
             "completing the captcha|proves you are (a )?human|are you a robot|verif(y|ying) (that )?you are (a )?human|security check to access|just a moment|enable javascript and cookies",
             Pattern.CASE_INSENSITIVE);
+    // archive.today 的“没有快照”帮助/搜索页：中英文都要拦，不能当正文提取
+    private static final Pattern ARCHIVE_HELP_RE = Pattern.compile(
+            "搜索所有来自此域名|根据精确网址查询存档|查询以此网址开头的网页|" +
+            "You may want to|archive this url|立即存档|存档此网址|No results|not archived",
+            Pattern.CASE_INSENSITIVE);
     // archive.today 快照页正文在 iframe 里（与主页面同源），工具条文字在 body——优先取更长的那个
     private static final String EXTRACT_JS =
             "(function(){var best='';var fr=document.getElementsByTagName('iframe');" +
@@ -72,10 +77,10 @@ public class MainActivity extends Activity {
             "if(window.__journalSaveTried)return 'skip';" +
             "window.__journalSaveTried=1;" +
             "var t=(document.body&&document.body.innerText)||'';" +
-            "if(!/no results|no snapshots?|not archived|archive this url|save this url|page not archived/i.test(t))return 'skip';" +
+            "if(!/no results|no snapshots?|not archived|archive this url|save this url|page not archived|搜索所有来自此域名|根据精确网址查询存档|立即存档|存档此网址|You may want to/i.test(t))return 'skip';" +
             "var as=document.querySelectorAll('a,button');" +
             "for(var i=0;i<as.length;i++){var x=as[i];var s=((x.innerText||x.textContent||'')+' '+(x.getAttribute('href')||'')).toLowerCase();" +
-            "if(/archive this url|save this url|submit url|\\/submit\\//.test(s)){x.click();return 'clicked';}}" +
+            "if(/archive this url|save this url|submit url|\\/submit\\//|存档|立即存档/.test(s)){x.click();return 'clicked';}}" +
             "return 'none';}catch(e){return 'err';}})()";
 
     private WebView web;
@@ -448,6 +453,13 @@ public class MainActivity extends Activity {
             int longLines = 0;
             for (String ln : text.split("\n")) {
                 if (ln.trim().length() >= 24) longLines++;
+            }
+            boolean helpPage = ARCHIVE_HELP_RE.matcher(text).find()
+                    || (web.getUrl() != null && web.getUrl().contains("/newest/"));
+            if (helpPage) {
+                Toast.makeText(this, "还没有快照：先点页面上的 archive this url / 存档此网址，等快照生成后再点提取",
+                        Toast.LENGTH_LONG).show();
+                return;
             }
             boolean garbage = text.length() < 200 || longLines < 3 || CAPTCHA_RE.matcher(text).find();
             if (garbage) {
