@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T11:35:32Z",
+ "generated_at": "2026-11-07T11:59:20Z",
  "sources": [
   "Bloomberg",
   "The New York Times",
@@ -16,13 +16,79 @@
  ],
  "items": [
   {
+   "id": "814cdafafdff",
+   "title": "Top China university stops using AI to spot absent-minded students after backlash",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T12:00:09Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/038c86a5-b7c5-40c7-aa84-89409bba678c_0875067c.jpg?itok=YJQO1iGu&v=1793971952",
+   "url": "https://www.scmp.com/news/china/science/article/3373599/top-china-university-stops-using-ai-spot-absent-minded-students-after-backlash",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "10cb34c41c0d",
+   "title": "The Silver Linings Of an Aging World",
+   "source": "TIME",
+   "topic": "Business",
+   "published": "2026-11-07T12:00:04Z",
+   "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt62216a3963d07a4b/6aecb473cdd408094b4d2523/Aging_Weekend_Essay_Featured_Image.png?branch=production&amp;width=2400&amp;quality=75&amp;auto=webp&amp;crop=16:9",
+   "url": "https://time.com/article/2026/11/07/silver-linings-in-an-aging-world/",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "26871911f8fc",
    "title": "Print Edition | Wall Street Journal - WSJ",
    "source": "WSJ",
    "topic": "Top",
-   "published": "2026-11-07T11:30:25Z",
+   "published": "2026-11-07T11:58:13Z",
    "image": null,
    "url": "https://www.wsj.com/print-edition/20261107/frontpage",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "7852f4ae2588",
+   "title": "Polish Finance Minister Faults President for S&P’s Negative View",
+   "source": "Bloomberg",
+   "topic": "Politics",
+   "published": "2026-11-07T11:51:21Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/articles/2026-11-07/polish-finance-minister-faults-president-for-s-p-s-negative-view",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "f9e901b7aaf0",
+   "title": "北海道大風雪 當局提醒可能影響交通或引致停電",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T11:50:00Z",
+   "image": null,
+   "url": "https://news.tvb.com/en/1205123",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "1bfdf675367b",
+   "title": "Xi’s Tightening China Grip Risks Less Innovation: New Economy",
+   "source": "Bloomberg",
+   "topic": "Economics",
+   "published": "2026-11-07T11:45:01Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/newsletters/2026-11-07/xi-s-tightening-china-grip-risks-less-innovation-new-economy",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -33,11 +99,52 @@
    "title": "New Zealand election 2026 live results: National and Labour neck-and-neck as minor party eyes kingmaker role",
    "source": "The Guardian",
    "topic": "World",
-   "published": "2026-11-07T11:29:11Z",
+   "published": "2026-11-07T11:44:32Z",
    "image": "https://i.guim.co.uk/img/media/ca0da5faecb3c527577fc78ebfc856aa865bc8d6/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=842242f69139eccf98f50148f27a190a",
    "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
    "_direct": true,
    "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "f8f50c378ba1",
+   "title": "進博會｜美企參展面積八連冠 看好中國市場",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T11:42:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026IqUOCYijGH1794051971.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205122",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "e4d427654379",
+   "title": "中央氣象台發暴雪黃色預警 北京延慶漫天飄雪",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T11:41:00Z",
+   "image": null,
+   "url": "https://news.tvb.com/en/1205121",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "79e17292589d",
+   "title": "Musk fled California for Texas. Now his red-state refuge is in revolt. - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-07T11:32:41Z",
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/DGTXVHBOWBHN5IH2YYMOEAYGZA.jpg&amp;w=1440",
+   "url": "https://www.washingtonpost.com/technology/2026/11/07/musk-fled-california-texas-now-his-red-state-refuge-is-revolt/",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -96,19 +203,6 @@
    "cover_only": false
   },
   {
-   "id": "ead3055a104e",
-   "title": "How Your Finances Could Change if Democrats Repeat Their Win in 2028 - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-07T11:15:57Z",
-   "image": null,
-   "url": "https://www.wsj.com/personal-finance/how-your-finances-could-change-if-democrats-repeat-their-win-in-2028-b7399634",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "c0904baae182",
    "title": "Manila weighs second South China Sea legal case against Beijing: analyst",
    "source": "SCMP",
@@ -116,7 +210,8 @@
    "published": "2026-11-07T11:10:52Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/bb62842d-52c7-4c77-89bf-b829f1f5cee4_a95434b4.jpg?itok=EsluG0jn&v=1794049851",
    "url": "https://www.scmp.com/news/china/diplomacy/article/3373651/manila-weighs-second-south-china-sea-legal-case-against-beijing-analyst",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -129,7 +224,22 @@
    "published": "2026-11-07T11:06:25Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/d73f810f-b24c-429c-9904-ec4a4ae7e302_f6e79d88.jpg?itok=5uKTaCCu&v=1794048974",
    "url": "https://www.scmp.com/news/china/military/article/3373649/trumps-war-secretary-hegseth-and-pacific-command-chief-paparo-may-soon-visit-china",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "4bcdd02a1c3b",
+   "title": "Chinese Vice Premier He Lifeng held video call with US Bessent",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T11:03:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026BzAJC6gi2v1794052195.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205117",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -212,6 +322,32 @@
    "url": "https://time.com/article/2026/11/07/how-to-keep-an-open-mind/",
    "_direct": true,
    "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "57fecb12c4f4",
+   "title": "Guangzhou metro repurpose transfer passageways into gym, library",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T10:57:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026mnNseShHYh1794052235.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205114",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "885617ce979d",
+   "title": "Trump names new chief of staff after election shakeup",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T10:56:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026AS5IujhKtf1794052146.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205112",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -425,6 +561,19 @@
    "published": "2026-11-07T10:02:07Z",
    "image": "https://static01.nyt.com/images/2026/11/07/us/07pol-democrats/07pol-democrats-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/07/us/politics/democrats-midterms-2028-presidential-race.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "914dff4e8d3d",
+   "title": "Turning Point Bet on the Midterms and Lost. Some Republicans Are Furious.",
+   "source": "The New York Times",
+   "topic": "Top",
+   "published": "2026-11-07T10:02:07Z",
+   "image": "https://static01.nyt.com/images/2026/11/07/multimedia/07nat-turningpoint-midterms-01-thwk/07nat-turningpoint-midterms-01-thwk-mediumSquareAt3X-v2.jpg",
+   "url": "https://www.nytimes.com/2026/11/07/us/turning-point-arizona-midterms.html",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -1153,19 +1302,6 @@
    "cover_only": false
   },
   {
-   "id": "74e03b93534a",
-   "title": "The Washington Post - Breaking news and latest headlines, U.S. news, world news, and video - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-07T08:08:41Z",
-   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Fimg%252Ewashingtonpost%252Ecom%2Fpb%2Fresources%2Fimg%2Ftwp-social-share%252Epng&amp;w=1484",
-   "url": "https://www.washingtonpost.com/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": "http://web.archive.org/web/20261107045942/https://www.washingtonpost.com/",
-   "cover_only": false
-  },
-  {
    "id": "e70c4fd1a661",
    "title": "After Israel’s Election, Who Will Get the First Chance to Form a Government?",
    "source": "The New York Times",
@@ -1643,50 +1779,8 @@
    "cover_only": false
   },
   {
-   "id": "0d5811042f58",
-   "title": "Global News Highlights from AP",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T06:16:00Z",
-   "image": "https://pro-vod-cdn.tvb.com/3c9160ef7edc4342a1f064150aa71b42/snapshots/de251174e43945a3b18b07fbc8c8120f-00003.jpg",
-   "url": "https://news.tvb.com/en/1205077",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "1c818cc28601",
-   "title": "Meghan, Duchess of Sussex's father arrested for child abuse material",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T06:13:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026wHJq9IupkR1794032087.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205076",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "5011af8393ec",
-   "title": "Pope Leo kicks off Latin America tour 3 weeks after cancer surgery",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T06:12:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026HnmBEvHwyw1794031998.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205075",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "9a53d6e32c7c",
-   "title": "New Zealand Election Kingmaker Emerges With 50% of Vote Counted",
+   "title": "New Zealand Government Holds Narrow Lead in Election Nailbiter",
    "source": "Bloomberg",
    "topic": "Politics",
    "published": "2026-11-07T06:08:21Z",
@@ -1834,18 +1928,17 @@
    "cover_only": true
   },
   {
-   "id": "c632ffad7f9d",
-   "title": "巴拉圭通過彈劾涉銀行危機總統並解除職務 副總統宣誓接任強調將保障存戶",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T05:53:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026fJmVkrPDKx1794031305.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205073",
-   "_direct": true,
-   "status": "direct",
+   "id": "991fd7bca220",
+   "title": "Wall Street Gets $2.5 Trillion AI Reality Check With Historic Rout of Tech Stocks - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T05:57:56Z",
+   "image": null,
+   "url": "https://www.wsj.com/print-edition/20261106/frontpage",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": false
+   "cover_only": true
   },
   {
    "id": "2887d893e5a0",
@@ -2633,20 +2726,6 @@
    "cover_only": false
   },
   {
-   "id": "dfe25ba3062f",
-   "title": "陳美寶指目標5年內將機場航點增至240個 擴展航空網絡並發展航空產業",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T03:27:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20262qg2zyJoIg1794023002.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205065",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "961507c0d946",
    "title": "草間彌生最大南瓜雕塑作品全球僅5座 其中一座落戶啟德",
    "source": "TVB",
@@ -2988,6 +3067,19 @@
    "cover_only": true
   },
   {
+   "id": "3890f3396e8a",
+   "title": "America Has Become the Last Place to Make Money for the World’s Automakers - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T02:00:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/business/autos/america-has-become-the-last-place-to-make-money-for-the-worlds-automakers-3ee3ae7c",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "d94247d11890",
    "title": "Ousted Paraguay president under house arrest after banking crisis leaves 60% of country unable to access accounts",
    "source": "The Guardian",
@@ -3042,6 +3134,19 @@
    "cover_only": false
   },
   {
+   "id": "295756811967",
+   "title": "A Soldier Cut Off His Own Foot to Survive. Then Came a Daring Drone Rescue. - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T01:42:08Z",
+   "image": null,
+   "url": "https://www.wsj.com/world/europe/ukraine-war-drone-rescue-c2e59cd6",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "533775c3cf0a",
    "title": "Stephen Miller, architect of Trump’s immigration crackdown, to become White House chief of staff",
    "source": "The Guardian",
@@ -3054,6 +3159,19 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
+  },
+  {
+   "id": "2b924cfc63c2",
+   "title": "Ten Months of War to Gain 46 Square Miles: How Russia Is Failing on the Battlefield - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T01:34:24Z",
+   "image": null,
+   "url": "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
   },
   {
    "id": "ae25133a15f7",
@@ -3297,19 +3415,6 @@
    "cover_only": false
   },
   {
-   "id": "2b924cfc63c2",
-   "title": "Ten Months of War to Gain 46 Square Miles: How Russia Is Failing on the Battlefield - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-07T00:34:08Z",
-   "image": null,
-   "url": "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "b7884d615bea",
    "title": "Australia’s Albanese Urges Iran De-Escalation After US Midterms",
    "source": "Bloomberg",
@@ -3362,20 +3467,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
-  },
-  {
-   "id": "91f73d8d8b46",
-   "title": "習近平：中國不是歐洲問題根源 人類命運共同體理念有利全球南方共同利益",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:11:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026GgJ2FOLybe1794010760.png?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205054",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
   },
   {
    "id": "ec287001d492",
@@ -3592,20 +3683,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
-  },
-  {
-   "id": "e21e4393c751",
-   "title": "Paraguay’s President Pena impeached over Ueno banking crisis, placed under house arrest",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-11-06T23:41:08Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/87c80bcb-7344-4477-9f17-cecf8461acf3_2e04e06a.jpg?itok=PjPsfuCw&v=1794008459",
-   "url": "https://www.scmp.com/news/world/americas/article/3373623/paraguays-president-pena-impeached-over-ueno-banking-crisis-placed-under-house-arrest",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
   },
   {
    "id": "88bda8582df9",
@@ -4121,19 +4198,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "53a098d197c6",
-   "title": "Paraguayan President Peña Removed From Office, Arrested",
-   "source": "Bloomberg",
-   "topic": "Politics",
-   "published": "2026-11-06T22:05:01Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/paraguay-senators-remove-pena-from-office-after-bank-scandal",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "226be790c87f",
@@ -5449,7 +5513,7 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T19:00:00Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EOL6BG36II3MESNEM7ST2AXPLM_size-normalized.JPG&amp;w=1440",
    "url": "https://www.washingtonpost.com/food/2026/11/06/we-tried-3d-printed-meat-wished-we-hadnt/",
    "status": "challenge",
    "archive_url": null,
@@ -5462,7 +5526,7 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T19:00:00Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/W75OMCYDFAU2CEW3CIFVQLKVTU_size-normalized.JPG&amp;w=1440",
    "url": "https://www.washingtonpost.com/climate-environment/2026/11/06/why-more-people-are-turning-native-gardens-dc/",
    "status": "challenge",
    "archive_url": null,
@@ -5779,7 +5843,7 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T18:15:42Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://podcast.posttv.com/series/20261106/t_1793925642112_name_2400template80DL.jpg&amp;w=1440",
    "url": "https://www.washingtonpost.com/podcasts/impromptu/what-the-collapse-of-a-2-billion-law-firm-reveals/",
    "_direct": true,
    "status": "direct",
@@ -6357,7 +6421,7 @@
    "published": "2026-11-06T16:50:13Z",
    "image": "https://i.guim.co.uk/img/media/e90c730d5a61042be7b70ef75678dc9ab9b80828/330_256_6210_4968/master/6210.jpg?width=140&quality=85&auto=format&fit=max&s=3e29ced56a6ef89bd2f99252512bdf5e",
    "url": "https://www.theguardian.com/politics/2026/nov/06/andy-burnham-quite-radical-change-young-people-support-benefits-neets",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6474,7 +6538,7 @@
    "published": "2026-11-06T16:42:38Z",
    "image": null,
    "url": "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy/heres-the-latest",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6487,7 +6551,7 @@
    "published": "2026-11-06T16:38:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026Yjs38ssMT81793982902.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205029",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6500,7 +6564,7 @@
    "published": "2026-11-06T16:36:12Z",
    "image": "https://i.guim.co.uk/img/media/b9cd273441ed2ab4f09142081a86d1aec24640bb/0_1069_4992_3990/master/4992.png?width=140&quality=85&auto=format&fit=max&s=625106902662c11704fcb884302c57d9",
    "url": "https://www.theguardian.com/fashion/2026/nov/06/john-smedley-will-always-be-in-vogue",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6539,7 +6603,7 @@
    "published": "2026-11-06T16:31:05Z",
    "image": "https://i.guim.co.uk/img/media/31769e89834e7540580a0bb16ab7d9b409b7b228/268_0_1321_1058/master/1321.jpg?width=140&quality=85&auto=format&fit=max&s=1830ffbc6553f4dc88cca20a53f32e19",
    "url": "https://www.theguardian.com/culture/2026/nov/06/seth-meyers-republicans-trump-midterms",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6565,7 +6629,7 @@
    "published": "2026-11-06T16:27:32Z",
    "image": "https://i.guim.co.uk/img/media/023ddc9c0a6ea277ce369177da0ca489c5581b34/227_0_4640_3712/master/4640.jpg?width=140&quality=85&auto=format&fit=max&s=5f2f605c056016892400595753b054ae",
    "url": "https://www.theguardian.com/environment/2026/nov/06/uk-dairy-farmers-face-squeeze-as-milk-processor-cuts-prices",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6578,7 +6642,7 @@
    "published": "2026-11-06T16:26:17Z",
    "image": "https://i.guim.co.uk/img/media/af13db51b17a65dbfc940a3980063bfbda88b6e9/253_0_4583_3667/master/4583.jpg?width=140&quality=85&auto=format&fit=max&s=e1c3d8cd16983990d912eb500ae31508",
    "url": "https://www.theguardian.com/world/live/2026/nov/06/high-alert-hoax-bomb-threats-france-air-lingus-belgium-pope-leo-europe-live",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6695,7 +6759,7 @@
    "published": "2026-11-06T16:14:54Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt63ca57497c3c2508/6aedfc34e47c1e5663c2fa59/climate-cooperation-clean-energy.jpg?branch=production",
    "url": "https://time.com/article/2026/11/06/tide-turning-global-climate-cooperation/",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6747,7 +6811,7 @@
    "published": "2026-11-06T16:09:18Z",
    "image": "https://i.guim.co.uk/img/media/e304922b1742f8abb9512b6c85d484878c2dd647/667_0_3333_2668/master/3333.jpg?width=140&quality=85&auto=format&fit=max&s=2339eb3c98a3c9050f34e633cd9e39bc",
    "url": "https://www.theguardian.com/technology/2026/nov/06/us-tech-stock-ai-bubble-bursting-market-meltdown-explainer",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6942,7 +7006,7 @@
    "published": "2026-11-06T15:38:22Z",
    "image": "https://i.guim.co.uk/img/media/31b6d050a0b8addfb2085e32367c8c60bc10af32/100_0_4167_3335/master/4167.jpg?width=140&quality=85&auto=format&fit=max&s=653e76a4581d57c94d276ebc8f10d6bf",
    "url": "https://www.theguardian.com/politics/live/2026/nov/06/burnham-force-employers-publish-salaries-job-ads-labour-chagos-islands-shabana-mahmood-eu-universities-brexit-kemi-badenoch-tories-uk-politics-latest-news",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6953,12 +7017,14 @@
    "source": "Bloomberg",
    "topic": "Economics",
    "published": "2026-11-06T15:37:04Z",
-   "image": null,
+   "image": "https://s.yimg.com/lo/mysterio/api/f5d0415af70b06ae1a48a950287c173f66ba76f457d1a008efa979ca49f39cde/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbloomberg_holding_pen_162%2F287a22a90d70cf7d99d83239210e428a.jpg",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/hassett-says-no-economic-policy-shift-even-after-election-rout",
+   "syndicated_url": "https://ca.finance.yahoo.com/news/hassett-says-no-economic-policy-153704724.html",
+   "syndicated_title": "Hassett Says No Economic Policy Shift Even After Election Rout",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "aa50917b6f0e",
@@ -6981,7 +7047,7 @@
    "published": "2026-11-06T15:35:32Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt580b7d3c67c8b7c2/6aedf2867ce30b4db81ea121/Duke-University.jpg?branch=production",
    "url": "https://time.com/article/2026/11/06/how-ai-is-impacting-college-students-like-me/",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6994,7 +7060,7 @@
    "published": "2026-11-06T15:32:26Z",
    "image": "https://i.guim.co.uk/img/media/9f462a31cb0f99a6a17231a4c9a3a1046c7108ab/879_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=aff1ed8eff7e4dcc21e407570220ef85",
    "url": "https://www.theguardian.com/football/2026/nov/06/gotham-fc-nwsl-playoffs",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -7007,7 +7073,7 @@
    "published": "2026-11-06T15:28:18Z",
    "image": "https://i.guim.co.uk/img/media/6b061cd7e309f7f7bbb7f4883125a6220eaaf331/22_0_1500_1200/master/1500.jpg?width=140&quality=85&auto=format&fit=max&s=a8ba682a1e4ffce6c9b82c6f2bad2cca",
    "url": "https://www.theguardian.com/uk-news/2026/nov/06/shabana-mahmood-uk-immigration-shakeup-reaction",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -7072,7 +7138,7 @@
    "published": "2026-11-06T15:17:08Z",
    "image": "https://i.guim.co.uk/img/media/73530bb71968af6a5b5d2dca4fd682c0f680fd80/0_253_3524_2819/master/3524.jpg?width=140&quality=85&auto=format&fit=max&s=d05db8a6116ac1b16f99fce1b22ac8e5",
    "url": "https://www.theguardian.com/technology/2026/nov/06/eu-charges-tiktok-failure-to-protect-users-mental-health",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -7377,19 +7443,6 @@
    "cover_only": true
   },
   {
-   "id": "69a8bd6148fe",
-   "title": "Lula Puts Allies Over Markets as He Mulls Finance Minister Pick",
-   "source": "Bloomberg",
-   "topic": "Economics",
-   "published": "2026-11-06T14:04:55Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/lula-puts-allies-over-markets-as-he-mulls-finance-minister-pick",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "23d61b38bcec",
    "title": "If Dune is this generation’s Star Wars, we are all in big trouble",
    "source": "The Guardian",
@@ -7616,12 +7669,14 @@
    "source": "Bloomberg",
    "topic": "Economics",
    "published": "2026-11-06T13:31:56Z",
-   "image": null,
+   "image": "https://assets.theedgemarkets.com/Sawmill_in_Pine_Plains,_New_York_Bloomberg_20261106224733_Bloomberg.jpg",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/us-adds-165-000-jobs-above-all-forecasts-as-unemployment-falls",
+   "syndicated_url": "https://theedgemalaysia.com/node/824930",
+   "syndicated_title": "US adds 165,000 jobs, topping all forecasts in broad advance",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "7b534737aa1e",
@@ -7902,12 +7957,14 @@
    "source": "WSJ",
    "topic": "Top",
    "published": "2026-11-06T12:31:00Z",
-   "image": null,
+   "image": "https://s.yimg.com/lo/mysterio/api/b4b55e11439fec1921b4eeca62c8a6f0129e463d80354ed19dffb9adc3539a6b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_staff_375%2Fa613bd28b1aad7ad283a1d6cf64b0592.jpg",
    "url": "https://www.wsj.com/business/autos/tesla-winding-down-production-of-cybertruck-musk-says-89df7158",
+   "syndicated_url": "https://finance.yahoo.com/markets/stocks/articles/musk-says-tesla-wind-down-085706319.html",
+   "syndicated_title": "Musk Says Tesla Will Wind Down Cybertruck Production Next Year",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": "http://web.archive.org/web/20261106122340/https://www.wsj.com/business/autos/tesla-winding-down-production-of-cybertruck-musk-says-89df7158",
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "76d4fe9a5ca8",
@@ -8188,12 +8245,14 @@
    "source": "Bloomberg",
    "topic": "Industries",
    "published": "2026-11-06T11:31:52Z",
-   "image": null,
+   "image": "https://s.yimg.com/lo/mysterio/api/f4cfbdd02ea4481c255875a2476e0a2607be30690a9f44a98aa65a3b6a5330da/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmediaite_845%2Fb4d29482bee6d69a4093148ba3463c33.jpg",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/tesla-to-wind-down-cybertruck-production-in-texas-next-year",
+   "syndicated_url": "https://finance.yahoo.com/markets/stocks/articles/tesla-winding-down-production-cybertruck-163822529.html",
+   "syndicated_title": "Tesla Is ‘Winding Down Production’ of the Cybertruck After Years of Poor Sales and Recalls",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "5b3e87fe2c27",
@@ -8203,19 +8262,6 @@
    "published": "2026-11-06T11:17:00Z",
    "image": null,
    "url": "https://www.wsj.com/economy/global/eurozone-retail-sales-slumped-in-september-9c1b2ae4",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
-   "id": "10864b26c766",
-   "title": "Taiwan Activates Market-Stabilization Measures to Stem AI Bleeding - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T11:16:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/finance/commodities-futures/taiwan-activates-market-stabilization-measures-to-stem-ai-bleeding-169e36e1",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -8630,12 +8676,14 @@
    "source": "Bloomberg",
    "topic": "Economics",
    "published": "2026-11-06T09:57:02Z",
-   "image": null,
+   "image": "https://s.yimg.com/lo/mysterio/api/e0b3d86bad4d1633eee20be333d58d32e14ee2dff02dc9f8267907b085aaac1c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbloomberg_holding_pen_162%2Fd2b67f807d9f6b88b214387bf55ab2b3.jpg",
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/williams-says-fed-should-gather-information-to-judge-price-risks",
+   "syndicated_url": "https://uk.finance.yahoo.com/news/williams-says-fed-gather-data-103153007.html",
+   "syndicated_title": "Williams Says Fed Should Gather Data to Judge Price Risks",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "2f6f27691895",
@@ -8853,6 +8901,19 @@
    "published": "2026-11-06T07:12:45Z",
    "image": null,
    "url": "https://www.washingtonpost.com/dc-md-va/2026/11/05/national-guard-adding-boats-humvees-dc-leaders-hope-oust-troops/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "fa9afb72cbae",
+   "title": "Belgium to allow home searches for suspected illegal migrants - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-06T07:07:00Z",
+   "image": null,
+   "url": "https://www.reuters.com/world/belgium-allow-home-searches-suspected-illegal-migrants-2026-11-06/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -9561,19 +9622,6 @@
    "cover_only": false
   },
   {
-   "id": "3cea4efe20d2",
-   "title": "Gold drops as strong US payrolls boost dollar, yields - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-06T03:46:00Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/india/gold-eases-inflation-worries-higher-oil-us-payrolls-data-focus-2026-11-06/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "e97cab3e21a0",
    "title": "How the Texas blue wave came crashing down on Republicans - The Washington Post",
    "source": "The Washington Post",
@@ -9779,19 +9827,6 @@
    "status": "challenge",
    "archive_url": null,
    "wayback_url": "http://web.archive.org/web/20261106052819/https://www.wsj.com/politics/elections/democrats-are-hatching-a-plan-to-reverse-trumps-canada-tariffs-a444cdc0",
-   "cover_only": true
-  },
-  {
-   "id": "295756811967",
-   "title": "A Soldier Cut Off His Own Foot to Survive. Then Came a Daring Drone Rescue. - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T02:00:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/world/europe/ukraine-war-drone-rescue-c2e59cd6",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
    "cover_only": true
   },
   {
@@ -10371,7 +10406,7 @@
    "title": "Cloudflare Stock Surges on Lifted Full-Year Outlook, Third-Quarter Revenue Growth - WSJ",
    "source": "WSJ",
    "topic": "Top",
-   "published": "2026-11-05T22:03:22Z",
+   "published": "2026-11-05T22:00:00Z",
    "image": null,
    "url": "https://www.wsj.com/business/earnings/cloudflare-stock-surges-on-lifted-full-year-outlook-third-quarter-revenue-growth-984186bf",
    "status": "challenge",
@@ -11336,7 +11371,7 @@
    "published": "2026-11-05T17:08:29Z",
    "image": "https://i.guim.co.uk/img/media/e19e5c2659dc5b85cbc7515c4bde9d66462e8fb8/94_0_2812_2250/master/2812.jpg?width=140&quality=85&auto=format&fit=max&s=6e31142ff89536d0f2a0a8053cd27028",
    "url": "https://www.theguardian.com/music/2026/nov/05/k-pop-group-newjeans-contract",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11349,7 +11384,7 @@
    "published": "2026-11-05T17:05:36Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt1d36d64c2977ca5c/6aecb41fcaf94bdec873f615/GettyImages-2303133748.jpg?branch=production",
    "url": "https://time.com/article/2026/11/05/what-is-rhabdomyolysis-linked-to-new-york-city-marathon-death/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11362,7 +11397,7 @@
    "published": "2026-11-05T17:03:15Z",
    "image": "https://i.guim.co.uk/img/media/a2fc838b4b1bfb896074a6f126b6dfe6bbdfb11f/653_249_3362_2690/master/3362.jpg?width=140&quality=85&auto=format&fit=max&s=660286b2e6100475ecab9e7801d8e575",
    "url": "https://www.theguardian.com/culture/2026/nov/05/russell-brand-found-guilty-rape-sexual-assault",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11375,7 +11410,7 @@
    "published": "2026-11-05T17:00:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20264IheuCkMw51793597325.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204124",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11388,7 +11423,7 @@
    "published": "2026-11-05T16:57:33Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05biz-toyota-tvgh/05biz-toyota-tvgh-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/business/toyota-profits-hybrids.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11401,7 +11436,7 @@
    "published": "2026-11-05T16:53:44Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05Boe-Rates-Sub-bgkv/05Boe-Rates-Sub-bgkv-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/business/bank-of-england-interest-rates-inflation.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11414,7 +11449,7 @@
    "published": "2026-11-05T16:44:13Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04biz-techfix-1-02-jlmg/04biz-techfix-1-02-jlmg-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/technology/personaltech/amazon-kindle-colorsoft-review.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11427,7 +11462,7 @@
    "published": "2026-11-05T16:35:52Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05vid-bangladesh-cover-jtbq/05vid-bangladesh-cover-jtbq-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/asia/bangladesh-garment-workers-protest-wage.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11440,7 +11475,7 @@
    "published": "2026-11-05T16:33:59Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-italy-verdict-02-zfjk/05int-italy-verdict-02-zfjk-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/europe/italy-american-murder-case.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11453,7 +11488,7 @@
    "published": "2026-11-05T16:10:54Z",
    "image": null,
    "url": "https://www.reuters.com/business/media-telecom/details-russell-brands-convictions-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11466,9 +11501,9 @@
    "published": "2026-11-05T15:45:02Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt03c771aa668f8304/6aecc6485fb446613bcfb01d/ai-cheating.jpg?branch=production",
    "url": "https://time.com/article/2026/11/05/ai-cheating-scientists-report-alignment/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106221715/https://time.com/article/2026/11/05/ai-cheating-scientists-report-alignment/",
    "cover_only": false
   },
   {
@@ -11479,7 +11514,7 @@
    "published": "2026-11-05T15:36:00Z",
    "image": null,
    "url": "https://www.wsj.com/politics/policy/what-to-know-about-trumps-veto-power-3fd31dd9",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11492,7 +11527,7 @@
    "published": "2026-11-05T15:27:17Z",
    "image": "https://i.guim.co.uk/img/media/5558d413a11af8bb7ebd96378b444dab4804bca1/31_35_4918_3935/master/4918.jpg?width=140&quality=85&auto=format&fit=max&s=c2df25d7457052df08d3aa86b32fd7c3",
    "url": "https://www.theguardian.com/media/2026/nov/05/misogyny-and-sexism-of-russell-brand-case-have-not-gone-away-say-tv-insiders",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11505,7 +11540,7 @@
    "published": "2026-11-05T15:10:11Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/bltf84a6674c40d77e6/6aeb8e71caf94b6b9a73efda/cooking-gifts-holidays-best-inventions.jpg?branch=production",
    "url": "https://time.com/article/2026/11/05/best-gifts-for-foodies/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11518,7 +11553,7 @@
    "published": "2026-11-05T15:07:32Z",
    "image": "https://i.guim.co.uk/img/media/bdea8fa3434de58a2e77dd4929bb096caf39825e/457_1204_3494_2796/master/3494.jpg?width=140&quality=85&auto=format&fit=max&s=0939c452b1c0d3c7a57c30775d8635fe",
    "url": "https://www.theguardian.com/stage/2026/nov/05/ms-blakk-for-president-play",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11531,7 +11566,7 @@
    "published": "2026-11-05T15:06:13Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/bltd1759784255c7020/6ae3b8a1187d310ded900f08/tech-gifts-holidays-best-inventions.jpg?branch=production",
    "url": "https://time.com/article/2026/11/05/best-gifts-for-techies/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11544,7 +11579,7 @@
    "published": "2026-11-05T15:02:06Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05xp-bear-tjwc/05xp-bear-tjwc-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/canada/canada-grizzly-bear-attack-mother-daughter-killed.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11557,7 +11592,7 @@
    "published": "2026-11-05T15:00:27Z",
    "image": "https://i.guim.co.uk/img/media/837ec3d7500d5e5a1162a916c5bacf44dfac1141/0_104_3885_3106/master/3885.jpg?width=140&quality=85&auto=format&fit=max&s=37279828e970a95153eea86281ac385b",
    "url": "https://www.theguardian.com/thefilter/2026/nov/05/best-christmas-gifts-dads-grandads-uncles-friends-uk",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11570,7 +11605,7 @@
    "published": "2026-11-05T15:00:27Z",
    "image": "https://i.guim.co.uk/img/media/3c28accf63cbac55a6fcd3a8fe9ea9c8f6763fe4/417_0_4167_3333/master/4167.jpg?width=140&quality=85&auto=format&fit=max&s=19b2aabc997602520a988257aa971537",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/05/american-kindness-cruelty-trump",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11583,7 +11618,7 @@
    "published": "2026-11-05T14:58:44Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/news/singapore/lee-huay-leng-lianhe-zaobaos-english-edition-should-bridge-divides-not-deepen-them",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11596,7 +11631,7 @@
    "published": "2026-11-05T14:48:00Z",
    "image": null,
    "url": "https://www.wsj.com/business/drone-startup-zipline-raises-1-5-billion-at-21-5-billion-valuation-1d166eec",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11609,7 +11644,7 @@
    "published": "2026-11-05T14:33:32Z",
    "image": null,
    "url": "https://www.reuters.com/world/europe/putin-will-not-be-invited-britains-g20-summit-uk-pm-burnham-says-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11622,7 +11657,7 @@
    "published": "2026-11-05T14:31:58Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-japan-wave-kgzc/05int-japan-wave-kgzc-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11635,7 +11670,7 @@
    "published": "2026-11-05T14:30:25Z",
    "image": "https://i.guim.co.uk/img/media/85f4db268f9e270df6f680d2524c254755da2af2/202_0_3755_3004/master/3755.jpg?width=140&quality=85&auto=format&fit=max&s=64f01f64c40df4c1fa475f6395c445f1",
    "url": "https://www.theguardian.com/business/2026/nov/05/developing-country-debt-record-94tn-high-world-bank-data",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11648,7 +11683,7 @@
    "published": "2026-11-05T14:26:52Z",
    "image": "https://i.guim.co.uk/img/media/5420f90edcae520cf428b04c87a177cbd7445fc8/95_0_3338_2671/master/3338.jpg?width=140&quality=85&auto=format&fit=max&s=8c40fc2b10fb36923702b1247403a50f",
    "url": "https://www.theguardian.com/uk-news/2026/nov/05/origin-stonehenge-altar-remains-enigma-north-east-scotland-ruled-out",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11661,7 +11696,20 @@
    "published": "2026-11-05T14:16:04Z",
    "image": null,
    "url": "https://www.economist.com/britain/2026/11/05/the-economist-is-recruiting-an-audience-editor-in-london",
-   "status": "original",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "ead3055a104e",
+   "title": "How Your Finances Could Change if Democrats Repeat Their Win in 2028 - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-05T14:14:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/personal-finance/how-your-finances-could-change-if-democrats-repeat-their-win-in-2028-b7399634",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11674,7 +11722,7 @@
    "published": "2026-11-05T14:00:12Z",
    "image": "https://i.guim.co.uk/img/media/01664f506f205766c0352c078da3675310b7c73e/570_0_6080_4865/master/6080.jpg?width=140&quality=85&auto=format&fit=max&s=97b51af8764c9e5e561ace46d265cb75",
    "url": "https://www.theguardian.com/business/2026/nov/05/what-does-interest-rate-rise-mean-for-homeowners-and-savers-mortgages",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11687,7 +11735,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/leaders/2026/11/05/englands-new-ban-on-kinky-porn-will-misfire",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11700,7 +11748,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/leaders/2026/11/05/patients-are-acting-more-like-consumers-good",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11713,7 +11761,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/leaders/2026/11/05/the-world-must-act-to-stop-a-cyber-disaster",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11726,7 +11774,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/leaders/2026/11/05/el-salvadors-gangbuster-tries-his-luck-in-haiti",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11739,7 +11787,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/business/2026/11/05/americas-copper-giant-has-big-dreams-but-cautious-plans",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11752,7 +11800,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/business/2026/11/05/can-a-doordash-instacart-fusion-stand-up-to-amazon-and-walmart",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11765,7 +11813,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/business/2026/11/05/the-break-up-of-cvs-marks-a-turning-point-in-american-health-care",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11778,7 +11826,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/business/2026/11/05/is-curiosity-all-its-cooked-up-to-be",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11791,7 +11839,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/business/2026/11/05/firms-are-racing-to-protect-themselves-from-ai-cyber-threats",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11804,7 +11852,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/china/2026/11/05/china-and-taiwan-are-fighting-over-sun-yat-sen",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11817,7 +11865,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/international/2026/11/05/the-digital-world-is-making-islam-more-diverse",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11830,7 +11878,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/culture/2026/11/05/what-is-it-like-to-be-a-newborn",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11843,7 +11891,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/culture/2026/11/05/is-childlessness-contagious",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11856,7 +11904,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/culture/2026/11/05/is-it-time-to-end-the-era-of-remote-work",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11869,7 +11917,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/culture/2026/11/05/chinese-tech-helps-repressive-african-governments-crush-dissent",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11882,7 +11930,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/europe/2026/11/05/the-leftists-who-want-to-seize-berlins-apartments",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11895,7 +11943,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/europe/2026/11/05/war-battered-ukraine-risks-a-demographic-collapse",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11908,7 +11956,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/asia/2026/11/05/japan-prepares-for-its-next-natural-disaster",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11921,7 +11969,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/asia/2026/11/05/dead-starlink-terminals-in-myanmar-are-getting-people-killed",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11934,7 +11982,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/britain/2026/11/05/britains-landlords-deserve-some-love",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11947,7 +11995,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/britain/2026/11/05/spare-a-thought-for-the-european-shag",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11960,7 +12008,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/britain/2026/11/05/investor-seeks-ai-adonis",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11973,7 +12021,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/britain/2026/11/05/britain-makes-the-path-to-permanent-residence-more-arduous",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11986,7 +12034,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/britain/2026/11/05/britains-ban-on-some-pornography-is-based-on-flimsy-evidence",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11999,7 +12047,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/middle-east-and-africa/2026/11/05/gulf-states-brace-for-war-with-iran-again",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12012,7 +12060,7 @@
    "published": "2026-11-05T13:58:17Z",
    "image": null,
    "url": "https://www.economist.com/middle-east-and-africa/2026/11/05/americas-allies-oppose-more-war-in-iran-they-may-not-get-a-say",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12025,7 +12073,7 @@
    "published": "2026-11-05T13:47:00Z",
    "image": "https://i.guim.co.uk/img/media/383606daa4f240ded1f7ec8a1b158003c8d3e84d/238_0_2383_1906/master/2383.jpg?width=140&quality=85&auto=format&fit=max&s=a06c5b49973e0b8f3da54b566fad5532",
    "url": "https://www.theguardian.com/world/2026/nov/05/yemen-president-sacks-ministers-and-officers-houthis",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12038,7 +12086,7 @@
    "published": "2026-11-05T13:37:39Z",
    "image": null,
    "url": "https://www.economist.com/asia/2026/11/05/asia-bulletin-newsletter-pushing-back-against-populism-in-australia-and-new-zealand",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12051,7 +12099,7 @@
    "published": "2026-11-05T13:18:00Z",
    "image": null,
    "url": "https://www.wsj.com/business/retail/canada-goose-loss-widens-as-higher-costs-weigh-down-results-58010cab",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12064,7 +12112,7 @@
    "published": "2026-11-05T13:12:41Z",
    "image": null,
    "url": "https://www.reuters.com/world/china/europe-must-stockpile-critical-raw-materials-germanys-merz-says-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12077,7 +12125,7 @@
    "published": "2026-11-05T13:10:44Z",
    "image": "https://i.guim.co.uk/img/media/60308561c80255ccbb0d5174dd7aadb14404b385/683_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=f7075274cd41f2a4670e899c8f07f77a",
    "url": "https://www.theguardian.com/business/2026/nov/05/interest-rate-rise-in-midst-of-cost-of-living-crisis-will-leave-many-incredulous",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12090,7 +12138,7 @@
    "published": "2026-11-05T13:06:00Z",
    "image": null,
    "url": "https://www.wsj.com/pro/venture-capital/remote-patient-monitoring-companies-dodge-medicare-shiftfor-now-73165f70",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12103,7 +12151,7 @@
    "published": "2026-11-05T13:00:08Z",
    "image": null,
    "url": "https://www.ft.com/content/004c0408-c81f-4104-a514-ed307df8890d?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12116,9 +12164,9 @@
    "published": "2026-11-05T12:55:49Z",
    "image": null,
    "url": "https://www.ft.com/content/dd91306a-f3cf-43cc-baf2-9a9134fb92c4?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105183820/https://www.ft.com/content/dd91306a-f3cf-43cc-baf2-9a9134fb92c4?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -12129,9 +12177,9 @@
    "published": "2026-11-05T12:45:17Z",
    "image": null,
    "url": "https://www.ft.com/content/088d3368-bb8b-4ff3-9df7-a7680d4d81b2?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20260327094054/https://www.ft.com/content/088d3368-bb8b-4ff3-9df7-a7680d4d81b2?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -12142,7 +12190,7 @@
    "published": "2026-11-05T12:44:44Z",
    "image": null,
    "url": "https://www.ft.com/content/47a5b871-8b0b-4b89-9d17-5b9735b0dbe1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12155,7 +12203,7 @@
    "published": "2026-11-05T12:41:27Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05db-hinojosa-jvpm/05db-hinojosa-jvpm-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/business/dealbook/texas-blue-wave-business-fallout.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12168,7 +12216,7 @@
    "published": "2026-11-05T12:35:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/asia-pacific/putin-places-japan-tobaccos-russian-assets-under-temporary-administration-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12181,9 +12229,9 @@
    "published": "2026-11-05T12:33:33Z",
    "image": null,
    "url": "https://www.ft.com/content/290cf85b-6d95-4c79-af9b-e2a3d79072f6?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105183850/https://www.ft.com/content/290cf85b-6d95-4c79-af9b-e2a3d79072f6?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -12194,7 +12242,7 @@
    "published": "2026-11-05T12:15:23Z",
    "image": "https://i.guim.co.uk/img/media/c37e8e56f89b1802bfd28e222df5e48d6fdc0cfd/0_2_2805_2244/master/2805.jpg?width=140&quality=85&auto=format&fit=max&s=cc027468fc3921d210dfff7834b60532",
    "url": "https://www.theguardian.com/music/2026/nov/05/full-of-life-and-catching-feelings-christine-and-the-queens-greatest-songs-ranked",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12207,7 +12255,7 @@
    "published": "2026-11-05T12:00:23Z",
    "image": "https://i.guim.co.uk/img/media/3103fbcaf2412a278d63d4c7022d3e320c0fcc19/2779_391_5861_4689/master/5861.jpg?width=140&quality=85&auto=format&fit=max&s=14817eb53c7fafb2ac7238fd73e234b3",
    "url": "https://www.theguardian.com/world/2026/nov/05/what-can-britain-learn-dutch-slavery-apology",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12220,7 +12268,7 @@
    "published": "2026-11-05T12:00:00Z",
    "image": null,
    "url": "https://www.wsj.com/cio-journal/mercedes-gives-its-cars-an-ai-upgrade-607daae2",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12233,7 +12281,7 @@
    "published": "2026-11-05T11:54:22Z",
    "image": null,
    "url": "https://www.economist.com/finance-and-economics/2026/11/05/indebted-tycoons-haunt-chinas-banking-system",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12246,23 +12294,10 @@
    "published": "2026-11-05T11:39:48Z",
    "image": "https://i.guim.co.uk/img/media/dd21ec002793498971d5c2fdf4669f4ea9096e95/179_0_2700_2160/master/2700.jpg?width=140&quality=85&auto=format&fit=max&s=5723439dce3716263d1924543028061f",
    "url": "https://www.theguardian.com/film/2026/nov/05/syrian-family-10-year-journey-one-in-a-million-itab-azzam-and-jack-macinnes",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "f2c5be1874e7",
-   "title": "Amazon, Uber Partner on Restaurant Delivery as Competition Intensifies - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-05T11:39:37Z",
-   "image": null,
-   "url": "https://www.wsj.com/business/amazon-uber-partner-on-restaurant-delivery-as-competition-intensifies-07687bf8",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "4657719509f7",
@@ -12272,7 +12307,7 @@
    "published": "2026-11-05T11:23:03Z",
    "image": "https://static01.nyt.com/images/2026/11/05/business/05biz-china-softbank-abb/05biz-china-softbank-abb-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/business/softbank-robotics-china-block.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12285,7 +12320,7 @@
    "published": "2026-11-05T11:23:00Z",
    "image": null,
    "url": "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12298,7 +12333,7 @@
    "published": "2026-11-05T11:17:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/middle-east/netanyahus-position-weakens-ultra-orthodox-party-withholds-support-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12311,9 +12346,9 @@
    "published": "2026-11-05T11:09:38Z",
    "image": null,
    "url": "https://www.ft.com/content/e7e1345b-7d9a-4d14-a726-33cee30f189a?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105004108/https://www.ft.com/content/e7e1345b-7d9a-4d14-a726-33cee30f189a?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -12324,7 +12359,7 @@
    "published": "2026-11-05T11:04:18Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04int-israel-steal-jvlt/04int-israel-steal-jvlt-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-netanyahu-trump.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12337,7 +12372,7 @@
    "published": "2026-11-05T11:03:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/us/musk-has-little-show-his-record-spending-republican-campaigns-us-midterms-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12350,7 +12385,7 @@
    "published": "2026-11-05T11:02:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/us/trumps-washington-arch-poised-approval-judge-weighs-bid-block-construction-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12363,7 +12398,7 @@
    "published": "2026-11-05T11:00:22Z",
    "image": "https://i.guim.co.uk/img/media/5feaf034b448cd4570f9ab8900aa709e74ef9e07/452_0_4997_3999/master/4997.jpg?width=140&quality=85&auto=format&fit=max&s=b464ed158e8a7f51a2184f93c180ea83",
    "url": "https://www.theguardian.com/business/2026/nov/05/former-trump-voters-economy",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12376,9 +12411,9 @@
    "published": "2026-11-05T11:00:08Z",
    "image": null,
    "url": "https://www.ft.com/content/3d00ef8c-eec3-4afa-a35f-5ea333bf8bfe?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105143306/https://www.ft.com/content/3d00ef8c-eec3-4afa-a35f-5ea333bf8bfe?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -12389,9 +12424,9 @@
    "published": "2026-11-05T11:00:07Z",
    "image": null,
    "url": "https://www.ft.com/content/18739027-d5cc-4e18-825e-d43ac7d1ef9f?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105183908/https://www.ft.com/content/18739027-d5cc-4e18-825e-d43ac7d1ef9f?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -12402,7 +12437,7 @@
    "published": "2026-11-05T10:23:51Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/00int-kpop-takeaways-fmhk/00int-kpop-takeaways-fmhk-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/asia/how-kpop-works-contracts.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12415,7 +12450,7 @@
    "published": "2026-11-05T10:22:20Z",
    "image": null,
    "url": "https://www.economist.com/finance-and-economics/2026/11/05/ai-is-turning-protectionists-into-free-traders",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12428,7 +12463,7 @@
    "published": "2026-11-05T10:17:54Z",
    "image": null,
    "url": "https://www.economist.com/finance-and-economics/2026/11/05/william-nordhaus-favourite-economist-of-the-right-and-the-left",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12441,7 +12476,7 @@
    "published": "2026-11-05T10:04:56Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05dc-trump-econ-01-qtbk/05dc-trump-econ-01-qtbk-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/us/politics/midterms-democrats-trump-taxes-tariffs.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12454,7 +12489,7 @@
    "published": "2026-11-05T10:04:44Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04dc-prexy-wmkf/04dc-prexy-wmkf-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12467,7 +12502,7 @@
    "published": "2026-11-05T10:02:53Z",
    "image": "https://static01.nyt.com/images/2026/11/04/science/04SCI-CHIHUAHUA-DNA-01/04SCI-CHIHUAHUA-DNA-01-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/science/chihuahuas-coyote-dna.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12480,7 +12515,7 @@
    "published": "2026-11-05T10:00:04Z",
    "image": "https://i.guim.co.uk/img/media/e5d74696788edf613106cb392ccab215fcedea6f/703_0_7017_5615/master/7017.jpg?width=140&quality=85&auto=format&fit=max&s=ec7d495edd0280bac566eb2e5b57b9c0",
    "url": "https://www.theguardian.com/world/2026/nov/05/repairing-legacy-slavery-what-are-campaigners-calling-for",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12493,7 +12528,7 @@
    "published": "2026-11-05T10:00:01Z",
    "image": "https://i.guim.co.uk/img/media/d9382ec3a10ac54e97ce33041895c49e9050bf35/61_0_1125_900/master/1125.jpg?width=140&quality=85&auto=format&fit=max&s=429c4943a80c461c8118113aa54c93d5",
    "url": "https://www.theguardian.com/games/2026/nov/05/its-so-glossy-and-sexy-10-movies-and-one-tv-show-that-inspired-grand-theft-auto",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12506,7 +12541,7 @@
    "published": "2026-11-05T10:00:01Z",
    "image": "https://i.guim.co.uk/img/media/3b4548217e0b97672e70a8abbe9e9f43a7adedcd/732_128_2537_2032/master/2537.jpg?width=140&quality=85&auto=format&fit=max&s=3390bbcfdd97166404da4fcc037d33e6",
    "url": "https://www.theguardian.com/film/2026/nov/05/jimmy-james-stewart-movie-review",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12519,9 +12554,9 @@
    "published": "2026-11-05T10:00:00Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/forum/views/opinion-singapores-soft-power-through-ssos-china-tour",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106053827/https://www.zaobao.com.sg/en/forum/views/opinion-singapores-soft-power-through-ssos-china-tour",
    "cover_only": false
   },
   {
@@ -12532,7 +12567,7 @@
    "published": "2026-11-05T09:19:09Z",
    "image": null,
    "url": "https://www.economist.com/britain/2026/11/05/andy-burnham-promises-three-foreign-policy-overhauls",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12545,7 +12580,7 @@
    "published": "2026-11-05T09:05:20Z",
    "image": null,
    "url": "https://www.economist.com/leaders/2026/11/05/donald-trumps-humiliation-offers-america-an-opportunity",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12558,7 +12593,7 @@
    "published": "2026-11-05T09:00:02Z",
    "image": "https://i.guim.co.uk/img/media/b8782004aafbc4cbcf5de4f84c322c671ea8db15/354_0_3516_2814/master/3516.jpg?width=140&quality=85&auto=format&fit=max&s=35ad787c95a8cfa59004fd578fcbc90f",
    "url": "https://www.theguardian.com/technology/2026/nov/05/tech-barons-america-musk-bezos-zuckerberg",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12571,7 +12606,7 @@
    "published": "2026-11-05T09:00:01Z",
    "image": "https://i.guim.co.uk/img/media/d71ddf5d851c953d692e59f548ed70931dae9c83/474_0_6830_5464/master/6830.jpg?width=140&quality=85&auto=format&fit=max&s=3c80ad70fbeac138911af992a1fb8413",
    "url": "https://www.theguardian.com/world/2026/nov/05/activists-across-europe-protests-ai-against-datacentres",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12584,7 +12619,7 @@
    "published": "2026-11-05T08:11:46Z",
    "image": "https://static01.nyt.com/images/2026/11/01/multimedia/00int-nz-election-top-jzwb/00int-nz-election-top-jzwb-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/australia/new-zealand-election-polls.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12597,7 +12632,7 @@
    "published": "2026-11-05T07:56:21Z",
    "image": "https://i.guim.co.uk/img/media/d9bf9f9b9523e26c98269088295afe0101408a09/745_0_4164_3333/master/4164.jpg?width=140&quality=85&auto=format&fit=max&s=284bff972880f241577f2f12b909e083",
    "url": "https://www.theguardian.com/world/2026/nov/05/hong-kong-joshua-wong-sentenced-national-security-case",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12610,7 +12645,7 @@
    "published": "2026-11-05T07:00:56Z",
    "image": "https://i.guim.co.uk/img/media/5ec31b6af5ac25cb3ca30fc242468ebfd4875bb8/1103_446_4806_3846/master/4806.jpg?width=140&quality=85&auto=format&fit=max&s=43d6c1be55798ed73fab0ce5cc41d2e2",
    "url": "https://www.theguardian.com/technology/2026/nov/05/apple-ipad-mini-a20-pro-review-best-small-tablet-but-big-price",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12623,7 +12658,7 @@
    "published": "2026-11-05T07:00:56Z",
    "image": "https://i.guim.co.uk/img/media/02e296e4df0fea6e4441d0acc9dc29f8ffe4bc87/0_797_1386_1108/master/1386.jpg?width=140&quality=85&auto=format&fit=max&s=fe97e33bfd39c0c24ea2d235bcbc2840",
    "url": "https://www.theguardian.com/environment/2026/nov/05/warming-uk-seas-could-fundamentally-reshape-marine-ecosystems-report",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12636,7 +12671,7 @@
    "published": "2026-11-05T06:56:25Z",
    "image": "https://static01.nyt.com/images/2026/10/02/multimedia/00int-hongkong-joshua-hlwt/00int-hongkong-joshua-hlwt-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/world/asia/joshua-wong-hong-kong-sentenced.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12649,7 +12684,7 @@
    "published": "2026-11-05T06:00:55Z",
    "image": "https://i.guim.co.uk/img/media/21e27d1b0cb4dca0920ba0ba4aa92270ee44a067/376_0_4498_3598/master/4498.jpg?width=140&quality=85&auto=format&fit=max&s=f724944b5312481fc5dee7dd10946b9e",
    "url": "https://www.theguardian.com/science/audio/2026/nov/05/ferritin-face-can-you-really-diagnose-low-iron-from-a-selfie-podcast",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12662,7 +12697,7 @@
    "published": "2026-11-05T05:01:06Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-election-turnout-analysis-zwkq/05int-election-turnout-analysis-zwkq-mediumSquareAt3X-v2.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/europe/voter-turnout-democracy-autocrats-elections.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12675,7 +12710,7 @@
    "published": "2026-11-05T05:00:55Z",
    "image": "https://i.guim.co.uk/img/media/cb4db687d218902c0710319b5c22a27ce31c84f2/446_0_3333_2667/master/3333.jpg?width=140&quality=85&auto=format&fit=max&s=0f3485761702bce981808ccca6ab31bd",
    "url": "https://www.theguardian.com/world/2026/nov/05/uk-dangerously-reliant-on-china-critical-minerals-military-ai-renewable-energy",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12688,7 +12723,7 @@
    "published": "2026-11-05T05:00:54Z",
    "image": "https://i.guim.co.uk/img/media/e267b155dd1ba39fe842b7a66990af23e442eff8/0_483_2411_1927/master/2411.jpg?width=140&quality=85&auto=format&fit=max&s=79fb6bedf6c3bad1b4731c3bfb2ae063",
    "url": "https://www.theguardian.com/uk-news/2026/nov/05/verica-rome-invade-britain-queen-or-king",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12701,7 +12736,7 @@
    "published": "2026-11-05T03:20:05Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04biz-nyt-hwvf/04biz-nyt-hwvf-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/business/media/new-york-times-earnings.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12714,7 +12749,7 @@
    "published": "2026-11-05T03:06:30Z",
    "image": null,
    "url": "https://www.nytimes.com/2026/11/04/business/media/midterm-elections-fox-ms-now.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12727,7 +12762,7 @@
    "published": "2026-11-05T02:35:00Z",
    "image": null,
    "url": "https://www.reuters.com/business/energy/global-markets-global-markets-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12740,7 +12775,7 @@
    "published": "2026-11-05T02:00:50Z",
    "image": "https://i.guim.co.uk/img/media/f5beb4426227616f86699d732ff704168d8ca0a1/1_0_2999_2400/master/2999.jpg?width=140&quality=85&auto=format&fit=max&s=37f0427003525b7ebdfaa69de33904a7",
    "url": "https://www.theguardian.com/technology/2026/nov/04/elon-musk-midterm-spending-analysis",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12753,7 +12788,7 @@
    "published": "2026-11-05T01:24:46Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/news/singapore/singapore-should-prioritise-credible-emissions-reduction-projects-when-buying-overseas-carbon",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12766,7 +12801,7 @@
    "published": "2026-11-05T01:08:28Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/news/singapore/rena-lees-election-icj-judge-underscores-international-trust-singapore",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12779,7 +12814,7 @@
    "published": "2026-11-05T00:31:07Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04cli-energy-midterms-wmvb/04cli-energy-midterms-wmvb-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/climate/trump-fossil-fuel-energy-policy-election.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12792,7 +12827,7 @@
    "published": "2026-11-04T23:30:47Z",
    "image": "https://i.guim.co.uk/img/media/704e724f06067525299523e158d790989b489e14/0_0_4856_3885/master/4856.jpg?width=140&quality=85&auto=format&fit=max&s=06f8bac0dd132b58c1d039c7d794590a",
    "url": "https://www.theguardian.com/science/2026/nov/04/swapping-dairy-milk-cheese-yoghurt-plant-based-vegan-alternatives-deficiencies-micronutrients-iodine",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12805,7 +12840,7 @@
    "published": "2026-11-04T23:03:06Z",
    "image": "https://static01.nyt.com/images/2026/11/07/obituaries/04whipple_top-print1/04whipple_top-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/science/beverly-whipple-g-spot-dead.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12818,7 +12853,7 @@
    "published": "2026-11-04T22:55:30Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04dc-trump-cook-bqcz/04dc-trump-cook-bqcz-mediumSquareAt3X-v2.jpg",
    "url": "https://www.nytimes.com/2026/11/04/business/trump-lisa-cook-fed-governor.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12831,7 +12866,7 @@
    "published": "2026-11-04T22:37:45Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04biz-trump-media-02-gkwh/04biz-trump-media-02-gkwh-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/business/trump-media-truth-social-midterm-elections.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12844,7 +12879,7 @@
    "published": "2026-11-04T22:06:04Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04midterms-climate-investigations-bjcg/04midterms-climate-investigations-bjcg-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/live/2026/11/04/us/midterm-election-results-democrats/congressional-investigations",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12857,7 +12892,7 @@
    "published": "2026-11-04T21:48:18Z",
    "image": null,
    "url": "https://www.economist.com/finance-and-economics/2026/11/04/what-markets-make-of-the-midterms",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -12870,7 +12905,7 @@
    "published": "2026-11-04T21:40:20Z",
    "image": "https://static01.nyt.com/images/2026/11/03/multimedia/03biz-midterms-stocks-mjvc/03biz-midterms-stocks-mjvc-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/business/midterm-elections-stock-market.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12883,7 +12918,7 @@
    "published": "2026-11-04T21:37:51Z",
    "image": "https://static01.nyt.com/images/2026/11/02/multimedia/00dc-maternal-drape-husaina-ljbz/00dc-maternal-drape-husaina-ljbz-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/03/health/maternal-drapes-nigeria-childbirth.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12896,7 +12931,7 @@
    "published": "2026-11-04T21:31:35Z",
    "image": "https://i.guim.co.uk/img/media/afeeaec3d8150f6f6861321b931606743b53aaac/500_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=06ee69e296b5aeae4df2bf93600b0d86",
    "url": "https://www.theguardian.com/us-news/2026/nov/04/kseniia-petrova-harvard-frog-embryos",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12909,7 +12944,7 @@
    "published": "2026-11-04T21:24:09Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04xp-mcrib-cwpj/04xp-mcrib-cwpj-mediumSquareAt3X-v2.jpg",
    "url": "https://www.nytimes.com/2026/11/04/business/mcdonalds-mcrib-lawsuit.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12922,7 +12957,7 @@
    "published": "2026-11-04T21:20:03Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04biz-cvs-breakup-zpcw/04biz-cvs-breakup-zpcw-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/business/cvs-health-split.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12935,7 +12970,7 @@
    "published": "2026-11-04T21:19:27Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04biz-midterms-musk-market-wqlv/04biz-midterms-musk-market-wqlv-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/business/musk-elections-spacex-tesla-stocks.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12948,7 +12983,7 @@
    "published": "2026-11-04T20:14:02Z",
    "image": "https://static01.nyt.com/images/2026/11/03/multimedia/03sci-nasa-swift-cqfk/03sci-nasa-swift-cqfk-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/03/science/nasa-swift-reentry-crash.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12961,7 +12996,7 @@
    "published": "2026-11-04T19:55:07Z",
    "image": "https://static01.nyt.com/images/2026/11/03/multimedia/03dc-saildrone-jtqg/03dc-saildrone-jtqg-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/03/us/politics/drone-boat-maker-navy-protest.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12974,7 +13009,7 @@
    "published": "2026-11-04T19:53:16Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04biz-ai-bluewave-sign-jgwf/04biz-ai-bluewave-sign-jgwf-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/technology/midterm-elections-ai-data-centers.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -12987,7 +13022,7 @@
    "published": "2026-11-04T19:05:18Z",
    "image": null,
    "url": "https://www.economist.com/middle-east-and-africa/2026/11/04/the-latest-ebola-outbreak-could-be-the-worst-ever",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -13000,7 +13035,7 @@
    "published": "2026-11-04T19:03:08Z",
    "image": "https://i.guim.co.uk/img/media/9d391bc73d0f2c4fb6d3757599f20b1c32fdc8af/527_0_4349_3480/master/4349.jpg?width=140&quality=85&auto=format&fit=max&s=0844efc303d5064475bde060c20d9e37",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/04/democrats-elected-us-awakening",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -13013,7 +13048,7 @@
    "published": "2026-11-04T18:38:15Z",
    "image": null,
    "url": "https://www.economist.com/china/2026/11/04/with-an-eye-on-america-china-is-beefing-up-its-ai-controlled-labs",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -13026,7 +13061,7 @@
    "published": "2026-11-04T18:31:13Z",
    "image": "https://i.guim.co.uk/img/media/371023e84b2006475fe025cc0ab2a21fc1e20a09/155_0_4583_3667/master/4583.jpg?width=140&quality=85&auto=format&fit=max&s=c7804e2628ad3b1309c95ecc1cd9ad01",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/04/the-guardian-view-on-the-us-midterms-joy-for-democrats-a-rout-for-republicans-and-a-reprieve-for-democracy",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -13039,7 +13074,7 @@
    "published": "2026-11-04T18:18:37Z",
    "image": "https://i.guim.co.uk/img/media/22d88a4e5887695fa17d85593fd7c9e807599182/872_0_4800_3840/master/4800.jpg?width=140&quality=85&auto=format&fit=max&s=e75a89393e422c54d1dcf69d2965d49d",
    "url": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -13799,13 +13834,13 @@
    "cover_only": true
   },
   {
-   "id": "6371bd825bd2",
-   "title": "Deportees Turn to TikTok to Document Life Starting Over",
-   "source": "The New York Times",
-   "topic": "Tech",
-   "published": "2026-11-02T14:53:35Z",
-   "image": "https://static01.nyt.com/images/2026/10/29/multimedia/00xp-deportees-Catherine-promo/00xp-deportees-Catherine-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/02/world/deportees-social-media-immigration.html",
+   "id": "5c2a6aa191ad",
+   "title": "[Perspective] How a small state should express its anger - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-11-02T11:00:00Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/forum/views/perspective-how-small-state-should-express-its-anger",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -13832,6 +13867,19 @@
    "published": "2026-11-02T02:27:26Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/finance/singapore/wyndham-asia-pacific-president-singapore-hotels-risk-falling-behind-if-they-fail-adapt-rapid-change",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "6d1c7dd1b188",
+   "title": "Thomson Reserve sells over 1,000 units at launch, signals 2027 housing demand - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-11-01T23:52:04Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/finance/singapore/thomson-reserve-sells-over-1000-units-launch-signals-2027-housing-demand",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -13949,19 +13997,6 @@
    "published": "2026-10-31T13:00:00Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/lifestyle/food/chinas-leading-chefs-bring-regional-flavours-singapore",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "5e2cd646bc5f",
-   "title": "13 public libraries open earlier, admitting visitors from 9am - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T10:51:11Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/news/singapore/13-public-libraries-open-earlier-admitting-visitors-9am",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
