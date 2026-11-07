@@ -111,6 +111,7 @@ public class MainActivity extends Activity {
 
         root = new FrameLayout(this);
         web = new WebView(this);
+        WebView.setWebContentsDebuggingEnabled(true); // 便于 adb/DevTools 排查网页问题
         root.addView(web, new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
@@ -240,6 +241,48 @@ public class MainActivity extends Activity {
                     ui.post(() -> {
                         try {
                             String js = "try{if(window.__wbDeliver)__wbDeliver("
+                                    + org.json.JSONObject.quote(fid) + ","
+                                    + (fh == null ? "null" : org.json.JSONObject.quote(fh)) + ");}catch(e){}";
+                            web.evaluateJavascript(js, null);
+                        } catch (Exception ignored) {
+                        }
+                    });
+                }).start();
+            }
+
+            // 原生直连任意文章 HTML（原文/转载版），绕开浏览器 CORS；结果通过 __htmlDeliver 回传。
+            // 这是 APP 不依赖 Jina 也能直读 TVB / NYT / The Edge / Yahoo 的关键通道。
+            @android.webkit.JavascriptInterface
+            public void fetchHtml(String id, String url) {
+                final String fid = id == null ? "" : id;
+                new Thread(() -> {
+                    String html = null;
+                    try {
+                        HttpURLConnection c = (HttpURLConnection) new URL(url).openConnection();
+                        c.setInstanceFollowRedirects(true);
+                        c.setConnectTimeout(12000);
+                        c.setReadTimeout(20000);
+                        c.setRequestProperty("User-Agent",
+                                "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 " +
+                                "(KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36");
+                        c.setRequestProperty("Accept", "text/html,application/xhtml+xml");
+                        c.setRequestProperty("Accept-Language", "en-US,en;q=0.9");
+                        if (c.getResponseCode() == 200) {
+                            java.io.InputStream in = c.getInputStream();
+                            java.io.ByteArrayOutputStream bos = new java.io.ByteArrayOutputStream();
+                            byte[] buf = new byte[8192];
+                            int n;
+                            while ((n = in.read(buf)) > 0 && bos.size() < 3 * 1024 * 1024) bos.write(buf, 0, n);
+                            in.close();
+                            String s = bos.toString("UTF-8");
+                            if (s.length() > 500) html = s;
+                        }
+                    } catch (Exception ignored) {
+                    }
+                    final String fh = html;
+                    ui.post(() -> {
+                        try {
+                            String js = "try{if(window.__htmlDeliver)__htmlDeliver("
                                     + org.json.JSONObject.quote(fid) + ","
                                     + (fh == null ? "null" : org.json.JSONObject.quote(fh)) + ");}catch(e){}";
                             web.evaluateJavascript(js, null);

@@ -353,6 +353,80 @@
     rBody.innerHTML = paras.map(t => `<p>${escText(t)}</p>`).join("");
   }
 
+  // 原生直连任意 URL 的 HTML（APK 无 CORS 限制）；回传 __htmlDeliver。
+  function nativeHtml(id, url, ctrl, timeout) {
+    return new Promise(resolve => {
+      if (!(window.Android && Android.fetchHtml)) return resolve(null);
+      let done = false;
+      const finish = v => {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        if (ctrl && ctrl.signal) ctrl.signal.removeEventListener("abort", onAbort);
+        try { delete window.__htmlDeliver; } catch (e) {}
+        resolve(v);
+      };
+      const timer = setTimeout(() => finish(null), timeout || 25000);
+      const onAbort = () => finish(null);
+      if (ctrl && ctrl.signal) ctrl.signal.addEventListener("abort", onAbort, { once: true });
+      window.__htmlDeliver = (rid, html) => {
+        if (rid !== id) return;
+        finish(html || null);
+      };
+      try { Android.fetchHtml(id, url); } catch (e) { finish(null); }
+    });
+  }
+
+  // JSON-LD articleBody（NYT / Guardian / The Edge / Yahoo 等）
+  function jsonLdBodies(doc) {
+    const out = [];
+    doc.querySelectorAll('script[type="application/ld+json"]').forEach(sc => {
+      try {
+        const data = JSON.parse(sc.textContent || "");
+        const stack = [data];
+        while (stack.length) {
+          const x = stack.pop();
+          if (!x) continue;
+          if (Array.isArray(x)) { stack.push(...x); continue; }
+          if (typeof x !== "object") continue;
+          if (x["@graph"]) stack.push(...x["@graph"]);
+          const type = Array.isArray(x["@type"]) ? x["@type"] : [x["@type"]];
+          if (type.some(t => /NewsArticle|Article|BlogPosting|ReportageNewsArticle/.test(t || ""))
+              && typeof x.articleBody === "string" && x.articleBody.length >= 200) {
+            out.push(x.articleBody);
+          }
+        }
+      } catch (e) {}
+    });
+    return out;
+  }
+
+  // TVB 文章正文在 Nuxt __NUXT_DATA__ 的 content/content_hk
+  function tvbBody(doc) {
+    const sc = doc.querySelector('script#__NUXT_DATA__,script[id="__NUXT_DATA__"]');
+    if (!sc) return null;
+    let arr;
+    try { arr = JSON.parse(sc.textContent || ""); } catch (e) { return null; }
+    if (!Array.isArray(arr)) return null;
+    const deref = (x, d) => {
+      if ((d || 0) > 8) return x;
+      if (Number.isInteger(x) && x > 0 && x < arr.length) return deref(arr[x], (d || 0) + 1);
+      return x;
+    };
+    for (const v of arr) {
+      if (!v || typeof v !== "object" || !("content" in v) || !("title_hk" in v)) continue;
+      const body = deref(v.content_hk || v.content);
+      if (typeof body !== "string" || body.length < 20) continue;
+      const tmp = document.createElement("div");
+      tmp.innerHTML = body;
+      const paras = [...tmp.querySelectorAll("p")]
+        .map(p => (p.textContent || "").replace(/\s+/g, " ").trim())
+        .filter(t => t.length >= 10);
+      if (paras.length) return paras;
+    }
+    return null;
+  }
+
   // Wayback 快照直接抓取的解析：jina 永久封禁 web.archive.org 域，经 jina 必失败，
   // 而 wayback 页面本身支持 CORS，直接 fetch + DOM 提取正文（剔除 wayback 工具条与站点家具）
   function denoiseWaybackDoc(html, title) {
@@ -360,6 +434,23 @@
     try { doc = new DOMParser().parseFromString(html, "text/html"); } catch (e) { return null; }
     const bodyText = doc.body ? doc.body.textContent : "";
     if (GARBAGE_RE.test(bodyText.slice(0, 3000))) return null;
+    // 先试 JSON-LD 与 TVB Nuxt（原生直连原文/转载版都走这里）
+    const tvb = tvbBody(doc);
+    if (tvb) {
+      const blocks = tvb.map(t => ({ text: t, head: false }));
+      if (readerQualityOk(blocks)) return { blocks, esc: escText };
+    }
+    for (const body of jsonLdBodies(doc)) {
+      const tmp = document.createElement("div");
+      tmp.innerHTML = body;
+      const paras = [...tmp.querySelectorAll("p")]
+        .map(p => (p.textContent || "").replace(/\s+/g, " ").trim())
+        .filter(t => t.length >= 10);
+      const texts = paras.length ? paras : body.replace(/<[^>]+>/g, "\n").split(/\n{2,}/)
+        .map(t => t.replace(/\s+/g, " ").trim()).filter(t => t.length >= 30);
+      const blocks = texts.map(t => ({ text: t, head: false }));
+      if (readerQualityOk(blocks)) return { blocks, esc: escText };
+    }
     doc.querySelectorAll("script,style,noscript,iframe,svg,form,nav,header,footer,aside,#wm-ipp-base,#wm-ipp,[id^='wm-ipp']")
       .forEach(e => e.remove());
     const root = doc.querySelector("article") || doc.querySelector("main")
@@ -549,6 +640,24 @@
           }
         }
       } catch (e) { /* 缓存不可用则照旧走链 */ }
+    }
+    // 3.3) APK 原生直连：原文/转载版 HTML，不依赖 Jina（TVB、NYT、The Edge、Yahoo 等）
+    if (window.Android && Android.fetchHtml && !ctrl.signal.aborted) {
+      for (const pair of [["转载版", it.syndicated_url], ["原文", it.url]]) {
+        const label = pair[0], u = pair[1];
+        if (!u) continue;
+        setStatus("正在获取正文 · 直连" + label);
+        const html = await nativeHtml(it.id + ":html:" + label, u, ctrl, 20000);
+        if (ctrl.signal.aborted) return;
+        if (!html) continue;
+        const d = denoiseWaybackDoc(html, it.title);
+        if (d) {
+          renderReaderBody(d);
+          readCache[it.url] = { ts: Date.now(), md: html, src: "native-html", kind: "wb" };
+          try { localStorage.setItem(RKEY, JSON.stringify(readCache)); } catch (e) {}
+          return;
+        }
+      }
     }
     // 3.4) 转载版直读：news.json 里带 syndicated_url 时，不需要私有缓存 token 也能读
     if (it.syndicated_url && !ctrl.signal.aborted) {
