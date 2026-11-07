@@ -227,16 +227,16 @@
     return false;
   }
 
-  // 与 CI 侧 quality_ok 同口径：英文 ≥3 段/400 字符；中文短讯允许 2 段/150 字
+  // 与 CI 侧 quality_ok 同口径：英文 ≥3 段/400 字符；中文短讯允许 2 段/100 字
   function readerQualityOk(kept) {
     const texts = kept.filter(x => x.text).map(x => x.text);
     const joined = texts.join("");
     const cjk = (joined.match(/[\u4e00-\u9fff]/g) || []).length;
     const paras = texts.filter(t => t.length >= 30 || cjk > 100);
-    const minParas = cjk >= 120 ? 2 : 3;
+    const minParas = cjk >= 100 ? 2 : 3;
     if (paras.length < minParas) return false;
-    if (joined.length < 150) return false;
-    if (joined.length < 400 && cjk < 120) return false;
+    if (joined.length < 100) return false;
+    if (joined.length < 400 && cjk < 100) return false;
     const sentenceLike = paras.filter(t => /[.!?。！？]/.test(t)).length;
     if (sentenceLike < Math.max(2, Math.floor(paras.length * 0.6))) return false;
     if (looksLikePaywall(texts.join(" ")) && joined.length < 2000) return false;
@@ -511,7 +511,7 @@
     if (looksLikeArchiveIndex(out)) return [];
     const joined = out.join("");
     const cjk = (joined.match(/[\u4e00-\u9fff]/g) || []).length;
-    return joined.length >= 150 && out.length >= (cjk >= 120 ? 2 : 3) ? out : [];
+    return joined.length >= 100 && out.length >= (cjk >= 100 ? 2 : 3) ? out : [];
   }
 
   // 链路重复失败时的阅读器内错误态：不再自动跳转，把选择权交给用户

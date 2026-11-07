@@ -161,17 +161,17 @@ def quality_ok(blocks: list, title: str = "") -> bool:
         return False
     texts = [b.get("text", "") for b in blocks if b.get("text")]
     total = sum(len(t) for t in texts)
-    if total < 150:
+    if total < 100:
         return False
     cjk = len(re.findall(r"[\u4e00-\u9fff]", "".join(texts)))
     if total < 200 and cjk < 100:
         return False
     paras = [t for t in texts if len(t) >= 30 or cjk > 100]
-    # 中文短讯（TVB 等）经常只有 2 段、200 字左右，不能按英文长文要求 3 段/400 字符
-    min_paras = 2 if cjk >= 120 else 3
+    # 中文短讯（TVB 等）经常只有 2-3 段、150 字左右，不能按英文长文要求 3 段/400 字符
+    min_paras = 2 if cjk >= 100 else 3
     if len(paras) < min_paras:
         return False
-    if total < 400 and cjk < 120:
+    if total < 400 and cjk < 100:
         return False
     sentence_like = sum(1 for t in paras if re.search(r"[.!?。！？]", t))
     if sentence_like < max(2, int(len(paras) * 0.6)):
