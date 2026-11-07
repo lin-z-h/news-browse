@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T10:43:43Z",
+ "generated_at": "2026-11-07T11:35:32Z",
  "sources": [
   "Bloomberg",
   "The New York Times",
@@ -15,6 +15,248 @@
   "TVB"
  ],
  "items": [
+  {
+   "id": "26871911f8fc",
+   "title": "Print Edition | Wall Street Journal - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T11:30:25Z",
+   "image": null,
+   "url": "https://www.wsj.com/print-edition/20261107/frontpage",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "bf47260ffe83",
+   "title": "New Zealand election 2026 live results: National and Labour neck-and-neck as minor party eyes kingmaker role",
+   "source": "The Guardian",
+   "topic": "World",
+   "published": "2026-11-07T11:29:11Z",
+   "image": "https://i.guim.co.uk/img/media/ca0da5faecb3c527577fc78ebfc856aa865bc8d6/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=842242f69139eccf98f50148f27a190a",
+   "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "a17c8438c564",
+   "title": "Meloni Blames Pro-Russian Hackers for Cyberattack on Minister",
+   "source": "Bloomberg",
+   "topic": "Tech",
+   "published": "2026-11-07T11:24:54Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/articles/2026-11-07/meloni-blames-pro-russian-hackers-for-attack-on-foreign-minister",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "d1c4a940fe3b",
+   "title": "Hunkering Down",
+   "source": "The New York Times",
+   "topic": "Top",
+   "published": "2026-11-07T11:24:46Z",
+   "image": null,
+   "url": "https://www.nytimes.com/2026/11/07/briefing/hunkering-down.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "7945933b0340",
+   "title": "新西蘭國會選舉 國家黨領導聯盟獲足夠議席繼續執政",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T11:22:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026oAsu5jumxm1794051031.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205118",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "1b135b1d8c06",
+   "title": "香港壁球公開賽月底展開 港將冀主場創佳績",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T11:17:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026oqLGyIgf6j1794050319.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205119",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "ead3055a104e",
+   "title": "How Your Finances Could Change if Democrats Repeat Their Win in 2028 - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T11:15:57Z",
+   "image": null,
+   "url": "https://www.wsj.com/personal-finance/how-your-finances-could-change-if-democrats-repeat-their-win-in-2028-b7399634",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "c0904baae182",
+   "title": "Manila weighs second South China Sea legal case against Beijing: analyst",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T11:10:52Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/bb62842d-52c7-4c77-89bf-b829f1f5cee4_a95434b4.jpg?itok=EsluG0jn&v=1794049851",
+   "url": "https://www.scmp.com/news/china/diplomacy/article/3373651/manila-weighs-second-south-china-sea-legal-case-against-beijing-analyst",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "2943f5d863cc",
+   "title": "Trump’s war secretary Hegseth and Pacific Command chief Paparo may ‘soon visit China’",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T11:06:25Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/d73f810f-b24c-429c-9904-ec4a4ae7e302_f6e79d88.jpg?itok=5uKTaCCu&v=1794048974",
+   "url": "https://www.scmp.com/news/china/military/article/3373649/trumps-war-secretary-hegseth-and-pacific-command-chief-paparo-may-soon-visit-china",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "c5fdee86d53e",
+   "title": "Black voter turnout surges in US south despite Republican redistricting drive: ‘They could not stop the momentum’",
+   "source": "The Guardian",
+   "topic": "US",
+   "published": "2026-11-07T11:00:10Z",
+   "image": "https://i.guim.co.uk/img/media/64c523b9d4c91b22a9047bb513fa382525feb46c/250_0_2500_2000/master/2500.jpg?width=140&quality=85&auto=format&fit=max&s=99eea561c04346dc9f052328a7a4732c",
+   "url": "https://www.theguardian.com/us-news/2026/nov/07/black-voter-turnout-gerrymandering",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "85076b37274a",
+   "title": "Job cuts, lost customers and a £22bn debt pile: what has gone wrong at Virgin Media O2?",
+   "source": "The Guardian",
+   "topic": "UK",
+   "published": "2026-11-07T11:00:09Z",
+   "image": "https://i.guim.co.uk/img/media/edb6e58b714179ecc5ed6eeeab0461874281de0e/613_0_5020_4016/master/5020.jpg?width=140&quality=85&auto=format&fit=max&s=428f4f4d26982cd99ce96061f55fdcbe",
+   "url": "https://www.theguardian.com/business/2026/nov/07/job-cuts-lost-customers-and-a-22bn-debt-pile-what-has-gone-wrong-at-virgin-media-o2",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "b64f9c5c9d11",
+   "title": "Steve Jones on dangerous tech innovations – cartoon",
+   "source": "The Guardian",
+   "topic": "Science",
+   "published": "2026-11-07T11:00:09Z",
+   "image": "https://i.guim.co.uk/img/media/86994054c0f6a4c972c5c9ffc994a75e79ab91f4/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=a9ee0f23697571494e489a42eaa27b93",
+   "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/07/steve-jones-dangerous-tech-innovations-cartoon-ai-fire",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "08cc2b9e5bf2",
+   "title": "Trump may have lost but don’t bet Democrats can fix the economy",
+   "source": "The Guardian",
+   "topic": "World",
+   "published": "2026-11-07T11:00:08Z",
+   "image": "https://i.guim.co.uk/img/media/452570685e3bee42441282dc9ff80c72d8c5dfca/453_0_4594_3676/master/4594.jpg?width=140&quality=85&auto=format&fit=max&s=71e4c9118ee3b481e3cc06a0a03df1f9",
+   "url": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "7634713bff96",
+   "title": "America’s Rebuke of Trump Won’t Swiftly Restore Canada-U.S. Harmony",
+   "source": "The New York Times",
+   "topic": "World",
+   "published": "2026-11-07T11:00:07Z",
+   "image": "https://static01.nyt.com/images/2026/11/07/multimedia/07int-canada-letter-cqlt/07int-canada-letter-cqlt-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/11/07/world/canada/carney-trump-canada-us-relations-midterm-elections.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "287ecc83c1dc",
+   "title": "How to Keep an Open Mind",
+   "source": "TIME",
+   "topic": "Top",
+   "published": "2026-11-07T11:00:03Z",
+   "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt7510adc63c504bf8/6aecd915d52f49e861036f8a/open-mind.jpg?branch=production",
+   "url": "https://time.com/article/2026/11/07/how-to-keep-an-open-mind/",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "cd6b4dc85691",
+   "title": "達卡青奧乒乓港隊代表凱旋",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T10:52:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026ESVEVQAF7Z1794049252.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205115",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "14e7927f9443",
+   "title": "全球首個仿生人形機械人新聞主播亮相 「不需睡眠」樂意返夜班",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T10:49:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026Sq2WOni3Jw1794048842.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205111",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "c7da73ead60e",
+   "title": "二十一大代表選舉強調嚴格把關人選 政治不合格者一票否決",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T10:49:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026ps9IzwTJsz1794050382.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205110",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
   {
    "id": "55204430c35b",
    "title": "團體舉辦中小學生中國歷史文化知識競賽 蔡若蓮冀同學堅定文化自信",
@@ -83,18 +325,30 @@
    "cover_only": false
   },
   {
-   "id": "bf47260ffe83",
-   "title": "New Zealand election 2026 live results: National and Labour neck-and-neck as minor party eyes kingmaker role",
-   "source": "The Guardian",
-   "topic": "World",
-   "published": "2026-11-07T10:21:42Z",
-   "image": "https://i.guim.co.uk/img/media/ca0da5faecb3c527577fc78ebfc856aa865bc8d6/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=842242f69139eccf98f50148f27a190a",
-   "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
-   "_direct": true,
-   "status": "direct",
+   "id": "875adb7be078",
+   "title": "When the great-grandson of an enslaved man beat the grandson of a president - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-07T10:19:02Z",
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/VSXER7O6V2SUONUPCABMLBTCHE.jpg&amp;w=1440",
+   "url": "https://www.washingtonpost.com/nation/2026/11/07/when-great-grandson-an-enslaved-man-beat-grandson-president/",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
+  },
+  {
+   "id": "8f76b689cf99",
+   "title": "Top Prosecutor Overseeing Conspiracy Probe of Trump Foes Resigns - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T10:16:36Z",
+   "image": null,
+   "url": "https://www.wsj.com/politics/policy/top-prosecutor-overseeing-conspiracy-probe-of-trump-foes-resigns-c9bb4d94",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
   },
   {
    "id": "0ab0e52a00f4",
@@ -138,6 +392,19 @@
    "cover_only": false
   },
   {
+   "id": "4b6d3d238a65",
+   "title": "The Good, the Bad and the Cringe: 10 Ads That Defined the Midterms",
+   "source": "The New York Times",
+   "topic": "Top",
+   "published": "2026-11-07T10:03:35Z",
+   "image": null,
+   "url": "https://www.nytimes.com/2026/11/07/us/politics/midterm-ads-republicans-democrats.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "fa584d9f72ce",
    "title": "Despite All, Daylight Saving Time Is Still on Trump’s Mind",
    "source": "The New York Times",
@@ -151,10 +418,23 @@
    "cover_only": false
   },
   {
+   "id": "26d75bf8d320",
+   "title": "Democrats, Newly Ascendant, Begin a Fight to Shape the Party’s Future",
+   "source": "The New York Times",
+   "topic": "Top",
+   "published": "2026-11-07T10:02:07Z",
+   "image": "https://static01.nyt.com/images/2026/11/07/us/07pol-democrats/07pol-democrats-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/11/07/us/politics/democrats-midterms-2028-presidential-race.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "9dc169ec0e84",
    "title": "Inside the Operation That Helped Ukraine Reverse Some Russian War Gains",
    "source": "The New York Times",
-   "topic": "World",
+   "topic": "Top",
    "published": "2026-11-07T10:01:41Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-ukraine-battlefield-01-tkvw-promo/05int-ukraine-battlefield-01-tkvw-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/07/world/europe/ukraine-russia-war-operation-vivaldi.html",
@@ -180,10 +460,23 @@
    "id": "78b9b9fdc4be",
    "title": "U.S. Cleared Nvidia Chips to Chinese Firms With Empty Offices and Troubling Ties",
    "source": "The New York Times",
-   "topic": "Business",
+   "topic": "Top",
    "published": "2026-11-07T10:00:40Z",
    "image": "https://static01.nyt.com/images/2026/11/07/multimedia/07dc-china-chips-01-fjhg/07dc-china-chips-01-fjhg-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/07/business/economy/nvidia-chips-chinese-firms.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "7b1cdaa43a2d",
+   "title": "Illeana Douglas Looks Back on Hollywood’s Biggest ‘Cat Fight’",
+   "source": "The New York Times",
+   "topic": "Top",
+   "published": "2026-11-07T10:00:31Z",
+   "image": "https://static01.nyt.com/images/2026/11/07/multimedia/07ST-ILLEANA-DOUGLAS-4-bjvh-grid-hp/07ST-ILLEANA-DOUGLAS-4-bjvh-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/11/07/style/illeana-douglas-the-women-cat-fight.html",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -300,6 +593,19 @@
    "cover_only": true
   },
   {
+   "id": "94a913256611",
+   "title": "With Susie Wiles’s Departure, Big Business Loses a Sympathetic Ear - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T10:00:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/politics/policy/with-susie-wiless-departure-big-business-loses-a-sympathetic-ear-72e7925a",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "ce46c1f52a78",
    "title": "兆邦苑兩房戶以9,800元獲承租",
    "source": "TVB",
@@ -327,6 +633,19 @@
    "cover_only": false
   },
   {
+   "id": "7c858d8f23f8",
+   "title": "SoftBank, ABB explore China carve-out to salvage robotics deal, Bloomberg News reports - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-07T09:55:43Z",
+   "image": null,
+   "url": "https://www.reuters.com/business/media-telecom/softbank-abb-explore-china-carve-out-salvage-robotics-deal-bloomberg-news-2026-11-07/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "a45733a5fb07",
    "title": "日本茨城縣有漁船擱淺兩人墮海亡 91歲船長獲救",
    "source": "TVB",
@@ -336,19 +655,6 @@
    "url": "https://news.tvb.com/en/1205107",
    "_direct": true,
    "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "cdc3bfcbfa12",
-   "title": "巴黎網球精英賽：艾卡拉斯晉級四強",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T09:51:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026Cdk60WmhY01794045210.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205108",
-   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -466,11 +772,11 @@
   },
   {
    "id": "6b7aaabc6956",
-   "title": "石澳三村十年一度太平清醮吸引不少市民遊客觀賞 有人指氣氛濃厚熱鬧",
+   "title": "圖輯｜石澳三村十年一度太平清醮吸引不少人觀賞 小朋友坐著飄色出巡",
    "source": "TVB",
    "topic": "Hong Kong",
    "published": "2026-11-07T09:37:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026f3NSHOMrRZ1794037730.jpg?x-oss-process=image/resize,w_600",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026gqEOWn1Arj1794049885.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205100",
    "status": "challenge",
    "archive_url": null,
@@ -565,7 +871,7 @@
    "source": "TVB",
    "topic": "Hong Kong",
    "published": "2026-11-07T09:14:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026TtgqMt0CJ41794043500.jpg?x-oss-process=image/resize,w_600",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20264bDfB1BT7c1794048759.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205096",
    "_direct": true,
    "status": "direct",
@@ -1063,20 +1369,6 @@
    "cover_only": false
   },
   {
-   "id": "9562b5aef046",
-   "title": "First openly gay sheriff in Alabama is Navy SEAL who vows to cut ties with Flock - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-07T07:09:15Z",
-   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fwapo%2FJJPPV3I4UTQ6AQ6IP7NKZIXUVM.jpg&amp;w=1200",
-   "url": "https://www.washingtonpost.com/politics/2026/11/06/first-openly-gay-sheriff-alabama-is-navy-seal-who-vows-cut-ties-with-flock/",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "5a6cea32d405",
    "title": "Tech stocks steady to end volatile week for markets - The Washington Post",
    "source": "The Washington Post",
@@ -1346,19 +1638,6 @@
    "url": "https://www.scmp.com/news/hong-kong/politics/article/3373638/hypocritical-hong-kong-hits-back-criticism-joshua-wongs-sentence",
    "_direct": true,
    "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "7a371a08f85d",
-   "title": "Southern Democrats Now Have a Chance to Lead. What Will They Do With It?",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-11-07T06:16:33Z",
-   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06nat-south-democrats-klqj/06nat-south-democrats-klqj-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/06/us/southern-democrats-georgia-north-carolina.html",
-   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -2070,6 +2349,19 @@
    "cover_only": false
   },
   {
+   "id": "acc219d29a61",
+   "title": "Pakistani astronaut to join China space station's Shenzhou-24 mission - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-07T04:32:00Z",
+   "image": null,
+   "url": "https://www.reuters.com/science/pakistani-astronaut-join-china-space-stations-shenzhou-24-mission-2026-11-07/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "b3256aa1c0f7",
    "title": "Why India’s Stock Markets Hold a Session on Diwali: Explainer",
    "source": "Bloomberg",
@@ -2233,19 +2525,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "2b924cfc63c2",
-   "title": "Ten Months of War to Gain 46 Square Miles: How Russia Is Failing on the Battlefield - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-07T04:00:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "be814735e55f",
@@ -2450,19 +2729,6 @@
    "cover_only": false
   },
   {
-   "id": "b23b61498a06",
-   "title": "Zoo Atlanta Unveils Its New Pandas: Fu Shuang and Ping Ping",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-11-07T03:02:09Z",
-   "image": null,
-   "url": "https://www.nytimes.com/2026/11/06/us/atlanta-pandas.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "ddb6f69672da",
    "title": "How North Korea turns child prodigies into crypto thieves",
    "source": "SCMP",
@@ -2517,6 +2783,19 @@
    "cover_only": true
   },
   {
+   "id": "9696c6da062a",
+   "title": "What to Know About Stephen Miller, Trump’s New Chief of Staff",
+   "source": "The New York Times",
+   "topic": "Top",
+   "published": "2026-11-07T02:56:14Z",
+   "image": "https://static01.nyt.com/images/2026/08/07/multimedia/06trump-wiles-stephen-miller1/06trump-wiles-stephen-miller1-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/11/06/us/politics/stephen-miller-white-house-chief-staff.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "54a25d38f818",
    "title": "Researchers Identify Suspicious Activity on Kalshi and Polymarket Before Times/Siena Poll Release",
    "source": "The New York Times",
@@ -2542,19 +2821,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "991fd7bca220",
-   "title": "Wall Street Gets $2.5 Trillion AI Reality Check With Historic Rout of Tech Stocks - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-07T02:51:42Z",
-   "image": null,
-   "url": "https://www.wsj.com/print-edition/20261106/frontpage",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "2fc7ad3a1b25",
@@ -2638,7 +2904,7 @@
    "status": "direct",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "66acba6478c5",
@@ -2716,19 +2982,6 @@
    "published": "2026-11-07T02:00:00Z",
    "image": null,
    "url": "https://www.wsj.com/politics/elections/stephen-miller-trump-chief-of-staff-56917f0a",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
-   "id": "23df4d5a6f3d",
-   "title": "The 2028 Election Map Just Broke Wide Open - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-07T02:00:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/politics/elections/2028-election-president-battleground-map-3b8567b9",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -2872,7 +3125,7 @@
    "id": "325e133d4c4b",
    "title": "Stephen Miller’s appointment shows Trump hasn’t learned his lesson on immigration",
    "source": "The Guardian",
-   "topic": "World",
+   "topic": "US",
    "published": "2026-11-07T01:04:52Z",
    "image": "https://i.guim.co.uk/img/media/4c335dc7c5ebfe5400f0bc48dcf393c6617cea91/683_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=ab9e00c284b6f2941a801e39068a3e9a",
    "url": "https://www.theguardian.com/us-news/2026/nov/06/donald-trump-stephen-miller-immigration",
@@ -3005,19 +3258,6 @@
    "cover_only": false
   },
   {
-   "id": "a21b53237615",
-   "title": "Prosecutors Vow to Keep Pursuing Death Penalty in California",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-11-07T00:57:32Z",
-   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06nat-ca-deathpenalty-phmv/06nat-ca-deathpenalty-phmv-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/06/us/california-prosecutors-death-penalty.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "8cff87b20da7",
    "title": "How Islamophobia backfired and helped elect the first Muslim senator - The Washington Post",
    "source": "The Washington Post",
@@ -3057,6 +3297,19 @@
    "cover_only": false
   },
   {
+   "id": "2b924cfc63c2",
+   "title": "Ten Months of War to Gain 46 Square Miles: How Russia Is Failing on the Battlefield - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T00:34:08Z",
+   "image": null,
+   "url": "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "b7884d615bea",
    "title": "Australia’s Albanese Urges Iran De-Escalation After US Midterms",
    "source": "Bloomberg",
@@ -3077,20 +3330,6 @@
    "published": "2026-11-07T00:31:59Z",
    "image": "https://i.guim.co.uk/img/media/30a42bd193109c7cf7e2854cf733ff3179bf6e89/436_0_4356_3485/master/4356.jpg?width=140&quality=85&auto=format&fit=max&s=11a25acc70a5aedd71f8e747816f1066",
    "url": "https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "2ffec89778ba",
-   "title": "特朗普任命國土安全顧問米勒 下周一起出任白宮幕僚長",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:30:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20266K5iZrP3Vc1794008425.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205049",
    "_direct": true,
    "status": "direct",
    "archive_url": null,
@@ -3164,46 +3403,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
-  },
-  {
-   "id": "daecf882a26c",
-   "title": "何立峰與美方經貿牽頭人通話 就美國對華經貿限制措施表達嚴正關切",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:07:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026AezeZlsuz91794012203.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205053",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "400bc6cc5f11",
-   "title": "Cornell Faculty Passes Vote of No Confidence Over Handling of Sexual Assault Case",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-11-07T00:06:38Z",
-   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/met-cornell-senate1-mplw/met-cornell-senate1-mplw-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/06/nyregion/cornell-no-confidence-vote.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "3a34103382d8",
-   "title": "86 Deaths and Counting: N.Y.C. Fire Fatalities Have Nearly Doubled This Year",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-11-07T00:01:39Z",
-   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/00met-sunsetfire-tbd-promo-fqvc/00met-sunsetfire-tbd-promo-fqvc-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/06/nyregion/nyc-fire-deaths.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
   },
   {
    "id": "4a7e1ef8907a",
@@ -3287,20 +3486,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
-  },
-  {
-   "id": "5743e834585c",
-   "title": "俯瞰神州‧新疆｜天山天池迎初雪 秋色白雪相映成畫",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:00:00Z",
-   "image": "https://pro-vod-cdn.tvb.com/2a8074006f2945c29adfedf666a21691/snapshots/38751c3cfba143b49483bde1f33eb050-00004.jpg",
-   "url": "https://news.tvb.com/en/1204944",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
   },
   {
    "id": "a7c6c5778050",
@@ -3488,32 +3673,6 @@
    "cover_only": true
   },
   {
-   "id": "7b99616223c6",
-   "title": "Brookfield Revels in Rising Demand for Infrastructure Assets - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T23:32:40Z",
-   "image": null,
-   "url": "https://www.wsj.com/pro/private-equity/brookfield-asset-management-fundraises-25-billion-in-quarter-led-by-infrastructure-strategies-b07bc57b",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
-   "id": "295756811967",
-   "title": "A Soldier Cut Off His Own Foot to Survive. Then Came a Daring Drone Rescue. - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T23:31:15Z",
-   "image": null,
-   "url": "https://www.wsj.com/world/europe/ukraine-war-drone-rescue-c2e59cd6",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "fa9d3e41b881",
    "title": "Elanco Shares Jump After Q3 Beat and Outlook Raise",
    "source": "Bloomberg",
@@ -3527,7 +3686,7 @@
    "status": "direct",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "bdfe040581f4",
@@ -3646,33 +3805,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
-  },
-  {
-   "id": "881f965547a6",
-   "title": "Unidroit regional office a vote of confidence in Hong Kong’s legal strengths",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-11-06T23:15:08Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/1baea89e-968e-49dd-bc08-fd653d3e70af_c5d719d8.jpg?itok=_VSYA9-2&v=1793941842",
-   "url": "https://www.scmp.com/opinion/comment/article/3373498/unidroit-regional-office-vote-confidence-hong-kongs-legal-strengths",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "10c561663687",
-   "title": "GLP-1 side effects have users turning to supplements. Why doctors are worried",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-11-06T23:15:05Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/005f570a-a194-40b4-808d-d74a11d067cb_74a619ee.jpg?itok=LwjwI9Rz&v=1793689601",
-   "url": "https://www.scmp.com/lifestyle/health-wellness/article/3373100/glp-1-side-effects-have-users-turning-supplements-why-doctors-are-worried",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
   },
   {
    "id": "e6ecd46e3357",
@@ -3814,6 +3946,19 @@
    "published": "2026-11-06T22:37:00Z",
    "image": null,
    "url": "https://www.wsj.com/world/americas/pope-leo-visits-a-latin-america-thats-losing-its-religion-b1007bbc",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "bf3914e9bbda",
+   "title": "Stephen Miller Is Trump’s New Chief of Staff - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T22:36:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/politics/stephen-miller-is-trumps-new-chief-of-staff-e1984f25",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -4122,20 +4267,6 @@
    "cover_only": true
   },
   {
-   "id": "42a853459534",
-   "title": "Cornell faculty declares ‘no confidence’ in school leaders in fallout from alleged gang-rape",
-   "source": "The Guardian",
-   "topic": "US",
-   "published": "2026-11-06T21:46:37Z",
-   "image": "https://i.guim.co.uk/img/media/208f3baf785c851de0a8a0bd9d5f082eb25a9b62/958_607_3485_2788/master/3485.jpg?width=140&quality=85&auto=format&fit=max&s=cb0077fdc88415cf8710d12e60d16d21",
-   "url": "https://www.theguardian.com/us-news/2026/nov/06/cornell-faculty-declares-no-confidence-school-leaders",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "a7bd1ef3d5f6",
    "title": "Big Take: The New AI Trade Is FOGO",
    "source": "Bloomberg",
@@ -4201,17 +4332,17 @@
    "cover_only": false
   },
   {
-   "id": "2f056fa1c4d7",
-   "title": "Hegseth Faces Impeachment Effort and Bipartisan Scrutiny After Midterm Elections",
-   "source": "The New York Times",
+   "id": "7b99616223c6",
+   "title": "Brookfield Revels in Rising Demand for Infrastructure Assets - WSJ",
+   "source": "WSJ",
    "topic": "Top",
-   "published": "2026-11-06T21:27:47Z",
-   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06dc-hegseth-fqbt/06dc-hegseth-fqbt-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/06/us/politics/hegseth-trump-iran-war.html",
+   "published": "2026-11-06T21:27:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/pro/private-equity/brookfield-asset-management-fundraises-25-billion-in-quarter-led-by-infrastructure-strategies-b07bc57b",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": false
+   "cover_only": true
   },
   {
    "id": "60f504d1c54a",
@@ -4438,6 +4569,19 @@
    "cover_only": true
   },
   {
+   "id": "470871ca67d4",
+   "title": "The High-End Neighborhoods Engineering Their Own Waves - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T21:00:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/real-estate/luxury-homes/the-high-end-neighborhoods-engineering-their-own-waves-26362331",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107062653/https://www.wsj.com/real-estate/luxury-homes/the-high-end-neighborhoods-engineering-their-own-waves-26362331",
+   "cover_only": true
+  },
+  {
    "id": "a40797809b85",
    "title": "OpenAI Completes $11 Billion Portion of Funding at $1.25 Trillion Value",
    "source": "Bloomberg",
@@ -4451,7 +4595,7 @@
    "status": "direct",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "16f3ce7fe8e7",
@@ -4546,19 +4690,6 @@
    "cover_only": true
   },
   {
-   "id": "b85c4cff0a6d",
-   "title": "Oil Futures Slide As Market Holds Out Hopes for Middle East Diplomacy - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T20:45:13Z",
-   "image": null,
-   "url": "https://www.wsj.com/business/energy-oil/brent-crude-climbs-above-100-as-middle-east-oil-supply-risks-persist-caaf64bb",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "030d1412945f",
    "title": "Indiana, Florida and Alabama carried out executions on Thursday - The Washington Post",
    "source": "The Washington Post",
@@ -4635,6 +4766,19 @@
    "status": "challenge",
    "archive_url": null,
    "wayback_url": "http://web.archive.org/web/20261107040345/https://www.economist.com/middle-east-and-africa/2026/11/06/republicans-blame-israel-for-their-defeat",
+   "cover_only": true
+  },
+  {
+   "id": "b85c4cff0a6d",
+   "title": "Oil Futures Slide As Market Holds Out Hopes for Middle East Diplomacy - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T20:34:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/business/energy-oil/brent-crude-climbs-above-100-as-middle-east-oil-supply-risks-persist-caaf64bb",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
    "cover_only": true
   },
   {
@@ -4940,7 +5084,7 @@
    "status": "direct",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "e9d3232865b5",
@@ -4983,12 +5127,25 @@
    "cover_only": false
   },
   {
+   "id": "23df4d5a6f3d",
+   "title": "The 2028 Election Map Just Broke Wide Open - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T19:33:58Z",
+   "image": null,
+   "url": "https://www.wsj.com/politics/elections/2028-election-president-battleground-map-3b8567b9",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "3b4f8c9da9d1",
    "title": "Nike is hit with religious ban in Libya because its name is a Greek goddess - The Washington Post",
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T19:30:40Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/Z2MVBBGVWQI6XM47AWRNO5VR6Q.jpg&amp;w=1440",
    "url": "https://www.washingtonpost.com/world/2026/11/05/nike-is-hit-with-religious-ban-libya-because-its-name-is-greek-goddess/",
    "status": "challenge",
    "archive_url": null,
@@ -5208,19 +5365,6 @@
    "cover_only": true
   },
   {
-   "id": "3978c9e3eeec",
-   "title": "Rubio to travel to Paris to meet G7 foreign ministers next week - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-06T19:02:43Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/europe/rubio-travel-paris-meet-g7-foreign-ministers-next-week-2026-11-06/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "54d6a280d177",
    "title": "Want to have a better chat? Scientists say the secret is ‘pink noise’",
    "source": "The Guardian",
@@ -5253,7 +5397,7 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T19:00:01Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/UTBLWRAJDAWSZ5B2E66ZPIMVL4.JPG&amp;w=1440",
    "url": "https://www.washingtonpost.com/politics/2026/11/06/white-house-starlink-gift-followed-by-nearly-12-million-pentagon-awards-spacex/",
    "status": "challenge",
    "archive_url": null,
@@ -5266,7 +5410,7 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T19:00:01Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/KDZ2F6G3QMI6PMNIMJMJINFFQE.jpg&amp;w=1440",
    "url": "https://www.washingtonpost.com/national-security/2026/11/06/ex-fbi-agent-stole-over-2-million-including-crypto-crime-victims/",
    "status": "challenge",
    "archive_url": null,
@@ -5279,7 +5423,7 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T19:00:00Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/BMMTHKKNBRHZ7K5XQXDGKUE55A.jpg&amp;w=1440",
    "url": "https://www.washingtonpost.com/wellness/2026/11/06/unique-heart-disease-risk-factors-women-face-each-stage-life/",
    "status": "challenge",
    "archive_url": null,
@@ -5292,11 +5436,24 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T19:00:00Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/PZB4BDMZKXLVBIGAYKQ6BBNWCI_size-normalized.JPG&amp;w=1440",
    "url": "https://www.washingtonpost.com/dc-md-va/2026/11/06/lewis-george-white-eye-opportunities-hope-they-can-stop-playing-defense/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "174a217e739d",
+   "title": "We tried 3D-printed meat and wished we hadn’t - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-06T19:00:00Z",
+   "image": null,
+   "url": "https://www.washingtonpost.com/food/2026/11/06/we-tried-3d-printed-meat-wished-we-hadnt/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106211845/https://www.washingtonpost.com/food/2026/11/06/we-tried-3d-printed-meat-wished-we-hadnt/",
    "cover_only": false
   },
   {
@@ -5329,7 +5486,7 @@
    "id": "1f18812b2ac8",
    "title": "They Spent Millions to Keep Their Dream Cruise Afloat. It Died Anyway.",
    "source": "The New York Times",
-   "topic": "Top",
+   "topic": "World",
    "published": "2026-11-06T18:58:23Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05trav-cruise-lkwz/05trav-cruise-lkwz-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/06/travel/villa-vie-residences-odyssey-cruise.html",
@@ -5370,12 +5527,15 @@
    "source": "Bloomberg",
    "topic": "Tech",
    "published": "2026-11-06T18:53:36Z",
-   "image": null,
+   "image": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
    "url": "https://www.bloomberg.com/news/videos/2026-11-06/bloomberg-tech-11-06-2026-video",
-   "status": "challenge",
+   "syndicated_url": "https://finance.yahoo.com/technology/ai/articles/nebius-iren-rally-dip-buyers-132138311.html",
+   "syndicated_title": "Nebius, IREN rally as dip buyers return to AI infrastructure stocks",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "730d2fc3afce",
@@ -5445,19 +5605,6 @@
    "cover_only": true
   },
   {
-   "id": "bb5e57c1dbb0",
-   "title": "Republicans’ Losses in New York’s Midterms Were Bad. Then Came Their Post-Election Freakout.",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-11-06T18:45:49Z",
-   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06met-ny-gop-whtj/06met-ny-gop-whtj-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/06/nyregion/new-york-election-midterms-republicans-blakeman-stefanik.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "57f1e8d811f9",
    "title": "NWSL May Move Playoff Games Amid Schedule Conflict With Men’s Teams Like WNBA",
    "source": "Bloomberg",
@@ -5469,32 +5616,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
-  },
-  {
-   "id": "8f76b689cf99",
-   "title": "Top Prosecutor Overseeing Conspiracy Probe of Trump Foes Resigns - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T18:39:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/politics/policy/top-prosecutor-overseeing-conspiracy-probe-of-trump-foes-resigns-c9bb4d94",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
-   "id": "20de9a118466",
-   "title": "U.S. Attorney Who Oversaw Centerpiece of Trump’s Revenge Campaign Resigns",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-11-06T18:38:12Z",
-   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/dc-quinones-vzfc/dc-quinones-vzfc-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/06/us/politics/jason-reding-quinones-resigns.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
   },
   {
    "id": "92a6b7a8ee6f",
@@ -5660,7 +5781,8 @@
    "published": "2026-11-06T18:15:42Z",
    "image": null,
    "url": "https://www.washingtonpost.com/podcasts/impromptu/what-the-collapse-of-a-2-billion-law-firm-reveals/",
-   "status": "challenge",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -5796,6 +5918,19 @@
    "cover_only": false
   },
   {
+   "id": "d05f42d1f413",
+   "title": "Why aren’t there kid-free flights? - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-06T18:00:00Z",
+   "image": null,
+   "url": "https://www.washingtonpost.com/travel/2026/11/06/could-adult-only-flights-ever-happen-real/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "f4aeddac3940",
    "title": "The GOP needs to move on from Trump. That’s easier said than done. - The Washington Post",
    "source": "The Washington Post",
@@ -5853,12 +5988,15 @@
    "source": "WSJ",
    "topic": "Top",
    "published": "2026-11-06T17:45:11Z",
-   "image": null,
+   "image": "https://s.yimg.com/lo/mysterio/api/59b705099ae7a23acefc0b5f246c64cac7a3a07db6d7de9d6ac9f7273e62bb78/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_wall_street_journal_hosted_996%2F8c4ac9d8a18192c49b1a902d0834270e.jpg",
    "url": "https://www.wsj.com/finance/investing/u-s-treasurys-little-changed-markets-await-employment-data-88f3f2b6",
-   "status": "challenge",
+   "syndicated_url": "https://finance.yahoo.com/markets/currencies/articles/treasury-yields-turn-higher-eurozone-112300671.html",
+   "syndicated_title": "Treasury Yields Rise on Strong Jobs Data",
+   "_direct": true,
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": true
+   "cover_only": false
   },
   {
    "id": "d92d3dd231ad",
@@ -5946,7 +6084,6 @@
    "published": "2026-11-06T17:35:46Z",
    "image": "https://i.guim.co.uk/img/media/7f3bd46e566d9f17cbfd30cee11a3762f7b880e1/710_278_2749_2200/master/2749.jpg?width=140&quality=85&auto=format&fit=max&s=d0716a07ed5e8b9130428a37d8c262c0",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/06/russell-brand-justice-comedy-other-abusers",
-   "_direct": true,
    "status": "direct",
    "archive_url": null,
    "wayback_url": null,
@@ -6064,7 +6201,7 @@
    "published": "2026-11-06T17:14:31Z",
    "image": "https://i.guim.co.uk/img/media/1f88c9a52100be8318eb3a96107a54f59d0a5606/205_0_4147_3317/master/4147.jpg?width=140&quality=85&auto=format&fit=max&s=019361f7d5bba2227ccd0b0797d26c42",
    "url": "https://www.theguardian.com/world/2026/nov/06/further-bomb-threats-disrupt-flights-across-europe",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6168,7 +6305,7 @@
    "published": "2026-11-06T16:57:42Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/bltd42a71c170099351/6aee06875fb4467fbbcfc0d2/GMZ_KV1-Still_Godzilla-clean_2026-07-07_copyright.jpg?branch=production",
    "url": "https://time.com/article/2026/11/06/godzilla-minus-zero-review/",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6181,7 +6318,7 @@
    "published": "2026-11-06T16:53:06Z",
    "image": "https://i.guim.co.uk/img/media/5100981af09f16b0a461e529898a8fe68a030874/396_0_3959_3167/master/3959.jpg?width=140&quality=85&auto=format&fit=max&s=b618988ae9f5725a90a5c100f82907b7",
    "url": "https://www.theguardian.com/culture/2026/nov/06/russell-brand-conviction-must-be-wake-up-call-says-culture-secretary-lisa-nandy",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -6941,19 +7078,6 @@
    "cover_only": false
   },
   {
-   "id": "62d6521c9d39",
-   "title": "‘Claude Monet’ Review: Lasting Impressions - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T15:15:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/arts-culture/books/claude-monet-review-lasting-impressions-779d8178",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "a3f3ffaee7ce",
    "title": "US Measles Cases Top 5,000 for the First Time Since the 1990s",
    "source": "Bloomberg",
@@ -7208,19 +7332,6 @@
    "published": "2026-11-06T14:17:18Z",
    "image": "https://i.guim.co.uk/img/media/fc422a8eeed993acd196ddf762bd56586c9f915d/261_0_1708_1366/master/1708.jpg?width=140&quality=85&auto=format&fit=max&s=a1f526a96dc0b3d8d687a97cc4153227",
    "url": "https://www.theguardian.com/us-news/2026/nov/05/congress-midterms-diverse",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "28b55d4c9c01",
-   "title": "Seafarer killed in suspected missile attack on tanker in Gulf - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-06T14:17:12Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/one-seafarer-killed-missile-attack-tanker-gulf-2026-11-06/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -8150,19 +8261,6 @@
    "cover_only": true
   },
   {
-   "id": "4714d235457a",
-   "title": "達卡青年奧運：蘇籽童乒乓女單、文薈喬50蛙分別摘銅",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-06T11:13:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026qoURA19Ujp1793963659.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1204987",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "83acf75ad162",
    "title": "Russia and US seek to block plan for binding rules on autonomous weapons",
    "source": "The Guardian",
@@ -8755,19 +8853,6 @@
    "published": "2026-11-06T07:12:45Z",
    "image": null,
    "url": "https://www.washingtonpost.com/dc-md-va/2026/11/05/national-guard-adding-boats-humvees-dc-leaders-hope-oust-troops/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "fa9afb72cbae",
-   "title": "Belgium to allow home searches for suspected illegal migrants - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-06T07:07:00Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/belgium-allow-home-searches-suspected-illegal-migrants-2026-11-06/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -9476,6 +9561,19 @@
    "cover_only": false
   },
   {
+   "id": "3cea4efe20d2",
+   "title": "Gold drops as strong US payrolls boost dollar, yields - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-06T03:46:00Z",
+   "image": null,
+   "url": "https://www.reuters.com/world/india/gold-eases-inflation-worries-higher-oil-us-payrolls-data-focus-2026-11-06/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "e97cab3e21a0",
    "title": "How the Texas blue wave came crashing down on Republicans - The Washington Post",
    "source": "The Washington Post",
@@ -9684,6 +9782,19 @@
    "cover_only": true
   },
   {
+   "id": "295756811967",
+   "title": "A Soldier Cut Off His Own Foot to Survive. Then Came a Daring Drone Rescue. - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T02:00:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/world/europe/ukraine-war-drone-rescue-c2e59cd6",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "d2d09621a862",
    "title": "Opinion | JD Vance’s stunning act of disloyalty - The Washington Post",
    "source": "The Washington Post",
@@ -9691,9 +9802,9 @@
    "published": "2026-11-06T01:57:08Z",
    "image": null,
    "url": "https://www.washingtonpost.com/opinions/2026/11/05/vances-post-midterms-disloyalty-trump-is-disqualifying/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106231759/https://www.washingtonpost.com/opinions/2026/11/05/vances-post-midterms-disloyalty-trump-is-disqualifying/",
    "cover_only": false
   },
   {
@@ -9704,7 +9815,7 @@
    "published": "2026-11-06T01:54:18Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05biz-openai-change-hpbl/05biz-openai-change-hpbl-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/technology/openai-data-centers-midterms.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9717,20 +9828,7 @@
    "published": "2026-11-06T01:49:52Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/rural-voters-gop-strongholds-helped-carry-democrats-midterm-victories/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "9774bca9cab5",
-   "title": "Israel’s largely ceremonial president faces choice that could shape its future - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-06T01:42:20Z",
-   "image": null,
-   "url": "https://www.washingtonpost.com/world/2026/11/05/israels-largely-ceremonial-president-faces-choice-that-could-shape-its-future/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9743,7 +9841,7 @@
    "published": "2026-11-06T01:30:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/progressives-launch-effort-urge-rep-ro-khanna-run-president-2028/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9756,7 +9854,7 @@
    "published": "2026-11-06T01:10:46Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05biz-jensen-congress-gwjh/05biz-jensen-congress-gwjh-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/technology/house-republicans-nvidia-jensen-huang-china.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9769,7 +9867,7 @@
    "published": "2026-11-06T01:00:00Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/news/singapore/lianhe-zaobao-english-edition-launch-welcomed-across-sectors-tan-kiat-how-says-it-can-deepen",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9782,7 +9880,7 @@
    "published": "2026-11-06T00:59:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026EGCTU24wDv1793881814.png?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204792",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9795,9 +9893,9 @@
    "published": "2026-11-06T00:52:51Z",
    "image": null,
    "url": "https://www.washingtonpost.com/national-security/2026/11/04/knives-out-pentagon-after-unpopular-iran-war-dooms-gop-midterms/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105182153/https://www.washingtonpost.com/national-security/2026/11/04/knives-out-pentagon-after-unpopular-iran-war-dooms-gop-midterms/",
    "cover_only": false
   },
   {
@@ -9808,7 +9906,7 @@
    "published": "2026-11-06T00:48:29Z",
    "image": null,
    "url": "https://www.nytimes.com/2026/11/05/business/stocks-midterms-artificial-intelligence.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9821,7 +9919,7 @@
    "published": "2026-11-06T00:33:00Z",
    "image": "https://static01.nyt.com/images/2026/11/06/multimedia/05biz-tech-billionaires-gwfm/05biz-tech-billionaires-gwfm-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/technology/tech-billionaires-democrats-midterms.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9834,7 +9932,7 @@
    "published": "2026-11-06T00:26:37Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05dc-bird-flu-cfvb/05dc-bird-flu-cfvb-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/health/bird-flu-death-us.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9847,7 +9945,7 @@
    "published": "2026-11-06T00:24:58Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/how-a-banking-scandal-is-taking-down-trump-s-ally-in-paraguay",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -9860,7 +9958,7 @@
    "published": "2026-11-06T00:20:54Z",
    "image": null,
    "url": "https://www.washingtonpost.com/weather/2026/11/05/flash-flood-emergencies-took-place-this-week-louisiana-florida/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9873,7 +9971,7 @@
    "published": "2026-11-06T00:17:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/us/trump-takes-action-make-sure-oval-office-stays-oval-2026-11-06/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9886,7 +9984,7 @@
    "published": "2026-11-06T00:09:55Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-06/gold-set-for-biggest-weekly-gain-since-august-after-us-midterms",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -9899,7 +9997,7 @@
    "published": "2026-11-05T23:59:46Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-05/the-dollar-s-bullish-case-holds-firm-after-midterms-shakeout",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -9912,7 +10010,7 @@
    "published": "2026-11-05T23:53:41Z",
    "image": null,
    "url": "https://www.washingtonpost.com/entertainment/2026/11/05/russell-brand-found-guilty-rape-sexual-assault-london-trial/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9925,7 +10023,7 @@
    "published": "2026-11-05T23:41:07Z",
    "image": null,
    "url": "https://www.economist.com/finance-and-economics/2026/11/05/markets-realise-they-hate-americas-blue-wave",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -9938,7 +10036,7 @@
    "published": "2026-11-05T23:41:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/ai-backlash-could-threaten-anthropic-ipo-timing-potential-investors-say-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9951,7 +10049,7 @@
    "published": "2026-11-05T23:40:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/incoming-senator-abdul-el-sayed-called-vance-habibi-what-does-that-mean/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9964,7 +10062,7 @@
    "published": "2026-11-05T23:39:16Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/news/singapore/president-tharman-china-more-important-less-understood-singapore-media-can-build-bridges",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9977,7 +10075,7 @@
    "published": "2026-11-05T23:30:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026zxkbLGzepv1793768000.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204340",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9990,7 +10088,7 @@
    "published": "2026-11-05T23:29:23Z",
    "image": "https://static01.nyt.com/images/2026/11/05/business/05biz-salon/05biz-salon-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/business/media/salon-online-magazine-shutters.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10003,7 +10101,7 @@
    "published": "2026-11-05T23:18:21Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-israel-party-vote-photo-hjzq/05int-israel-party-vote-photo-hjzq-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10016,7 +10114,7 @@
    "published": "2026-11-05T23:09:27Z",
    "image": "https://static01.nyt.com/images/2026/10/29/business/29BIZ-LETTERBOXD/29BIZ-LETTERBOXD-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/business/media/letterboxd-new-york-times-company.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10029,23 +10127,10 @@
    "published": "2026-11-05T23:06:49Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/news/singapore/lianhe-zaobao-launches-english-website-reach-young-readers-and-all-races-chinese-language-identity",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "40a47e6ef637",
-   "title": "Lone Pine, Whale Rock, Tiger Global Battered by AI Jitters",
-   "source": "Bloomberg",
-   "topic": "Tech",
-   "published": "2026-11-05T23:03:01Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/articles/2026-11-05/tiger-global-whale-rock-battered-by-ai-fears-in-painful-october",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "ffd1bbe5b827",
@@ -10055,7 +10140,7 @@
    "published": "2026-11-05T23:03:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/asia-pacific/chinas-yuan-dilemma-too-weak-abroad-too-strong-home-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10068,7 +10153,7 @@
    "published": "2026-11-05T23:02:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/silver-lake-pif-have-held-recent-talks-buy-gaming-software-provider-unity-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10081,7 +10166,7 @@
    "published": "2026-11-05T23:00:36Z",
    "image": "https://i.guim.co.uk/img/media/f98712649872f00498ef7bae039a13ef7ee16f70/605_0_6623_5301/master/6623.jpg?width=140&quality=85&auto=format&fit=max&s=95930b57eb532e9b0f8777ff5d602f8d",
    "url": "https://www.theguardian.com/culture/ng-interactive/2026/nov/06/powerhouse-parramatta-opening-festival",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10094,9 +10179,9 @@
    "published": "2026-11-05T22:49:00Z",
    "image": null,
    "url": "https://www.wsj.com/opinion/trump-is-the-author-of-the-ruin-41827a6e",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106152106/https://www.wsj.com/opinion/trump-is-the-author-of-the-ruin-41827a6e",
    "cover_only": true
   },
   {
@@ -10107,7 +10192,7 @@
    "published": "2026-11-05T22:48:00Z",
    "image": null,
    "url": "https://www.wsj.com/politics/policy/trump-signs-proclamation-he-says-will-protect-oval-office-from-major-changes-93f3285b",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10120,7 +10205,7 @@
    "published": "2026-11-05T22:47:35Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05biz-elections-ratings-mltc/05biz-elections-ratings-mltc-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/business/media/tv-ratings-midterms-steve-kornacki.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10133,7 +10218,7 @@
    "published": "2026-11-05T22:40:00Z",
    "image": null,
    "url": "https://www.wsj.com/opinion/tech-selloff-economy-politics-2e789982",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10146,7 +10231,7 @@
    "published": "2026-11-05T22:31:00Z",
    "image": null,
    "url": "https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10159,9 +10244,9 @@
    "published": "2026-11-05T22:30:00Z",
    "image": null,
    "url": "https://www.ft.com/content/6a1b17dd-3da2-410b-b64e-fbf111e40336?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106005106/https://www.ft.com/content/6a1b17dd-3da2-410b-b64e-fbf111e40336?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -10172,7 +10257,7 @@
    "published": "2026-11-05T22:30:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/dc-md-va/2026/11/05/35-best-things-do-dc-this-weekend-next-week/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10185,7 +10270,7 @@
    "published": "2026-11-05T22:25:38Z",
    "image": null,
    "url": "https://www.reuters.com/legal/government/french-bank-credit-mutuel-arkea-says-100-million-missing-after-cyberattack-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10198,7 +10283,7 @@
    "published": "2026-11-05T22:25:07Z",
    "image": null,
    "url": "https://www.reuters.com/business/retail-consumer/us-warns-ongoing-cyber-threat-industrial-refrigeration-systems-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10211,9 +10296,9 @@
    "published": "2026-11-05T22:22:00Z",
    "image": null,
    "url": "https://www.wsj.com/opinion/trumps-republican-carnage-befb58a6",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106183237/https://www.wsj.com/opinion/trumps-republican-carnage-befb58a6",
    "cover_only": true
   },
   {
@@ -10224,7 +10309,7 @@
    "published": "2026-11-05T22:21:47Z",
    "image": null,
    "url": "https://www.nytimes.com/2026/11/05/business/media/pc-vey-new-yorker-cartoons.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10237,7 +10322,7 @@
    "published": "2026-11-05T22:21:00Z",
    "image": null,
    "url": "https://www.wsj.com/opinion/the-cherry-hill-jewish-cheesesteak-tumult-7fa83355",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10250,7 +10335,7 @@
    "published": "2026-11-05T22:18:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/asia-pacific/labour-gains-latest-new-zealand-poll-before-vote-results-remain-too-close-call-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10263,7 +10348,7 @@
    "published": "2026-11-05T22:17:59Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-05/stock-market-today-dow-s-p-live-updates",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10276,7 +10361,7 @@
    "published": "2026-11-05T22:10:24Z",
    "image": "https://static01.nyt.com/images/2026/11/05/business/05biz-addiction-lawsuit/05biz-addiction-lawsuit-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/technology/social-media-child-safety-california.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10289,7 +10374,7 @@
    "published": "2026-11-05T22:03:22Z",
    "image": null,
    "url": "https://www.wsj.com/business/earnings/cloudflare-stock-surges-on-lifted-full-year-outlook-third-quarter-revenue-growth-984186bf",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10302,7 +10387,7 @@
    "published": "2026-11-05T21:44:00Z",
    "image": null,
    "url": "https://www.wsj.com/business/earnings/monster-beverage-profit-rises-as-international-sales-jump-ac9a1685",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10315,9 +10400,9 @@
    "published": "2026-11-05T21:41:00Z",
    "image": null,
    "url": "https://www.wsj.com/finance/stocks/wall-street-gets-2-5-trillion-ai-reality-check-with-historic-rout-of-tech-stocks-93985d7c",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105234112/https://www.wsj.com/finance/stocks/wall-street-gets-2-5-trillion-ai-reality-check-with-historic-rout-of-tech-stocks-93985d7c",
    "cover_only": true
   },
   {
@@ -10328,7 +10413,7 @@
    "published": "2026-11-05T21:34:35Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-finland-ship-jvkl/05int-finland-ship-jvkl-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/europe/finland-fitburg-russia-ship-baltic-cables-sabotage.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10341,7 +10426,7 @@
    "published": "2026-11-05T21:30:46Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-canada-budget-takeaways01-photo-bcmw/05int-canada-budget-takeaways01-photo-bcmw-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/canada/carney-sovereignty-federal-budget-trade.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10354,7 +10439,7 @@
    "published": "2026-11-05T21:24:00Z",
    "image": null,
    "url": "https://www.wsj.com/arts-culture/television/de-gaulle-resistance-review-a-grand-portrait-of-the-general-274b6b48",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10367,7 +10452,7 @@
    "published": "2026-11-05T21:23:18Z",
    "image": "https://i.guim.co.uk/img/media/3a568c8ddd6dd680b69418b3c568815a7cbbea29/261_0_3478_2784/master/3478.jpg?width=140&quality=85&auto=format&fit=max&s=06500e89cb38f5ecdd58baa634d2acb4",
    "url": "https://www.theguardian.com/business/2026/nov/05/nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10380,9 +10465,9 @@
    "published": "2026-11-05T21:23:00Z",
    "image": null,
    "url": "https://www.wsj.com/politics/elections/white-house-warns-conservative-groups-it-is-monitoring-their-statements-087b07d0",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106021840/https://www.wsj.com/politics/elections/white-house-warns-conservative-groups-it-is-monitoring-their-statements-087b07d0",
    "cover_only": true
   },
   {
@@ -10393,7 +10478,7 @@
    "published": "2026-11-05T21:19:39Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05cli-newsletter-ballot-measures-zmwl/05cli-newsletter-ballot-measures-zmwl-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/climate/climate-environment-ballot-meaures-midterms.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10406,7 +10491,7 @@
    "published": "2026-11-05T21:18:04Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-uk-ebola-patient-htbc/05int-uk-ebola-patient-htbc-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/europe/british-ebola-case-congo-uk.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10419,7 +10504,7 @@
    "published": "2026-11-05T21:17:00Z",
    "image": null,
    "url": "https://www.wsj.com/finance/investing/ai-panic-grips-stocks-60a59518",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10432,7 +10517,7 @@
    "published": "2026-11-05T21:16:14Z",
    "image": "https://static01.nyt.com/images/2026/11/05/obituaries/05kuhne_bw/05kuhne_bw-mediumSquareAt3X.png",
    "url": "https://www.nytimes.com/2026/11/05/world/europe/klaus-michael-kuhne-dead.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10445,7 +10530,7 @@
    "published": "2026-11-05T21:15:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/entertainment/2026/11/05/wake-democratic-wins-rosie-odonnell-considers-return-us/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10458,7 +10543,7 @@
    "published": "2026-11-05T21:12:00Z",
    "image": null,
    "url": "https://www.wsj.com/business/earnings/lyfts-bookings-rise-on-strength-in-partnerships-new-products-d8953f77",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10471,7 +10556,7 @@
    "published": "2026-11-05T21:07:31Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-ukraine-oleshky-hgtc/05int-ukraine-oleshky-hgtc-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/europe/melania-trump-oleshky-ukraine-ceasefire.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10484,9 +10569,9 @@
    "published": "2026-11-05T21:07:00Z",
    "image": null,
    "url": "https://www.wsj.com/arts-culture/film/i-play-rocky-review-sylvester-stallones-fight-to-be-a-star-cc0c00f3",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106182309/https://www.wsj.com/arts-culture/film/i-play-rocky-review-sylvester-stallones-fight-to-be-a-star-cc0c00f3",
    "cover_only": true
   },
   {
@@ -10497,7 +10582,7 @@
    "published": "2026-11-05T20:51:57Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04int-argentina-bolsonaro01-photo-jtkl/04int-argentina-bolsonaro01-photo-jtkl-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/americas/bolsonaro-escape-brazil-milei-adviser-argentina.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10510,7 +10595,7 @@
    "published": "2026-11-05T20:45:10Z",
    "image": null,
    "url": "https://www.economist.com/britain/2026/11/05/transcript-an-interview-with-andy-burnham",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10523,7 +10608,7 @@
    "published": "2026-11-05T20:39:36Z",
    "image": null,
    "url": "https://www.washingtonpost.com/opinions/2026/11/05/business-activity-tax-dc-should-look-before-it-leaps/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10536,7 +10621,7 @@
    "published": "2026-11-05T20:38:43Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-sudan-lana-2-kgtq/05int-sudan-lana-2-kgtq-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/africa/lana-nusseibeh-united-nations-uae-sudan.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10549,7 +10634,7 @@
    "published": "2026-11-05T20:34:26Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04dc-arbitators-jwgf/04dc-arbitators-jwgf-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/health/arbitrators-medical-bills.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10562,7 +10647,7 @@
    "published": "2026-11-05T20:30:11Z",
    "image": "https://i.guim.co.uk/img/media/b58a5b463f1a943c738a5d7c55d8aa4d09f9ba33/1000_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=b6a82955507141e93cb6c304d2fe7819",
    "url": "https://www.theguardian.com/world/2026/nov/05/british-ebola-patient-evacuated-drc-arrives-london-hospital",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10575,7 +10660,7 @@
    "published": "2026-11-05T20:30:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/dc-md-va/2026/11/05/dc-mayor-bowser-honors-popular-blog-with-popville-day/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10588,7 +10673,7 @@
    "published": "2026-11-05T20:21:12Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt4cce8c7755a9e9e9/6aecbdc0e47c1eeb84c2eae0/GettyImages-2213109092.jpg?branch=production",
    "url": "https://time.com/article/2026/11/05/maha-supporters-say-trump-broken-promises-helped-democrats-win/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10601,9 +10686,9 @@
    "published": "2026-11-05T20:08:16Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blta0fadc93aa2c84b6/6aece09a4eb3c76856179502/nithya-raman-la-mayor-midterm-elections.jpg?branch=production",
    "url": "https://time.com/article/2026/11/05/democratic-socialist-mayors-la-dc-new-york-city-nithya-raman-election/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107033209/https://time.com/article/2026/11/05/democratic-socialist-mayors-la-dc-new-york-city-nithya-raman-election/",
    "cover_only": false
   },
   {
@@ -10614,7 +10699,7 @@
    "published": "2026-11-05T20:02:30Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt16ecf125674b9a03/6aecd4e809298fdb95211280/GettyImages-2299291968.jpg?branch=production",
    "url": "https://time.com/article/2026/11/05/byd-china-trade-ev-cars-toyota/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10627,9 +10712,9 @@
    "published": "2026-11-05T20:00:00Z",
    "image": null,
    "url": "https://www.wsj.com/finance/investing/home-vs-stock-market-investment-6783607f",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106165310/https://www.wsj.com/finance/investing/home-vs-stock-market-investment-6783607f",
    "cover_only": true
   },
   {
@@ -10640,7 +10725,7 @@
    "published": "2026-11-05T19:56:52Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-bolsonaro-interview01a-photo-flzk/05int-bolsonaro-interview01a-photo-flzk-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/americas/flavio-bolsonaro-florida-brazil.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10653,7 +10738,7 @@
    "published": "2026-11-05T19:45:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/opinions/2026/11/05/impeachment-trump-democrats-an-inevitability/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10666,7 +10751,7 @@
    "published": "2026-11-05T19:39:19Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-bomb-threats-scene01-photo-bqtk/05int-bomb-threats-scene01-photo-bqtk-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-airline-passengers.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10679,7 +10764,7 @@
    "published": "2026-11-05T19:35:00Z",
    "image": null,
    "url": "https://www.wsj.com/real-estate/luxury-homes/paradise-valley-arizona-home-underground-bunker-4b4cc96a",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10692,7 +10777,7 @@
    "published": "2026-11-05T19:30:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/opinions/2026/11/05/how-trump-squandered-gop-latino-realignment/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10705,9 +10790,9 @@
    "published": "2026-11-05T19:30:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/opinions/2026/11/05/vance-rubio-2028-race-needs-new-republicans/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105182336/https://www.washingtonpost.com/opinions/2026/11/05/vance-rubio-2028-race-needs-new-republicans/",
    "cover_only": false
   },
   {
@@ -10718,7 +10803,7 @@
    "published": "2026-11-05T19:27:58Z",
    "image": "https://static01.nyt.com/images/2026/10/26/multimedia/26biz-Chromebook-harms-qwlb/26biz-Chromebook-harms-qwlb-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/technology/ai-safety-school-chromebooks-google-lawsuit.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10731,9 +10816,9 @@
    "published": "2026-11-05T19:22:00Z",
    "image": null,
    "url": "https://www.wsj.com/world/middle-east/saudi-arabia-has-no-easy-choices-as-it-weighs-how-to-combat-houthi-threat-a4adc358",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105064458/https://www.wsj.com/world/middle-east/saudi-arabia-has-no-easy-choices-as-it-weighs-how-to-combat-houthi-threat-a4adc358",
    "cover_only": true
   },
   {
@@ -10744,9 +10829,9 @@
    "published": "2026-11-05T19:15:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/opinions/2026/11/05/how-trump-gop-lost-young-male-vote/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105180219/https://www.washingtonpost.com/opinions/2026/11/05/how-trump-gop-lost-young-male-vote/",
    "cover_only": false
   },
   {
@@ -10757,7 +10842,7 @@
    "published": "2026-11-05T19:12:23Z",
    "image": "https://i.guim.co.uk/img/media/5a6a27323bce9dc45011b7655af557ec6a8b8be0/711_0_7108_5687/master/7108.jpg?width=140&quality=85&auto=format&fit=max&s=02a02fd62899fe824b2370aeb2624232",
    "url": "https://www.theguardian.com/us-news/2026/nov/05/trumps-interior-design",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10770,7 +10855,7 @@
    "published": "2026-11-05T19:07:18Z",
    "image": null,
    "url": "https://www.nytimes.com/2026/11/05/science/ancient-siberia-scythians-first-marijuanna-cannabis-use.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10783,7 +10868,7 @@
    "published": "2026-11-05T19:03:51Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-france-protests-vjhc/05int-france-protests-vjhc-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/europe/france-protests-general-strike.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10796,7 +10881,7 @@
    "published": "2026-11-05T19:00:01Z",
    "image": null,
    "url": "https://www.washingtonpost.com/education/2026/11/05/some-colleges-reined-frats-after-rapes-experts-urge-bigger-fix/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10809,7 +10894,7 @@
    "published": "2026-11-05T19:00:01Z",
    "image": null,
    "url": "https://www.washingtonpost.com/dc-md-va/interactive/2026/11/05/taps-finally-plays-arlington-teenage-soldier-killed-civil-war/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10822,9 +10907,9 @@
    "published": "2026-11-05T19:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/obituaries/2026/11/05/prominent-dc-litigator-dies-65-while-preparing-trial-arizona/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107043644/https://www.washingtonpost.com/obituaries/2026/11/05/prominent-dc-litigator-dies-65-while-preparing-trial-arizona/",
    "cover_only": false
   },
   {
@@ -10835,7 +10920,7 @@
    "published": "2026-11-05T19:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/far-washington-democrats-forge-huge-state-level-gains/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10848,9 +10933,9 @@
    "published": "2026-11-05T19:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/gops-losses-will-raise-pressure-conservative-supreme-court-justices-retire/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107050136/https://www.washingtonpost.com/politics/2026/11/05/gops-losses-will-raise-pressure-conservative-supreme-court-justices-retire/",
    "cover_only": false
   },
   {
@@ -10861,7 +10946,7 @@
    "published": "2026-11-05T18:54:00Z",
    "image": null,
    "url": "https://www.wsj.com/finance/banking/goldmans-exclusive-club-of-partners-welcomes-an-influx-from-wealth-management-ebe2e32a",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10874,7 +10959,7 @@
    "published": "2026-11-05T18:52:33Z",
    "image": "https://i.guim.co.uk/img/media/36cdca31f5998fec5f693d4be17c5c60a55db9fa/482_0_5748_4599/master/5748.jpg?width=140&quality=85&auto=format&fit=max&s=aa6c3db50f183dd8dcdc4edd50fcb9da",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/05/the-guardian-view-on-the-midterms-and-foreign-policy-american-voters-spoke-and-now-the-world-waits-anxiously",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10887,7 +10972,7 @@
    "published": "2026-11-05T18:49:25Z",
    "image": "https://i.guim.co.uk/img/media/35fda37d88f97320d4f215c7d6d925bde94ad822/0_42_4290_3434/master/4290.jpg?width=140&quality=85&auto=format&fit=max&s=2f5890add823d4936348130315b53a5a",
    "url": "https://www.theguardian.com/society/2026/nov/05/nhs-england-cancer-diagnoses-record-high-1000-people-diagnosed-every-day",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10900,7 +10985,7 @@
    "published": "2026-11-05T18:48:56Z",
    "image": null,
    "url": "https://www.ft.com/content/bd35cc23-9c24-4ac5-8754-76ed8dd0c264?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10913,7 +10998,7 @@
    "published": "2026-11-05T18:45:05Z",
    "image": null,
    "url": "https://www.ft.com/content/65ebfccc-1289-447d-9147-66c17a0e1f1f?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10926,7 +11011,7 @@
    "published": "2026-11-05T18:43:57Z",
    "image": null,
    "url": "https://www.ft.com/content/153ecf4a-bcf9-485e-ae7d-1f88af3e9361?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10939,7 +11024,7 @@
    "published": "2026-11-05T18:27:59Z",
    "image": "https://static01.nyt.com/images/2026/11/05/multimedia/05int-iran-negotiations-vmfc/05int-iran-negotiations-vmfc-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10952,7 +11037,7 @@
    "published": "2026-11-05T18:20:18Z",
    "image": null,
    "url": "https://www.ft.com/content/ed74a1e3-1d80-41dd-9404-2dee3015c162?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -10965,9 +11050,9 @@
    "published": "2026-11-05T18:19:00Z",
    "image": null,
    "url": "https://www.wsj.com/politics/elections/the-red-wall-falls-democrats-shatter-decades-of-gop-dominance-across-the-south-a299a14d",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261105233907/https://www.wsj.com/politics/elections/the-red-wall-falls-democrats-shatter-decades-of-gop-dominance-across-the-south-a299a14d",
    "cover_only": true
   },
   {
@@ -10978,7 +11063,7 @@
    "published": "2026-11-05T18:13:01Z",
    "image": "https://i.guim.co.uk/img/media/a185514bb9391c025cb28c78344aff4c704d891e/661_145_2662_2130/master/2662.jpg?width=140&quality=85&auto=format&fit=max&s=db8cfb3d24f801801ec77bf3b495cc50",
    "url": "https://www.theguardian.com/world/2026/nov/05/herzog-netanyahu-eisenkot-israel-election-decision",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10991,20 +11076,20 @@
    "published": "2026-11-05T18:04:46Z",
    "image": null,
    "url": "https://www.reuters.com/world/comedian-russell-brand-found-guilty-rape-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
   },
   {
-   "id": "bad87b539115",
-   "title": "Bank of England raises interest rates to 4%, the first increase for more than three years",
-   "source": "The Guardian",
-   "topic": "UK",
-   "published": "2026-11-05T18:00:28Z",
-   "image": "https://i.guim.co.uk/img/media/d6ebd9b4d868a9da787c0f6b207548c78ad7ab28/586_197_4797_3840/master/4797.jpg?width=140&quality=85&auto=format&fit=max&s=6b8dbc64af07e342604bb536b83ddf1b",
-   "url": "https://www.theguardian.com/business/2026/nov/05/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years",
-   "status": "original",
+   "id": "33ad6a9d51f5",
+   "title": "Anthropic rolls out personal finance feature for Claude - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-05T18:03:44Z",
+   "image": null,
+   "url": "https://www.reuters.com/business/anthropic-rolls-out-personal-finance-feature-claude-2026-11-05/",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11017,7 +11102,7 @@
    "published": "2026-11-05T18:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/what-midterms-taught-us-about-future-democratic-party/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11030,7 +11115,7 @@
    "published": "2026-11-05T18:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/business/2026/11/05/us-spent-50-years-trying-escape-oil-shocks-they-still-upend-elections/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11043,7 +11128,7 @@
    "published": "2026-11-05T18:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/sports/2026/11/05/safesport-says-it-will-expand-efforts-stop-banned-coaches-working-with-kids/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11056,7 +11141,7 @@
    "published": "2026-11-05T18:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/climate-environment/2026/11/05/recycling-costs-money-new-laws-ask-companies-pay-it/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11069,7 +11154,7 @@
    "published": "2026-11-05T18:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/lifestyle/2026/11/05/her-house-was-flooding-teens-came-rescue-paddleboard-kayak/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11082,7 +11167,7 @@
    "published": "2026-11-05T18:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/bipartisan-support-grows-reconsidering-us-israel-ties/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11095,20 +11180,7 @@
    "published": "2026-11-05T18:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/health/2026/11/05/can-hormone-therapy-lower-risk-alzheimers-dementia/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "0ed402c35a76",
-   "title": "Column | If you’re aging alone, take these steps right now - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-05T18:00:00Z",
-   "image": null,
-   "url": "https://www.washingtonpost.com/business/2026/11/05/six-steps-secure-your-care-when-aging-single/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11121,9 +11193,9 @@
    "published": "2026-11-05T17:55:34Z",
    "image": null,
    "url": "https://www.ft.com/content/ec6394d5-b4fb-4bf4-b231-300da1cd9bfb?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261106142939/https://www.ft.com/content/ec6394d5-b4fb-4bf4-b231-300da1cd9bfb?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -11134,7 +11206,7 @@
    "published": "2026-11-05T17:47:45Z",
    "image": null,
    "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11147,7 +11219,7 @@
    "published": "2026-11-05T17:37:46Z",
    "image": null,
    "url": "https://www.ft.com/content/88476c6f-2e7c-4ec6-b92c-cd933b9aeb01?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11160,7 +11232,7 @@
    "published": "2026-11-05T17:37:27Z",
    "image": "https://i.guim.co.uk/img/media/f07363f35ce5612b989365a754efde92e8077a12/384_0_2441_1953/master/2441.jpg?width=140&quality=85&auto=format&fit=max&s=487347e8c2f0afd80ec79acc90c6e867",
    "url": "https://www.theguardian.com/world/2026/nov/05/meghan-sussex-thomas-markle-jr-philippines-child-sexual-abuse-inquiry",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11173,7 +11245,7 @@
    "published": "2026-11-05T17:37:09Z",
    "image": "https://i.guim.co.uk/img/media/d3fbbe29622d8e6b5a4d866831d94bc549e62702/357_0_4044_3235/master/4044.jpg?width=140&quality=85&auto=format&fit=max&s=d47d1feb5f9af879a28793348de0c2f4",
    "url": "https://www.theguardian.com/culture/video/2026/nov/05/justice-has-been-served-for-russell-brands-victims-prosecutor-says-video",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11186,7 +11258,7 @@
    "published": "2026-11-05T17:30:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026YvRVELGiRT1793692368.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204362",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11199,7 +11271,7 @@
    "published": "2026-11-05T17:17:00Z",
    "image": "https://i.guim.co.uk/img/media/328676bd308b2026f8162d12204c9f870220cb95/0_90_5265_4214/master/5265.jpg?width=140&quality=85&auto=format&fit=max&s=dde28312e36881727682cfc2ceeedcbf",
    "url": "https://www.theguardian.com/society/2026/nov/05/beware-cosmetic-surgery-tourism-packages-experts-advise",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11212,7 +11284,7 @@
    "published": "2026-11-05T17:15:00Z",
    "image": null,
    "url": "https://www.wsj.com/real-estate/luxury-homes/nantucket-most-expensive-home-5a473e3f",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11225,7 +11297,7 @@
    "published": "2026-11-05T17:14:06Z",
    "image": "https://static.time.com/v3/assets/bltea6093859af6183b/bltf92d8abccc41ef07/6aebafdc46dffe62a5d9c3de/The_Human_Endeavor_Thumbnail_S1E1.jpg?branch=production",
    "url": "https://time.com/collection/the-ceo-moment/2026/building-an-ai-future-that-expands-human-potential/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -11238,7 +11310,7 @@
    "published": "2026-11-05T17:12:56Z",
    "image": null,
    "url": "https://www.ft.com/content/2153a8c5-976c-471f-9ca9-bf0a5da40b61?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11251,7 +11323,7 @@
    "published": "2026-11-05T17:10:00Z",
    "image": null,
    "url": "https://www.wsj.com/opinion/more-hiring-at-small-firms-f19a0080",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -11595,19 +11667,6 @@
    "cover_only": true
   },
   {
-   "id": "ead3055a104e",
-   "title": "How Your Finances Could Change if Democrats Repeat Their Win in 2028 - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-05T14:14:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/personal-finance/how-your-finances-could-change-if-democrats-repeat-their-win-in-2028-b7399634",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "ba327e3ef74d",
    "title": "What does the UK interest rate rise mean for homeowners and savers?",
    "source": "The Guardian",
@@ -11615,19 +11674,6 @@
    "published": "2026-11-05T14:00:12Z",
    "image": "https://i.guim.co.uk/img/media/01664f506f205766c0352c078da3675310b7c73e/570_0_6080_4865/master/6080.jpg?width=140&quality=85&auto=format&fit=max&s=97b51af8764c9e5e561ace46d265cb75",
    "url": "https://www.theguardian.com/business/2026/nov/05/what-does-interest-rate-rise-mean-for-homeowners-and-savers-mortgages",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "6c66ec85729f",
-   "title": "Senator Elizabeth Warren: Why Democrats Won the Midterms",
-   "source": "TIME",
-   "topic": "Top",
-   "published": "2026-11-05T14:00:04Z",
-   "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blte7cc1c5585984b77/6aebfe95f7d5905f9166dce7/Senator-Elizabeth-Warren.jpg?branch=production",
-   "url": "https://time.com/article/2026/11/05/senator-elizabeth-warren-why-democrats-won-the-midterms/",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -12219,19 +12265,6 @@
    "cover_only": true
   },
   {
-   "id": "2aa5a73dda16",
-   "title": "Opinion | El-Sayed Is Your Classic Sore Winner - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-05T11:25:04Z",
-   "image": null,
-   "url": "https://www.wsj.com/opinion/free-expression/el-sayed-is-your-classic-sore-winner-ff61f902",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "4657719509f7",
    "title": "China Blocks SoftBank’s $5.4 Billion Robotics Takeover, Impeding Foreign Deals",
    "source": "The New York Times",
@@ -12308,19 +12341,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "c7cf2715099c",
-   "title": "A Far-Left Congress? Not So Fast - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-05T11:02:16Z",
-   "image": null,
-   "url": "https://www.wsj.com/politics/elections/a-far-left-congress-not-so-fast-adba4350",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "35574b403b6a",
@@ -12726,6 +12746,19 @@
    "cover_only": false
   },
   {
+   "id": "5d3b0f21061a",
+   "title": "Singapore ‘should prioritise credible emissions-reduction projects when buying overseas carbon credits’ - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-11-05T01:24:46Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/news/singapore/singapore-should-prioritise-credible-emissions-reduction-projects-when-buying-overseas-carbon",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "0d33ec9bdee8",
    "title": "Rena Lee’s election as ICJ judge underscores international trust in Singapore - 联合早报",
    "source": "Lianhe Zaobao (EN)",
@@ -12759,19 +12792,6 @@
    "published": "2026-11-04T23:30:47Z",
    "image": "https://i.guim.co.uk/img/media/704e724f06067525299523e158d790989b489e14/0_0_4856_3885/master/4856.jpg?width=140&quality=85&auto=format&fit=max&s=06f8bac0dd132b58c1d039c7d794590a",
    "url": "https://www.theguardian.com/science/2026/nov/04/swapping-dairy-milk-cheese-yoghurt-plant-based-vegan-alternatives-deficiencies-micronutrients-iodine",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "054ecfe2ed84",
-   "title": "Bob Dylan Meets With Pope Leo",
-   "source": "The New York Times",
-   "topic": "World",
-   "published": "2026-11-04T23:14:39Z",
-   "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04int-pope-1-fpkg/04int-pope-1-fpkg-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/04/world/europe/bob-dylan-pope-leo.html",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -13155,19 +13175,6 @@
    "cover_only": false
   },
   {
-   "id": "d538a907674d",
-   "title": "EXCLUSIVE: Google extends voluntary buyout offers to employees in several countries - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-04T15:48:10Z",
-   "image": null,
-   "url": "https://www.reuters.com/business/media-telecom/google-extends-voluntary-buyout-offers-employees-several-countries-2026-11-04/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "6950dade11c9",
    "title": "CVS Health to split pharmacy chain from health insurance",
    "source": "The Guardian",
@@ -13253,32 +13260,6 @@
    "published": "2026-11-04T13:18:36Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04db-talarico-cqwp/04db-talarico-cqwp-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/business/dealbook/business-fallout-blue-wave.html",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "12a9b3f78dbf",
-   "title": "Trump blamed Fox News for Republican losses even as network’s hosts went easy on him",
-   "source": "The Guardian",
-   "topic": "Business",
-   "published": "2026-11-04T12:30:29Z",
-   "image": "https://i.guim.co.uk/img/media/de67ae6aae54b626b8a5227703466697b87a5acc/1_0_2999_2400/master/2999.jpg?width=140&quality=85&auto=format&fit=max&s=683cb6af40a4c28e09dbf5bdfed0ab63",
-   "url": "https://www.theguardian.com/us-news/2026/nov/04/trump-blames-fox-news-republican-losses",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "ba81f50958ca",
-   "title": "Firework noise limit should be drastically cut to protect wild animals, UK government told",
-   "source": "The Guardian",
-   "topic": "UK",
-   "published": "2026-11-04T11:47:33Z",
-   "image": "https://i.guim.co.uk/img/media/694a519211aa6f728ded4cb72708cb14c88326f6/270_0_1706_1365/master/1706.jpg?width=140&quality=85&auto=format&fit=max&s=767c6d107df75cee6167f77e3865fd4d",
-   "url": "https://www.theguardian.com/environment/2026/nov/04/firework-noise-limit-protect-wild-animals-bonfire-night",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -13766,6 +13747,19 @@
    "cover_only": true
   },
   {
+   "id": "dd7865ca7775",
+   "title": "Inside Anthropic’s Hunt for A.I. Computing Power",
+   "source": "The New York Times",
+   "topic": "Tech",
+   "published": "2026-11-02T18:01:25Z",
+   "image": "https://static01.nyt.com/images/2026/10/29/business/00anthropic-compute/00anthropic-compute-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/11/02/technology/anthropic-ai-computing-power.html",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "f620ac662eae",
    "title": "The fight for the soul of the Australian right",
    "source": "The Economist",
@@ -13803,6 +13797,19 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
+  },
+  {
+   "id": "6371bd825bd2",
+   "title": "Deportees Turn to TikTok to Document Life Starting Over",
+   "source": "The New York Times",
+   "topic": "Tech",
+   "published": "2026-11-02T14:53:35Z",
+   "image": "https://static01.nyt.com/images/2026/10/29/multimedia/00xp-deportees-Catherine-promo/00xp-deportees-Catherine-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/11/02/world/deportees-social-media-immigration.html",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
   },
   {
    "id": "b4064da2ad72",
@@ -13955,32 +13962,6 @@
    "published": "2026-10-31T10:51:11Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/news/singapore/13-public-libraries-open-earlier-admitting-visitors-9am",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "50692b629c49",
-   "title": "Real Huang, who earns S$1.17 million a year in royalties, to move family to Singapore - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T10:24:55Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/entertainment/real-huang-who-earns-s1-17-million-year-royalties-move-family-singapore",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "fcff9ff0f292",
-   "title": "[Opinion] Singapore’s meritocracy and the myth of high pay - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-10-31T10:00:00Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/forum/views/opinion-singapores-meritocracy-and-myth-high-pay",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
