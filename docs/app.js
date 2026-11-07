@@ -649,9 +649,8 @@
           { headers: { Authorization: "Bearer " + CACHE_TOKEN, Accept: "application/vnd.github+json" } }, 15000, ctrl.signal);
         if (r.ok) {
           const j = JSON.parse(r.text);
-          // v2 缓存直接信；旧缓存（无 v）用同一套质量关复核，好的继续用、垃圾丢弃
-          if (Array.isArray(j.blocks) && j.blocks.length
-              && (j.v === 2 || readerQualityOk(j.blocks))) {
+          // v3 缓存才信：v1/v2 可能把同题旧文缓存进来，直接忽略走实时链路
+          if (Array.isArray(j.blocks) && j.blocks.length && j.v === 3) {
             renderReaderBody({ blocks: j.blocks, esc: escText });
             return;
           }

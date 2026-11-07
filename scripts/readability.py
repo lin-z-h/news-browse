@@ -91,7 +91,7 @@ PAYWALL_HOSTS = ("bloomberg.com", "wsj.com", "ft.com", "economist.com", "washing
 JINA_ENDPOINT = "https://r.jina.ai/"
 # 正文缓存格式版本：v2 = 转载版/HTML/JSON-LD + 严格质量关。
 # 旧缓存（无 v 字段）视为过期，避免继续渲染历史垃圾正文。
-TEXT_CACHE_VERSION = 2
+TEXT_CACHE_VERSION = 3
 
 
 def _norm(s: str) -> str:
