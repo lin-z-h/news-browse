@@ -218,14 +218,16 @@
     return false;
   }
 
-  // 与 CI 侧 quality_ok 同口径：≥3 个长段、≥400 字符（中文 ≥200 字）、多数成句
+  // 与 CI 侧 quality_ok 同口径：英文 ≥3 段/400 字符；中文短讯允许 2 段/150 字
   function readerQualityOk(kept) {
     const texts = kept.filter(x => x.text).map(x => x.text);
     const joined = texts.join("");
     const cjk = (joined.match(/[\u4e00-\u9fff]/g) || []).length;
     const paras = texts.filter(t => t.length >= 30 || cjk > 100);
-    if (paras.length < 3) return false;
-    if (joined.length < 400 && cjk < 200) return false;
+    const minParas = cjk >= 120 ? 2 : 3;
+    if (paras.length < minParas) return false;
+    if (joined.length < 150) return false;
+    if (joined.length < 400 && cjk < 120) return false;
     const sentenceLike = paras.filter(t => /[.!?。！？]/.test(t)).length;
     if (sentenceLike < Math.max(2, Math.floor(paras.length * 0.6))) return false;
     if (looksLikePaywall(texts.join(" ")) && joined.length < 2000) return false;
@@ -399,7 +401,9 @@
       out.push(line);
     }
     if (looksLikeArchiveIndex(out)) return [];
-    return out.join("").length >= 120 && out.length >= 3 ? out : [];
+    const joined = out.join("");
+    const cjk = (joined.match(/[\u4e00-\u9fff]/g) || []).length;
+    return joined.length >= 150 && out.length >= (cjk >= 120 ? 2 : 3) ? out : [];
   }
 
   // 链路重复失败时的阅读器内错误态：不再自动跳转，把选择权交给用户
@@ -536,8 +540,9 @@
           { headers: { Authorization: "Bearer " + CACHE_TOKEN, Accept: "application/vnd.github+json" } }, 15000, ctrl.signal);
         if (r.ok) {
           const j = JSON.parse(r.text);
-          // v2 = 转载版/HTML/JSON-LD + 严格质量关；旧缓存（无 v）不渲染，避免历史垃圾正文
-          if (j.v === 2 && Array.isArray(j.blocks) && j.blocks.length) {
+          // v2 缓存直接信；旧缓存（无 v）用同一套质量关复核，好的继续用、垃圾丢弃
+          if (Array.isArray(j.blocks) && j.blocks.length
+              && (j.v === 2 || readerQualityOk(j.blocks))) {
             renderReaderBody({ blocks: j.blocks, esc: escText });
             return;
           }

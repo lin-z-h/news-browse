@@ -4,7 +4,7 @@
 
 **功能**：搜索；来源 × 话题双维度筛选（chips 双行循环滚动，悬停/触按/选中时暂停）；亮色 / 暗色 / 系统主题切换；收藏/稍后读（localStorage 持久化，掉出列表仍可看）；紧凑/舒适视图切换；RSS 缩略图 + og:image 回填（无图时用来源首字母色块）；结果计数 + 清除筛选；相对时间每分钟自动刷新；**阅读模式**：点任意卡片在应用内读全文。正文按“转载版 → 发布者原文 → Jina Reader → 失败转封面/手动”链取首个质量达标来源；付费墙源（Bloomberg 等）优先用 The Edge Malaysia / The Edge Singapore / Yahoo Finance 等**公开转载版**拿标题、图片、正文；只缓存清洗后的段落，不绕付费墙、不批量抓取、不在公开仓库存储正文。
 
-**源（12 个）**：Bloomberg、NYT、Economist、Guardian、WSJ、Financial Times、TIME、SCMP、Washington Post、Reuters、联合早报英文版、TVB。Reuters 与联合早报无官方 RSS，经 Google News 检索 + [googlenewsdecoder](https://pypi.org/project/googlenewsdecoder/) 解码还原原文链接；TVB 解析 Nuxt 内嵌数据；NYT/Guardian 可选官方 API（配置 `NYT_API_KEY` / `GUARDIAN_API_KEY` 后自动启用，否则回落 RSS）。
+**源（12 个）**：Bloomberg、NYT、Economist、Guardian、WSJ、Financial Times、TIME、SCMP、Washington Post、Reuters、联合早报英文版、TVB。Reuters 与联合早报无官方 RSS，经 Google News 检索 + [googlenewsdecoder](https://pypi.org/project/googlenewsdecoder/) 解码还原原文链接；TVB 列表解析 Nuxt 内嵌数据，**文章正文也直接解析 `__NUXT_DATA__`（不需要 archive）**；NYT/Guardian 可选官方 API（配置 `NYT_API_KEY` / `GUARDIAN_API_KEY` 后自动启用，否则回落 RSS）。
 
 新闻源会随时间陆续死亡（停更/清空/改版，如 WSJ 官方 feed 冻结在 2025-01、NYT 体育部裁撤后源变空）。定期跑一次体检脚本可揪出"活着但冻结/为空"的源：
 

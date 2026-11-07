@@ -118,3 +118,29 @@ def test_jsonld_article_body_extracted():
     assert art is not None
     assert art["image"] == "https://x.test/a.jpg"
     assert len(art["blocks"]) == 3
+
+
+TVB_HTML = """<html><head><title>投資者343萬元入市大埔翠屏花園1房戶</title></head><body>
+<script id="__NUXT_DATA__" type="application/json">
+[{"id": 1, "title_hk": 2, "content": 3, "cover": 4}, 1204182,
+ "投資者343萬元入市大埔翠屏花園1房戶",
+ "<p>中原地產大埔昌運中心高級資深分區營業經理招權峰表示，近期市況向好，帶動交投，大埔翠屏花園最新錄B座高層08室，單位實用面積269平方呎，1房間隔，日前議價後以343.8萬元沽出，平均實用呎價約12,781元。</p><p> </p><p>據了解，新買家為投資客，見單位價錢合理，即決定購入單位投資收租，單位市值月租約13,500元，買家料可享約4.7厘租金回報。</p>",
+ [5], {"url": 6}, "https://img.tvb.com/cover.jpg"]
+</script></body></html>"""
+
+
+def test_tvb_article_extracted_from_nuxt_data():
+    art = rd.extract_tvb_article(TVB_HTML, "https://news.tvb.com/en/1204182", "tvb")
+    assert art is not None
+    assert art["title"] == "投資者343萬元入市大埔翠屏花園1房戶"
+    assert art["image"] == "https://img.tvb.com/cover.jpg"
+    assert len(art["blocks"]) == 2
+    assert rd.quality_ok(art["blocks"], art["title"])
+
+
+def test_tvb_short_article_quality_allows_two_paragraphs():
+    blocks = [{"text": "中原地產大埔昌運中心高級資深分區營業經理招權峰表示，近期市況向好，帶動交投，"
+                       "大埔翠屏花園最新錄B座高層08室，實用面積269平方呎，1房間隔，議價後以343.8萬元沽出。"},
+              {"text": "據了解，新買家為投資客，見單位價錢合理，即決定購入單位投資收租，單位市值月租約"
+                       "13,500元，買家料可享約4.7厘租金回報，原業主持貨約10年。"}]
+    assert rd.quality_ok(blocks, "TVB 短訊")

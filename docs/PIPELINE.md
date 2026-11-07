@@ -81,6 +81,8 @@ RSS 拿不到图时，`PUT og:image` 回填（限额 15 条/轮，结果缓存 3
         → Financial Post → Business Standard → Moneyweb → BusinessToday Malaysia
         → Seoul Economic Daily → The Economic Times → BusinessWorld → Investing.com
 2. 发布者原文 HTML（curl_cffi 浏览器指纹）→ JSON-LD articleBody → 文章容器段落
+   - TVB：正文在 Nuxt `__NUXT_DATA__` 的 `content/content_hk` 字段，直接解析，
+     不需要 archive/Jina；中文短讯 2 段、约 200 字也算完整正文
 3. Jina Reader（r.jina.ai）原文
 4. Jina Reader 读 archive.today 快照（r.jina.ai 的出口 IP 常能过 reCAPTCHA）
 5. 全失败 → None → 前端“封面 + 开始阅读”

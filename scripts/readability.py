@@ -161,13 +161,17 @@ def quality_ok(blocks: list, title: str = "") -> bool:
         return False
     texts = [b.get("text", "") for b in blocks if b.get("text")]
     total = sum(len(t) for t in texts)
-    if total < 200:
+    if total < 150:
         return False
     cjk = len(re.findall(r"[\u4e00-\u9fff]", "".join(texts)))
-    paras = [t for t in texts if len(t) >= 30 or cjk > 100]
-    if len(paras) < 3:
+    if total < 200 and cjk < 100:
         return False
-    if total < 400 and cjk < 200:
+    paras = [t for t in texts if len(t) >= 30 or cjk > 100]
+    # 中文短讯（TVB 等）经常只有 2 段、200 字左右，不能按英文长文要求 3 段/400 字符
+    min_paras = 2 if cjk >= 120 else 3
+    if len(paras) < min_paras:
+        return False
+    if total < 400 and cjk < 120:
         return False
     sentence_like = sum(1 for t in paras if re.search(r"[.!?。！？]", t))
     if sentence_like < max(2, int(len(paras) * 0.6)):
@@ -361,10 +365,74 @@ def _ld_image(x) -> Optional[str]:
     return None
 
 
+_TVB_DATA_RE = re.compile(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>', re.S)
+
+
+def _tvb_deref(arr: list, idx, depth: int = 0):
+    """devalue 格式：对象/数组里的整数值是对 arr 下标的引用（0 除外）。"""
+    if depth > 8:
+        return idx
+    if isinstance(idx, int) and 0 < idx < len(arr):
+        return _tvb_deref(arr, arr[idx], depth + 1)
+    return idx
+
+
+def extract_tvb_article(html: str, url: str, title: str = "") -> Optional[dict]:
+    """TVB 文章页是 Nuxt SPA，正文在 __NUXT_DATA__ 的 content/content_hk 字段。
+
+    直接解析内嵌 JSON，不用 archive、不用 Jina；中文短讯 2 段也算完整正文。
+    """
+    m = _TVB_DATA_RE.search(html or "")
+    if not m:
+        return None
+    try:
+        arr = json.loads(m.group(1))
+    except ValueError:
+        return None
+    wanted = None
+    mid = re.search(r"/(?:en|tc|sc)/(\d+)", url or "")
+    if mid:
+        wanted = int(mid.group(1))
+    for v in arr:
+        if not (isinstance(v, dict) and "content" in v and "title_hk" in v):
+            continue
+        aid = _tvb_deref(arr, v.get("id"))
+        if wanted is not None and aid != wanted:
+            continue
+        body = _tvb_deref(arr, v.get("content_hk") or v.get("content"))
+        if not isinstance(body, str) or len(body) < 20:
+            continue
+        text = _strip_tags(body)
+        blocks = []
+        for para in re.split(r"\n{2,}", text):
+            para = re.sub(r"\s+", " ", para).strip()
+            if len(para) >= 10:
+                blocks.append({"text": para, "head": False})
+        if not blocks:
+            continue
+        image = None
+        cover = _tvb_deref(arr, v.get("cover"))
+        if isinstance(cover, list) and cover:
+            cover = _tvb_deref(arr, cover[0])
+        if isinstance(cover, dict):
+            image = _tvb_deref(arr, cover.get("url"))
+        found_title = _tvb_deref(arr, v.get("title_hk")) or title
+        return {
+            "title": found_title if isinstance(found_title, str) else title,
+            "image": image if isinstance(image, str) else None,
+            "blocks": blocks,
+        }
+    return None
+
+
 def extract_article_html(html: str, title: str = "", url: str = "") -> Optional[dict]:
     """从原文 HTML 提取 {title, image, blocks}；失败返回 None。"""
     if not html or len(html) < 500:
         return None
+    if "news.tvb.com" in (url or ""):
+        tvb = extract_tvb_article(html, url, title)
+        if tvb:
+            return tvb
     if re.search(r"<title[^>]*>\s*(just a moment|attention required)", html, re.I):
         return None
     meta_title = re.search(r'<meta[^>]+property=["\']og:title["\'][^>]*content=["\']([^"\']+)', html, re.I)
