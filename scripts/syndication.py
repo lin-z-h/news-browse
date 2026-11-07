@@ -218,6 +218,7 @@ def _try_copy(real: str, cand_title: str, title: str, provider: dict,
         "url": real,
         "title": found_title,
         "image": art.get("image"),
+        "published": art.get("published"),
         "blocks": art["blocks"],
     }
 

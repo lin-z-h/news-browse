@@ -516,12 +516,20 @@ def probe_stage(items: list, cache: dict, now: float, now_iso: str, paywalled: s
 
 
 def _synd_cache_fresh(marker: dict, now: float) -> bool:
+    # v2：带 published；旧的 v1 命中（可能是同题旧文）全部失效重查
+    if marker.get("v") != 2:
+        return False
     ts = cache_store.parse_iso(marker.get("at"))
     if not ts:
         return False
     # 转载版命中基本稳定（30 天）；未命中 12h 后重试（新文章可能还没被 Google News 收录）
     ttl = 30 * 86400 if marker.get("ok") else 12 * 3600
     return now - ts < ttl
+
+
+def _dates_close(a, b, days: float = 3) -> bool:
+    ta, tb = cache_store.parse_iso(a), cache_store.parse_iso(b)
+    return not (ta and tb and abs(ta - tb) > days * 86400)
 
 
 def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
@@ -542,12 +550,16 @@ def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
         key = "synd:" + item["url"]
         marker = cache.get(key)
         if isinstance(marker, dict) and _synd_cache_fresh(marker, now):
-            if marker.get("ok"):
+            if not marker.get("ok"):
+                continue
+            if (not item.get("published") or not marker.get("published")
+                    or _dates_close(item.get("published"), marker.get("published"))):
                 item["syndicated_url"] = marker.get("url")
                 item["syndicated_title"] = marker.get("title")
                 if not item.get("image") and marker.get("image"):
                     item["image"] = marker["image"]
-            continue
+                continue
+            # 缓存的转载版与原发布日期不符（同题旧文）→ 丢弃，重新检索
         providers = providers_by_source.get(item["source"]) or list(syndication.DEFAULT_ORDER)
         budget -= 1
         todo.append((item, providers))
@@ -584,12 +596,13 @@ def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
                 if not item.get("image") and res.get("image"):
                     item["image"] = res["image"]
                 payloads[item["url"]] = res
-                cache[key] = {"at": now_iso, "ok": 1, "url": res["url"],
+                cache[key] = {"at": now_iso, "ok": 1, "v": 2, "url": res["url"],
                               "title": res.get("title"), "image": res.get("image"),
+                              "published": res.get("published"),
                               "provider": res.get("provider")}
                 _log(f"[synd] {item['source']} ← {res.get('provider')}: {res['url'][:80]}")
             else:
-                cache[key] = {"at": now_iso, "ok": 0}
+                cache[key] = {"at": now_iso, "ok": 0, "v": 2}
     return payloads
 
 
