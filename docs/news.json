@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T09:20:52Z",
+ "generated_at": "2026-11-07T09:36:21Z",
  "sources": [
   "Bloomberg",
   "The New York Times",
@@ -16,6 +16,58 @@
  ],
  "items": [
   {
+   "id": "a87e5db297bc",
+   "title": "匹克球中巡賽首度落戶香港 12月初展開",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T09:34:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026uWjRVZLpkI1794044143.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205099",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "d9fb5d2e71dc",
+   "title": "Will New Zealand Join Voters’ Global Revolt Over Soaring Costs?",
+   "source": "The New York Times",
+   "topic": "World",
+   "published": "2026-11-07T09:33:15Z",
+   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06int-NZ-elections-gjhz/06int-NZ-elections-gjhz-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "4588185e802e",
+   "title": "元朗YOHO Town2房沽 呎價1.47萬元",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T09:30:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20266mmillAmP71793886264.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1204810",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "bf47260ffe83",
+   "title": "New Zealand election 2026 live results: Labour draws level with National as count continues in close race",
+   "source": "The Guardian",
+   "topic": "World",
+   "published": "2026-11-07T09:28:18Z",
+   "image": "https://i.guim.co.uk/img/media/ca0da5faecb3c527577fc78ebfc856aa865bc8d6/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=842242f69139eccf98f50148f27a190a",
+   "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "750ffdf3d3b9",
    "title": "MTR Corporation halts unauthorised remedial works at station after column concerns",
    "source": "SCMP",
@@ -29,13 +81,52 @@
    "cover_only": false
   },
   {
-   "id": "bf47260ffe83",
-   "title": "New Zealand election 2026 live results: Labour draws level with National as count continues in close race",
+   "id": "5ce8be22d8af",
+   "title": "鹹菜豉椒炒肚尖食譜 豬肚口感爽脆彈牙",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T09:17:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/file/2026/11/2026nUwwcWPeJU1793956672.webp?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1204957",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "0cfedc38f47a",
+   "title": "Home Office sued after stripping almost 1,500 EU citizens of right to live in UK",
    "source": "The Guardian",
    "topic": "World",
-   "published": "2026-11-07T09:13:25Z",
-   "image": "https://i.guim.co.uk/img/media/ca0da5faecb3c527577fc78ebfc856aa865bc8d6/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=842242f69139eccf98f50148f27a190a",
-   "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
+   "published": "2026-11-07T09:15:35Z",
+   "image": "https://i.guim.co.uk/img/media/838ba7f69956d265d77e9f70e4f810129f1225ec/0_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=359a51ab4e53c21874955230fb8034c0",
+   "url": "https://www.theguardian.com/politics/2026/nov/07/home-office-sued-the3million-eu-citizens-right-to-live-in-uk-pre-settled",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "26938f56c809",
+   "title": "二十四節氣‧立冬｜中醫提醒進補不宜過早 長者要留意心腦血管變化",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T09:14:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026TtgqMt0CJ41794043500.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205096",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "c522ec94398d",
+   "title": "神舟二十四號｜巴基斯坦航天員將任載荷專家 中國太空站首迎外籍人員進駐",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T09:14:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026SmvvpiqCWp1794043207.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205095",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -47,7 +138,7 @@
    "source": "TVB",
    "topic": "Hong Kong",
    "published": "2026-11-07T09:03:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026VLYtRMvrjw1794043251.jpg?x-oss-process=image/resize,w_1200",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026VLYtRMvrjw1794043251.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205092",
    "status": "challenge",
    "archive_url": null,
@@ -218,6 +309,19 @@
    "published": "2026-11-07T08:15:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/05/44cbd77f-5071-47f6-801f-805bb67554a7_8376ec90.jpg?itok=fNnPrzgm&v=1793853559",
    "url": "https://www.scmp.com/lifestyle/arts/article/3373342/artist-oscar-chan-examines-religion-myth-and-trauma-haunting-hong-kong-exhibition",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "5d0f1bf0241a",
+   "title": "Russian diplomats and military officials to join talks with US and Ukraine, Kremlin says - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-07T08:14:35Z",
+   "image": null,
+   "url": "https://www.reuters.com/world/europe/russian-aide-military-intelligence-chief-attend-talks-with-us-ukraine-kremlin-2026-11-07/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -575,45 +679,6 @@
    "cover_only": false
   },
   {
-   "id": "fea1e7449008",
-   "title": "李家超指青年發展藍圖落實近300項具體措施 將按五年規劃續拓機遇",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T06:59:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026mKt1UCQrXa1794036805.png?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205079",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "eff27e28bff5",
-   "title": "有機構舉辦航空職業及教育博覽 冀讓青少年加深了解行業並培育人才",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T06:58:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026xhKfxRxaXI1794035306.png?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205078",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "d9fb5d2e71dc",
-   "title": "Will New Zealand Join Voters’ Global Revolt Over Soaring Costs?",
-   "source": "The New York Times",
-   "topic": "World",
-   "published": "2026-11-07T06:45:04Z",
-   "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06int-NZ-elections-gjhz/06int-NZ-elections-gjhz-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "7b5487c943c8",
    "title": "Chinese consulate in Melbourne demands justice after fatal stabbing of delivery worker",
    "source": "SCMP",
@@ -933,7 +998,7 @@
    "published": "2026-11-07T05:00:41Z",
    "image": null,
    "url": "https://www.ft.com/content/47dba9d2-4c82-4e17-969d-f1728ef13a5a?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -946,9 +1011,9 @@
    "published": "2026-11-07T05:00:34Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb97c036c-a1ce-44f6-bf85-1015b9a9d329.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/f80ff605-6f6e-4b5d-9fab-20276b78e9b7?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107091258/https://www.ft.com/content/f80ff605-6f6e-4b5d-9fab-20276b78e9b7?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -959,7 +1024,7 @@
    "published": "2026-11-07T05:00:34Z",
    "image": null,
    "url": "https://www.ft.com/content/8e34dba9-8ebc-4499-9274-f88d02ad691c?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -972,9 +1037,9 @@
    "published": "2026-11-07T05:00:34Z",
    "image": null,
    "url": "https://www.ft.com/content/b9b88216-4285-467b-8aad-33e26ee2468a",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107091404/https://www.ft.com/content/b9b88216-4285-467b-8aad-33e26ee2468a",
    "cover_only": true
   },
   {
@@ -985,9 +1050,9 @@
    "published": "2026-11-07T05:00:33Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fea1cb484-2a10-47e0-8459-0e08f9a6c436.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/452cf328-c819-482e-8f2c-61b65c96f8ce?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107091408/https://www.ft.com/content/452cf328-c819-482e-8f2c-61b65c96f8ce?syn-25a6b1a6=1",
    "cover_only": true
   },
   {
@@ -998,7 +1063,7 @@
    "published": "2026-11-07T05:00:33Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F58c9476d-fe27-43c6-b014-2ba105b29159.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/0845687f-1f74-4bbf-88c9-5c6b031c7f20?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1011,7 +1076,7 @@
    "published": "2026-11-07T05:00:33Z",
    "image": null,
    "url": "https://www.ft.com/content/bc1814b7-fbd0-4d05-8ba3-c61115c80735?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1024,7 +1089,7 @@
    "published": "2026-11-07T05:00:31Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fdc61c6e8-1b20-4d32-a999-77183a5d30b5.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/5a6806f0-e82e-4b34-b761-f9877e2b511c?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1037,7 +1102,7 @@
    "published": "2026-11-07T05:00:23Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7f700946-fe3b-42d2-8af2-f40a832e8f9a.jpg?source=next-barrier-page&amp;fit=scale-down&amp;quality=highest&amp;width=700&amp;dpr=1",
    "url": "https://www.ft.com/content/e25b73c7-9c6c-446b-b9d2-8f82d458bcf8?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1050,7 +1115,7 @@
    "published": "2026-11-07T05:00:23Z",
    "image": null,
    "url": "https://www.ft.com/content/510f4a2e-0c7a-48c9-bee6-eabc704b1907",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1063,7 +1128,7 @@
    "published": "2026-11-07T05:00:23Z",
    "image": null,
    "url": "https://www.ft.com/content/25470ea7-2a13-4dc6-af41-de2d1d78c715?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1076,7 +1141,7 @@
    "published": "2026-11-07T05:00:22Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fca107dc0-c254-464a-bc67-45a5f0829a56.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/3370e949-4a32-4a2d-8738-2f1cde6a35ea?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1089,7 +1154,7 @@
    "published": "2026-11-07T05:00:22Z",
    "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb9137d30-0c2a-4917-ac07-cf7fa31056b7.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "url": "https://www.ft.com/content/0700baee-1a7f-4dc4-ac95-5b98e1868d96?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1102,7 +1167,7 @@
    "published": "2026-11-07T05:00:22Z",
    "image": null,
    "url": "https://www.ft.com/content/80d91653-c210-43cd-b91e-2b8c644561c1?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1115,7 +1180,7 @@
    "published": "2026-11-07T05:00:13Z",
    "image": null,
    "url": "https://www.ft.com/content/52f2548d-93b8-47dd-9edf-9900a9a43a51?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1128,7 +1193,7 @@
    "published": "2026-11-07T05:00:13Z",
    "image": null,
    "url": "https://www.ft.com/content/af97585a-3381-42a9-838b-9a205ab81232?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1141,9 +1206,9 @@
    "published": "2026-11-07T05:00:13Z",
    "image": null,
    "url": "https://www.ft.com/content/32066a67-a697-4eb4-a779-c6dff8cc2ac7",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
-   "wayback_url": null,
+   "wayback_url": "http://web.archive.org/web/20261107053211/https://www.ft.com/content/32066a67-a697-4eb4-a779-c6dff8cc2ac7",
    "cover_only": true
   },
   {
@@ -1154,7 +1219,7 @@
    "published": "2026-11-07T05:00:13Z",
    "image": null,
    "url": "https://www.ft.com/content/83afefc2-e974-4266-b7fb-3596282f276a?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1167,7 +1232,7 @@
    "published": "2026-11-07T05:00:13Z",
    "image": null,
    "url": "https://www.ft.com/content/8b29cf58-6cac-4129-811d-4c58249393fb",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1180,7 +1245,7 @@
    "published": "2026-11-07T05:00:13Z",
    "image": null,
    "url": "https://www.ft.com/content/0eb3068a-6199-4706-b99c-23fe6302997b?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1193,7 +1258,7 @@
    "published": "2026-11-07T05:00:06Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/0b823ad3-b9a0-4a53-a2ac-9c32ec503c3e_0b9bcb8d.jpg?itok=0JTFkY7g&v=1793961177",
    "url": "https://www.scmp.com/week-asia/economics/article/3373569/there-could-be-anarchy-bangladeshs-garment-unrest-threatens-economic-disaster",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1206,7 +1271,7 @@
    "published": "2026-11-07T05:00:04Z",
    "image": null,
    "url": "https://www.ft.com/content/04b1bc84-981e-4996-b98e-ade9603045b8",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1219,7 +1284,7 @@
    "published": "2026-11-07T05:00:04Z",
    "image": null,
    "url": "https://www.ft.com/content/b8110f9c-5ef5-402c-90b8-171405af35e2",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1232,7 +1297,7 @@
    "published": "2026-11-07T05:00:02Z",
    "image": "https://i.guim.co.uk/img/media/ab150660e1c0941c2982524b3f3d02283867ef5d/350_0_2943_2354/master/2943.jpg?width=140&quality=85&auto=format&fit=max&s=947cd67326b78e5e24874e61dd562574",
    "url": "https://www.theguardian.com/environment/ng-interactive/2026/nov/07/whats-the-point-ten-years-after-the-paris-treaty-are-climate-talks-getting-anywhere",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1245,7 +1310,7 @@
    "published": "2026-11-07T05:00:02Z",
    "image": "https://i.guim.co.uk/img/media/fcd2f563900100a09e32551733206c8276b969a9/896_0_5047_4037/master/5047.jpg?width=140&quality=85&auto=format&fit=max&s=fc9fb69476e03fe39d3ccddb2b9176ab",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/07/freezer-meltdowns-airline-hoaxes-greyzone-aggression-europe",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1258,7 +1323,7 @@
    "published": "2026-11-07T05:00:00Z",
    "image": null,
    "url": "https://www.ft.com/content/b03f1688-be8f-4c7e-946d-7ccea5d9d524?syn-25a6b1a6=1",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -1271,7 +1336,7 @@
    "published": "2026-11-07T04:45:05Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/04/7efb92c6-61aa-4a7d-8260-b9e81900ee10_ac4a8e28.jpg?itok=k03d2v4Y&v=1793786839",
    "url": "https://www.scmp.com/lifestyle/fashion-beauty/article/3373273/k-beauty-rival-c-beauty-brands-take-global-market-lines-ulta-boots",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1282,9 +1347,9 @@
    "source": "TVB",
    "topic": "Hong Kong",
    "published": "2026-11-07T04:40:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20263Ff1OaL6U91794029071.jpg?x-oss-process=image/resize,w_600",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026rzzsZhyLs81794043217.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205070",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1336,6 +1401,19 @@
    "published": "2026-11-07T04:23:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/middle-east/qatar-says-its-mediation-efforts-between-us-iran-continue-prevent-escalation-2026-11-07/",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "45a12af98ce5",
+   "title": "US firm Equinix opens sixth Singapore data centre with investment of over S$370 million - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-11-07T04:13:54Z",
+   "image": "https://cassette.sphdigital.com.sg/image/zaobao/b42ae8a3c72b58710150e6b871168f4bbbed695e43a3b12c6c9fa4bb0508786e",
+   "url": "https://www.zaobao.com.sg/en/finance/singapore/us-firm-equinix-opens-sixth-singapore-data-centre-investment-over-s370-million?ref=today-newsen-section-card-1",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -1615,25 +1693,12 @@
    "cover_only": false
   },
   {
-   "id": "af646b28ce3b",
-   "title": "有醫生指天氣轉涼有機會「三疫夾擊」 籲家長及早帶子女接種疫苗",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T02:41:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026GiX5wuWTDk1794022015.png?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205061",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "5f8b2e3846d4",
    "title": "Government to step up public education as Lianhe Zaobao poll finds gaps in understanding of nuclear energy - 联合早报",
    "source": "Lianhe Zaobao (EN)",
    "topic": "Singapore",
    "published": "2026-11-07T02:36:39Z",
-   "image": null,
+   "image": "https://cassette.sphdigital.com.sg/image/zaobao/2bd0a6979f8252b0a0b006a6a54ec7216f2c03a1e3881ad1c358e2b1fe54ba2b",
    "url": "https://www.zaobao.com.sg/en/news/singapore/government-step-public-education-lianhe-zaobao-poll-finds-gaps-understanding-nuclear-energy",
    "status": "original",
    "archive_url": null,
@@ -1719,19 +1784,6 @@
    "cover_only": false
   },
   {
-   "id": "03712048ee89",
-   "title": "Trump Signals Combative Next Two Years With Elevation of Stephen Miller - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-07T02:01:35Z",
-   "image": null,
-   "url": "https://www.wsj.com/politics/elections/stephen-miller-trump-chief-of-staff-56917f0a",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "e46d5e227aa8",
    "title": "AI-generated cats showcasing rural life, Chinese cuisine land major brand sponsorships",
    "source": "SCMP",
@@ -1756,6 +1808,19 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
+  },
+  {
+   "id": "03712048ee89",
+   "title": "Trump Signals Combative Next Two Years With Elevation of Stephen Miller - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T02:00:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/politics/elections/stephen-miller-trump-chief-of-staff-56917f0a",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
   },
   {
    "id": "23df4d5a6f3d",
@@ -1992,19 +2057,6 @@
    "cover_only": false
   },
   {
-   "id": "f899b036b71f",
-   "title": "遠信儲能招股錄得逾1300倍超額認購",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:58:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026YAPwGmGIjw1794013132.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205058",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "a21b53237615",
    "title": "Prosecutors Vow to Keep Pursuing Death Penalty in California",
    "source": "The New York Times",
@@ -2211,19 +2263,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
-  },
-  {
-   "id": "5743e834585c",
-   "title": "俯瞰神州‧新疆｜天山天池迎初雪 秋色白雪相映成畫",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:00:00Z",
-   "image": "https://pro-vod-cdn.tvb.com/2a8074006f2945c29adfedf666a21691/snapshots/38751c3cfba143b49483bde1f33eb050-00004.jpg",
-   "url": "https://news.tvb.com/en/1204944",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
   },
   {
    "id": "a7c6c5778050",
@@ -3188,19 +3227,6 @@
    "cover_only": false
   },
   {
-   "id": "fdf35b5ad24c",
-   "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity, Bloomberg News reports - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-06T19:16:09Z",
-   "image": null,
-   "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "c20a0775d0f5",
    "title": "The unique heart disease risk factors women face in each stage of life - The Washington Post",
    "source": "The Washington Post",
@@ -3734,19 +3760,6 @@
    "cover_only": false
   },
   {
-   "id": "4796e8be5389",
-   "title": "Anti-fire ant eradication activist convicted after using legal arguments ‘similar to sovereign citizens’",
-   "source": "The Guardian",
-   "topic": "World",
-   "published": "2026-11-06T14:00:46Z",
-   "image": "https://i.guim.co.uk/img/media/654815fe7534ab77ec7637150114dc59aa8fec75/186_0_3101_2480/master/3101.jpg?width=140&quality=85&auto=format&fit=max&s=bcf6cce7795fa31f09a6d22888869053",
-   "url": "https://www.theguardian.com/australia-news/2026/nov/07/trevor-hold-activist-convicted-qld-fire-ant-eradication-program-queensland-ntwnfb",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "1405634589fd",
    "title": "In Club Kid, a Party Guy Becomes a Dad, With Zero Sappy Clichés",
    "source": "TIME",
@@ -3897,19 +3910,6 @@
    "published": "2026-11-06T01:30:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/progressives-launch-effort-urge-rep-ro-khanna-run-president-2028/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "27010d2fc4f0",
-   "title": "Lianhe Zaobao English Edition launch welcomed across sectors; Tan Kiat How says it can deepen understanding between communities - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-11-06T01:00:00Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/news/singapore/lianhe-zaobao-english-edition-launch-welcomed-across-sectors-tan-kiat-how-says-it-can-deepen",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
