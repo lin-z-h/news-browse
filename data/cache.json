@@ -863,6 +863,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://news.tvb.com/en/1205008": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://news.tvb.com/en/1205029": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
@@ -1049,11 +1055,23 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://time.com/article/2026/11/06/best-gifts-for-jetsetters/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://time.com/article/2026/11/06/best-gifts-for-the-stylish-friend/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
   "status": "challenge",
   "wayback_url": null
+ },
+ "https://time.com/article/2026/11/06/club-kid-review-jordan-firstman/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "wayback",
+  "wayback_url": "http://web.archive.org/web/20261107062417/https://time.com/article/2026/11/06/club-kid-review-jordan-firstman/"
  },
  "https://time.com/article/2026/11/06/godzilla-minus-zero-review/": {
   "archive_url": null,
@@ -1061,10 +1079,22 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://time.com/article/2026/11/06/how-ai-is-impacting-college-students-like-me/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://time.com/article/2026/11/06/i-play-rocky-movie-review/": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
   "status": "challenge",
+  "wayback_url": null
+ },
+ "https://time.com/article/2026/11/06/it-gets-worse-review/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
   "wayback_url": null
  },
  "https://time.com/article/2026/11/06/stephen-miller-tapped-as-trump-s-new-chief-of-staff-replacing-susie-wiles/": {
@@ -1517,6 +1547,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-06/ai-stocks-rebound-as-investors-weigh-whether-selloff-is-over": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-06/apollo-backed-dental-firm-vvardis-seeks-228-6-million-in-us-ipo": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
@@ -1547,9 +1583,21 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-06/canada-jobless-rate-rises-to-6-7-amid-small-employment-decline": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-06/canadian-dollar-set-for-worst-week-since-september-on-weak-jobs": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-06/charter-shows-steep-customer-losses-launches-cost-saving-plan": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -1565,9 +1613,21 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-06/devon-activist-holders-toms-and-kimmeridge-ramp-up-pressure-to-sell": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-06/fed-s-daly-says-more-rate-increases-likely-needed-to-tame-prices": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-06/fox-finalizes-22-billion-roku-acquisition-in-streaming-push": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -1580,6 +1640,12 @@
  "https://www.bloomberg.com/news/articles/2026-11-06/google-takes-over-wyoming-data-center-that-crusoe-had-pitched": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-06/hassett-says-no-economic-policy-shift-even-after-election-rout": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -1601,9 +1667,21 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-06/lula-puts-allies-over-markets-as-he-mulls-finance-minister-pick": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-06/neocloud-groq-aims-to-double-value-to-8-billion-amid-ai-selloff": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-06/nubank-halts-some-crypto-transactions-citing-snag-with-provider": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -1679,15 +1757,51 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-06/uk-plans-tougher-cost-test-for-next-renewable-energy-auction": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-06/under-armour-sinks-after-cut-to-margin-forecast-hits-turnaround": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-06/us-adds-165-000-jobs-above-all-forecasts-as-unemployment-falls": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-06/us-consumer-credit-surges-by-most-in-nearly-four-years": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-06/us-consumer-sentiment-unexpectedly-rises-fueled-by-independents": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-06/us-job-gains-may-be-spreading-from-ai-buildout-to-implementation": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-06/us-jobs-report-october-2026-key-takeaways-on-employment-payrolls": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-06/us-measles-cases-top-5-000-for-the-first-time-since-the-1990s": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -1718,6 +1832,12 @@
  "https://www.bloomberg.com/news/articles/2026-11-07/burnham-bets-that-britain-can-move-past-the-old-brexit-divisions": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:20:52Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-07/charting-the-global-economy-job-growth-in-us-tops-all-forecasts": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -2279,6 +2399,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/videos/2026-11-06/consumer-sentiment-still-very-negative-umich-s-hsu-says-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/videos/2026-11-06/data-center-delays-risk-an-air-gap-for-chips-lovell-video": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -2387,6 +2513,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/01048d5b-9886-4247-b14a-8c738edba5e3?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/04772b49-0aec-4acc-b2cb-1fae192a5f60?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-02T19:55:52Z",
@@ -2441,6 +2573,24 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/0f3065ce-239e-4afb-a865-a45ef3e48c42?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/117c1690-2928-4652-b4d9-33c0be02b129": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/11ea58b9-008e-4e09-b384-44b3b7bf5d46": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/14a8ce6c-ef84-478a-993f-47db30a41d1d?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-10-31T13:01:24Z",
@@ -2489,6 +2639,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/3066017e-996c-4689-9bd8-021eb70b99ac?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/314e17df-e7af-4814-b208-70a0557cb452?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -2531,6 +2687,12 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261101064841/https://www.ft.com/content/3da634d6-59de-4474-b2fc-b6b1b580b1dc?syn-25a6b1a6=1"
  },
+ "https://www.ft.com/content/44211bf7-0f18-4e55-81b8-01e750ae785f?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261106152251/https://www.ft.com/content/44211bf7-0f18-4e55-81b8-01e750ae785f?syn-25a6b1a6=1"
+ },
  "https://www.ft.com/content/452cf328-c819-482e-8f2c-61b65c96f8ce?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:36:21Z",
@@ -2567,15 +2729,45 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/52770926-e4b9-4005-9e2f-332eb7dc6631": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/52f2548d-93b8-47dd-9edf-9900a9a43a51?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:36:21Z",
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/538bfe46-7051-4e3d-8ff3-ad71c861a1f7?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/551ece11-bd7c-4c9a-8914-1e6d4331af70?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-02T19:55:52Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/580ab1bf-4e2e-46b8-9178-dbf765645754?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261106081442/https://www.ft.com/content/580ab1bf-4e2e-46b8-9178-dbf765645754?syn-25a6b1a6=1"
+ },
+ "https://www.ft.com/content/58dc7cb0-bbce-4197-83eb-1fed7e2e9523?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/59a3bb17-5b09-4223-9077-413140b8a05b?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -2600,6 +2792,12 @@
  "https://www.ft.com/content/642b32dc-e3a1-4df8-ae91-5c84bdeb89e0?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/64c72979-1f97-4d25-8dc9-7c47c6089191?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -2645,9 +2843,21 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/7dbff765-cf48-4f78-87dc-09a56aee27fe?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/7e749777-dcee-4c11-9bdc-7f81bee80455?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-01T07:35:50Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/7eb006c7-a430-40fd-bba6-48dcbb810ba2?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -2729,6 +2939,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/a0de0506-d647-4a8c-a94a-751f56925ed0?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/a17489a4-71d2-493a-9ef6-20eb57b8bd5a?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-01T06:40:17Z",
@@ -2750,6 +2966,12 @@
  "https://www.ft.com/content/a97de5ca-484e-4ed9-84e0-958b90b85ef8?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-10-31T13:01:24Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/aa99a49b-d6fa-473e-9e8a-7d7906ab4f79?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -2944,6 +3166,12 @@
   "checked_at": "2026-11-03T08:02:37Z",
   "status": "wayback",
   "wayback_url": "http://web.archive.org/web/20261103083010/https://www.ft.com/content/ebeaca62-8958-459a-be9d-d3d39e441a53?syn-25a6b1a6=1"
+ },
+ "https://www.ft.com/content/eecbeefc-930c-4492-962b-4b9ec6cebfe3?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
  },
  "https://www.ft.com/content/efaa2962-1acb-45cf-afb4-d0088f0a1046?syn-25a6b1a6=1": {
   "archive_url": null,
@@ -3467,9 +3695,27 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.nytimes.com/2026/11/06/business/dealbook/tech-investors-ai-rout.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/06/business/economy/ai-jobs-layoffs.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.nytimes.com/2026/11/06/business/economy/economy-jobs-unemployment.html": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/06/business/economy/stable-labor-market-to-keep-fed-on-track-to-raise-rates-gradually.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -3539,6 +3785,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.nytimes.com/2026/11/06/science/science-democrats-congress-election.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.nytimes.com/2026/11/06/science/scientists-election-congress.html": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -3548,6 +3800,12 @@
  "https://www.nytimes.com/2026/11/06/technology/kalshi-polymarket-nyt-siena-poll-bets.html": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:44:00Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/06/technology/microsoft-buyouts.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -3641,6 +3899,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.nytimes.com/2026/11/06/well/hormone-therapy-menopause-cancer.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.nytimes.com/2026/11/06/world/africa/kenya-cult-leader-prison-sentence-mass-murder-paul-mackenzie.html": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -3659,9 +3923,21 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:20:52Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/06/world/canada/alberta-book-ban-public-libraries.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -3707,9 +3983,33 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.nytimes.com/2026/11/06/your-money/home-equity-investment.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.nytimes.com/2026/11/07/business/economy/nvidia-chips-chinese-firms.html": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/07/science/donald-trump-daylight-saving-time.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/07/technology/whistle-blowers-jeffrey-wigand.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/07/world/europe/bomb-threats-cyberattacks-europe-uncertainty.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -3725,6 +4025,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.nytimes.com/2026/11/07/world/europe/ukraine-russia-war-operation-vivaldi.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.nytimes.com/2026/11/07/world/middleeast/eisenkot-israel-new-government.html": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -3733,7 +4039,7 @@
  },
  "https://www.nytimes.com/article/france-student-protests-why.html": {
   "archive_url": null,
-  "checked_at": "2026-10-31T13:01:24Z",
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -3788,6 +4094,12 @@
  "https://www.reuters.com/business/autos-transportation/tesla-cybertrucks-bumpy-run-cracked-windows-long-delays-11-recalls-2026-11-06/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/business/energy/indias-ongc-hopes-get-rights-operate-2-venezuelan-oil-projects-six-months-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -3863,6 +4175,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/business/retail-consumer/amazon-rolls-out-text-based-shopping-through-alexa-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/business/retail-consumer/apples-predictive-text-restrictions-include-dictator-trump-sleepy-joe-researcher-2026-11-06/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
@@ -3872,6 +4190,12 @@
  "https://www.reuters.com/business/us-job-growth-beats-expectations-october-unemployment-rate-falls-41-2026-11-06/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/business/world-at-work/london-tube-drivers-hold-8-days-strikes-over-winter-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -3923,6 +4247,18 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/legal/litigation/how-chinas-clean-tech-machine-is-reshaping-global-climate-fight-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/legal/litigation/lilly-sell-obesity-drugs-directly-hims-hers-site-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/legal/litigation/malaysia-airlines-says-customers-may-be-affected-by-amadeus-breach-2026-11-01/": {
   "archive_url": null,
   "checked_at": "2026-11-01T07:35:50Z",
@@ -3941,6 +4277,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/legal/transactional/fox-completes-22-billion-roku-deal-expand-digital-reach-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/": {
   "archive_url": null,
   "checked_at": "2026-11-02T19:55:52Z",
@@ -3956,6 +4298,12 @@
  "https://www.reuters.com/science/crew-nasas-simulated-mars-mission-emerges-after-378-days-isolation-2026-11-01/": {
   "archive_url": null,
   "checked_at": "2026-11-02T01:08:48Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/science/russia-using-own-version-starlink-military-comms-over-ukraine-kyiv-says-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -3983,6 +4331,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/world/africa/south-africas-anc-32-da-24-municipal-vote-count-enters-final-stretch-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/world/after-louvre-heist-string-thefts-europes-smaller-museums-are-guard-2026-10-31/": {
   "archive_url": null,
   "checked_at": "2026-10-31T13:01:24Z",
@@ -3992,6 +4346,12 @@
  "https://www.reuters.com/world/americas/trump-says-flavio-bolsonaro-can-stay-us-as-long-he-wants-2026-11-01/": {
   "archive_url": null,
   "checked_at": "2026-11-01T07:35:50Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/world/asia-pacific/china-contact-with-real-madrid-laliga-over-mbappes-mao-comments-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -4007,15 +4367,33 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/world/asia-pacific/new-zealanders-vote-general-election-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/world/asia-pacific/south-korea-exports-nearly-double-october-strongest-growth-since-1974-2026-11-01/": {
   "archive_url": null,
   "checked_at": "2026-11-01T07:35:50Z",
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/world/bomb-threats-warning-the-clock-is-ticking-disrupt-tv-channels-across-europe-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/world/bulgaria-votes-presidential-runoff-after-tight-first-round-2026-11-01/": {
   "archive_url": null,
   "checked_at": "2026-11-01T21:29:04Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/world/china/meta-pauses-planned-terms-updates-keeps-existing-rules-place-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -4028,6 +4406,12 @@
  "https://www.reuters.com/world/europe/bulgarias-iotova-wins-presidential-runoff-near-final-results-show-2026-11-02/": {
   "archive_url": null,
   "checked_at": "2026-11-02T08:33:26Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/world/europe/rubio-travel-paris-meet-g7-foreign-ministers-next-week-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -4079,6 +4463,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/world/middle-east/iran-war-spurs-crackdown-clerics-tiny-gulf-state-bahrain-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/world/middle-east/iranian-negotiators-doha-continue-talks-end-us-iran-war-official-says-2026-11-01/": {
   "archive_url": null,
   "checked_at": "2026-11-01T16:33:53Z",
@@ -4115,6 +4505,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/world/one-seafarer-killed-missile-attack-tanker-gulf-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/world/prince-harry-will-seek-appeal-dismissal-lawsuit-against-daily-mail-2026-11-06/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
@@ -4139,9 +4535,21 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/world/uk-broadcaster-sky-received-security-threat-alerts-sweep-europe-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/world/uk/fbi-arrests-thomas-markle-father-meghan-source-says-2026-11-06/": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/world/uk/russell-brand-convicted-rape-now-likely-face-more-allegations-says-uk-police-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -4154,6 +4562,18 @@
  "https://www.reuters.com/world/uk/uk-unveil-migrant-settlement-overhaul-after-months-debate-2026-11-02/": {
   "archive_url": null,
   "checked_at": "2026-11-02T19:55:52Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/world/ukraine-must-be-part-europes-security-architecture-eu-foreign-policy-chief-says-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/world/ukraines-zelenskiy-russian-forces-plan-new-strikes-energy-targets-bridges-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -4190,6 +4610,12 @@
  "https://www.reuters.com/world/us/trump-says-stephen-miller-become-chief-staff-2026-11-06/": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/world/us/us-attorney-whose-office-oversaw-trumps-election-conspiracy-probe-resigns-2026-11-06/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -4406,6 +4832,12 @@
  "https://www.scmp.com/lifestyle/health-wellness/article/3373100/glp-1-side-effects-have-users-turning-supplements-why-doctors-are-worried": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.scmp.com/lifestyle/health-wellness/article/3373529/walking-therapy-making-strides-what-it-and-why-its-good-mental-and-physical-health": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5213,6 +5645,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/artanddesign/gallery/2026/nov/07/head-on-portrait-awards-2026-in-pictures": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/australia-news/2026/nov/02/australia-economy-fifth-interest-rate-hike-looms": {
   "archive_url": null,
   "checked_at": "2026-11-02T08:33:26Z",
@@ -5273,6 +5711,18 @@
   "status": "original",
   "wayback_url": null
  },
+ "https://www.theguardian.com/australia-news/2026/nov/07/the-victorian-liberals-campaign-bus-was-supposed-to-be-a-reset-instead-it-became-the-symbol-of-a-rough-week": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/australia-news/2026/nov/07/trevor-hold-activist-convicted-qld-fire-ant-eradication-program-queensland-ntwnfb": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/australia-news/live/2026/nov/03/rba-interest-rates-meeting-today-latest-news-australia-reserve-bank-cash-rate-announcement-decision-live-updates": {
   "archive_url": null,
   "checked_at": "2026-11-03T01:58:19Z",
@@ -5288,6 +5738,24 @@
  "https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre": {
   "archive_url": null,
   "checked_at": "2026-11-01T21:29:04Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/business/2026/nov/06/dream-ticket-super-rich-singapore-airlines-largest-double-bed": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/business/2026/nov/06/uk-house-prices-fall-at-steepest-rate-in-more-than-three-years": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/business/2026/nov/06/us-job-growth-october": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5345,6 +5813,24 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/commentisfree/2026/nov/06/hong-kong-prisoners-china-signal-democracy-joshua-wong": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/commentisfree/2026/nov/06/i-have-flung-myself-headfirst-into-sarah-j-maass-romantasy-universe-and-i-find-myself-a-changed-woman": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/commentisfree/2026/nov/06/post-election-feeling-optimism": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/commentisfree/2026/nov/06/russell-brand-justice-comedy-other-abusers": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
@@ -5390,6 +5876,12 @@
  "https://www.theguardian.com/commentisfree/2026/oct/31/political-traitors-burnham-autumn-budget-games-lies": {
   "archive_url": null,
   "checked_at": "2026-10-31T13:01:24Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/commentisfree/picture/2026/nov/07/australias-coal-and-gas-approvals-are-starting-to-stink-ahead-of-cop31": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5441,6 +5933,30 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/film/2026/nov/06/cat-in-the-hat-movie-review": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/film/2026/nov/06/florence-pugh-dune-star-wars": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/football/2026/nov/06/gotham-fc-nwsl-playoffs": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/games/2026/nov/06/the-legend-of-zelda-ocarina-of-time-midnight-game-launch": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/lifeandstyle/2026/oct/31/ai-your-wingman-chatbots-transforming-dating": {
   "archive_url": null,
   "checked_at": "2026-10-31T13:01:24Z",
@@ -5475,6 +5991,18 @@
   "archive_url": null,
   "checked_at": "2026-11-02T08:33:26Z",
   "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/music/2026/nov/06/the-weeks-best-new-tracks-and-the-act-you-need-to-know-crowd-pleasing-anticapitalist-rockers-sans-froid": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/music/2026/nov/06/wynonna-judd-country-music-interview-naomi-hard-truth-new-album": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
   "wayback_url": null
  },
  "https://www.theguardian.com/news/ng-interactive/2026/nov/07/the-end-of-maga-as-we-know-it": {
@@ -5519,6 +6047,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/politics/2026/nov/06/kemi-badenoch-slavery-comments-anger-black-voters-operation-black-vote": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/politics/2026/nov/07/home-office-sued-the3million-eu-citizens-right-to-live-in-uk-pre-settled": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:36:21Z",
@@ -5546,6 +6080,12 @@
  "https://www.theguardian.com/politics/live/2026/nov/02/andy-burnham-shabana-mahmood-migration-indefinite-leave-to-remain-care-workers-uk-politics-latest-news": {
   "archive_url": null,
   "checked_at": "2026-11-02T19:55:52Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/politics/live/2026/nov/06/burnham-force-employers-publish-salaries-job-ads-labour-chagos-islands-shabana-mahmood-eu-universities-brexit-kemi-badenoch-tories-uk-politics-latest-news": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5621,6 +6161,30 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/technology/2026/nov/06/eu-charges-tiktok-failure-to-protect-users-mental-health": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/technology/2026/nov/06/tesla-to-wind-down-cybertruck-production-as-elon-musk-focuses-on-robotics-and-ai": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/technology/2026/nov/06/us-tech-stock-ai-bubble-bursting-market-meltdown-explainer": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/technology/2026/nov/07/tiktok-sex-industry-girls-onlyfans": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:20:52Z",
@@ -5630,6 +6194,12 @@
  "https://www.theguardian.com/thefilter-us/2026/nov/06/best-personalized-custom-gift-ideas": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/thefilter/2026/nov/06/best-christmas-gifts-teenagers-uk": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5666,6 +6236,18 @@
  "https://www.theguardian.com/uk-news/2026/nov/02/shabana-mahmood-softens-immigration-plans-cabinet-backlash-leave-to-remain": {
   "archive_url": null,
   "checked_at": "2026-11-02T19:55:52Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/uk-news/2026/nov/06/commuters-and-shoppers-face-disruption-from-tube-driver-strikes-in-run-up-to-christmas": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/uk-news/2026/nov/06/shabana-mahmood-uk-immigration-shakeup-reaction": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5744,6 +6326,12 @@
  "https://www.theguardian.com/us-news/2026/nov/03/midterm-elections-americans-vote": {
   "archive_url": null,
   "checked_at": "2026-11-03T08:02:37Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/us-news/2026/nov/05/congress-midterms-diverse": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5873,9 +6461,27 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/world/2026/nov/06/anc-faces-defeat-south-african-local-elections": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/world/2026/nov/06/flavio-bolsonaro-upbeat-brazil-election-us": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/world/2026/nov/06/further-bomb-threats-disrupt-flights-across-europe": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5933,6 +6539,12 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261107045942/https://www.washingtonpost.com/"
  },
+ "https://www.washingtonpost.com/advice/2026/11/06/carolyn-hax-apparently-not-good-enough-best-friends-good-news/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.washingtonpost.com/business/2026/11/06/asian-european-markets-slide-amid-fears-greater-ai-oversight/": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:12:08Z",
@@ -5951,9 +6563,27 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.washingtonpost.com/business/2026/11/06/musk-says-tesla-will-wind-down-cybertruck-production-texas/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.washingtonpost.com/climate-environment/2026/11/06/data-centers-may-not-be-raising-americans-electricity-bills-that-much/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.washingtonpost.com/climate-environment/2026/11/06/why-more-people-are-turning-native-gardens-dc/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -5981,6 +6611,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.washingtonpost.com/education/2026/11/05/college-costs-are-trending-lower-than-decade-ago/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.washingtonpost.com/education/2026/11/06/cornell-faculty-senate-votes-no-confidence-university-leadership/": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:20:52Z",
@@ -6004,6 +6640,24 @@
   "checked_at": "2026-11-07T09:52:30Z",
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261107000804/https://www.washingtonpost.com/entertainment/2026/11/06/martha-stewarts-halloween-costume-apology-tour-ends-today-show/"
+ },
+ "https://www.washingtonpost.com/entertainment/2026/11/06/museum-asian-art-showcases-islamic-art-pieces-louvre/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.washingtonpost.com/food/2026/11/06/we-tried-3d-printed-meat-wished-we-hadnt/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261106211845/https://www.washingtonpost.com/food/2026/11/06/we-tried-3d-printed-meat-wished-we-hadnt/"
+ },
+ "https://www.washingtonpost.com/health/2026/11/06/former-white-house-health-aide-accuses-trump-advisers-catering-special-interests/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
  },
  "https://www.washingtonpost.com/immigration/2026/10/31/mamdani-says-trump-agreed-visa-ghanaian-mom-whose-son-was-killed-nyc/": {
   "archive_url": null,
@@ -6077,6 +6731,12 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261107034803/https://www.washingtonpost.com/national-security/2026/11/06/prosecutor-leading-grand-conspiracy-probe-florida-resigns/"
  },
+ "https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261106205553/https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/"
+ },
  "https://www.washingtonpost.com/opinions/2026/11/02/2026-midterm-election-predictions-before-election-day/": {
   "archive_url": null,
   "checked_at": "2026-11-03T01:58:19Z",
@@ -6088,6 +6748,12 @@
   "checked_at": "2026-11-02T19:55:52Z",
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261102113609/https://www.washingtonpost.com/opinions/2026/11/02/hegseth-deserves-be-impeached-or-fired/"
+ },
+ "https://www.washingtonpost.com/opinions/2026/11/06/jd-vance-ohio-ugly-maga-limits/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261106231815/https://www.washingtonpost.com/opinions/2026/11/06/jd-vance-ohio-ugly-maga-limits/"
  },
  "https://www.washingtonpost.com/opinions/2026/11/06/jd-vance-presidential-ambitions-must-be-stymied-by-temperate-americans/": {
   "archive_url": null,
@@ -6106,6 +6772,12 @@
   "checked_at": "2026-11-07T09:52:30Z",
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261107062051/https://www.washingtonpost.com/opinions/2026/11/06/trumps-wounded-presidency-turns-two-iran-ukraine-wars/"
+ },
+ "https://www.washingtonpost.com/podcasts/impromptu/what-the-collapse-of-a-2-billion-law-firm-reveals/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
  },
  "https://www.washingtonpost.com/politics/2026/10/30/early-voting-surpasses-2022-levels-pope-has-cast-his-ballot/": {
   "archive_url": null,
@@ -6227,11 +6899,29 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.washingtonpost.com/politics/2026/11/05/republicans-north-carolina-lose-4-more-house-seats-gop-wipeout-spreads/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.washingtonpost.com/politics/2026/11/05/trump-wants-his-arch-approved-thursday-and-immediately-start-work/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261106104905/https://www.washingtonpost.com/politics/2026/11/05/trump-wants-his-arch-approved-thursday-and-immediately-start-work/"
+ },
  "https://www.washingtonpost.com/politics/2026/11/06/democrat-scott-wiener-wins-race-nancy-pelosis-seat-california/": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
   "status": "challenge",
   "wayback_url": null
+ },
+ "https://www.washingtonpost.com/politics/2026/11/06/first-openly-gay-sheriff-alabama-is-navy-seal-who-vows-cut-ties-with-flock/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261107000808/https://www.washingtonpost.com/politics/2026/11/06/first-openly-gay-sheriff-alabama-is-navy-seal-who-vows-cut-ties-with-flock/"
  },
  "https://www.washingtonpost.com/politics/2026/11/06/florida-approved-controversial-property-tax-measure-what-comes-next/": {
   "archive_url": null,
@@ -6323,6 +7013,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.washingtonpost.com/wellness/2026/11/06/3-ways-fidgeting-may-actually-benefit-your-health/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.washingtonpost.com/wellness/2026/11/06/nondairy-creamer-is-more-popular-than-ever-is-it-healthy/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
@@ -6359,6 +7055,12 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261102191544/https://www.washingtonpost.com/world/2026/11/02/under-house-arrest-argentina-ex-president-predicts-big-losses-trump/"
  },
+ "https://www.washingtonpost.com/world/2026/11/05/nike-is-hit-with-religious-ban-libya-because-its-name-is-greek-goddess/": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.washingtonpost.com/world/2026/11/06/midterms-give-ukrainians-cautious-hope-aid-even-trump-talks-deals-with-putin/": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -6371,9 +7073,39 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/articles/a-county-by-county-look-at-how-the-blue-wave-touched-nearly-every-part-of-america-e1dd346c": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/arts-culture/books/11-books-we-read-this-week-a032f427": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/arts-culture/books/eva-and-the-island-review-desert-island-duo-ca0585bf": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/arts-culture/books/frank-capra-review-a-directors-magic-touch-1756dea6": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.wsj.com/arts-culture/books/the-idiot-dostoevskys-classic-novel-of-an-honest-man-1f1b377b": {
   "archive_url": null,
   "checked_at": "2026-11-02T01:08:48Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/arts-culture/books/the-last-emperor-of-china-review-puyis-paradise-lost-1dc1f65c": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -6401,9 +7133,27 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/business/autos/musk-called-it-teslas-best-product-ever-now-the-cybertruck-is-being-scrapped-0d2249c2": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/business/autos/tesla-winding-down-production-of-cybertruck-musk-says-89df7158": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261106122340/https://www.wsj.com/business/autos/tesla-winding-down-production-of-cybertruck-musk-says-89df7158"
+ },
  "https://www.wsj.com/business/earnings/colgate-palmolive-posts-higher-profit-sales-857724f5": {
   "archive_url": null,
   "checked_at": "2026-11-02T01:08:48Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/business/earnings/under-armour-revenue-falls-on-broad-segment-declines-381d839c": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -6437,15 +7187,45 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/business/firefly-aerospace-inks-1-3-billion-deal-with-ast-spacemobile-for-rocket-engines-eb7e3ea1": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
+  "wayback_url": null
+ },
  "https://www.wsj.com/business/retail/seth-dallaire-walmart-ef8827b5": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/business/telecom/charter-continues-to-lose-internet-video-customers-plans-new-savings-program-3d36f9dc": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261106191611/https://www.wsj.com/business/telecom/charter-continues-to-lose-internet-video-customers-plans-new-savings-program-3d36f9dc"
+ },
  "https://www.wsj.com/business/the-biotech-leader-who-erased-team-lanes-5850c911": {
   "archive_url": null,
   "checked_at": "2026-11-02T01:08:48Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/cio-journal/openai-bolsters-cyber-defenses-cf7cafb5": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/cmo-today/a-polarizing-halo-product-runs-out-of-road-at-tesla-9172566a": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/cmo-today/can-an-ai-agent-be-your-next-cmo-at-some-small-startups-it-already-is-daca36aa": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -6461,6 +7241,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/economy/central-banking/solid-jobs-report-leaves-inflation-markets-to-settle-feds-december-call-7738799e": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261107014407/https://www.wsj.com/economy/central-banking/solid-jobs-report-leaves-inflation-markets-to-settle-feds-december-call-7738799e"
+ },
  "https://www.wsj.com/economy/jobs/canada-unemployment-rate-climbs-to-six-month-high-of-6-7-90a664ca": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
@@ -6470,6 +7256,12 @@
  "https://www.wsj.com/economy/jobs/companies-have-a-solution-for-the-skilled-trade-shortage-more-women-37851f46": {
   "archive_url": null,
   "checked_at": "2026-11-02T01:08:48Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/finance/banking/norway-oil-fund-reaches-224-5-million-settlement-with-kpmg-over-silicon-valley-bank-collapse-e0cc9045": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -6509,6 +7301,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/finance/stocks/tech-stocks-recover-some-losses-f494cd13": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-after-jobs-data-muted-ai-rebound-945344f6": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -6518,6 +7316,12 @@
  "https://www.wsj.com/finance/the-four-academics-who-dreamed-up-californias-billionaire-tax-b0d05dcc": {
   "archive_url": null,
   "checked_at": "2026-11-02T08:33:26Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/health/moderna-lifts-full-year-outlook-swings-to-quarterly-profit-d05bf4b3": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -6539,9 +7343,27 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/opinion/more-autism-therapy-isnt-evidence-of-fraud-7deaaa55": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/opinion/send-glenn-youngkin-to-the-white-house-57bc9e59": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.wsj.com/opinion/the-case-for-a-historic-wave-c11a0a92": {
   "archive_url": null,
   "checked_at": "2026-11-01T07:35:50Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/opinion/the-democratic-party-wont-tolerate-pro-israel-members-38e9a8a4": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -6773,6 +7595,12 @@
   "status": "wayback",
   "wayback_url": "http://web.archive.org/web/20261103005242/https://www.wsj.com/world/middle-east/u-s-strikes-irans-qeshm-island-as-trump-talks-down-war-risks-79d73d3d"
  },
+ "https://www.wsj.com/world/middle-east/whats-next-for-iran-peace-talks-after-the-midterms-a031003c": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -6783,6 +7611,12 @@
   "archive_url": null,
   "checked_at": "2026-11-02T08:33:26Z",
   "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.zaobao.com.sg/en/en/lifestyle/feature/brush-chisel-and-light-handmade-signs-keep-human-touch-alive": {
+  "archive_url": null,
+  "checked_at": "2026-11-07T10:19:19Z",
+  "status": "original",
   "wayback_url": null
  },
  "https://www.zaobao.com.sg/en/entertainment/real-huang-who-earns-s1-17-million-year-royalties-move-family-singapore": {
@@ -7159,8 +7993,32 @@
   "checked_at": "2026-11-03T08:02:37Z",
   "image": null
  },
+ "img:https://www.bloomberg.com/news/articles/2026-11-06/ai-s-wild-week-has-wall-street-hunting-for-fresh-escape-routes": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-06/hedge-funds-fled-bullish-oil-bets-ahead-of-election-day-drop": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-06/jetblue-s-defiant-cfo-to-employees-not-considering-bankruptcy": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.bloomberg.com/news/articles/2026-11-06/neocloud-groq-aims-to-double-value-to-8-billion-amid-ai-selloff": {
   "checked_at": "2026-11-07T10:05:28Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-06/paraguay-senators-remove-pena-from-office-after-bank-scandal": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-06/retail-traders-cautiously-buy-stocks-after-worst-rout-since-2025": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-06/spacex-director-resigns-from-board-one-day-after-us-election": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.bloomberg.com/news/articles/2026-11-07/australia-s-albanese-urges-iran-de-escalation-after-us-midterms": {
@@ -7173,6 +8031,10 @@
  },
  "img:https://www.bloomberg.com/news/articles/2026-11-07/burnham-bets-that-britain-can-move-past-the-old-brexit-divisions": {
   "checked_at": "2026-11-07T09:12:08Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-07/charting-the-global-economy-job-growth-in-us-tops-all-forecasts": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.bloomberg.com/news/articles/2026-11-07/china-extends-gold-buying-streak-to-two-years-as-prices-drop": {
@@ -7527,8 +8389,20 @@
   "checked_at": "2026-11-07T10:05:28Z",
   "image": null
  },
+ "img:https://www.bloomberg.com/news/videos/2026-11-06/airbnb-surges-on-growth-outlook-closing-bell-video": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/videos/2026-11-06/ann-berry-on-the-importance-of-learning-ai-video": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.bloomberg.com/news/videos/2026-11-06/balance-of-power-late-edition-11-06-2026-video": {
   "checked_at": "2026-11-07T09:44:00Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/videos/2026-11-06/big-take-the-new-ai-trade-is-fogo-video": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.bloomberg.com/news/videos/2026-11-06/bremmer-on-u-s-retreat-from-global-leadership-video": {
@@ -7553,6 +8427,10 @@
  },
  "img:https://www.bloomberg.com/news/videos/2026-11-06/manchin-democrats-risk-overplaying-hand-on-impeachment-video": {
   "checked_at": "2026-11-07T09:52:30Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/videos/2026-11-06/masters-in-business-with-ann-berry-video": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.bloomberg.com/news/videos/2026-11-06/rep-beyer-democrats-were-not-elected-to-impeach-trump-video": {
@@ -7593,6 +8471,10 @@
  },
  "img:https://www.ft.com/content/06e2f3a7-f1db-4d9a-bf8d-92e362893a95?syn-25a6b1a6=1": {
   "checked_at": "2026-11-03T01:58:19Z",
+  "image": null
+ },
+ "img:https://www.ft.com/content/088ed252-ea9c-4b61-b2d1-37295fd0f7c2?syn-25a6b1a6=1": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.ft.com/content/0eb3068a-6199-4706-b99c-23fe6302997b?syn-25a6b1a6=1": {
@@ -7799,6 +8681,10 @@
   "checked_at": "2026-11-01T06:40:17Z",
   "image": null
  },
+ "img:https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.ft.com/content/fec5981d-0c31-4f21-9a37-a1dd1526f530?syn-25a6b1a6=1": {
   "checked_at": "2026-11-03T08:02:37Z",
   "image": null
@@ -7847,6 +8733,10 @@
   "checked_at": "2026-11-03T08:02:37Z",
   "image": null
  },
+ "img:https://www.nytimes.com/2026/11/06/business/global-stocks-markets-tech-ai.html": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.nytimes.com/2026/11/06/us/atlanta-pandas.html": {
   "checked_at": "2026-11-07T09:36:21Z",
   "image": null
@@ -7889,6 +8779,10 @@
  },
  "img:https://www.reuters.com/business/imfs-georgieva-says-any-slowdown-ai-driven-growth-would-be-factor-central-banks-2026-11-06/": {
   "checked_at": "2026-11-07T10:05:28Z",
+  "image": null
+ },
+ "img:https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.reuters.com/business/media-telecom/google-executive-donald-harrison-resigns-spacex-board-2026-11-06/": {
@@ -7943,6 +8837,10 @@
   "checked_at": "2026-11-02T08:33:26Z",
   "image": null
  },
+ "img:https://www.reuters.com/lifestyle/macklemore-says-us-venues-rejected-his-free-palestine-tour-2026-11-06/": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.reuters.com/science/crew-nasas-simulated-mars-mission-emerges-after-378-days-isolation-2026-11-01/": {
   "checked_at": "2026-11-02T01:08:48Z",
   "image": null
@@ -7985,6 +8883,10 @@
  },
  "img:https://www.reuters.com/world/bulgaria-votes-presidential-runoff-after-tight-first-round-2026-11-01/": {
   "checked_at": "2026-11-01T11:26:09Z",
+  "image": null
+ },
+ "img:https://www.reuters.com/world/china/meta-pauses-planned-terms-updates-keeps-existing-rules-place-2026-11-06/": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.reuters.com/world/china/taipei-mayor-gets-angry-reception-pride-after-gay-bar-raid-2026-10-31/": {
@@ -8119,6 +9021,14 @@
   "checked_at": "2026-11-07T09:12:08Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/J6NJ7TRMIW3OVCQMO5XUIY43OY_size-normalized.jpg&amp;w=1440"
  },
+ "img:https://www.washingtonpost.com/business/2026/11/06/musk-says-tesla-will-wind-down-cybertruck-production-texas/": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/DMRMJKN6UJHCY36TDPO4ESQ5UM.JPG&amp;w=1440"
+ },
+ "img:https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/KNTGHFHQHCW3FPRWLPTH73V2Z4_size-normalized.jpg&amp;w=1440"
+ },
  "img:https://www.washingtonpost.com/dc-md-va/2026/10/31/dc-virginia-sue-block-trumps-proposed-triumphal-arch/": {
   "checked_at": "2026-10-31T14:34:20Z",
   "image": null
@@ -8142,6 +9052,10 @@
  "img:https://www.washingtonpost.com/entertainment/2026/11/06/martha-stewarts-halloween-costume-apology-tour-ends-today-show/": {
   "checked_at": "2026-11-07T09:52:30Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fwapo%2FSSSUEQ73I44BWO7IWLJM7ELANE.jpg&amp;w=1200"
+ },
+ "img:https://www.washingtonpost.com/health/2026/11/06/former-white-house-health-aide-accuses-trump-advisers-catering-special-interests/": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/BIYD4LJKRIXGMQOAMAPFNWH3TA_size-normalized.jpg&amp;w=1440"
  },
  "img:https://www.washingtonpost.com/immigration/2026/10/31/mamdani-says-trump-agreed-visa-ghanaian-mom-whose-son-was-killed-nyc/": {
   "checked_at": "2026-11-01T06:40:17Z",
@@ -8279,9 +9193,17 @@
   "checked_at": "2026-11-02T19:55:52Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LGOEFXMXHMVQ6IZHUY73L25SVI_size-normalized.jpg&amp;w=1440"
  },
+ "img:https://www.washingtonpost.com/politics/2026/11/05/republicans-north-carolina-lose-4-more-house-seats-gop-wipeout-spreads/": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/YZEB4GYQ5ZL5JA6V5KH64SQMAM_size-normalized.jpg&amp;w=1440"
+ },
  "img:https://www.washingtonpost.com/politics/2026/11/06/democrat-scott-wiener-wins-race-nancy-pelosis-seat-california/": {
   "checked_at": "2026-11-07T09:52:30Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/YLG6BJOD3OGPJJP3WEFCVH27AI_size-normalized.jpg&amp;w=1440"
+ },
+ "img:https://www.washingtonpost.com/politics/2026/11/06/first-openly-gay-sheriff-alabama-is-navy-seal-who-vows-cut-ties-with-flock/": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fwapo%2FJJPPV3I4UTQ6AQ6IP7NKZIXUVM.jpg&amp;w=1200"
  },
  "img:https://www.washingtonpost.com/politics/2026/11/06/florida-approved-controversial-property-tax-measure-what-comes-next/": {
   "checked_at": "2026-11-07T10:05:28Z",
@@ -8363,6 +9285,10 @@
   "checked_at": "2026-11-01T11:26:09Z",
   "image": null
  },
+ "img:https://www.wsj.com/arts-culture/fine-art/bacon-de-kooning-review-a-surprising-first-meeting-airdigital-d8bca86e": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.wsj.com/arts-culture/fine-art/louvre-director-christophe-leribault-on-the-museums-many-crises-5aaa2a5a": {
   "checked_at": "2026-11-07T10:05:28Z",
   "image": null
@@ -8399,6 +9325,10 @@
   "checked_at": "2026-11-02T01:08:48Z",
   "image": null
  },
+ "img:https://www.wsj.com/cmo-today/can-an-ai-agent-be-your-next-cmo-at-some-small-startups-it-already-is-daca36aa": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.wsj.com/economy/central-banking/fed-needs-to-implement-at-least-two-more-rate-increases-dallas-feds-logan-says-c5003190": {
   "checked_at": "2026-11-02T08:33:26Z",
   "image": null
@@ -8421,6 +9351,14 @@
  },
  "img:https://www.wsj.com/finance/stocks/midterms-markets-week-ai-trade-97b3fc5d": {
   "checked_at": "2026-11-07T09:44:00Z",
+  "image": null
+ },
+ "img:https://www.wsj.com/finance/stocks/tech-stocks-recover-some-losses-f494cd13": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
+ "img:https://www.wsj.com/finance/stocks/u-s-stocks-mixed-after-jobs-data-muted-ai-rebound-945344f6": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.wsj.com/finance/the-four-academics-who-dreamed-up-californias-billionaire-tax-b0d05dcc": {
@@ -8471,6 +9409,10 @@
   "checked_at": "2026-11-01T06:40:17Z",
   "image": null
  },
+ "img:https://www.wsj.com/politics/elections/five-things-to-know-about-stephen-miller-trumps-new-chief-of-staff-8436e016": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.wsj.com/politics/elections/prediction-markets-keep-whiffing-on-elections-will-they-miss-on-the-midterms-9809c8c9": {
   "checked_at": "2026-10-31T15:44:08Z",
   "image": null
@@ -8481,6 +9423,10 @@
  },
  "img:https://www.wsj.com/politics/elections/trump-administration-states-harden-battle-lines-ahead-of-election-day-73950755": {
   "checked_at": "2026-11-01T11:26:09Z",
+  "image": null
+ },
+ "img:https://www.wsj.com/politics/elections/trump-names-stephen-miller-his-new-chief-of-staff-2f835632": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.wsj.com/politics/national-security/inside-the-u-s-militarys-open-ended-mission-to-keep-gulf-oil-flowing-0f4cbbc4": {
@@ -8511,12 +9457,20 @@
   "checked_at": "2026-11-01T06:40:17Z",
   "image": null
  },
+ "img:https://www.wsj.com/real-estate/luxury-homes/clive-davis-manhattan-apartment-e24d1885": {
+  "checked_at": "2026-11-07T10:19:19Z",
+  "image": null
+ },
  "img:https://www.wsj.com/real-estate/luxury-homes/fashion-nova-richard-saghian-nyc-penthouse-17a8b76e": {
   "checked_at": "2026-11-01T11:26:09Z",
   "image": null
  },
  "img:https://www.wsj.com/real-estate/luxury-homes/the-sinking-of-a-malibu-megaproject-ce831e93": {
   "checked_at": "2026-11-01T21:29:04Z",
+  "image": null
+ },
+ "img:https://www.wsj.com/style/design/how-wicker-inspired-new-films-feuds-and-14-000-stools-ba8e6ba7": {
+  "checked_at": "2026-11-07T10:19:19Z",
   "image": null
  },
  "img:https://www.wsj.com/style/fashion/how-to-wear-knee-length-skirts-prada-a7178f33": {
@@ -8635,8 +9589,24 @@
   "checked_at": "2026-11-01T11:26:09Z",
   "image": "https://cassette.sphdigital.com.sg/image/zaobao/d893d01404ec56a9546746e93a478528cd4514e897e16fc0dbb5bc0403c7400e"
  },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-06/ai-s-wild-week-has-wall-street-hunting-for-fresh-escape-routes": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-06/hedge-funds-fled-bullish-oil-bets-ahead-of-election-day-drop": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
  "synd:https://www.bloomberg.com/news/articles/2026-11-06/neocloud-groq-aims-to-double-value-to-8-billion-amid-ai-selloff": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-06/paraguay-senators-remove-pena-from-office-after-bank-scandal": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-06/spacex-director-resigns-from-board-one-day-after-us-election": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "synd:https://www.bloomberg.com/news/articles/2026-11-07/australia-s-albanese-urges-iran-de-escalation-after-us-midterms": {
@@ -8649,6 +9619,10 @@
  },
  "synd:https://www.bloomberg.com/news/articles/2026-11-07/burnham-bets-that-britain-can-move-past-the-old-brexit-divisions": {
   "at": "2026-11-07T09:20:52Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-07/charting-the-global-economy-job-growth-in-us-tops-all-forecasts": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "synd:https://www.bloomberg.com/news/articles/2026-11-07/china-extends-gold-buying-streak-to-two-years-as-prices-drop": {
@@ -8723,8 +9697,28 @@
   "at": "2026-11-07T10:05:28Z",
   "ok": 0
  },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-06/ai-generated-movie-heading-theaters-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-06/ai-selloff-exposes-data-center-boom-risks-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-06/airbnb-surges-on-growth-outlook-closing-bell-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-06/ann-berry-on-the-importance-of-learning-ai-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
  "synd:https://www.bloomberg.com/news/videos/2026-11-06/balance-of-power-late-edition-11-06-2026-video": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-06/big-take-the-new-ai-trade-is-fogo-video": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "synd:https://www.bloomberg.com/news/videos/2026-11-06/bremmer-on-u-s-retreat-from-global-leadership-video": {
@@ -8753,6 +9747,10 @@
  },
  "synd:https://www.bloomberg.com/news/videos/2026-11-06/manchin-democrats-risk-overplaying-hand-on-impeachment-video": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-06/masters-in-business-with-ann-berry-video": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "synd:https://www.bloomberg.com/news/videos/2026-11-06/rep-beyer-democrats-were-not-elected-to-impeach-trump-video": {
@@ -8785,6 +9783,10 @@
  },
  "synd:https://www.ft.com/content/0845687f-1f74-4bbf-88c9-5c6b031c7f20?syn-25a6b1a6=1": {
   "at": "2026-11-07T09:36:21Z",
+  "ok": 0
+ },
+ "synd:https://www.ft.com/content/088ed252-ea9c-4b61-b2d1-37295fd0f7c2?syn-25a6b1a6=1": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "synd:https://www.ft.com/content/0eb3068a-6199-4706-b99c-23fe6302997b?syn-25a6b1a6=1": {
@@ -8825,6 +9827,14 @@
  },
  "synd:https://www.ft.com/content/5a6806f0-e82e-4b34-b761-f9877e2b511c?syn-25a6b1a6=1": {
   "at": "2026-11-07T09:36:21Z",
+  "ok": 0
+ },
+ "synd:https://www.ft.com/content/642b32dc-e3a1-4df8-ae91-5c84bdeb89e0?syn-25a6b1a6=1": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.ft.com/content/6e8f2244-0e39-45cd-b415-e0be54b0351f?syn-25a6b1a6=1": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "synd:https://www.ft.com/content/80d91653-c210-43cd-b91e-2b8c644561c1?syn-25a6b1a6=1": {
@@ -8887,6 +9897,14 @@
   "at": "2026-11-07T09:20:52Z",
   "ok": 0
  },
+ "synd:https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.wsj.com/arts-culture/fine-art/bacon-de-kooning-review-a-surprising-first-meeting-airdigital-d8bca86e": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
  "synd:https://www.wsj.com/arts-culture/fine-art/louvre-director-christophe-leribault-on-the-museums-many-crises-5aaa2a5a": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 0
@@ -8899,16 +9917,36 @@
   "at": "2026-11-07T10:05:28Z",
   "ok": 0
  },
+ "synd:https://www.wsj.com/cmo-today/can-an-ai-agent-be-your-next-cmo-at-some-small-startups-it-already-is-daca36aa": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
  "synd:https://www.wsj.com/finance/stocks/midterms-markets-week-ai-trade-97b3fc5d": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0
+ },
+ "synd:https://www.wsj.com/finance/stocks/tech-stocks-recover-some-losses-f494cd13": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.wsj.com/finance/stocks/u-s-stocks-mixed-after-jobs-data-muted-ai-rebound-945344f6": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "synd:https://www.wsj.com/politics/elections/2028-election-president-battleground-map-3b8567b9": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 0
  },
+ "synd:https://www.wsj.com/politics/elections/five-things-to-know-about-stephen-miller-trumps-new-chief-of-staff-8436e016": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
  "synd:https://www.wsj.com/politics/elections/stephen-miller-trump-chief-of-staff-56917f0a": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0
+ },
+ "synd:https://www.wsj.com/politics/elections/trump-names-stephen-miller-his-new-chief-of-staff-2f835632": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "synd:https://www.wsj.com/politics/policy/elon-musk-texas-midterm-elections-b993e58d": {
@@ -8923,12 +9961,24 @@
   "at": "2026-11-07T10:05:28Z",
   "ok": 0
  },
+ "synd:https://www.wsj.com/style/design/how-wicker-inspired-new-films-feuds-and-14-000-stools-ba8e6ba7": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
+ "synd:https://www.wsj.com/world/americas/pope-leo-visits-a-latin-america-thats-losing-its-religion-b1007bbc": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0
+ },
  "synd:https://www.wsj.com/world/europe/ukraine-war-drone-rescue-c2e59cd6": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 0
  },
  "synd:https://www.wsj.com/world/middle-east/trumps-clashing-advisers-press-him-to-make-iran-war-decision-758c1e55": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0
+ },
+ "synd:https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0
  },
  "text:https://news.tvb.com/en/1203051": {
@@ -9482,6 +10532,26 @@
   "ok": 1,
   "v": 2
  },
+ "text:https://news.tvb.com/en/1205102": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
+  "v": 2
+ },
+ "text:https://news.tvb.com/en/1205103": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
+  "v": 2
+ },
+ "text:https://news.tvb.com/en/1205104": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
+  "v": 2
+ },
+ "text:https://news.tvb.com/en/1205106": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
+  "v": 2
+ },
  "text:https://news.tvb.com/en/1205107": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 1,
@@ -9658,13 +10728,93 @@
   "at": "2026-11-03T08:02:37Z",
   "ok": 1
  },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/ai-s-wild-week-has-wall-street-hunting-for-fresh-escape-routes": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/apollo-backed-dental-firm-vvardis-seeks-228-6-million-in-us-ipo": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/braskem-shareholders-pull-funding-offer-as-debt-talks-hit-snags": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/cornell-faculty-vote-no-confidence-in-university-leadership": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/delek-ceo-downplays-white-house-refinery-expansion-announcement": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/google-takes-over-wyoming-data-center-that-crusoe-had-pitched": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/hedge-funds-fled-bullish-oil-bets-ahead-of-election-day-drop": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/jetblue-s-defiant-cfo-to-employees-not-considering-bankruptcy": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.bloomberg.com/news/articles/2026-11-06/neocloud-groq-aims-to-double-value-to-8-billion-amid-ai-selloff": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 0,
   "v": 2
  },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/oil-traders-in-talks-with-us-to-get-sanctioned-ships-back-to-sea": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.bloomberg.com/news/articles/2026-11-06/paraguay-senators-remove-pena-from-office-after-bank-scandal": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/retail-traders-cautiously-buy-stocks-after-worst-rout-since-2025": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/spacex-director-resigns-from-board-one-day-after-us-election": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/trump-officials-to-miss-his-vaccine-recommendation-deadline": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/us-consumer-credit-surges-by-most-in-nearly-four-years": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/us-job-gains-may-be-spreading-from-ai-buildout-to-implementation": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-06/yeezy-returns-with-la-runway-show-and-jd-sports-partnership": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -9680,6 +10830,11 @@
  },
  "text:https://www.bloomberg.com/news/articles/2026-11-07/burnham-bets-that-britain-can-move-past-the-old-brexit-divisions": {
   "at": "2026-11-07T09:44:00Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-07/charting-the-global-economy-job-growth-in-us-tops-all-forecasts": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -9962,13 +11117,33 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.bloomberg.com/news/videos/2026-11-06/airbnb-surges-on-growth-outlook-closing-bell-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-06/ann-berry-on-the-importance-of-learning-ai-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.bloomberg.com/news/videos/2026-11-06/balance-of-power-late-edition-11-06-2026-video": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 0,
   "v": 2
  },
+ "text:https://www.bloomberg.com/news/videos/2026-11-06/big-take-the-new-ai-trade-is-fogo-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.bloomberg.com/news/videos/2026-11-06/bremmer-on-u-s-retreat-from-global-leadership-video": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-06/brookfield-ceo-says-infrastructure-is-growing-fastest-video": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -9979,6 +11154,11 @@
  },
  "text:https://www.bloomberg.com/news/videos/2026-11-06/coinbase-s-vangrack-says-crypto-is-advancing-video": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-06/data-center-delays-risk-an-air-gap-for-chips-lovell-video": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10002,6 +11182,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.bloomberg.com/news/videos/2026-11-06/power-on-how-private-is-an-always-listening-apple-watch-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.bloomberg.com/news/videos/2026-11-06/rep-beyer-democrats-were-not-elected-to-impeach-trump-video": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 0,
@@ -10017,6 +11202,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.bloomberg.com/news/videos/2026-11-06/time-to-move-forward-on-sensible-ai-regulation-liccardo-video": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.bloomberg.com/news/videos/2026-11-07/wall-street-week-blue-wave-economics-richmond-fed-video": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 0,
@@ -10029,6 +11219,16 @@
  "text:https://www.economist.com/europe/2026/11/01/polands-fight-over-its-constitutional-court-gets-physical": {
   "at": "2026-11-01T13:35:11Z",
   "ok": 1
+ },
+ "text:https://www.economist.com/middle-east-and-africa/2026/11/06/republicans-blame-israel-for-their-defeat": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.economist.com/science-and-technology/2026/11/06/the-climate-issue-newsletter-the-world-braces-for-an-almighty-el-nino": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.ft.com/content/04b1bc84-981e-4996-b98e-ade9603045b8": {
   "at": "2026-11-07T09:52:30Z",
@@ -10054,6 +11254,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.ft.com/content/088ed252-ea9c-4b61-b2d1-37295fd0f7c2?syn-25a6b1a6=1": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.ft.com/content/0eb3068a-6199-4706-b99c-23fe6302997b?syn-25a6b1a6=1": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 0,
@@ -10065,6 +11270,11 @@
  },
  "text:https://www.ft.com/content/25470ea7-2a13-4dc6-af41-de2d1d78c715?syn-25a6b1a6=1": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.ft.com/content/314e17df-e7af-4814-b208-70a0557cb452?syn-25a6b1a6=1": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10108,6 +11318,11 @@
  },
  "text:https://www.ft.com/content/52f2548d-93b8-47dd-9edf-9900a9a43a51?syn-25a6b1a6=1": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.ft.com/content/580ab1bf-4e2e-46b8-9178-dbf765645754?syn-25a6b1a6=1": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10226,6 +11441,11 @@
  "text:https://www.ft.com/content/d7fe99f8-d292-4cb5-a8fd-45be0f8cc2b3?syn-25a6b1a6=1": {
   "at": "2026-11-02T08:33:26Z",
   "ok": 1
+ },
+ "text:https://www.ft.com/content/daee9cd2-3477-4fcc-859f-46acb9fdfbd9?syn-25a6b1a6=1": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.ft.com/content/e1f6ac62-d677-4a50-94c5-25605ae71eb7": {
   "at": "2026-11-01T16:33:53Z",
@@ -10435,6 +11655,21 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.nytimes.com/2026/11/06/business/farmers-election-trump-democrats.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/06/business/global-stocks-markets-tech-ai.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/06/business/media/trump-wall-street-journal.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.nytimes.com/2026/11/06/nyregion/cornell-no-confidence-vote.html": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 0,
@@ -10442,6 +11677,16 @@
  },
  "text:https://www.nytimes.com/2026/11/06/nyregion/nyc-fire-deaths.html": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/06/science/radical-numerics-tabula-phage.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/06/science/scientists-election-congress.html": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10460,13 +11705,33 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.nytimes.com/2026/11/06/us/faa-floppy-disks-atc-2028.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.nytimes.com/2026/11/06/us/politics/chinese-spy-agency-nvidia-jensen-huang.html": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 0,
   "v": 2
  },
+ "text:https://www.nytimes.com/2026/11/06/us/politics/hegseth-trump-iran-war.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.nytimes.com/2026/11/06/us/politics/homeless-population-drop.html": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/06/us/politics/musk-trump-midterm-election-spending.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/06/us/politics/susie-wiles-calley-means-joe-rogan.html": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10485,6 +11750,16 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.nytimes.com/2026/11/06/us/thomas-markle-arrested-child-sexual-abuse.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/06/world/africa/kenya-cult-leader-prison-sentence-mass-murder-paul-mackenzie.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 0,
@@ -10492,6 +11767,11 @@
  },
  "text:https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html": {
   "at": "2026-11-07T09:36:21Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/06/world/europe/bomb-threats-flights-campaign-ireland.html": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10505,6 +11785,21 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.nytimes.com/2026/11/07/science/donald-trump-daylight-saving-time.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/07/technology/whistle-blowers-jeffrey-wigand.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/2026/11/07/world/europe/bomb-threats-cyberattacks-europe-uncertainty.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.nytimes.com/2026/11/07/world/europe/france-fourth-saturday-protests.html": {
   "at": "2026-11-07T09:44:00Z",
   "ok": 0,
@@ -10515,8 +11810,18 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.nytimes.com/2026/11/07/world/europe/ukraine-russia-war-operation-vivaldi.html": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.nytimes.com/2026/11/07/world/middleeast/eisenkot-israel-new-government.html": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.nytimes.com/article/france-student-protests-why.html": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10544,6 +11849,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.reuters.com/business/media-telecom/google-executive-donald-harrison-resigns-spacex-board-2026-11-06/": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 0,
@@ -10561,6 +11871,11 @@
  },
  "text:https://www.reuters.com/legal/government/peltola-campaign-sues-alaska-get-records-rejected-absentee-ballots-2026-11-07/": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.reuters.com/legal/government/two-top-justice-department-officials-resign-post-election-exodus-accelerates-2026-11-06/": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10592,6 +11907,11 @@
  "text:https://www.reuters.com/world/bulgaria-votes-presidential-runoff-after-tight-first-round-2026-11-01/": {
   "at": "2026-11-01T21:29:04Z",
   "ok": 1
+ },
+ "text:https://www.reuters.com/world/china/meta-pauses-planned-terms-updates-keeps-existing-rules-place-2026-11-06/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.reuters.com/world/europe/russia-says-it-hit-targets-around-kyiv-massive-overnight-strike-2026-11-07/": {
   "at": "2026-11-07T09:20:52Z",
@@ -10644,6 +11964,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.reuters.com/world/ukraines-zelenskiy-russian-forces-plan-new-strikes-energy-targets-bridges-2026-11-06/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.reuters.com/world/us-judge-throws-out-trump-election-lawsuit-alaska-2026-11-01/": {
   "at": "2026-11-01T21:29:04Z",
   "ok": 1
@@ -10654,6 +11979,11 @@
  },
  "text:https://www.reuters.com/world/us/trump-says-stephen-miller-become-chief-staff-2026-11-06/": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.reuters.com/world/us/white-house-recasts-trump-arch-military-tribute-2026-11-06/": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -10765,6 +12095,11 @@
  },
  "text:https://www.scmp.com/lifestyle/health-wellness/article/3373100/glp-1-side-effects-have-users-turning-supplements-why-doctors-are-worried": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 1,
+  "v": 2
+ },
+ "text:https://www.scmp.com/lifestyle/health-wellness/article/3373529/walking-therapy-making-strides-what-it-and-why-its-good-mental-and-physical-health": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 1,
   "v": 2
  },
@@ -11331,6 +12666,11 @@
   "at": "2026-11-01T11:26:09Z",
   "ok": 1
  },
+ "text:https://www.theguardian.com/science/2026/nov/06/better-conversation-study-pink-noise": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
+  "v": 2
+ },
  "text:https://www.theguardian.com/society/2026/nov/01/high-street-slot-farms-budget-tax-rise-business-rates-bingo-licence-loophole": {
   "at": "2026-11-01T07:35:50Z",
   "ok": 1
@@ -11374,6 +12714,11 @@
  "text:https://www.theguardian.com/technology/2026/nov/07/tiktok-sex-industry-girls-onlyfans": {
   "at": "2026-11-07T09:20:52Z",
   "ok": 1,
+  "v": 2
+ },
+ "text:https://www.theguardian.com/thefilter-us/2026/nov/06/best-personalized-custom-gift-ideas": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
   "v": 2
  },
  "text:https://www.theguardian.com/uk-news/2026/nov/01/teenagers-stabbing-halloween-party-hampshire": {
@@ -11481,6 +12826,11 @@
   "ok": 1,
   "v": 2
  },
+ "text:https://www.theguardian.com/us-news/2026/nov/06/mississippi-senate-race-vote-counting-lawyers": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
+  "v": 2
+ },
  "text:https://www.theguardian.com/us-news/2026/nov/06/secret-service-man-in-custody-trump": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 1,
@@ -11496,6 +12846,11 @@
   "ok": 1,
   "v": 2
  },
+ "text:https://www.theguardian.com/us-news/2026/nov/07/stephen-miller-democrats-react": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
+  "v": 2
+ },
  "text:https://www.theguardian.com/us-news/2026/nov/07/uk-weighs-risks-opportunities-after-trump-us-midterms-disaster": {
   "at": "2026-11-07T10:05:28Z",
   "ok": 1,
@@ -11508,6 +12863,11 @@
  "text:https://www.theguardian.com/us-news/live/2026/nov/06/us-midterm-elections-2026-democrats-blue-wave-congress-latest-news-updates": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 1,
+  "v": 2
+ },
+ "text:https://www.theguardian.com/us-news/video/2026/nov/06/texas-v-musk-how-southern-state-democrats-won-against-the-billionaire-explainer": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
   "v": 2
  },
  "text:https://www.theguardian.com/world/2026/nov/01/india-opposition-protest-rally-delhi": {
@@ -11541,6 +12901,11 @@
  "text:https://www.theguardian.com/world/2026/nov/03/russia-bombs-ukrainian-aid-centre-komyshuvakha": {
   "at": "2026-11-03T01:58:19Z",
   "ok": 1
+ },
+ "text:https://www.theguardian.com/world/2026/nov/06/activists-break-into-building-site-of-microsoft-datacentre-in-amsterdam": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
+  "v": 2
  },
  "text:https://www.theguardian.com/world/2026/nov/07/ousted-paraguay-president-under-house-arrest-after-banking-crisis-leaves-60-of-country-unable-to-access-accounts": {
   "at": "2026-11-07T09:52:30Z",
@@ -11591,8 +12956,23 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.washingtonpost.com/business/2026/11/06/musk-says-tesla-will-wind-down-cybertruck-production-texas/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.washingtonpost.com/dc-md-va/2026/11/06/man-arrested-near-white-house-threats-carrying-multiple-weapons/": {
   "at": "2026-11-07T09:52:30Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.washingtonpost.com/education/2026/11/05/college-costs-are-trending-lower-than-decade-ago/": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -11609,6 +12989,16 @@
  "text:https://www.washingtonpost.com/entertainment/2026/11/06/martha-stewarts-halloween-costume-apology-tour-ends-today-show/": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 1,
+  "v": 2
+ },
+ "text:https://www.washingtonpost.com/entertainment/2026/11/06/museum-asian-art-showcases-islamic-art-pieces-louvre/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.washingtonpost.com/health/2026/11/06/former-white-house-health-aide-accuses-trump-advisers-catering-special-interests/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
   "v": 2
  },
  "text:https://www.washingtonpost.com/nation/2026/11/01/business-jet-crashes-florida-killing-all-nine-board/": {
@@ -11628,6 +13018,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.washingtonpost.com/nation/2026/11/06/three-states-indiana-florida-alabama-carried-out-executions-thursday/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.washingtonpost.com/national-security/2026/11/01/hegseth-digs-confident-democrats-plan-go-offense/": {
   "at": "2026-11-01T21:29:04Z",
   "ok": 1
@@ -11641,6 +13036,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.washingtonpost.com/opinions/2026/11/02/2026-midterm-election-predictions-before-election-day/": {
   "at": "2026-11-03T01:58:19Z",
   "ok": 1
@@ -11648,6 +13048,21 @@
  "text:https://www.washingtonpost.com/opinions/2026/11/02/hegseth-deserves-be-impeached-or-fired/": {
   "at": "2026-11-02T19:55:52Z",
   "ok": 1
+ },
+ "text:https://www.washingtonpost.com/opinions/2026/11/06/jd-vance-ohio-ugly-maga-limits/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.washingtonpost.com/opinions/2026/11/06/jd-vance-presidential-ambitions-must-be-stymied-by-temperate-americans/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.washingtonpost.com/opinions/2026/11/06/job-seeking-age-ai-robots-read-my-cover-letter/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.washingtonpost.com/opinions/2026/11/06/trumps-wounded-presidency-turns-two-iran-ukraine-wars/": {
   "at": "2026-11-07T09:52:30Z",
@@ -11718,9 +13133,19 @@
   "at": "2026-11-02T19:55:52Z",
   "ok": 1
  },
+ "text:https://www.washingtonpost.com/politics/2026/11/05/republicans-north-carolina-lose-4-more-house-seats-gop-wipeout-spreads/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.washingtonpost.com/politics/2026/11/06/democrat-scott-wiener-wins-race-nancy-pelosis-seat-california/": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 0,
+  "v": 2
+ },
+ "text:https://www.washingtonpost.com/politics/2026/11/06/first-openly-gay-sheriff-alabama-is-navy-seal-who-vows-cut-ties-with-flock/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 1,
   "v": 2
  },
  "text:https://www.washingtonpost.com/politics/2026/11/06/florida-approved-controversial-property-tax-measure-what-comes-next/": {
@@ -11789,6 +13214,11 @@
   "at": "2026-11-02T19:55:52Z",
   "ok": 1
  },
+ "text:https://www.washingtonpost.com/world/2026/11/05/nike-is-hit-with-religious-ban-libya-because-its-name-is-greek-goddess/": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.washingtonpost.com/world/2026/11/06/midterms-give-ukrainians-cautious-hope-aid-even-trump-talks-deals-with-putin/": {
   "at": "2026-11-07T09:52:30Z",
   "ok": 0,
@@ -11799,9 +13229,24 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.wsj.com/articles/a-county-by-county-look-at-how-the-blue-wave-touched-nearly-every-part-of-america-e1dd346c": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.wsj.com/arts-culture/books/11-books-we-read-this-week-a032f427": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.wsj.com/arts-culture/books/the-idiot-dostoevskys-classic-novel-of-an-honest-man-1f1b377b": {
   "at": "2026-11-02T01:08:48Z",
   "ok": 1
+ },
+ "text:https://www.wsj.com/arts-culture/fine-art/bacon-de-kooning-review-a-surprising-first-meeting-airdigital-d8bca86e": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.wsj.com/arts-culture/fine-art/louvre-director-christophe-leribault-on-the-museums-many-crises-5aaa2a5a": {
   "at": "2026-11-07T10:05:28Z",
@@ -11812,14 +13257,29 @@
   "at": "2026-11-01T13:35:11Z",
   "ok": 1
  },
+ "text:https://www.wsj.com/business/alphabets-drone-unit-to-invest-up-to-125-million-in-new-texas-facility-d9725c3b": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.wsj.com/business/energy-oil/a-berkshire-hathaway-electric-utility-wants-a-historic-rate-hike-in-california-b7a0cc70": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.wsj.com/business/energy-oil/brent-crude-climbs-above-100-as-middle-east-oil-supply-risks-persist-caaf64bb": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
  "text:https://www.wsj.com/business/entrepreneurship/business-finance-merchant-cash-advance-37d8bc42": {
   "at": "2026-11-01T21:29:04Z",
   "ok": 1
+ },
+ "text:https://www.wsj.com/business/entrepreneurship/reader-stories-small-business-3679b083": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.wsj.com/business/retail/seth-dallaire-walmart-ef8827b5": {
   "at": "2026-11-07T10:05:28Z",
@@ -11829,6 +13289,11 @@
  "text:https://www.wsj.com/business/the-biotech-leader-who-erased-team-lanes-5850c911": {
   "at": "2026-11-02T01:08:48Z",
   "ok": 1
+ },
+ "text:https://www.wsj.com/cmo-today/can-an-ai-agent-be-your-next-cmo-at-some-small-startups-it-already-is-daca36aa": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.wsj.com/economy/central-banking/fed-needs-to-implement-at-least-two-more-rate-increases-dallas-feds-logan-says-c5003190": {
   "at": "2026-11-02T08:33:26Z",
@@ -11848,6 +13313,16 @@
  },
  "text:https://www.wsj.com/finance/stocks/midterms-markets-week-ai-trade-97b3fc5d": {
   "at": "2026-11-07T10:05:28Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.wsj.com/finance/stocks/tech-stocks-recover-some-losses-f494cd13": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
+ "text:https://www.wsj.com/finance/stocks/u-s-stocks-mixed-after-jobs-data-muted-ai-rebound-945344f6": {
+  "at": "2026-11-07T10:19:19Z",
   "ok": 0,
   "v": 2
  },
@@ -11883,6 +13358,11 @@
  "text:https://www.wsj.com/politics/elections/darline-graham-senate-race-da6227b0": {
   "at": "2026-11-02T19:55:52Z",
   "ok": 1
+ },
+ "text:https://www.wsj.com/politics/elections/five-things-to-know-about-stephen-miller-trumps-new-chief-of-staff-8436e016": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.wsj.com/politics/elections/stephen-miller-trump-chief-of-staff-56917f0a": {
   "at": "2026-11-07T09:52:30Z",
@@ -11925,6 +13405,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.wsj.com/real-estate/luxury-homes/clive-davis-manhattan-apartment-e24d1885": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
+ },
  "text:https://www.wsj.com/real-estate/luxury-homes/fashion-nova-richard-saghian-nyc-penthouse-17a8b76e": {
   "at": "2026-11-01T11:26:09Z",
   "ok": 1
@@ -11932,6 +13417,11 @@
  "text:https://www.wsj.com/real-estate/luxury-homes/the-sinking-of-a-malibu-megaproject-ce831e93": {
   "at": "2026-11-01T21:29:04Z",
   "ok": 1
+ },
+ "text:https://www.wsj.com/style/design/how-wicker-inspired-new-films-feuds-and-14-000-stools-ba8e6ba7": {
+  "at": "2026-11-07T10:19:19Z",
+  "ok": 0,
+  "v": 2
  },
  "text:https://www.wsj.com/style/fashion/playful-hats-c2aeada8": {
   "at": "2026-11-01T16:33:53Z",
