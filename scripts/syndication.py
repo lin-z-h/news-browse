@@ -103,6 +103,34 @@ _STOP = {
     "after", "before", "over", "under", "says", "said", "new", "amid",
 }
 
+_WORD_NUM = {
+    "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7,
+    "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13,
+    "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17, "eighteen": 18,
+    "nineteen": 19, "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50,
+}
+_DURATION_RE = re.compile(
+    r"(\d{1,3}|" + "|".join(_WORD_NUM) + r")\s*(years?|months?|weeks?|days?)\b", re.I)
+
+
+def _durations(text: str) -> set:
+    """标题里的时长（月）：Two Years → 24，19 Months → 19，用于拒绝同题旧文。"""
+    out = set()
+    for num, unit in _DURATION_RE.findall(text or ""):
+        val = int(num) if num.isdigit() else _WORD_NUM.get(num.lower())
+        if val is None:
+            continue
+        unit = unit.lower()
+        if unit.startswith("year"):
+            out.add(val * 12)
+        elif unit.startswith("month"):
+            out.add(val)
+        elif unit.startswith("week"):
+            out.add(val / 4.0)
+        elif unit.startswith("day"):
+            out.add(val / 30.0)
+    return out
+
 
 def _tokens(title: str) -> set:
     words = re.findall(r"[a-z0-9]+", (title or "").lower())
@@ -207,7 +235,11 @@ def _try_copy(real: str, cand_title: str, title: str, provider: dict,
         a, b = _date_ts(published), _date_ts(art.get("published"))
         if a and b and abs(a - b) > 3 * 86400:
             return None
+    # 日期没抓到时的兜底：标题时长必须相容（two years=24 months）
     found_title = art.get("title") or cand_title
+    dt, df = _durations(title), _durations(found_title)
+    if dt and df and not (dt & df):
+        return None
     overlap = _tokens(title) & _tokens(found_title)
     if len(overlap) < min(4, len(_tokens(title))):
         return None

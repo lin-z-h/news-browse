@@ -516,8 +516,8 @@ def probe_stage(items: list, cache: dict, now: float, now_iso: str, paywalled: s
 
 
 def _synd_cache_fresh(marker: dict, now: float) -> bool:
-    # v2：带 published；旧的 v1 命中（可能是同题旧文）全部失效重查
-    if marker.get("v") != 2:
+    # v3：带 published + 时长校验；旧的 v1/v2 命中（可能是同题旧文）全部失效重查
+    if marker.get("v") != 3:
         return False
     ts = cache_store.parse_iso(marker.get("at"))
     if not ts:
@@ -596,13 +596,13 @@ def syndication_stage(items: list, cache: dict, now: float, now_iso: str,
                 if not item.get("image") and res.get("image"):
                     item["image"] = res["image"]
                 payloads[item["url"]] = res
-                cache[key] = {"at": now_iso, "ok": 1, "v": 2, "url": res["url"],
+                cache[key] = {"at": now_iso, "ok": 1, "v": 3, "url": res["url"],
                               "title": res.get("title"), "image": res.get("image"),
                               "published": res.get("published"),
                               "provider": res.get("provider")}
                 _log(f"[synd] {item['source']} ← {res.get('provider')}: {res['url'][:80]}")
             else:
-                cache[key] = {"at": now_iso, "ok": 0, "v": 2}
+                cache[key] = {"at": now_iso, "ok": 0, "v": 3}
     return payloads
 
 
