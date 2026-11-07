@@ -411,7 +411,8 @@
   }
 
   // TVB 文章正文在 Nuxt __NUXT_DATA__ 的 content/content_hk
-  function tvbBody(doc) {
+  function tvbBody(doc, url) {
+    if (!/news\.tvb\.com/i.test(String(url || ""))) return null;
     const sc = doc.querySelector('script#__NUXT_DATA__,script[id="__NUXT_DATA__"]');
     if (!sc) return null;
     let arr;
@@ -422,6 +423,9 @@
       if (Number.isInteger(x) && x > 0 && x < arr.length) return deref(arr[x], (d || 0) + 1);
       return x;
     };
+    const m = String(url || "").match(/\/(?:en|tc|sc)\/(\d+)/);
+    const wanted = m ? Number(m[1]) : null;
+    let best = null, bestLen = 0;
     for (const v of arr) {
       if (!v || typeof v !== "object" || !("content" in v) || !("title_hk" in v)) continue;
       const body = deref(v.content_hk || v.content);
@@ -431,20 +435,23 @@
       const paras = [...tmp.querySelectorAll("p")]
         .map(p => (p.textContent || "").replace(/\s+/g, " ").trim())
         .filter(t => t.length >= 10);
-      if (paras.length) return paras;
+      if (!paras.length) continue;
+      const len = paras.join("").length;
+      if (wanted !== null && Number(deref(v.id)) === wanted) return paras;
+      if (len > bestLen) { best = paras; bestLen = len; }
     }
-    return null;
+    return best;
   }
 
   // Wayback 快照直接抓取的解析：jina 永久封禁 web.archive.org 域，经 jina 必失败，
   // 而 wayback 页面本身支持 CORS，直接 fetch + DOM 提取正文（剔除 wayback 工具条与站点家具）
-  function denoiseWaybackDoc(html, title, host) {
+  function denoiseWaybackDoc(html, title, host, url) {
     let doc;
     try { doc = new DOMParser().parseFromString(html, "text/html"); } catch (e) { return null; }
     const bodyText = doc.body ? doc.body.textContent : "";
     if (GARBAGE_RE.test(bodyText.slice(0, 3000))) return null;
     // 先试 JSON-LD 与 TVB Nuxt（原生直连原文/转载版都走这里）
-    const tvb = tvbBody(doc);
+    const tvb = tvbBody(doc, url);
     if (tvb) {
       const blocks = tvb.map(t => ({ text: t, head: false }));
       if (readerQualityOk(blocks) && !paywallTeaser(blocks, host)) return { blocks, esc: escText };
@@ -628,7 +635,7 @@
     // 2) 本地抓取缓存（md=jina markdown；kind=wb 存的是 wayback HTML）
     const hit = readCache[it.url];
     if (hit && hit.md) {
-      const den = hit.kind === "wb" ? denoiseWaybackDoc(hit.md, it.title, host) : denoiseReader(hit.md, host, it.title);
+      const den = hit.kind === "wb" ? denoiseWaybackDoc(hit.md, it.title, host, it.url) : denoiseReader(hit.md, host, it.title);
       if (den) { renderReaderBody(den); return; }
     }
     rBody.innerHTML = '<div class="rspin"></div><div class="rstat" id="rstat">正在获取正文…</div>';
@@ -663,7 +670,7 @@
         const html = await nativeHtml(it.id + ":html:" + label, u, ctrl, 20000);
         if (ctrl.signal.aborted) return;
         if (!html) continue;
-        const d = denoiseWaybackDoc(html, it.title, _host(u));
+        const d = denoiseWaybackDoc(html, it.title, _host(u), u);
         if (d) {
           renderReaderBody(d);
           readCache[it.url] = { ts: Date.now(), md: html, src: "native-html", kind: "wb" };
@@ -736,7 +743,7 @@
         const html = await nativeWayback(it, ctrl);
         if (ctrl.signal.aborted) throw new Error("aborted");
         if (html) {
-          den = denoiseWaybackDoc(html, it.title, host);
+          den = denoiseWaybackDoc(html, it.title, host, it.url);
           if (den) { gotText = html; via = "wb"; }
         }
       }
