@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T12:53:13Z",
+ "generated_at": "2026-11-07T13:07:55Z",
  "sources": [
   "Bloomberg",
   "The New York Times",
@@ -15,6 +15,123 @@
   "TVB"
  ],
  "items": [
+  {
+   "id": "79e17292589d",
+   "title": "Musk fled California for Texas. Now his red-state refuge is in revolt. - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-07T13:02:41Z",
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/DGTXVHBOWBHN5IH2YYMOEAYGZA.jpg&amp;w=1440",
+   "url": "https://www.washingtonpost.com/technology/2026/11/07/musk-fled-california-texas-now-his-red-state-refuge-is-revolt/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "7d33bcafae89",
+   "title": "Despite midterm rebuke of Trump, allies see U.S. turning further away - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-07T13:02:37Z",
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/2GVOUZCXOYQSM2EZSPRE6SDH7E.JPG&amp;w=1440",
+   "url": "https://www.washingtonpost.com/world/2026/11/07/despite-midterm-rebuke-trump-allies-see-us-turning-further-away/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "875adb7be078",
+   "title": "When the great-grandson of an enslaved man beat the grandson of a president - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-07T13:02:36Z",
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/VSXER7O6V2SUONUPCABMLBTCHE.jpg&amp;w=1440",
+   "url": "https://www.washingtonpost.com/nation/2026/11/07/when-great-grandson-an-enslaved-man-beat-grandson-president/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "4b05da619487",
+   "title": "Berkshire Hathaway’s Operating Earnings Fall, Buybacks Rise",
+   "source": "Bloomberg",
+   "topic": "Markets",
+   "published": "2026-11-07T13:01:21Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/articles/2026-11-07/berkshire-hathaway-s-operating-earnings-fall-buybacks-rise",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "2aff89d741be",
+   "title": "SCMP Best Bets: Delight a Hot prospect for punters at Sha Tin",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T13:00:09Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/2026/11/07/win.jpeg?itok=EN-l1Apq",
+   "url": "https://www.scmp.com/sport/racing/article/3373656/scmp-best-bets-delight-hot-prospect-punters-sha-tin",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "25db57bea725",
+   "title": "Law Firms Have Malpractice Insurance. Should Their A.I. Agents?",
+   "source": "The New York Times",
+   "topic": "Business",
+   "published": "2026-11-07T13:00:06Z",
+   "image": "https://static01.nyt.com/images/2026/11/07/multimedia/07DB-AI-INSURANCE-01-qkvt/07DB-AI-INSURANCE-01-qkvt-mediumSquareAt3X.jpg",
+   "url": "https://www.nytimes.com/2026/11/07/business/dealbook/crosby-ai-agent-liability-malpractice-insurance.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "532125cbaaa1",
+   "title": "Crypto’s Trump-Fueled Washington Boom Reaches Its Endgame",
+   "source": "Bloomberg",
+   "topic": "Markets",
+   "published": "2026-11-07T13:00:00Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/articles/2026-11-07/crypto-s-trump-fueled-washington-boom-reaches-its-endgame",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "a9adee4d71eb",
+   "title": "What Michelle Goldberg Learned From the Most Exciting Democrats",
+   "source": "The New York Times",
+   "topic": "Top",
+   "published": "2026-11-07T12:56:13Z",
+   "image": "https://static01.nyt.com/images/2026/11/07/opinion/07eks-goldberg-image01/07eks-goldberg-image01-mediumSquareAt3X.png",
+   "url": "https://www.nytimes.com/2026/11/07/opinion/ezra-klein-podcast-michelle-goldberg.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "31212707ca79",
+   "title": "AI Trade Faces a Post-Election Reality Check",
+   "source": "Bloomberg",
+   "topic": "Tech",
+   "published": "2026-11-07T12:50:00Z",
+   "image": null,
+   "url": "https://www.bloomberg.com/news/videos/2026-11-07/ai-trade-faces-a-post-election-reality-check-video",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
   {
    "id": "2050cc9f2667",
    "title": "This Israeli Vows to Oust Netanyahu. Here’s How.",
@@ -159,19 +276,6 @@
    "published": "2026-11-07T12:04:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026wJPdcN6rts1794053106.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205124",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "a9adee4d71eb",
-   "title": "How the Democrats Did It",
-   "source": "The New York Times",
-   "topic": "Top",
-   "published": "2026-11-07T12:02:33Z",
-   "image": "https://static01.nyt.com/images/2026/11/07/opinion/07eks-goldberg-image01/07eks-goldberg-image01-mediumSquareAt3X.png",
-   "url": "https://www.nytimes.com/2026/11/07/opinion/ezra-klein-podcast-michelle-goldberg.html",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -397,32 +501,6 @@
    "cover_only": false
   },
   {
-   "id": "7d33bcafae89",
-   "title": "Despite midterm rebuke of Trump, allies see U.S. turning further away - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-07T11:32:37Z",
-   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/2GVOUZCXOYQSM2EZSPRE6SDH7E.JPG&amp;w=1440",
-   "url": "https://www.washingtonpost.com/world/2026/11/07/despite-midterm-rebuke-trump-allies-see-us-turning-further-away/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "875adb7be078",
-   "title": "When the great-grandson of an enslaved man beat the grandson of a president - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-07T11:32:36Z",
-   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/VSXER7O6V2SUONUPCABMLBTCHE.jpg&amp;w=1440",
-   "url": "https://www.washingtonpost.com/nation/2026/11/07/when-great-grandson-an-enslaved-man-beat-grandson-president/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "a17c8438c564",
    "title": "Meloni Blames Pro-Russia Hackers for Cyberattack on Minister",
    "source": "Bloomberg",
@@ -486,6 +564,19 @@
    "url": "https://www.scmp.com/news/china/diplomacy/article/3373651/manila-weighs-second-south-china-sea-legal-case-against-beijing-analyst",
    "_direct": true,
    "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "647baeea3b22",
+   "title": "EXCLUSIVE: Rubio seeks to impose order at State as Republicans look ahead to 2028 - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-07T11:07:59Z",
+   "image": null,
+   "url": "https://www.reuters.com/world/us/rubio-seeks-impose-order-state-republicans-look-ahead-2028-2026-11-07/",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -627,6 +718,20 @@
    "cover_only": false
   },
   {
+   "id": "6144e8a986c7",
+   "title": "Giant panda duo greets public in Atlanta after month-long quarantine",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T10:57:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026KDqvB9sd1K1794052481.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205113",
+   "_direct": true,
+   "status": "direct",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "885617ce979d",
    "title": "Trump names new chief of staff after election shakeup",
    "source": "TVB",
@@ -734,19 +839,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "8f76b689cf99",
-   "title": "Top Prosecutor Overseeing Conspiracy Probe of Trump Foes Resigns - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-07T10:16:36Z",
-   "image": null,
-   "url": "https://www.wsj.com/politics/policy/top-prosecutor-overseeing-conspiracy-probe-of-trump-foes-resigns-c9bb4d94",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "0ab0e52a00f4",
@@ -1099,20 +1191,6 @@
    "cover_only": false
   },
   {
-   "id": "b12c876af51d",
-   "title": "3 arrested on suspicion of involvement in craft beer scam",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T09:47:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20268XHc32VfRQ1794046453.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205104",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "ad7ce0d0cb33",
    "title": "Paraguay swears in Pedro Alliana as president amid banking crisis",
    "source": "TVB",
@@ -1127,13 +1205,13 @@
    "cover_only": false
   },
   {
-   "id": "fda1f5ef899b",
-   "title": "Cold front to sweep across HK starting Monday",
+   "id": "b12c876af51d",
+   "title": "3 arrested on suspicion of involvement in craft beer scam",
    "source": "TVB",
    "topic": "Hong Kong",
    "published": "2026-11-07T09:47:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026n7bftiuXVs1794046601.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205103",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20268XHc32VfRQ1794046453.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205104",
    "_direct": true,
    "status": "direct",
    "archive_url": null,
@@ -1141,13 +1219,13 @@
    "cover_only": false
   },
   {
-   "id": "e6dca24ce7ff",
-   "title": "Decennial Tai Ping Ching Chiu parade held in Shek O",
+   "id": "fda1f5ef899b",
+   "title": "Cold front to sweep across HK starting Monday",
    "source": "TVB",
    "topic": "Hong Kong",
-   "published": "2026-11-07T09:46:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026iVsHPIPoRz1794046657.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1205102",
+   "published": "2026-11-07T09:47:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026n7bftiuXVs1794046601.jpg?x-oss-process=image/resize,w_600",
+   "url": "https://news.tvb.com/en/1205103",
    "_direct": true,
    "status": "direct",
    "archive_url": null,
@@ -2204,6 +2282,19 @@
    "cover_only": true
   },
   {
+   "id": "991fd7bca220",
+   "title": "Wall Street Gets $2.5 Trillion AI Reality Check With Historic Rout of Tech Stocks - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T05:57:56Z",
+   "image": null,
+   "url": "https://www.wsj.com/print-edition/20261106/frontpage",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "2887d893e5a0",
    "title": "Tanzanian opposition leader found guilty of ‘incitement,’ handed 4-year sentence - The Washington Post",
    "source": "The Washington Post",
@@ -2786,15 +2877,14 @@
    "cover_only": false
   },
   {
-   "id": "45a12af98ce5",
+   "id": "3ac2cd05a403",
    "title": "US firm Equinix opens sixth Singapore data centre with investment of over S$370 million - 联合早报",
    "source": "Lianhe Zaobao (EN)",
    "topic": "Singapore",
    "published": "2026-11-07T04:13:54Z",
    "image": "https://cassette.sphdigital.com.sg/image/zaobao/b42ae8a3c72b58710150e6b871168f4bbbed695e43a3b12c6c9fa4bb0508786e",
-   "url": "https://www.zaobao.com.sg/en/finance/singapore/us-firm-equinix-opens-sixth-singapore-data-centre-investment-over-s370-million?ref=today-newsen-section-card-1",
-   "_direct": true,
-   "status": "direct",
+   "url": "https://www.zaobao.com.sg/en/finance/singapore/us-firm-equinix-opens-sixth-singapore-data-centre-investment-over-s370-million",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -3057,6 +3147,19 @@
    "cover_only": false
   },
   {
+   "id": "295756811967",
+   "title": "A Soldier Cut Off His Own Foot to Survive. Then Came a Daring Drone Rescue. - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-07T03:02:44Z",
+   "image": null,
+   "url": "https://www.wsj.com/world/europe/ukraine-war-drone-rescue-c2e59cd6",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "5c1a467688bd",
    "title": "Democrats blast Trump’s decision to make Stephen Miller his chief of staff as president defends picking loyal ‘MVP’ - as it happened",
    "source": "The Guardian",
@@ -3238,10 +3341,10 @@
    "source": "Bloomberg",
    "topic": "Markets",
    "published": "2026-11-07T02:26:22Z",
-   "image": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
+   "image": "https://wimg.sedaily.com/news/cms/2026/11/07/rcv.NEWS1.NEWS1.20261026.2026-10-26T151704_1008179315_LOCAL_I_P1.jpg",
    "url": "https://www.bloomberg.com/news/articles/2026-11-07/china-extends-gold-buying-streak-to-two-years-as-prices-drop",
-   "syndicated_url": "https://finance.yahoo.com/economy/policy/articles/china-central-bank-extends-gold-051634782.html",
-   "syndicated_title": "China’s central bank extends gold-buying streak to 19 months",
+   "syndicated_url": "https://en.sedaily.com/international/2026/11/07/chinas-central-bank-extends-gold-buying-streak-to-24-months",
+   "syndicated_title": "China's Central Bank Extends Gold Buying Streak to 24 Months",
    "_direct": true,
    "status": "direct",
    "archive_url": null,
@@ -3409,19 +3512,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "2b924cfc63c2",
-   "title": "Ten Months of War to Gain 46 Square Miles: How Russia Is Failing on the Battlefield - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-07T01:34:24Z",
-   "image": null,
-   "url": "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "ae25133a15f7",
@@ -3738,20 +3828,6 @@
    "published": "2026-11-07T00:00:47Z",
    "image": "https://i.guim.co.uk/img/media/78f703913b8bb129d666b06187eb2aca13440d34/605_20_5235_4187/master/5235.jpg?width=140&quality=85&auto=format&fit=max&s=19e0ad91d347cb864bad8a4a0d7ddef5",
    "url": "https://www.theguardian.com/culture/2026/nov/06/russell-brand-trial-other-women",
-   "_direct": true,
-   "status": "direct",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "11def4583f2e",
-   "title": "Hong Kong grows in popularity for open water swimmers, but some logistics issues remain",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:00:17Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/d5593ea1-3c60-415b-969c-673c2e418f8d_e9244a53.jpg?itok=rVHt_d7r&v=1793949119",
-   "url": "https://www.scmp.com/sport/hong-kong/article/3373522/hong-kong-grows-popularity-open-water-swimmers-some-logistics-issues-remain",
    "_direct": true,
    "status": "direct",
    "archive_url": null,
@@ -4746,19 +4822,6 @@
    "cover_only": false
   },
   {
-   "id": "aa07010971e5",
-   "title": "Retail Traders Cautiously Buy Stocks After Worst Rout Since 2025",
-   "source": "Bloomberg",
-   "topic": "Markets",
-   "published": "2026-11-06T21:05:54Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/retail-traders-cautiously-buy-stocks-after-worst-rout-since-2025",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "fa11addfd017",
    "title": "How Elon Musk Frittered Away Nearly $500 Million on the Midterm Elections",
    "source": "The New York Times",
@@ -4927,19 +4990,6 @@
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "6027b233a24a",
-   "title": "Jay Rockefeller, Senate voice on health care and security, dies at 89 - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-06T20:42:42Z",
-   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/RHO5U52PYAQLVSKRLEX3W2B4PA.JPG&amp;w=1440",
-   "url": "https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": "http://web.archive.org/web/20261106205553/https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/",
    "cover_only": false
   },
   {
@@ -5199,6 +5249,19 @@
    "published": "2026-11-06T20:00:00Z",
    "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/IBGAEXYJZIMXWCE65B5MREECFM_size-normalized.jpg&amp;w=1440",
    "url": "https://www.washingtonpost.com/opinions/2026/11/06/jd-vance-presidential-ambitions-must-be-stymied-by-temperate-americans/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "be51e65d90d7",
+   "title": "Opinion | What the midterms proved about the ‘God gap’ - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-06T20:00:00Z",
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/WZS7HQABEBG6LOI2EB626ZFIZ4.jpg&amp;w=1440",
+   "url": "https://www.washingtonpost.com/opinions/2026/11/06/midterms-show-power-faith-democratic-party/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -5538,6 +5601,19 @@
    "cover_only": true
   },
   {
+   "id": "23df4d5a6f3d",
+   "title": "The 2028 Election Map Just Broke Wide Open - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T19:03:59Z",
+   "image": null,
+   "url": "https://www.wsj.com/politics/elections/2028-election-president-battleground-map-3b8567b9",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "17d30e0356f4",
    "title": "How will the midterm results change US politics? You asked, we answered",
    "source": "Financial Times",
@@ -5640,19 +5716,6 @@
    "status": "challenge",
    "archive_url": null,
    "wayback_url": "http://web.archive.org/web/20261106211845/https://www.washingtonpost.com/food/2026/11/06/we-tried-3d-printed-meat-wished-we-hadnt/",
-   "cover_only": false
-  },
-  {
-   "id": "b1ac9d1231b4",
-   "title": "Why more people are turning to native gardens in D.C. - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-06T19:00:00Z",
-   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/W75OMCYDFAU2CEW3CIFVQLKVTU_size-normalized.JPG&amp;w=1440",
-   "url": "https://www.washingtonpost.com/climate-environment/2026/11/06/why-more-people-are-turning-native-gardens-dc/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
    "cover_only": false
   },
   {
@@ -5762,19 +5825,6 @@
    "cover_only": true
   },
   {
-   "id": "0d61f91f11f4",
-   "title": "Anthropic IPO Investors Weigh Valuation as Low as $1.2 Trillion",
-   "source": "Bloomberg",
-   "topic": "Tech",
-   "published": "2026-11-06T18:47:46Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/videos/2026-11-06/anthropic-ipo-investors-weigh-valuation-as-low-as-1-2t-video",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "57f1e8d811f9",
    "title": "NWSL May Move Playoff Games Amid Schedule Conflict With Men’s Teams Like WNBA",
    "source": "Bloomberg",
@@ -5788,13 +5838,13 @@
    "cover_only": true
   },
   {
-   "id": "23df4d5a6f3d",
-   "title": "The 2028 Election Map Just Broke Wide Open - WSJ",
+   "id": "8f76b689cf99",
+   "title": "Top Prosecutor Overseeing Conspiracy Probe of Trump Foes Resigns - WSJ",
    "source": "WSJ",
    "topic": "Top",
-   "published": "2026-11-06T18:31:35Z",
+   "published": "2026-11-06T18:39:00Z",
    "image": null,
-   "url": "https://www.wsj.com/politics/elections/2028-election-president-battleground-map-3b8567b9",
+   "url": "https://www.wsj.com/politics/policy/top-prosecutor-overseeing-conspiracy-probe-of-trump-foes-resigns-c9bb4d94",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -6383,7 +6433,6 @@
    "published": "2026-11-06T17:14:31Z",
    "image": "https://i.guim.co.uk/img/media/1f88c9a52100be8318eb3a96107a54f59d0a5606/205_0_4147_3317/master/4147.jpg?width=140&quality=85&auto=format&fit=max&s=019361f7d5bba2227ccd0b0797d26c42",
    "url": "https://www.theguardian.com/world/2026/nov/06/further-bomb-threats-disrupt-flights-across-europe",
-   "_direct": true,
    "status": "direct",
    "archive_url": null,
    "wayback_url": null,
@@ -7248,6 +7297,19 @@
    "cover_only": false
   },
   {
+   "id": "62d6521c9d39",
+   "title": "‘Claude Monet’ Review: Lasting Impressions - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T15:15:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/arts-culture/books/claude-monet-review-lasting-impressions-779d8178",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
    "id": "a3f3ffaee7ce",
    "title": "US Measles Cases Top 5,000 for the First Time Since the 1990s",
    "source": "Bloomberg",
@@ -7268,19 +7330,6 @@
    "published": "2026-11-06T15:14:29Z",
    "image": null,
    "url": "https://www.reuters.com/world/uk/russell-brand-convicted-rape-now-likely-face-more-allegations-says-uk-police-2026-11-06/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "7026e6976cbc",
-   "title": "Bomb threats warning 'the clock is ticking' disrupt TV channels across Europe - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-06T15:09:49Z",
-   "image": null,
-   "url": "https://www.reuters.com/world/bomb-threats-warning-the-clock-is-ticking-disrupt-tv-channels-across-europe-2026-11-06/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -7487,7 +7536,7 @@
    "source": "The Washington Post",
    "topic": "Top",
    "published": "2026-11-06T14:18:33Z",
-   "image": null,
+   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/Y4NXUGF3L7LR26EZQNMLVPOKMY_size-normalized.JPG&amp;w=1440",
    "url": "https://www.washingtonpost.com/politics/2026/11/05/trump-wants-his-arch-approved-thursday-and-immediately-start-work/",
    "status": "challenge",
    "archive_url": null,
@@ -7558,6 +7607,19 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
+  },
+  {
+   "id": "2b924cfc63c2",
+   "title": "Ten Months of War to Gain 46 Square Miles: How Russia Is Failing on the Battlefield - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T14:04:24Z",
+   "image": null,
+   "url": "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
   },
   {
    "id": "5b7826cd2de6",
@@ -9055,6 +9117,19 @@
    "cover_only": false
   },
   {
+   "id": "b1c459cc62fa",
+   "title": "New wave of bomb hoaxes hits dozens of flights across Europe - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-06T06:51:11Z",
+   "image": null,
+   "url": "https://www.reuters.com/business/aerospace-defense/bomb-alert-diverts-airbus-a320-plane-going-dublin-rome-french-pm-says-2026-11-05/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "b9de78c3c5d3",
    "title": "Open AI makes pledges on data center operation after midterm backlash - The Washington Post",
    "source": "The Washington Post",
@@ -9088,7 +9163,7 @@
    "published": "2026-11-06T06:45:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026fj6YBikdlk1793942755.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204913",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9192,7 +9267,7 @@
    "published": "2026-11-06T06:16:22Z",
    "image": "https://i.guim.co.uk/img/media/a77eebbaa9a34c6ba08a7521d0b9d7e55650da11/1666_5_3949_3159/master/3949.jpg?width=140&quality=85&auto=format&fit=max&s=e82620f109a326e6d5b5cff3740166e3",
    "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9218,7 +9293,7 @@
    "published": "2026-11-06T06:06:14Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/finance/singapore/singapore-retail-sales-rise-1-7-year-year-september-extending-gains-eight-months",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9335,7 +9410,7 @@
    "published": "2026-11-06T05:47:16Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/entertainment/matilda-taos-missed-electricity-bill-leaves-singapore-home-without-power-jokes-she-exempt-ai-threat",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9465,7 +9540,7 @@
    "published": "2026-11-06T05:01:43Z",
    "image": "https://i.guim.co.uk/img/media/a5c3d6d068c51d99fc6bbfc19da3d05aff7bddb8/157_105_2569_2055/master/2569.jpg?width=140&quality=85&auto=format&fit=max&s=4284b76616ea345f99ad5f8f116795ea",
    "url": "https://www.theguardian.com/tv-and-radio/2026/nov/06/awkwafina-the-unlikely-cook-review",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9491,7 +9566,7 @@
    "published": "2026-11-06T05:00:44Z",
    "image": "https://i.guim.co.uk/img/media/d461f59fb9214d97e5aaa4575eb283294777e9c9/541_0_6830_5464/master/6830.jpg?width=140&quality=85&auto=format&fit=max&s=023af475c7d85b44ea2d708f35bb2c26",
    "url": "https://www.theguardian.com/music/2026/nov/06/its-a-new-world-its-a-little-fascistic-and-it-needs-a-different-response-u2-on-50-years-together-and-their-undimmed-faith-in-humanity",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9718,19 +9793,6 @@
    "cover_only": true
   },
   {
-   "id": "d3618cd573d8",
-   "title": "SoftBank credit risk jumps to 4-year high, shares tumble as AI fears roil market - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-06T03:20:00Z",
-   "image": null,
-   "url": "https://www.reuters.com/business/media-telecom/softbank-cds-softbank-cds-2026-11-06/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "4bb98b69f55d",
    "title": "張文慈公開香港居所！中港兩邊走照顧年老爸爸",
    "source": "TVB",
@@ -9738,7 +9800,7 @@
    "published": "2026-11-06T03:19:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/file/2026/11/2026fbQ4ea8wZY1793935187.webp?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204889",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9764,7 +9826,7 @@
    "published": "2026-11-06T03:00:41Z",
    "image": "https://i.guim.co.uk/img/media/681b85fa1fe139fd9043297805c0cc003cf0c294/593_0_2973_2378/master/2973.jpg?width=140&quality=85&auto=format&fit=max&s=8b53c52c69121155ff38c0e94e897adf",
    "url": "https://www.theguardian.com/news/audio/2026/nov/06/the-crimes-of-russell-brand-podcast",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9842,12 +9904,10 @@
    "published": "2026-11-06T02:00:00Z",
    "image": null,
    "url": "https://www.wsj.com/politics/policy/elizabeth-warrens-power-in-new-senate-is-a-wall-street-nightmare-dff8fb6e",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
-   "wayback_url": "http://web.archive.org/web/20261106172714/https://www.wsj.com/politics/policy/elizabeth-warrens-power-in-new-senate-is-a-wall-street-nightmare-dff8fb6e",
-   "syndicated_url": "https://finance.yahoo.com/economy/policy/articles/wall-street-critic-elizabeth-warren-110834217.html",
-   "syndicated_title": "Wall Street critic Elizabeth Warren could be at the height of her power in new Congress",
-   "cover_only": false
+   "wayback_url": null,
+   "cover_only": true
   },
   {
    "id": "6f233c1f01f0",
@@ -9860,19 +9920,6 @@
    "status": "challenge",
    "archive_url": null,
    "wayback_url": "http://web.archive.org/web/20261106052819/https://www.wsj.com/politics/elections/democrats-are-hatching-a-plan-to-reverse-trumps-canada-tariffs-a444cdc0",
-   "cover_only": true
-  },
-  {
-   "id": "295756811967",
-   "title": "A Soldier Cut Off His Own Foot to Survive. Then Came a Daring Drone Rescue. - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T02:00:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/world/europe/ukraine-war-drone-rescue-c2e59cd6",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
    "cover_only": true
   },
   {
@@ -9948,7 +9995,7 @@
    "published": "2026-11-06T01:00:00Z",
    "image": null,
    "url": "https://www.zaobao.com.sg/en/news/singapore/lianhe-zaobao-english-edition-launch-welcomed-across-sectors-tan-kiat-how-says-it-can-deepen",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -9961,7 +10008,7 @@
    "published": "2026-11-06T00:59:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026EGCTU24wDv1793881814.png?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204792",
-   "status": "challenge",
+   "status": "direct",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -10420,19 +10467,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
-  },
-  {
-   "id": "7730cb8ab1f0",
-   "title": "Chip Stocks Climb After Rout, But AI Doubts Linger: Markets Wrap",
-   "source": "Bloomberg",
-   "topic": "Markets",
-   "published": "2026-11-05T22:17:59Z",
-   "image": null,
-   "url": "https://www.bloomberg.com/news/articles/2026-11-05/stock-market-today-dow-s-p-live-updates",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "3420c7878d95",
@@ -11176,19 +11210,6 @@
    "cover_only": false
   },
   {
-   "id": "5fbf6ccbe5c4",
-   "title": "What the midterms taught us about the future of the Democratic Party - The Washington Post",
-   "source": "The Washington Post",
-   "topic": "Top",
-   "published": "2026-11-05T18:00:00Z",
-   "image": null,
-   "url": "https://www.washingtonpost.com/politics/2026/11/05/what-midterms-taught-us-about-future-democratic-party/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "35197bdd189e",
    "title": "The U.S. spent 50 years trying to escape oil shocks. They still upend elections. - The Washington Post",
    "source": "The Washington Post",
@@ -11196,6 +11217,19 @@
    "published": "2026-11-05T18:00:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/business/2026/11/05/us-spent-50-years-trying-escape-oil-shocks-they-still-upend-elections/",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "5fbf6ccbe5c4",
+   "title": "What the midterms taught us about the future of the Democratic Party - The Washington Post",
+   "source": "The Washington Post",
+   "topic": "Top",
+   "published": "2026-11-05T18:00:00Z",
+   "image": null,
+   "url": "https://www.washingtonpost.com/politics/2026/11/05/what-midterms-taught-us-about-future-democratic-party/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -11551,19 +11585,6 @@
    "archive_url": null,
    "wayback_url": "http://web.archive.org/web/20261106221715/https://time.com/article/2026/11/05/ai-cheating-scientists-report-alignment/",
    "cover_only": false
-  },
-  {
-   "id": "19b73f6c5172",
-   "title": "What to Know About Trump’s Veto Power - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-05T15:36:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/politics/policy/what-to-know-about-trumps-veto-power-3fd31dd9",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
   },
   {
    "id": "1212da89a1c7",
@@ -12164,19 +12185,6 @@
    "cover_only": false
   },
   {
-   "id": "82556e671ee0",
-   "title": "Remote-Patient Monitoring Companies Dodge Medicare Shift—For Now - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-05T13:06:00Z",
-   "image": null,
-   "url": "https://www.wsj.com/pro/venture-capital/remote-patient-monitoring-companies-dodge-medicare-shiftfor-now-73165f70",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "ab75e6877f96",
    "title": "Politicians, voters really don’t care about your broad statistics",
    "source": "Financial Times",
@@ -12632,19 +12640,6 @@
    "cover_only": false
   },
   {
-   "id": "b1c459cc62fa",
-   "title": "New wave of bomb hoaxes hits dozens of flights across Europe - Reuters",
-   "source": "Reuters",
-   "topic": "Wire",
-   "published": "2026-11-05T08:55:00Z",
-   "image": null,
-   "url": "https://www.reuters.com/business/aerospace-defense/bomb-alert-diverts-airbus-a320-plane-going-dublin-rome-french-pm-says-2026-11-05/",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "c851a1456455",
    "title": "The New Zealand Election That Could ‘Flip the Table’",
    "source": "The New York Times",
@@ -12847,6 +12842,19 @@
    "published": "2026-11-05T00:31:07Z",
    "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04cli-energy-midterms-wmvb/04cli-energy-midterms-wmvb-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/04/climate/trump-fossil-fuel-energy-policy-election.html",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "2f956ad900ea",
+   "title": "Seven numbers that explain Democrats' US midterm triumph - Reuters",
+   "source": "Reuters",
+   "topic": "Wire",
+   "published": "2026-11-04T23:36:32Z",
+   "image": null,
+   "url": "https://www.reuters.com/world/us/seven-numbers-that-explain-democrats-us-midterm-rout-2026-11-04/",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -13607,19 +13615,6 @@
    "cover_only": false
   },
   {
-   "id": "e1e59bd37445",
-   "title": "Gaming Out the Prospect of a Blue Wave",
-   "source": "The New York Times",
-   "topic": "Business",
-   "published": "2026-11-03T15:27:12Z",
-   "image": "https://static01.nyt.com/images/2026/11/03/multimedia/03db-elections-bvhw/03db-elections-bvhw-mediumSquareAt3X.jpg",
-   "url": "https://www.nytimes.com/2026/11/03/business/dealbook/blue-wave-business-market-ramifications.html",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "491a75bad632",
    "title": "Plot Twist newsletter: Winston Churchill and the power of hobbies",
    "source": "The Economist",
@@ -13904,6 +13899,19 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
+  },
+  {
+   "id": "5c2a6aa191ad",
+   "title": "[Perspective] How a small state should express its anger - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-11-02T11:00:00Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/forum/views/perspective-how-small-state-should-express-its-anger",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
   },
   {
    "id": "b4064da2ad72",
