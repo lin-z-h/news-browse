@@ -1161,8 +1161,5 @@
   });
   applyTheme();
 
-  // 调试入口（adb DevTools 用；不参与业务）
-  window.__journalDebug = { denoiseWaybackDoc, tvbBody, readerQualityOk, openReader };
-
   load();
 })();

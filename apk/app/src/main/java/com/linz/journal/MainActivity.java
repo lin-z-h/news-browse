@@ -111,7 +111,6 @@ public class MainActivity extends Activity {
 
         root = new FrameLayout(this);
         web = new WebView(this);
-        WebView.setWebContentsDebuggingEnabled(true); // 便于 adb/DevTools 排查网页问题
         root.addView(web, new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
