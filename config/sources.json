@@ -10,7 +10,10 @@
       "feeds": [
         {"url": "https://feeds.bloomberg.com/markets/news.rss", "topic": "Markets"},
         {"url": "https://feeds.bloomberg.com/technology/news.rss", "topic": "Tech"},
-        {"url": "https://feeds.bloomberg.com/politics/news.rss", "topic": "Politics"}
+        {"url": "https://feeds.bloomberg.com/politics/news.rss", "topic": "Politics"},
+        {"url": "https://feeds.bloomberg.com/economics/news.rss", "topic": "Economics"},
+        {"url": "https://feeds.bloomberg.com/industries/news.rss", "topic": "Industries"},
+        {"url": "https://feeds.bloomberg.com/crypto/news.rss", "topic": "Crypto"}
       ]
     },
     {
@@ -23,7 +26,9 @@
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "topic": "World"},
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml", "topic": "Business"},
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml", "topic": "Tech"},
-        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "topic": "Science"}
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "topic": "Science"},
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml", "topic": "Health"},
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml", "topic": "Climate"}
       ]
     },
     {
@@ -52,7 +57,11 @@
          "api": {"kind": "guardian", "section": "world"}},
         {"url": "https://www.theguardian.com/business/rss", "topic": "Business"},
         {"url": "https://www.theguardian.com/technology/rss", "topic": "Tech"},
-        {"url": "https://www.theguardian.com/opinion/rss", "topic": "Opinion"}
+        {"url": "https://www.theguardian.com/opinion/rss", "topic": "Opinion"},
+        {"url": "https://www.theguardian.com/us-news/rss", "topic": "US"},
+        {"url": "https://www.theguardian.com/uk-news/rss", "topic": "UK"},
+        {"url": "https://www.theguardian.com/science/rss", "topic": "Science"},
+        {"url": "https://www.theguardian.com/culture/rss", "topic": "Culture"}
       ]
     },
     {
@@ -73,7 +82,10 @@
         {"url": "https://www.ft.com/rss/world", "topic": "World"},
         {"url": "https://www.ft.com/rss/markets", "topic": "Markets"},
         {"url": "https://www.ft.com/rss/tech", "topic": "Tech"},
-        {"url": "https://www.ft.com/rss/opinion", "topic": "Opinion"}
+        {"url": "https://www.ft.com/rss/opinion", "topic": "Opinion"},
+        {"url": "https://www.ft.com/rss/companies", "topic": "Companies"},
+        {"url": "https://www.ft.com/rss/economy", "topic": "Economy"},
+        {"url": "https://www.ft.com/rss/management", "topic": "Management"}
       ]
     },
     {
@@ -85,7 +97,10 @@
         {"url": "https://time.com/politics/feed/", "topic": "Politics"},
         {"url": "https://time.com/business/feed/", "topic": "Business"},
         {"url": "https://time.com/tech/feed/", "topic": "Tech"},
-        {"url": "https://time.com/entertainment/feed/", "topic": "Culture"}
+        {"url": "https://time.com/entertainment/feed/", "topic": "Culture"},
+        {"url": "https://time.com/health/feed/", "topic": "Health"},
+        {"url": "https://time.com/science/feed/", "topic": "Science"},
+        {"url": "https://time.com/sports/feed/", "topic": "Sports"}
       ]
     },
     {

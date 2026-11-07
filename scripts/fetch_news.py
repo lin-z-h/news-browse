@@ -19,7 +19,7 @@ news-cache（仅 token 持有者可见）。
     DIRECT_TEXT_BUDGET   本轮最多直连正文条数（默认 64）
     READ_TEXT_BUDGET     本轮最多抓正文条数（默认 80）
     TEXT_WORKERS / DIRECT_TEXT_WORKERS   正文/直连并发（默认 4）
-    GNEWS_DECODE_PER_FEED 每 feed 最多解码条数（默认 48）
+    GNEWS_DECODE_PER_FEED 每 feed 最多解码条数（默认 80）
 
 阶段到点即停、已抓到的结果照常写出；CI 的提交步骤用 if: always() 兜底，
 超时也不会丢进度。
@@ -342,7 +342,7 @@ def collect_items(config: dict, deadline: float | None = None) -> list:
                 continue
             topic = (topic or "General").strip()
             # gnews 源只解码前 N 条（后续条目反正会被截断丢弃）；解码是整轮最慢的一步
-            gnews_left = _env_int("GNEWS_DECODE_PER_FEED", 48)
+            gnews_left = _env_int("GNEWS_DECODE_PER_FEED", 80)
             try:
                 entries = _feed_entries(source, feed if isinstance(feed, dict) else {"url": feed_url})
             except Exception as exc:  # 单个源失败不影响整体
