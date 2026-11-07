@@ -189,6 +189,15 @@
   ];
   // archive.today 的 newest/index 页：跨来源标题列表，常被误当正文（快照页本身不算）
   const ARCHIVE_INDEX_RE = /no results|create a snapshot|this page is not available|submit url/i;
+  // 付费墙源：原文/快照只给导语，不能当正文渲染；必须用转载版全文
+  const PAYWALL_SOURCES = new Set(["Bloomberg", "Financial Times", "WSJ", "The Economist"]);
+  const PAYWALL_HOSTS = ["bloomberg.com", "wsj.com", "ft.com", "economist.com"];
+  const isPaywallHost = h => PAYWALL_HOSTS.some(x => String(h || "").includes(x));
+  function paywallTeaser(blocks, host) {
+    if (!isPaywallHost(host)) return false;
+    const texts = blocks.filter(b => b.text).map(b => b.text);
+    return texts.length < 4 || texts.join("").length < 900;
+  }
   const INDEX_PUBLICATIONS = [
     "the new york times", "financial times", "the washington post", "lianhe zaobao",
     "reuters", "bloomberg", "the guardian", "the economist", "wall street journal",
@@ -309,7 +318,7 @@
       kept.push(x);
     }
     while (kept.length && kept[0].text && kept[0].text.length < 40) kept.shift(); // 开头家具修剪
-    if (!readerQualityOk(kept)) return null;
+    if (!readerQualityOk(kept) || paywallTeaser(kept, host)) return null;
     return { blocks: kept, esc };
   }
 
@@ -429,7 +438,7 @@
 
   // Wayback 快照直接抓取的解析：jina 永久封禁 web.archive.org 域，经 jina 必失败，
   // 而 wayback 页面本身支持 CORS，直接 fetch + DOM 提取正文（剔除 wayback 工具条与站点家具）
-  function denoiseWaybackDoc(html, title) {
+  function denoiseWaybackDoc(html, title, host) {
     let doc;
     try { doc = new DOMParser().parseFromString(html, "text/html"); } catch (e) { return null; }
     const bodyText = doc.body ? doc.body.textContent : "";
@@ -438,7 +447,7 @@
     const tvb = tvbBody(doc);
     if (tvb) {
       const blocks = tvb.map(t => ({ text: t, head: false }));
-      if (readerQualityOk(blocks)) return { blocks, esc: escText };
+      if (readerQualityOk(blocks) && !paywallTeaser(blocks, host)) return { blocks, esc: escText };
     }
     for (const body of jsonLdBodies(doc)) {
       const tmp = document.createElement("div");
@@ -449,7 +458,7 @@
       const texts = paras.length ? paras : body.replace(/<[^>]+>/g, "\n").split(/\n{2,}/)
         .map(t => t.replace(/\s+/g, " ").trim()).filter(t => t.length >= 30);
       const blocks = texts.map(t => ({ text: t, head: false }));
-      if (readerQualityOk(blocks)) return { blocks, esc: escText };
+      if (readerQualityOk(blocks) && !paywallTeaser(blocks, host)) return { blocks, esc: escText };
     }
     doc.querySelectorAll("script,style,noscript,iframe,svg,form,nav,header,footer,aside,#wm-ipp-base,#wm-ipp,[id^='wm-ipp']")
       .forEach(e => e.remove());
@@ -468,7 +477,7 @@
       blocks.push({ text: t, head: /^h[1-3]$/i.test(el.tagName) });
     }
     while (blocks.length && blocks[0].text.length < 40) blocks.shift(); // 开头家具修剪
-    if (!readerQualityOk(blocks)) return null;
+    if (!readerQualityOk(blocks) || paywallTeaser(blocks, host)) return null;
     return { blocks, esc: escText };
   }
 
@@ -608,6 +617,7 @@
     // APK：阅读模式下隐藏右上角按钮——必须在所有早退分支之前，否则缓存命中路径会漏隐藏、压住 ×
     try { window.Android && Android.hideUpdate(true); } catch (e) {}
     const host = _host(it.url);
+    const paywalled = PAYWALL_SOURCES.has(it.source);
     // 1) 人工捕获正文（APK 提取并清洗过）优先——用户亲验内容，最可信且零延迟
     const cap = capCache[it.id];
     if (cap && cap.paras && cap.paras.length) {
@@ -618,7 +628,7 @@
     // 2) 本地抓取缓存（md=jina markdown；kind=wb 存的是 wayback HTML）
     const hit = readCache[it.url];
     if (hit && hit.md) {
-      const den = hit.kind === "wb" ? denoiseWaybackDoc(hit.md, it.title) : denoiseReader(hit.md, host, it.title);
+      const den = hit.kind === "wb" ? denoiseWaybackDoc(hit.md, it.title, host) : denoiseReader(hit.md, host, it.title);
       if (den) { renderReaderBody(den); return; }
     }
     rBody.innerHTML = '<div class="rspin"></div><div class="rstat" id="rstat">正在获取正文…</div>';
@@ -643,14 +653,17 @@
     }
     // 3.3) APK 原生直连：原文/转载版 HTML，不依赖 Jina（TVB、NYT、The Edge、Yahoo 等）
     if (window.Android && Android.fetchHtml && !ctrl.signal.aborted) {
-      for (const pair of [["转载版", it.syndicated_url], ["原文", it.url]]) {
+      const pairs = paywalled
+        ? [["转载版", it.syndicated_url]]
+        : [["转载版", it.syndicated_url], ["原文", it.url]];
+      for (const pair of pairs) {
         const label = pair[0], u = pair[1];
         if (!u) continue;
         setStatus("正在获取正文 · 直连" + label);
         const html = await nativeHtml(it.id + ":html:" + label, u, ctrl, 20000);
         if (ctrl.signal.aborted) return;
         if (!html) continue;
-        const d = denoiseWaybackDoc(html, it.title);
+        const d = denoiseWaybackDoc(html, it.title, _host(u));
         if (d) {
           renderReaderBody(d);
           readCache[it.url] = { ts: Date.now(), md: html, src: "native-html", kind: "wb" };
@@ -688,24 +701,26 @@
       const sel = READER_SELECTORS[host];
       if (sel) headers["x-target-selector"] = sel;
       if (JINA_KEY) headers["Authorization"] = "Bearer " + JINA_KEY;
-      setStatus("正在获取正文 · 1/2");
-      let r = null;
-      try {
-        r = await fetchTextTimeout("https://r.jina.ai/" + it.url, { headers }, 20000, ctrl.signal);
-        if (!r.ok && ctrl.signal.aborted) throw new Error("aborted");
-        if (!r.ok && JINA_KEY) {
-          delete headers.Authorization; // 预检失败退回匿名
+      if (!paywalled) {
+        setStatus("正在获取正文 · 1/2");
+        let r = null;
+        try {
           r = await fetchTextTimeout("https://r.jina.ai/" + it.url, { headers }, 20000, ctrl.signal);
+          if (!r.ok && ctrl.signal.aborted) throw new Error("aborted");
+          if (!r.ok && JINA_KEY) {
+            delete headers.Authorization; // 预检失败退回匿名
+            r = await fetchTextTimeout("https://r.jina.ai/" + it.url, { headers }, 20000, ctrl.signal);
+          }
+        } catch (e) {
+          if (ctrl.signal.aborted) throw e;
         }
-      } catch (e) {
-        if (ctrl.signal.aborted) throw e;
-      }
-      if (r && r.ok) {
-        den = denoiseReader(r.text, host, it.title);
-        if (den) { gotText = r.text; via = "md"; }
+        if (r && r.ok) {
+          den = denoiseReader(r.text, host, it.title);
+          if (den) { gotText = r.text; via = "md"; }
+        }
       }
       // Jina 的服务器 IP 能过 archive.today 的人机验证；直连快照拿不到时走它
-      if (!den && !ctrl.signal.aborted) {
+      if (!paywalled && !den && !ctrl.signal.aborted) {
         setStatus("正在获取正文 · 快照通道");
         try {
           const ar = await fetchTextTimeout("https://r.jina.ai/https://archive.ph/newest/" + it.url, { headers }, 25000, ctrl.signal);
@@ -721,7 +736,7 @@
         const html = await nativeWayback(it, ctrl);
         if (ctrl.signal.aborted) throw new Error("aborted");
         if (html) {
-          den = denoiseWaybackDoc(html, it.title);
+          den = denoiseWaybackDoc(html, it.title, host);
           if (den) { gotText = html; via = "wb"; }
         }
       }
