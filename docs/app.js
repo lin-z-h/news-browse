@@ -661,12 +661,12 @@
     // 3.3) APK 原生直连：原文/转载版 HTML，不依赖 Jina（TVB、NYT、The Edge、Yahoo 等）
     if (window.Android && Android.fetchHtml && !ctrl.signal.aborted) {
       const pairs = paywalled
-        ? [["转载版", it.syndicated_url]]
-        : [["转载版", it.syndicated_url], ["原文", it.url]];
+        ? [["synd", it.syndicated_url]]
+        : [["synd", it.syndicated_url], ["orig", it.url]];
       for (const pair of pairs) {
         const label = pair[0], u = pair[1];
         if (!u) continue;
-        setStatus("正在获取正文 · 直连" + label);
+        setStatus("正在获取正文 · 直连" + (label === "synd" ? "转载版" : "原文"));
         const html = await nativeHtml(it.id + ":html:" + label, u, ctrl, 20000);
         if (ctrl.signal.aborted) return;
         if (!html) continue;
@@ -1160,6 +1160,9 @@
     applyTheme();
   });
   applyTheme();
+
+  // 调试入口（adb DevTools 用；不参与业务）
+  window.__journalDebug = { denoiseWaybackDoc, tvbBody, readerQualityOk, openReader };
 
   load();
 })();
