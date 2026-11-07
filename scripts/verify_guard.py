@@ -57,6 +57,13 @@ _WEAK = [
 
 _STRONG_RE = [re.compile(p, re.I) for p in _STRONG]
 _WEAK_RE = [re.compile(p, re.I) for p in _WEAK]
+# 强特征里再区分 Cloudflare 与 reCAPTCHA：archive.today 的限速页其实是 reCAPTCHA，
+# 不要把提示写成 “cloudflare 验证页”
+_CLOUDFLARE_MARK_RE = re.compile(
+    r"just\s+a\s+moment|attention\s+required|checking\s+your\s+browser|"
+    r"cf[-_]chl|challenge-platform|cdn-cgi/challenge-platform|enable\s+javascript\s+and\s+cookies", re.I)
+_CAPTCHA_MARK_RE = re.compile(
+    r"recaptcha/api\.js|data-sitekey=|g-recaptcha|hcaptcha|turnstile", re.I)
 _TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
 _SITEKEY_RE = re.compile(
     r"""(?:data-sitekey|sitekey|site_key)["']?\s*[:=]\s*["']([A-Za-z0-9_-]{20,})["']""",
@@ -97,13 +104,22 @@ def detect_challenge(body: str) -> Optional[Challenge]:
     m = _TITLE_RE.search(body)
     title = m.group(1) if m else ""
     if _match_any(_STRONG_RE, title):
-        return _with_flavor("cloudflare", body)
+        return _with_flavor(_challenge_kind(body), body)
     lowered = body.lower()
     if _match_any(_STRONG_RE, lowered):
-        return _with_flavor("cloudflare", body)
+        return _with_flavor(_challenge_kind(body), body)
     if not substantive_content(body) and _match_any(_WEAK_RE, lowered):
         return _with_flavor("captcha", body)
     return None
+
+
+def _challenge_kind(body: str) -> str:
+    """强特征命中后细分类型：Cloudflare 优先，否则 reCAPTCHA/hCaptcha/Turnstile。"""
+    if _CLOUDFLARE_MARK_RE.search(body):
+        return "cloudflare"
+    if _CAPTCHA_MARK_RE.search(body):
+        return "captcha"
+    return "cloudflare"
 
 
 def _with_flavor(kind: str, body: str) -> Challenge:

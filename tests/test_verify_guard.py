@@ -88,7 +88,7 @@ def test_archive_today_rate_limit_page_detected():
     body = _article_about_captcha() + widget
     assert substantive_content(body)
     ch = detect_challenge(body)
-    assert ch is not None and ch.kind == "cloudflare"
+    assert ch is not None and ch.kind == "captcha"
     assert ch.sitekey == "6LcXYZabcdefgh1234567890"
 
 

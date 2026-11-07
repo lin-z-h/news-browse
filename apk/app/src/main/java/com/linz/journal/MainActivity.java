@@ -63,6 +63,20 @@ public class MainActivity extends Activity {
             "if(d&&d.body){var t=d.body.innerText||'';if(t.length>best.length)best=t;}}catch(e){}}" +
             "try{var b=document.body?document.body.innerText:'';if(b.length>best.length)best=b;}catch(e){}" +
             "return best;})()";
+    // 无快照时 best-effort 点 “archive this url / Save this url”：只在 newest/提交页上执行一次，
+    // 已有快照（/<id>/http…）绝不打扰。提交后 archive.today 会生成快照，用户再点底部提取。
+    private static final String SAVE_JS =
+            "(function(){try{" +
+            "var u=location.href||'';" +
+            "if(!/\\/newest\\//.test(u))return 'skip';" +
+            "if(window.__journalSaveTried)return 'skip';" +
+            "window.__journalSaveTried=1;" +
+            "var t=(document.body&&document.body.innerText)||'';" +
+            "if(!/no results|no snapshots?|not archived|archive this url|save this url|page not archived/i.test(t))return 'skip';" +
+            "var as=document.querySelectorAll('a,button');" +
+            "for(var i=0;i<as.length;i++){var x=as[i];var s=((x.innerText||x.textContent||'')+' '+(x.getAttribute('href')||'')).toLowerCase();" +
+            "if(/archive this url|save this url|submit url|\\/submit\\//.test(s)){x.click();return 'clicked';}}" +
+            "return 'none';}catch(e){return 'err';}})()";
 
     private WebView web;
     private FrameLayout root;
@@ -80,6 +94,7 @@ public class MainActivity extends Activity {
     private String capturingTitle = "";
     private String pendingCaptureJs = null;
     private boolean captureInjecting = false;
+    private int captureSaveAttempts = 0;
 
     private int dp(float v) {
         return (int) (v * getResources().getDisplayMetrics().density + 0.5f);
@@ -117,6 +132,18 @@ public class MainActivity extends Activity {
                         captureMode = false;
                         capturingFor = null;
                         applyButtons();
+                    }
+                } else if (captureMode && isArchivePage(url)) {
+                    // 无快照的归档页：自动点一次 “archive this url”，然后等快照生成
+                    if (captureSaveAttempts < 2) {
+                        captureSaveAttempts++;
+                        view.evaluateJavascript(SAVE_JS, r -> {
+                            if (r != null && r.contains("clicked")) {
+                                Toast.makeText(MainActivity.this,
+                                        "没有快照，已点击 archive this url；生成后点底部按钮提取正文",
+                                        Toast.LENGTH_LONG).show();
+                            }
+                        });
                     }
                 }
             }
@@ -167,6 +194,7 @@ public class MainActivity extends Activity {
                     capturingFor = id;
                     capturingUrl = url == null ? "" : url;
                     capturingTitle = title == null ? "" : title;
+                    captureSaveAttempts = 0;
                     readerOpen = false;
                     applyButtons();
                     web.loadUrl("https://archive.ph/newest/" + url);

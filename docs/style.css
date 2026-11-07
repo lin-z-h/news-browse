@@ -400,6 +400,19 @@ button { font: inherit; }
 .rbtn:active { transform: scale(.97); }
 .rbtn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
+/* 封面模式：付费墙源无快照时只显示封面与“开始阅读” */
+.rcover { margin: 10px auto 0; max-width: 520px; text-align: center; }
+.rcoverimg {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 0 0 20px;
+  background: var(--line);
+}
+.rcovernote { font-size: 14px; line-height: 1.75; color: var(--muted); margin: 0 0 22px; }
+.rcoverbtns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
 /* 打印/导出 PDF：只输出阅读正文 */
 @media print {
   body { background: #fff !important; }

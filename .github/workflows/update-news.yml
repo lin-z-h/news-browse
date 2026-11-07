@@ -18,7 +18,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -31,32 +31,45 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch RSS & probe archives
+        timeout-minutes: 50
         env:
           # 可选：手动获取的 cf_clearance（见 README「机器验证处理」）
           ARCHIVE_COOKIE: ${{ secrets.ARCHIVE_COOKIE }}
           ARCHIVE_UA: ${{ secrets.ARCHIVE_UA }}
           # 可选：nopecha 打码服务 key（小规模自动解题尝试）
           NOPECHA_API_KEY: ${{ secrets.NOPECHA_API_KEY }}
+          # 可选：官方 API key（无 key 自动回落 RSS）
+          NYT_API_KEY: ${{ secrets.NYT_API_KEY }}
+          GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
           # 可选：jina key（提升正文抓取配额）+ 私有正文缓存 token
           JINA_KEY: ${{ secrets.JINA_KEY }}
           NEWS_CACHE_TOKEN: ${{ secrets.NEWS_CACHE_TOKEN }}
-          READ_TEXT_BUDGET: "40"
-          # 每轮最多探测的新链接数
-          MAX_PROBES_PER_RUN: "60"
+          # 整轮墙钟预算：到点停止网络任务并写出已完成部分（解决 CI 超时）
+          NEWS_BUDGET_SECONDS: "2400"
+          # 各阶段预算（单条/单轮）
+          MAX_PROBES_PER_RUN: "35"
+          PROBE_WORKERS: "2"
+          PROBE_TOTAL_TIMEOUT: "45"
+          AUTO_ARCHIVE_BUDGET: "6"
+          SYND_BUDGET: "6"
+          READ_TEXT_BUDGET: "20"
+          TEXT_WORKERS: "2"
+          OG_IMAGE_BUDGET: "15"
         run: python scripts/fetch_news.py
 
-      - name: Commit news.json & cache
+      - name: Commit news.json & cache (also after timeout)
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/news.json data/cache.json
           if git diff --cached --quiet; then
             echo "no changes to commit"
-          else
-            git commit -m "update news & cache [skip ci]"
-            git pull --rebase origin main
-            for i in 1 2 3; do git push && break || sleep 20; done
+            exit 0
           fi
+          git commit -m "update news & cache [skip ci]"
+          git pull --rebase origin main
+          for i in 1 2 3; do git push && break || sleep 20; done
 
   apk:
     needs: update

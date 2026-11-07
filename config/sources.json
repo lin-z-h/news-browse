@@ -4,6 +4,9 @@
   "sources": [
     {
       "name": "Bloomberg",
+      "cover_only_when_unarchived": true,
+      "syndication": ["edge_my", "edge_sg", "yahoo", "bnn", "fpost", "bst", "moneyweb",
+                      "businesstoday", "sedaily", "economictimes", "bworld", "investing"],
       "feeds": [
         {"url": "https://feeds.bloomberg.com/markets/news.rss", "topic": "Markets"},
         {"url": "https://feeds.bloomberg.com/technology/news.rss", "topic": "Tech"},
@@ -14,7 +17,8 @@
       "name": "The New York Times",
       "hide_unarchived": true,
       "feeds": [
-        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml", "topic": "Top"},
+        {"url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml", "topic": "Top",
+         "api": {"kind": "nyt", "section": "home"}},
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "topic": "World"},
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml", "topic": "Business"},
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml", "topic": "Tech"},
@@ -23,6 +27,8 @@
     },
     {
       "name": "The Economist",
+      "cover_only_when_unarchived": true,
+      "syndication": ["edge_my", "edge_sg"],
       "feeds": [
         {"url": "https://www.economist.com/leaders/rss.xml", "topic": "Opinion"},
         {"url": "https://www.economist.com/business/rss.xml", "topic": "Business"},
@@ -40,7 +46,8 @@
     {
       "name": "The Guardian",
       "feeds": [
-        {"url": "https://www.theguardian.com/world/rss", "topic": "World"},
+        {"url": "https://www.theguardian.com/world/rss", "topic": "World",
+         "api": {"kind": "guardian", "section": "world"}},
         {"url": "https://www.theguardian.com/business/rss", "topic": "Business"},
         {"url": "https://www.theguardian.com/technology/rss", "topic": "Tech"},
         {"url": "https://www.theguardian.com/opinion/rss", "topic": "Opinion"}
@@ -49,12 +56,16 @@
     {
       "name": "WSJ",
       "hide_unarchived": true,
+      "cover_only_when_unarchived": true,
+      "syndication": ["edge_my", "yahoo", "fpost"],
       "feeds": [
         {"url": "https://news.google.com/rss/search?q=site:wsj.com+when:2d&hl=en-US&gl=US&ceid=US:en", "topic": "Top"}
       ]
     },
     {
       "name": "Financial Times",
+      "cover_only_when_unarchived": true,
+      "syndication": ["edge_my", "edge_sg", "yahoo"],
       "feeds": [
         {"url": "https://www.ft.com/rss/home/uk", "topic": "Top"},
         {"url": "https://www.ft.com/rss/world", "topic": "World"},
@@ -66,7 +77,8 @@
     {
       "name": "TIME",
       "feeds": [
-        {"url": "https://time.com/feed/", "topic": "Top"},
+        {"url": "https://time.com/feed/", "topic": "Top",
+         "api": {"kind": "wp", "url": "https://time.com/wp-json/wp/v2/posts"}},
         {"url": "https://time.com/politics/feed/", "topic": "Politics"},
         {"url": "https://time.com/business/feed/", "topic": "Business"},
         {"url": "https://time.com/tech/feed/", "topic": "Tech"},

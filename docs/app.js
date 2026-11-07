@@ -177,15 +177,65 @@
     "news.tvb.com": [/^\d+\.\s[\s\S]*\d+\.\s/, /^publish[:：]/i, /^by[:：]/i],
   };
   // 错误页/验证页特征：jina 会把 403 页面当"内容"带回来，必须识别拒绝
-  const GARBAGE_RE = /are you a robot|access denied|just a moment|unusual traffic|verify (?:you are )?human|403 forbidden|captcha|enable javascript and cookies|are you human|error code|request id|we apologise for any inconvenience|for help please visit/i;
+  const GARBAGE_RE = /are you a robot|access denied|just a moment|unusual traffic|verify (?:you are )?human|403 forbidden|captcha|enable javascript and cookies|are you human|error code|request id|we apologise for any inconvenience|for help please visit|security check to access/i;
+  // 付费墙/登录/同意墙：整页命中时代表“没有正文”，绝不能当文章渲染
+  const PAYWALL_MARKERS = [
+    "continue with apple", "continue with google", "sign in with google",
+    "do not sell or share my personal information", "unlock this article",
+    "unlock election coverage", "unlock the global benchmark", "already a subscriber",
+    "subscribe to continue", "create a free account", "get unlimited access",
+    "sign in to continue", "by continuing, i agree to the", "claim this offer",
+    "we've updated our terms", "two ways to read", "already have an account",
+  ];
+  // archive.today 的 newest/index 页：跨来源标题列表，常被误当正文（快照页本身不算）
+  const ARCHIVE_INDEX_RE = /no results|create a snapshot|this page is not available|submit url/i;
+  const INDEX_PUBLICATIONS = [
+    "the new york times", "financial times", "the washington post", "lianhe zaobao",
+    "reuters", "bloomberg", "the guardian", "the economist", "wall street journal",
+    "south china morning post", "time", "associated press",
+  ];
   // 全局噪音块（任何站点、任何位置出现即丢弃）
-  const READER_NOISE_RE = /^enter your email|after newsletter promotion|^free newsletter|^sign up to |^gift this article|^add us on google|^terms and conditions|^copyright \d{4}|^thanks for sharing|^download now|^most viewed|^related storie|^advertisement/i;
+  const READER_NOISE_RE = /^enter your email|after newsletter promotion|^free newsletter|^sign up to |^gift this article|^add us on google|^terms and conditions|^copyright \d{4}|^thanks for sharing|^download now|^most viewed|^related storie|^advertisement|^contact us|^confidential tip|^site feedback|^back to top|^share this|^listen to this|^before it'?s here|^learn more|^bloomberg terminal|^archive\.today|^saved from|^all snapshots|^webpage capture|^archived \d|^short link$|^long link$|^markdown$|^html code$|^wiki code$/i;
 
   function _host(u) { try { return new URL(u).host; } catch (e) { return ""; } }
 
+  function looksLikePaywall(text) {
+    const low = String(text || "").toLowerCase();
+    let hits = 0;
+    for (const m of PAYWALL_MARKERS) if (low.includes(m)) hits++;
+    return hits >= 2 || (low.includes("do not sell or share my personal information") && text.includes("$1"));
+  }
+
+  function looksLikeArchiveIndex(texts) {
+    const joined = texts.join(" ");
+    if (ARCHIVE_INDEX_RE.test(joined)) return true;
+    const low = joined.toLowerCase();
+    const names = INDEX_PUBLICATIONS.filter(n => low.includes(n)).length;
+    if (names >= 4) {
+      const sentences = (joined.match(/[.!?。！？](?:\s|$)/g) || []).length;
+      if (sentences < Math.max(4, Math.floor(texts.length / 3))) return true;
+    }
+    return false;
+  }
+
+  // 与 CI 侧 quality_ok 同口径：≥3 个长段、≥400 字符（中文 ≥200 字）、多数成句
+  function readerQualityOk(kept) {
+    const texts = kept.filter(x => x.text).map(x => x.text);
+    const joined = texts.join("");
+    const cjk = (joined.match(/[\u4e00-\u9fff]/g) || []).length;
+    const paras = texts.filter(t => t.length >= 30 || cjk > 100);
+    if (paras.length < 3) return false;
+    if (joined.length < 400 && cjk < 200) return false;
+    const sentenceLike = paras.filter(t => /[.!?。！？]/.test(t)).length;
+    if (sentenceLike < Math.max(2, Math.floor(paras.length * 0.6))) return false;
+    if (looksLikePaywall(texts.join(" ")) && joined.length < 2000) return false;
+    if (looksLikeArchiveIndex(texts)) return false;
+    return true;
+  }
+
   // 清洗 jina markdown → 文本块/图片块。返回 null = 垃圾（错误页/太短），上层换下一个来源。
   // 结束边界标记：命中即认为正文结束（募捐区/推荐区/页脚）
-  const READER_END_RE = /^#{0,4}\s*(most viewed|related storie|more from|explore more on these topics|topics in this article|reuse this content|advertisement|year-end fundraiser|at this unsettling time|now live|please contribute|was this helpful|sign up for our email|fund independent|what readers are saying|do not sell or share|get unlimited access|we've updated our terms|claim this offer|©\s*20\d\d|already have an account|two ways to read)/i;
+  const READER_END_RE = /^#{0,4}\s*(most viewed|most read|related storie|more from|top reads|explore more on these topics|topics in this article|reuse this content|advertisement|year-end fundraiser|at this unsettling time|now live|please contribute|was this helpful|sign up for our email|fund independent|what readers are saying|do not sell or share|get unlimited access|we've updated our terms|claim this offer|©\s*20\d\d|already have an account|two ways to read|continue with (?:apple|google)|sign in|subscribe|home\b|terms of service)/i;
 
   // 清洗 jina markdown → 文本块/图片块。返回 null = 垃圾（错误页/太短），上层换下一个来源。
   // title 用于剔除与卡片标题重复的正文标题，避免双标题。
@@ -257,8 +307,7 @@
       kept.push(x);
     }
     while (kept.length && kept[0].text && kept[0].text.length < 40) kept.shift(); // 开头家具修剪
-    const total = kept.filter(x => x.text).map(x => x.text).join("").length;
-    if (total < 40) return null;
+    if (!readerQualityOk(kept)) return null;
     return { blocks: kept, esc };
   }
 
@@ -326,7 +375,7 @@
       blocks.push({ text: t, head: /^h[1-3]$/i.test(el.tagName) });
     }
     while (blocks.length && blocks[0].text.length < 40) blocks.shift(); // 开头家具修剪
-    if (blocks.map(b => b.text).join("").length < 120) return null;
+    if (!readerQualityOk(blocks)) return null;
     return { blocks, esc: escText };
   }
 
@@ -337,7 +386,7 @@
   // 清洗 APK 提取的纯文本：去 URL 行/工具条行/重复行/与标题重复的行。
   // 达不到正文量（≥3 段且 ≥120 字，中文短讯也覆盖）返回空 = 拒绝渲染
   function cleanCaptureText(text, title) {
-    if (CAP_GARBAGE_RE.test(text)) return [];
+    if (CAP_GARBAGE_RE.test(text) || looksLikePaywall(text)) return [];
     const tnorm = String(title || "").replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
     const seen = new Set([tnorm]);
     const out = [];
@@ -349,6 +398,7 @@
       seen.add(k);
       out.push(line);
     }
+    if (looksLikeArchiveIndex(out)) return [];
     return out.join("").length >= 120 && out.length >= 3 ? out : [];
   }
 
@@ -373,13 +423,58 @@
     row.appendChild(mk("重试", false, () => {
       delete failMem[it.url];
       persistFails();
-      openReader(it);
+      openReader(it, true);
     }));
     row.appendChild(mk("打开原文", false, () => open(it.url)));
     wrap.appendChild(p);
     wrap.appendChild(row);
     rBody.innerHTML = "";
     rBody.appendChild(wrap);
+  }
+
+  // 封面模式：付费墙源且没有快照/正文缓存时只渲染封面，等用户点“开始阅读”。
+  // 有快照 → 直接走正文链；无快照 → APK 进人工验证捕获流程，浏览器打开归档页。
+  function renderCover(it) {
+    const wrap = el(`<div class="rcover"></div>`);
+    if (it.image) {
+      const img = document.createElement("img");
+      img.className = "rcoverimg";
+      img.loading = "lazy";
+      img.referrerPolicy = "no-referrer";
+      img.alt = "";
+      img.src = it.image;
+      img.addEventListener("error", () => img.remove());
+      wrap.appendChild(img);
+    }
+    const note = el(`<p class="rcovernote"></p>`);
+    note.textContent = it.archive_url || it.wayback_url
+      ? "已有快照，点“开始阅读”加载正文。"
+      : "这条来自付费墙源，暂时没有可用快照。点“开始阅读”后，在归档页完成人机验证（没有快照时先点 archive this url），再回来提取正文。";
+    wrap.appendChild(note);
+    const row = el(`<div class="rcoverbtns"></div>`);
+    const start = el(`<button class="rbtn primary"></button>`);
+    start.textContent = "开始阅读";
+    start.addEventListener("click", () => startReading(it));
+    const orig = el(`<button class="rbtn"></button>`);
+    orig.textContent = "打开原文";
+    orig.addEventListener("click", () => open(it.url));
+    row.appendChild(start);
+    row.appendChild(orig);
+    wrap.appendChild(row);
+    rBody.innerHTML = "";
+    rBody.appendChild(wrap);
+  }
+
+  function startReading(it) {
+    // 有快照：直接重新走正文链（跳过封面）
+    if (it.archive_url || it.wayback_url) { openReader(it, true); return; }
+    // APK：进入人工验证捕获流程（archive 页 + 底部“完成验证 · 提取正文”）
+    if (window.Android && Android.captureFor) {
+      try { Android.captureFor(it.id, it.url, it.title || ""); } catch (e) {}
+      return;
+    }
+    // 浏览器：打开 archive.today 最新快照/存档页，用户过完验证后回来重试
+    open("https://archive.ph/newest/" + it.url);
   }
 
 
@@ -409,7 +504,7 @@
     });
   }
 
-  async function openReader(it) {
+  async function openReader(it, force) {
     readerEl.hidden = false;
     document.body.style.overflow = "hidden";
     rTitle.textContent = it.title;
@@ -441,13 +536,18 @@
           { headers: { Authorization: "Bearer " + CACHE_TOKEN, Accept: "application/vnd.github+json" } }, 15000, ctrl.signal);
         if (r.ok) {
           const j = JSON.parse(r.text);
-          renderReaderBody({ blocks: j.blocks, esc: escText });
-          return;
+          // v2 = 转载版/HTML/JSON-LD + 严格质量关；旧缓存（无 v）不渲染，避免历史垃圾正文
+          if (j.v === 2 && Array.isArray(j.blocks) && j.blocks.length) {
+            renderReaderBody({ blocks: j.blocks, esc: escText });
+            return;
+          }
         }
       } catch (e) { /* 缓存不可用则照旧走链 */ }
     }
+    // 3.5) 封面模式：付费墙源且无快照/正文缓存 → 只渲染封面，等用户点“开始阅读”
+    if (it.cover_only && !force) { renderCover(it); return; }
     // 4) 失败记忆：24h 内全链失败过 → 不再慢试，直接给人工兜底入口（修“没快照就很卡”）
-    if (Date.now() - (failMem[it.url] || 0) < 864e5) {
+    if (!force && Date.now() - (failMem[it.url] || 0) < 864e5) {
       renderReaderError(it);
       return;
     }
@@ -475,6 +575,17 @@
       if (r && r.ok) {
         den = denoiseReader(r.text, host, it.title);
         if (den) { gotText = r.text; via = "md"; }
+      }
+      // Jina 的服务器 IP 能过 archive.today 的人机验证；直连快照拿不到时走它
+      if (!den && !ctrl.signal.aborted) {
+        setStatus("正在获取正文 · 快照通道");
+        try {
+          const ar = await fetchTextTimeout("https://r.jina.ai/https://archive.ph/newest/" + it.url, { headers }, 25000, ctrl.signal);
+          if (ar && ar.ok) {
+            den = denoiseReader(ar.text, host, it.title);
+            if (den) { gotText = ar.text; via = "md"; }
+          }
+        } catch (e) { /* 快照通道失败则继续原生 wayback */ }
       }
       // APK：原生通道直连 wayback（wayback_url 优先，web/2/ 重定向兜底），无 CORS 限制
       if (!den && window.Android && Android.fetchSnapshot && !ctrl.signal.aborted) {
@@ -569,6 +680,8 @@
         published: it.published || null, url: it.url,
         image: it.image || null,
         archive_url: it.archive_url || null, wayback_url: it.wayback_url || null,
+        cover_only: !!it.cover_only, status: it.status || null,
+        syndicated_url: it.syndicated_url || null,
       };
       btn.setAttribute("aria-pressed", "true");
     }
@@ -614,6 +727,9 @@
           url: (fresh && fresh.url) || obj.url || "",
           archive_url: (fresh && fresh.archive_url) || obj.archive_url || null,
           wayback_url: (fresh && fresh.wayback_url) || obj.wayback_url || null,
+          cover_only: fresh ? !!fresh.cover_only : !!obj.cover_only,
+          status: (fresh && fresh.status) || obj.status || null,
+          syndicated_url: (fresh && fresh.syndicated_url) || obj.syndicated_url || null,
           _savedTs: obj.ts || 0,
         };
       })

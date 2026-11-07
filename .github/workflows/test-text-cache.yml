@@ -65,11 +65,11 @@ jobs:
           jkey = os.environ.get("JINA_KEY", "").strip() or None
           print(f"jina key: {'已配置' if jkey else '未配置（匿名）'}")
           for it in items:
-              blocks = rd.fetch_text(it["url"], key=jkey)
+              blocks = rd.fetch_text(it["url"], key=jkey, title=it.get("title", ""))
               stored = False
               if blocks:
-                  payload = {"url": it["url"], "title": it["title"], "fetched_at": "ci-test",
-                             "blocks": blocks}
+                  payload = {"v": rd.TEXT_CACHE_VERSION, "url": it["url"], "title": it["title"],
+                             "fetched_at": "ci-test", "blocks": blocks}
                   stored = rd.cache_put(token, repo, it["id"] + ".json", payload)
               print(f"[fetch] blocks={len(blocks or [])} stored={stored} | {it['url'][:70]}")
               back = rd.cache_read(token, repo, it["id"] + ".json")

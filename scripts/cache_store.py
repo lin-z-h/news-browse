@@ -16,6 +16,7 @@ TTL_SECONDS = {
     "archive": 180 * 86400,
     "wayback": 30 * 86400,
     "original": 3 * 86400,
+    "unarchived": 12 * 3600,   # 自动存档失败：12h 后再试
     "challenge": 12 * 3600,
 }
 
