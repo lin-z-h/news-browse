@@ -75,6 +75,22 @@ def _rate_limit() -> None:
     _last_request_ts = time.time()
 
 
+def _impersonate() -> str:
+    """TLS 指纹必须与 ARCHIVE_UA 同浏览器族，否则 cf_clearance 会被判定不匹配。"""
+    ua = (os.environ.get("ARCHIVE_UA", "").strip() or DEFAULT_UA).lower()
+    if "edg/" in ua:
+        return "edge101"
+    if "firefox" in ua:
+        return "firefox133"
+    if "chrome/" in ua or "chromium" in ua:
+        m = re.search(r"chrome/(\d+)", ua)
+        version = int(m.group(1)) if m else 124
+        return "chrome124" if version >= 124 else "chrome110"
+    if "safari" in ua:
+        return "safari17_0"
+    return "chrome124"
+
+
 def _headers() -> dict:
     ua = os.environ.get("ARCHIVE_UA", "").strip() or DEFAULT_UA
     headers = {
@@ -120,7 +136,7 @@ def _get(url: str, timeout: Optional[float] = None) -> Optional[requests.Respons
 
             return creq.get(
                 url,
-                impersonate="safari17_0",
+                impersonate=_impersonate(),
                 headers=_headers(),
                 timeout=(CONNECT_TIMEOUT, read_to),
                 allow_redirects=True,
@@ -154,7 +170,7 @@ def _post(url: str, data: dict, timeout: Optional[float] = None) -> bool:
     try:
         from curl_cffi import requests as creq
 
-        creq.post(url, data=data, impersonate="safari17_0", headers=_headers(),
+        creq.post(url, data=data, impersonate=_impersonate(), headers=_headers(),
                   timeout=(CONNECT_TIMEOUT, read_to), allow_redirects=True,
                   **_proxy_kwargs())
         return True

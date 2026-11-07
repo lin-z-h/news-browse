@@ -43,3 +43,14 @@ def test_probe_link_unarchived_when_auto_archive_fails(monkeypatch):
     monkeypatch.setattr(ap, "probe_wayback", lambda url: None)
     res = ap.probe_link("https://x", auto_archive=True, wait_seconds=1)
     assert res["status"] == "unarchived"
+
+
+def test_impersonate_matches_archive_ua(monkeypatch):
+    monkeypatch.setenv("ARCHIVE_UA", "Mozilla/5.0 Chrome/142.0.0.0 Safari/537.36")
+    assert ap._impersonate() == "chrome124"
+    monkeypatch.setenv("ARCHIVE_UA", "Mozilla/5.0 Firefox/133.0")
+    assert ap._impersonate() == "firefox133"
+    monkeypatch.setenv("ARCHIVE_UA", "Mozilla/5.0 Version/17.4 Safari/605.1.15")
+    assert ap._impersonate() == "safari17_0"
+    monkeypatch.setenv("ARCHIVE_UA", "")
+    assert ap._impersonate() == "chrome124"
