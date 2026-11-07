@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T09:12:08Z",
+ "generated_at": "2026-11-07T09:20:52Z",
  "sources": [
   "Bloomberg",
   "The New York Times",
@@ -15,6 +15,45 @@
   "TVB"
  ],
  "items": [
+  {
+   "id": "750ffdf3d3b9",
+   "title": "MTR Corporation halts unauthorised remedial works at station after column concerns",
+   "source": "SCMP",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T09:20:29Z",
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/a0b878d0-26bd-4755-bb91-2bab5c3529b7_23f23338.jpg?itok=9cn2__eV&v=1794043080",
+   "url": "https://www.scmp.com/news/hong-kong/transport/article/3373646/mtr-corporation-halts-unauthorised-remedial-works-station-after-column-concerns",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "bf47260ffe83",
+   "title": "New Zealand election 2026 live results: Labour draws level with National as count continues in close race",
+   "source": "The Guardian",
+   "topic": "World",
+   "published": "2026-11-07T09:13:25Z",
+   "image": "https://i.guim.co.uk/img/media/ca0da5faecb3c527577fc78ebfc856aa865bc8d6/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=842242f69139eccf98f50148f27a190a",
+   "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "302344f4605e",
+   "title": "三人涉欺騙市民投資手工啤酒機被捕 以高回報作招徠涉款逾400萬",
+   "source": "TVB",
+   "topic": "Hong Kong",
+   "published": "2026-11-07T09:03:00Z",
+   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026VLYtRMvrjw1794043251.jpg?x-oss-process=image/resize,w_1200",
+   "url": "https://news.tvb.com/en/1205092",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
   {
    "id": "e5a6f3f8ca7c",
    "title": "Hong Kong’s Bailee Brown calls triathlon ‘brutal, unforgiving’ after World Cup setback",
@@ -42,6 +81,19 @@
    "cover_only": false
   },
   {
+   "id": "44d1c1e684bb",
+   "title": "TikTok accused of helping to promote sex industry to girls",
+   "source": "The Guardian",
+   "topic": "World",
+   "published": "2026-11-07T09:00:07Z",
+   "image": "https://i.guim.co.uk/img/media/4c15ad088ea9124f8235261941f6a598cbe96eb1/0_0_2500_2001/master/2500.jpg?width=140&quality=85&auto=format&fit=max&s=49db3bd2ae088c593641c5fcdf9fe21d",
+   "url": "https://www.theguardian.com/technology/2026/nov/07/tiktok-sex-industry-girls-onlyfans",
+   "status": "challenge",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
    "id": "95503f2665dd",
    "title": "北角海峯園2房戶 放盤不足一個月成交",
    "source": "TVB",
@@ -62,19 +114,6 @@
    "published": "2026-11-07T08:58:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026RKYQ80rXPR1794042358.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205090",
-   "status": "challenge",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "bf47260ffe83",
-   "title": "New Zealand election 2026 live results: Labour draws level with National as count continues in close race",
-   "source": "The Guardian",
-   "topic": "World",
-   "published": "2026-11-07T08:53:31Z",
-   "image": "https://i.guim.co.uk/img/media/ca0da5faecb3c527577fc78ebfc856aa865bc8d6/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=842242f69139eccf98f50148f27a190a",
-   "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
    "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
@@ -478,7 +517,7 @@
    "published": "2026-11-07T07:00:05Z",
    "image": "https://i.guim.co.uk/img/media/963b9fb283b70d3463b4d4d901c1c5231806e169/568_0_4594_3676/master/4594.jpg?width=140&quality=85&auto=format&fit=max&s=eeaf31aecc7f71bcc7e93b2291402bb8",
    "url": "https://www.theguardian.com/money/2026/nov/07/nationwide-savings-account-market-leading-interest-rate",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -491,20 +530,7 @@
    "published": "2026-11-07T07:00:04Z",
    "image": "https://i.guim.co.uk/img/media/e3e106cee8c7a119858472afd76f5d130e4d43b6/1722_527_3180_2545/master/3180.jpg?width=140&quality=85&auto=format&fit=max&s=c72bd7888aaa9fe83477f32594d1988a",
    "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "0aa5af0a7322",
-   "title": "‘Super-force’ plans a real threat to local policing, English mayors say",
-   "source": "The Guardian",
-   "topic": "World",
-   "published": "2026-11-07T07:00:04Z",
-   "image": "https://i.guim.co.uk/img/media/28b9efa1a0ecf769d3f2a029c30e52e049178708/398_177_2542_2033/master/2542.jpg?width=140&quality=85&auto=format&fit=max&s=d9e48ad9c58490e2a027d441a2159184",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/07/super-force-plans-england-wales-threaten-local-policing-mayors",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -517,7 +543,7 @@
    "published": "2026-11-07T07:00:04Z",
    "image": "https://i.guim.co.uk/img/media/c4ab352229a9553522afe3e33aaa405141978fb4/781_95_1724_1380/master/1724.jpg?width=140&quality=85&auto=format&fit=max&s=a76aedad354b9a23642fbc9bedce6e64",
    "url": "https://www.theguardian.com/politics/2026/nov/07/reform-uk-councillor-promoted-alleged-ponzi-scheme-hyperverse",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -530,7 +556,7 @@
    "published": "2026-11-07T07:00:03Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-07/finland-considers-ukraine-style-tank-barriers-as-russia-rearms",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -543,7 +569,7 @@
    "published": "2026-11-07T07:00:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026VRGHtHaDRQ1793885643.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204803",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -556,7 +582,7 @@
    "published": "2026-11-07T06:59:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026mKt1UCQrXa1794036805.png?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205079",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -569,7 +595,7 @@
    "published": "2026-11-07T06:58:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026xhKfxRxaXI1794035306.png?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205078",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -582,7 +608,7 @@
    "published": "2026-11-07T06:45:04Z",
    "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06int-NZ-elections-gjhz/06int-NZ-elections-gjhz-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -595,7 +621,7 @@
    "published": "2026-11-07T06:44:42Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/3e97c612-b5aa-4f96-92bb-c6fd384a2455_61c378df.jpg?itok=_2xglCFH&v=1794033868",
    "url": "https://www.scmp.com/news/china/diplomacy/article/3373640/chinese-consulate-melbourne-demands-justice-after-fatal-stabbing-delivery-worker",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -608,7 +634,7 @@
    "published": "2026-11-07T06:31:27Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/8cced664-248d-4fa5-85c3-e35a2caae8e0_ce07c1a1.jpg?itok=4ot-7att&v=1794033072",
    "url": "https://www.scmp.com/news/hong-kong/politics/article/3373638/hypocritical-hong-kong-hits-back-criticism-joshua-wongs-sentence",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -621,7 +647,7 @@
    "published": "2026-11-07T06:30:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026o8SrrCKEyL1793885333.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204802",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -634,7 +660,7 @@
    "published": "2026-11-07T06:16:33Z",
    "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06nat-south-democrats-klqj/06nat-south-democrats-klqj-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/06/us/southern-democrats-georgia-north-carolina.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -647,7 +673,7 @@
    "published": "2026-11-07T06:16:00Z",
    "image": "https://pro-vod-cdn.tvb.com/3c9160ef7edc4342a1f064150aa71b42/snapshots/de251174e43945a3b18b07fbc8c8120f-00003.jpg",
    "url": "https://news.tvb.com/en/1205077",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -660,7 +686,7 @@
    "published": "2026-11-07T06:13:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026wHJq9IupkR1794032087.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205076",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -673,7 +699,7 @@
    "published": "2026-11-07T06:12:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026HnmBEvHwyw1794031998.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205075",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -686,20 +712,20 @@
    "published": "2026-11-07T06:11:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026ffSbmgktTl1794031934.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205074",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
   },
   {
    "id": "9a53d6e32c7c",
-   "title": "Counting Begins in NZ Election That’s Too Close to Call",
+   "title": "New Zealand Election Kingmaker Emerges With 50% of Vote Counted",
    "source": "Bloomberg",
    "topic": "Politics",
    "published": "2026-11-07T06:08:21Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-07/counting-begins-in-new-zealand-election-that-s-too-close-to-call",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -712,7 +738,7 @@
    "published": "2026-11-07T06:01:55Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/72264be6-6245-40ec-ba7d-f944e91ee997_4886ca29.jpg?itok=rXvpk0DC&v=1794031252",
    "url": "https://www.scmp.com/news/asia/south-asia/article/3373637/air-indias-capital-ranked-worlds-most-polluted-eve-diwali",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -725,7 +751,7 @@
    "published": "2026-11-07T06:00:23Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/c921f9b3-782a-4767-b002-c2a9085f0a60_19047d98.jpg?itok=EvryFX5p&v=1793960023",
    "url": "https://www.scmp.com/economy/china-economy/article/3373566/chinese-tourist-arrivals-thailand-fall-136-october-after-embassy-safety-warning",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -738,7 +764,7 @@
    "published": "2026-11-07T06:00:18Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/d1ac7ff8-1f59-45bd-97f8-e6781a8d51cf_e879072d.jpg?itok=fAEEf7PH&v=1793954996",
    "url": "https://www.scmp.com/business/money/wealth/article/3373542/financial-leaders-tiptoe-around-beijings-asset-scrutiny-hail-hong-kongs-wealth-boom",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -751,7 +777,7 @@
    "published": "2026-11-07T06:00:05Z",
    "image": "https://i.guim.co.uk/img/media/0312d200602b299fe774847a5f06b6f25056098c/1238_380_2087_1670/master/2087.jpg?width=140&quality=85&auto=format&fit=max&s=dd428f0d2cf0916b6671dbe6560b0245",
    "url": "https://www.theguardian.com/news/ng-interactive/2026/nov/07/the-end-of-maga-as-we-know-it",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -764,7 +790,7 @@
    "published": "2026-11-07T06:00:05Z",
    "image": "https://i.guim.co.uk/img/media/bcbe33019144d919dd5320a3d34584709608210b/450_0_4500_3600/master/4500.jpg?width=140&quality=85&auto=format&fit=max&s=3b36b24a41b9a1b7d30fba4a3fb4225e",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/07/andy-burnham-take-control-small-measures-ebikes",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -777,7 +803,7 @@
    "published": "2026-11-07T06:00:04Z",
    "image": "https://i.guim.co.uk/img/media/26ca01f978ce01c4b69b4f2cf325f6776851a3c5/750_0_3750_3000/master/3750.jpg?width=140&quality=85&auto=format&fit=max&s=04e915bd6dd19b7cb3e3556f13fb5777",
    "url": "https://www.theguardian.com/world/2026/nov/07/us-midterm-results-may-help-unite-israeli-coalition-to-unseat-netanyahu",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -790,7 +816,7 @@
    "published": "2026-11-07T06:00:00Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/articles/2026-11-07/burnham-bets-that-britain-can-move-past-the-old-brexit-divisions",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
@@ -803,7 +829,7 @@
    "published": "2026-11-07T06:00:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/20262VjdkelncG1793885103.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204801",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -816,7 +842,7 @@
    "published": "2026-11-07T05:53:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026fJmVkrPDKx1794031305.jpg?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1205073",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -829,7 +855,7 @@
    "published": "2026-11-07T05:40:00Z",
    "image": "https://pro-img-cdn.tvb.com/uploads/file/2026/11/2026V6CS8QAWWZ1793958211.webp?x-oss-process=image/resize,w_600",
    "url": "https://news.tvb.com/en/1204965",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -842,7 +868,7 @@
    "published": "2026-11-07T05:33:52Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/71025650-c349-4373-9fc5-ba19b480723b_a8c9152f.jpg?itok=cHpH0ri1&v=1794029505",
    "url": "https://www.scmp.com/news/hong-kong/health-environment/article/3373635/hong-kong-paediatrician-urges-parents-vaccinate-children-temperatures-fall",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -855,7 +881,7 @@
    "published": "2026-11-07T05:11:17Z",
    "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/OERTSVIACHJYPCNX2VZ4AVD2AU.JPG&amp;w=1440",
    "url": "https://www.washingtonpost.com/education/2026/11/06/cornell-faculty-senate-votes-no-confidence-university-leadership/",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -868,7 +894,7 @@
    "published": "2026-11-07T05:07:32Z",
    "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/9e78e719-2f40-4abd-8c21-deaed17ce1ee_e6d5dc44.jpg?itok=JiARyqQ6&v=1794028043",
    "url": "https://www.scmp.com/sport/racing/article/3373634/exciting-clash-between-rising-stars-hot-delight-and-mr-incredible-early-classic-mile-preview",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -881,7 +907,7 @@
    "published": "2026-11-07T05:01:07Z",
    "image": "https://static01.nyt.com/images/2026/11/07/multimedia/07int-uk-king-trip-01-fhwt/07int-uk-king-trip-01-fhwt-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/07/world/europe/king-charles-chogm-umbrella-rain-diplomacy.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -894,7 +920,7 @@
    "published": "2026-11-07T05:01:04Z",
    "image": "https://static01.nyt.com/images/2026/11/07/multimedia/07int-france-protest-photo-wmgh/07int-france-protest-photo-wmgh-mediumSquareAt3X.jpg",
    "url": "https://www.nytimes.com/2026/11/07/world/europe/france-fourth-saturday-protests.html",
-   "status": "original",
+   "status": "challenge",
    "archive_url": null,
    "wayback_url": null,
    "cover_only": false
@@ -1009,7 +1035,7 @@
    "source": "Financial Times",
    "topic": "World",
    "published": "2026-11-07T05:00:23Z",
-   "image": null,
+   "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7f700946-fe3b-42d2-8af2-f40a832e8f9a.jpg?source=next-barrier-page&amp;fit=scale-down&amp;quality=highest&amp;width=700&amp;dpr=1",
    "url": "https://www.ft.com/content/e25b73c7-9c6c-446b-b9d2-8f82d458bcf8?syn-25a6b1a6=1",
    "status": "original",
    "archive_url": null,
@@ -1215,7 +1241,7 @@
    "id": "afacb97b6212",
    "title": "Freezer meltdowns and airline hoaxes are a taste of things to come. Hoping for the best is no longer an option | Elisabeth Braw",
    "source": "The Guardian",
-   "topic": "Opinion",
+   "topic": "Tech",
    "published": "2026-11-07T05:00:02Z",
    "image": "https://i.guim.co.uk/img/media/fcd2f563900100a09e32551733206c8276b969a9/896_0_5047_4037/master/5047.jpg?width=140&quality=85&auto=format&fit=max&s=fc9fb69476e03fe39d3ccddb2b9176ab",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/07/freezer-meltdowns-airline-hoaxes-greyzone-aggression-europe",
@@ -1310,19 +1336,6 @@
    "published": "2026-11-07T04:23:00Z",
    "image": null,
    "url": "https://www.reuters.com/world/middle-east/qatar-says-its-mediation-efforts-between-us-iran-continue-prevent-escalation-2026-11-07/",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
-   "id": "45a12af98ce5",
-   "title": "US firm Equinix opens sixth Singapore data centre with investment of over S$370 million - 联合早报",
-   "source": "Lianhe Zaobao (EN)",
-   "topic": "Singapore",
-   "published": "2026-11-07T04:13:54Z",
-   "image": null,
-   "url": "https://www.zaobao.com.sg/en/finance/singapore/us-firm-equinix-opens-sixth-singapore-data-centre-investment-over-s370-million?ref=today-newsen-section-card-1",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -2187,19 +2200,6 @@
    "cover_only": false
   },
   {
-   "id": "467f7e775c54",
-   "title": "Our cheat sheet for the best things to do in Hong Kong, November 7-22",
-   "source": "SCMP",
-   "topic": "Hong Kong",
-   "published": "2026-11-07T00:00:11Z",
-   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/05/474cc2ab-298a-4c31-a029-94fdb54c3406_2be463ae.jpg?itok=yKx4KsBn&v=1793875221",
-   "url": "https://www.scmp.com/postmag/culture/article/3373420/our-cheat-sheet-best-things-do-hong-kong-november-7-22",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "2dcf782a8f4a",
    "title": "Trump’s Clashing Advisers Press Him to Make Iran War Decision - WSJ",
    "source": "WSJ",
@@ -2291,19 +2291,6 @@
    "cover_only": false
   },
   {
-   "id": "1fe67865c954",
-   "title": "逾20萬人網上觀看乒乓球賽竟是假？央視踢爆「假球賽，真帶貨」產業鏈｜網絡熱話",
-   "source": "TVB",
-   "topic": "Hong Kong",
-   "published": "2026-11-06T23:45:00Z",
-   "image": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/202687tKrSMdrq1793768057.jpg?x-oss-process=image/resize,w_600",
-   "url": "https://news.tvb.com/en/1204535",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "17a40bed5493",
    "title": "Coinbase’s Ryan VanGrack Says Crypto Clarity Is Advancing",
    "source": "Bloomberg",
@@ -2382,19 +2369,6 @@
    "cover_only": true
   },
   {
-   "id": "d1157a214e10",
-   "title": "His Job Is to Turn Walmart’s Customer Data Into Profit - WSJ",
-   "source": "WSJ",
-   "topic": "Top",
-   "published": "2026-11-06T23:27:02Z",
-   "image": null,
-   "url": "https://www.wsj.com/business/retail/seth-dallaire-walmart-ef8827b5",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": true
-  },
-  {
    "id": "6680ddbe0e24",
    "title": "Sweetgreen CEO Says Sales Rebound After Cyclospora-Related Traffic Drop",
    "source": "Bloomberg",
@@ -2415,6 +2389,19 @@
    "published": "2026-11-06T23:26:20Z",
    "image": null,
    "url": "https://www.bloomberg.com/news/videos/2026-11-06/affordability-first-open-to-hegseth-impeachment-moore-video",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": true
+  },
+  {
+   "id": "d1157a214e10",
+   "title": "His Job Is to Turn Walmart’s Customer Data Into Profit - WSJ",
+   "source": "WSJ",
+   "topic": "Top",
+   "published": "2026-11-06T23:25:00Z",
+   "image": null,
+   "url": "https://www.wsj.com/business/retail/seth-dallaire-walmart-ef8827b5",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -2861,19 +2848,6 @@
    "archive_url": null,
    "wayback_url": null,
    "cover_only": true
-  },
-  {
-   "id": "52e860822377",
-   "title": "Three men charged in US with using AI to impersonate CEOs and steal millions",
-   "source": "The Guardian",
-   "topic": "Tech",
-   "published": "2026-11-06T21:20:49Z",
-   "image": "https://i.guim.co.uk/img/media/c3a832e799ac1dd8a85e6c73794399c038d7678b/250_0_2500_2001/master/2500.jpg?width=140&quality=85&auto=format&fit=max&s=ea760337f8b9936ab96b5415c0bb868d",
-   "url": "https://www.theguardian.com/us-news/2026/nov/06/ai-ceo-impersonation-theft",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
   },
   {
    "id": "fc0b940e8d8f",
@@ -3630,19 +3604,6 @@
    "cover_only": false
   },
   {
-   "id": "9c95d9f4cc46",
-   "title": "Struggling to spell ‘male chauvinist pig’? Apple’s grey list means your iPhone won’t help you",
-   "source": "The Guardian",
-   "topic": "Tech",
-   "published": "2026-11-06T16:12:41Z",
-   "image": "https://i.guim.co.uk/img/media/28e97d03d0abcd9f1e2eb53b873f17079a1a7f82/998_270_3911_3129/master/3911.jpg?width=140&quality=85&auto=format&fit=max&s=c3306471f1180373ae3a5fed24d1cac7",
-   "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
-   "status": "original",
-   "archive_url": null,
-   "wayback_url": null,
-   "cover_only": false
-  },
-  {
    "id": "8b48cf50d5e9",
    "title": "US tech stock rout: is the AI bubble bursting?",
    "source": "The Guardian",
@@ -3754,6 +3715,32 @@
    "published": "2026-11-06T14:53:05Z",
    "image": "https://i.guim.co.uk/img/media/ac7d101f59d11c72b50edb388c770b059b99c420/423_0_2915_2334/master/2915.jpg?width=140&quality=85&auto=format&fit=max&s=9be97c03ff7cff1e1e9930694896f58a",
    "url": "https://www.theguardian.com/commentisfree/2026/nov/06/hong-kong-prisoners-china-signal-democracy-joshua-wong",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "cc14ad662460",
+   "title": "The most diverse, anti-establishment Congress in history is cause for optimism",
+   "source": "The Guardian",
+   "topic": "Opinion",
+   "published": "2026-11-06T14:17:18Z",
+   "image": "https://i.guim.co.uk/img/media/fc422a8eeed993acd196ddf762bd56586c9f915d/261_0_1708_1366/master/1708.jpg?width=140&quality=85&auto=format&fit=max&s=a1f526a96dc0b3d8d687a97cc4153227",
+   "url": "https://www.theguardian.com/us-news/2026/nov/05/congress-midterms-diverse",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "4796e8be5389",
+   "title": "Anti-fire ant eradication activist convicted after using legal arguments ‘similar to sovereign citizens’",
+   "source": "The Guardian",
+   "topic": "World",
+   "published": "2026-11-06T14:00:46Z",
+   "image": "https://i.guim.co.uk/img/media/654815fe7534ab77ec7637150114dc59aa8fec75/186_0_3101_2480/master/3101.jpg?width=140&quality=85&auto=format&fit=max&s=bcf6cce7795fa31f09a6d22888869053",
+   "url": "https://www.theguardian.com/australia-news/2026/nov/07/trevor-hold-activist-convicted-qld-fire-ant-eradication-program-queensland-ntwnfb",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
@@ -3910,6 +3897,19 @@
    "published": "2026-11-06T01:30:00Z",
    "image": null,
    "url": "https://www.washingtonpost.com/politics/2026/11/05/progressives-launch-effort-urge-rep-ro-khanna-run-president-2028/",
+   "status": "original",
+   "archive_url": null,
+   "wayback_url": null,
+   "cover_only": false
+  },
+  {
+   "id": "27010d2fc4f0",
+   "title": "Lianhe Zaobao English Edition launch welcomed across sectors; Tan Kiat How says it can deepen understanding between communities - 联合早报",
+   "source": "Lianhe Zaobao (EN)",
+   "topic": "Singapore",
+   "published": "2026-11-06T01:00:00Z",
+   "image": null,
+   "url": "https://www.zaobao.com.sg/en/news/singapore/lianhe-zaobao-english-edition-launch-welcomed-across-sectors-tan-kiat-how-says-it-can-deepen",
    "status": "original",
    "archive_url": null,
    "wayback_url": null,
