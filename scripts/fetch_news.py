@@ -460,6 +460,12 @@ def probe_stage(items: list, cache: dict, now: float, now_iso: str, paywalled: s
     budget = _env_int("MAX_PROBES_PER_RUN", 35)
     pending = []
     for item in items:
+        # 直连/转载版正文已经进 news-cache：优先它，不再为这条探测 archive
+        if item.get("_direct") or _text_cached(cache, item["url"], now):
+            item["status"] = "direct"
+            item["archive_url"] = None
+            item["wayback_url"] = None
+            continue
         fresh = cache_store.fresh_entry(cache, item["url"], now)
         if fresh is not None:
             apply_entry(item, fresh)
@@ -577,6 +583,87 @@ def _load_syndicated(marker: dict, title: str, deadline: float) -> dict | None:
     if not art or not rd.quality_ok(art["blocks"], title):
         return None
     return {"url": url, "title": art.get("title"), "image": art.get("image"), "blocks": art["blocks"]}
+
+
+def _text_cached(cache: dict, url: str, now: float) -> bool:
+    marker = cache.get("text:" + url)
+    if not isinstance(marker, dict) or marker.get("v") != rd.TEXT_CACHE_VERSION or not marker.get("ok"):
+        return False
+    ts = cache_store.parse_iso(marker.get("at"))
+    return bool(ts and now - ts < 30 * 86400)
+
+
+def direct_stage(items: list, cache: dict, now: float, now_iso: str,
+                 synd_payloads: dict, direct_sources: set) -> int:
+    """直连正文优先：能直接读的源 / 已找到转载版的付费墙源先写 news-cache。
+
+    这一步放在 archive 探测之前；成功的条目会跳过后续 archive 探测。
+    失败的条目不写 marker，交给 probe + text_stage 再试（archive/Jina 兜底）。
+    """
+    token = os.environ.get("NEWS_CACHE_TOKEN", "").strip()
+    if not token:
+        return 0
+    jina_key = os.environ.get("JINA_KEY", "").strip() or None
+    repo = os.environ.get("NEWS_CACHE_REPO", "lin-z-h/news-cache")
+    budget = _env_int("DIRECT_TEXT_BUDGET", 16)
+    todo = []
+    for item in items:
+        if budget <= 0 or time.monotonic() >= DEADLINE:
+            break
+        if _text_cached(cache, item["url"], now):
+            item["_direct"] = True
+            continue
+        if item["source"] not in direct_sources and item["url"] not in synd_payloads:
+            continue
+        budget -= 1
+        todo.append(item)
+    if not todo:
+        return 0
+
+    def work(item: dict):
+        synd = synd_payloads.get(item["url"])
+        if synd is None:
+            marker = cache.get("synd:" + item["url"])
+            if isinstance(marker, dict) and marker.get("ok"):
+                synd = _load_syndicated(marker, item["title"],
+                                        min(DEADLINE, time.monotonic() + 40))
+        blocks = rd.fetch_text(
+            item["url"], key=jina_key, title=item["title"], syndicated=synd,
+            deadline=min(DEADLINE, time.monotonic() + 60),
+        )
+        return item, blocks
+
+    stored = 0
+    workers = max(1, _env_int("DIRECT_TEXT_WORKERS", 2))
+    _log(f"[direct] 直连正文 {len(todo)} 条，并发 {workers}")
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(work, it) for it in todo]
+        for fut in as_completed(futures):
+            try:
+                item, blocks = fut.result()
+            except Exception as exc:
+                _log(f"[direct] 异常: {type(exc).__name__}: {str(exc)[:80]}")
+                continue
+            if not blocks:
+                continue
+            payload = {
+                "v": rd.TEXT_CACHE_VERSION,
+                "url": item["url"], "title": item["title"], "fetched_at": now_iso,
+                "source": "syndicated" if item.get("syndicated_url") else "direct",
+                "syndicated_url": item.get("syndicated_url"),
+                "blocks": blocks,
+            }
+            try:
+                ok = rd.cache_put(token, repo, item["id"] + ".json", payload)
+            except Exception as exc:
+                _log(f"[direct] 写入失败: {type(exc).__name__}: {str(exc)[:60]}")
+                ok = False
+            if ok:
+                cache["text:" + item["url"]] = {"at": now_iso, "ok": 1,
+                                                 "v": rd.TEXT_CACHE_VERSION}
+                item["_direct"] = True
+                stored += 1
+    return stored
 
 
 def text_stage(items: list, cache: dict, now: float, now_iso: str,
@@ -739,13 +826,19 @@ def main() -> int:
 
         paywalled = {s.get("name") for s in config.get("sources", [])
                      if s.get("cover_only_when_unarchived")}
+        direct_sources = {s.get("name") for s in config.get("sources", [])
+                          if s.get("direct")}
         providers_by_source = {
             s.get("name"): s.get("syndication") for s in config.get("sources", [])
             if s.get("syndication")
         }
 
-        probe_stage(items, cache, now, now_iso, paywalled)
+        # 顺序很重要：先转载版/原文直连写 news-cache，再对没拿到的条目探测 archive
         synd_payloads = syndication_stage(items, cache, now, now_iso, paywalled, providers_by_source)
+        direct_stored = direct_stage(items, cache, now, now_iso, synd_payloads, direct_sources)
+        if direct_stored:
+            _log(f"[direct] 直连正文新增 {direct_stored} 条 → news-cache")
+        probe_stage(items, cache, now, now_iso, paywalled)
         stored = text_stage(items, cache, now, now_iso, synd_payloads)
         if stored:
             _log(f"[text] 正文缓存新增 {stored} 条 → news-cache")

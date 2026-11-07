@@ -52,6 +52,8 @@ jobs:
           PROBE_TOTAL_TIMEOUT: "45"
           AUTO_ARCHIVE_BUDGET: "6"
           SYND_BUDGET: "6"
+          DIRECT_TEXT_BUDGET: "16"
+          DIRECT_TEXT_WORKERS: "2"
           READ_TEXT_BUDGET: "20"
           TEXT_WORKERS: "2"
           OG_IMAGE_BUDGET: "15"

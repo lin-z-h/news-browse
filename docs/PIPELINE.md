@@ -21,6 +21,8 @@
 | `PROBE_TOTAL_TIMEOUT` | `45` | 单条探测子进程上限（自动存档时放宽到 75） |
 | `AUTO_ARCHIVE_BUDGET` | `6` | 本轮最多自动 “archive this url” 条数 |
 | `SYND_BUDGET` | `6` | 本轮最多解析转载版条数 |
+| `DIRECT_TEXT_BUDGET` | `16` | 本轮最多直连正文条数（优先于 archive） |
+| `DIRECT_TEXT_WORKERS` | `2` | 直连正文并发 |
 | `READ_TEXT_BUDGET` | `20` | 本轮最多抓正文条数 |
 | `TEXT_WORKERS` | `2` | 正文抓取并发 |
 | `OG_IMAGE_BUDGET` | `15` | 本轮最多回填多少张 og:image |
@@ -48,7 +50,15 @@ TVB 解析 Nuxt `__NUXT_DATA__`。所有源只取**标题、链接、发布时�
 
 RSS 拿不到图时，`PUT og:image` 回填（限额 15 条/轮，结果缓存 30 天）。
 
-## 3. 阶段 B：快照探测 + 自动存档
+## 3. 阶段 B：直连正文 → 快照探测
+
+**顺序：先直连，后 archive。** 能直接读的源先抓正文写 news-cache，成功即跳过 archive 探测：
+
+- **TVB**：`__NUXT_DATA__` 的 `content/content_hk` + `cover`，不需要 archive/Jina；
+- **The Guardian / NYT / TIME**：原文 HTML 的 JSON-LD `articleBody` 或文章容器段落；
+- **付费墙源（Bloomberg/FT/WSJ/Economist）**：先解析转载版（The Edge Malaysia、
+  Seoul Economic Daily 等），拿到正文就直接缓存；
+- 直连失败的条目才进入 archive 探测；探测仍失败才转封面模式。
 
 ```
 缓存命中（archive 180d / wayback 30d / original 3d / challenge 12h / unarchived 12h）

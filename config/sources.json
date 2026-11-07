@@ -16,6 +16,7 @@
     {
       "name": "The New York Times",
       "hide_unarchived": true,
+      "direct": true,
       "feeds": [
         {"url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml", "topic": "Top",
          "api": {"kind": "nyt", "section": "home"}},
@@ -45,6 +46,7 @@
     },
     {
       "name": "The Guardian",
+      "direct": true,
       "feeds": [
         {"url": "https://www.theguardian.com/world/rss", "topic": "World",
          "api": {"kind": "guardian", "section": "world"}},
@@ -76,6 +78,7 @@
     },
     {
       "name": "TIME",
+      "direct": true,
       "feeds": [
         {"url": "https://time.com/feed/", "topic": "Top",
          "api": {"kind": "wp", "url": "https://time.com/wp-json/wp/v2/posts"}},
@@ -113,6 +116,7 @@
     },
     {
       "name": "TVB",
+      "direct": true,
       "feeds": [
         {"type": "tvb", "url": "https://news.tvb.com/tc", "topic": "Hong Kong"}
       ]
