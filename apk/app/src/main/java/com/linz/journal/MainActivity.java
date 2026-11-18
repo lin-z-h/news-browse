@@ -13,6 +13,7 @@ import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.CookieManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.JsPromptResult;
 import android.webkit.WebChromeClient;
@@ -111,6 +112,7 @@ public class MainActivity extends Activity {
 
         root = new FrameLayout(this);
         web = new WebView(this);
+        CookieManager.getInstance().setAcceptCookie(true);
         root.addView(web, new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
@@ -518,8 +520,16 @@ public class MainActivity extends Activity {
             captureMode = false;
             capturingFor = null;
             applyButtons();
+            CookieManager.getInstance().flush();
             web.loadUrl(SITE_URL);
         });
+    }
+
+    @Override
+    protected void onPause() {
+        // 将网站签发的持久 Cookie 写入本机 WebView 存储，供下次打开时使用。
+        CookieManager.getInstance().flush();
+        super.onPause();
     }
 
     @Override
