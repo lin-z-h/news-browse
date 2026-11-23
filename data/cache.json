@@ -3833,6 +3833,54 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://news.tvb.com/en/1208015": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://news.tvb.com/en/1208018": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://news.tvb.com/en/1208019": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://news.tvb.com/en/1208020": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://news.tvb.com/en/1208021": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://news.tvb.com/en/1208029": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://news.tvb.com/en/1208030": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://news.tvb.com/en/1208032": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://time.com/article/2026/10/31/compost-halloween-pumpkins/": {
   "archive_url": null,
   "checked_at": "2026-10-31T13:01:24Z",
@@ -4094,6 +4142,12 @@
  "https://time.com/article/2026/11/22/how-to-deal-with-anxiety/": {
   "archive_url": null,
   "checked_at": "2026-11-22T17:27:07Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://time.com/article/2026/11/23/blade-runner-2099-review/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -11633,6 +11687,42 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-23/ai-linked-stocks-take-off-after-nvidia-reinstates-jensen-huang": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/amazon-is-said-to-pay-7-5-billion-for-ai-startup-decart-s-tech": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/anthropic-shares-churn-defying-ai-trade-rally-on-huang-s-return": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/boe-s-pill-says-action-needed-to-maintain-inflation-credibility": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/braskem-creditors-reach-deal-on-out-of-court-debt-revamp": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/canadian-stocks-recover-as-huang-s-return-fuels-metals-tech": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-23/china-state-funds-ramp-up-etf-buying-to-record-as-rout-deepens": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
@@ -11645,9 +11735,45 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-23/credit-heads-swivel-as-huang-return-ignites-tech-debt-rally": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-23/emerging-market-stocks-set-to-erase-2026-gains-on-ai-selloff": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/eu-targets-ex-russian-fighters-in-new-sanctions-package": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/european-farmers-set-to-plant-less-as-costs-weather-bite": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/ford-invests-in-satellite-startup-in-push-beyond-auto-business": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/forint-jumps-after-hungary-softens-interest-rate-guidance": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/health-insurers-stocks-slide-again-on-latest-medicare-proposal": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -11663,6 +11789,42 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-23/india-working-to-resolve-scotch-whisky-dispute-official-says": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/italy-warns-us-threatens-to-undermine-europe-s-protected-foods": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/mexico-s-firms-see-better-security-even-as-extortion-persists": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/new-hacked-data-puts-russian-death-toll-in-ukraine-near-500-000": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo-with-government-input": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/polar-cruise-firm-hx-expeditions-gains-time-for-creditor-talks": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-23/south-korea-s-early-exports-gain-after-1-trillion-milestone": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
@@ -11675,9 +11837,39 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/articles/2026-11-23/stellantis-pulls-out-of-auto-racing-as-ceo-ramps-up-cost-cuts": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/strategy-mstr-enterprise-value-falls-below-its-851-305-btc-holding": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/articles/2026-11-23/tata-steel-to-acquire-26-4-in-apl-apollo-tubes-for-1-7-billion": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/trump-praises-nvidia-s-decision-to-reinstate-huang-as-ceo": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/trump-says-he-expects-china-to-buy-another-250-boeing-planes": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/ubs-barclays-stuck-with-1-2-billion-debt-as-irca-deal-unravels": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -11690,6 +11882,12 @@
  "https://www.bloomberg.com/news/articles/2026-11-23/vietnam-picks-french-korean-consortium-for-high-speed-rail-deal": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/articles/2026-11-23/woolworths-investors-reject-pay-report-in-shareholder-rebuke": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -11855,6 +12053,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/features/2026-11-23/quien-es-maximiliano-luksic-heredero-de-antofagasta-y-alcalde-en-chile": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/live-blog/2026-11-02/ftse-100-live-updates-pound-gilts-pmi-data-trump-iran-oil-prices-ryanair-what-s-moving-uk-markets-right-now-markets-today": {
   "archive_url": null,
   "checked_at": "2026-11-02T08:33:26Z",
@@ -11906,6 +12110,12 @@
  "https://www.bloomberg.com/news/live-blog/2026-11-20/markets-turmoil": {
   "archive_url": null,
   "checked_at": "2026-11-20T14:25:55Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/live-blog/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo-live-updates": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -15869,9 +16079,27 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/videos/2026-11-23/-great-to-see-huang-back-at-nvidia-ferragu-says-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/analyst-backs-huang-s-return-cautiously-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/videos/2026-11-23/asia-market-measures-may-buffer-stock-losses-bnp-video": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/david-herro-on-nvidia-s-ceo-shakeup-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -15881,9 +16109,63 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.bloomberg.com/news/videos/2026-11-23/huang-s-return-to-fuel-us-ai-relevance-says-mortonson-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.bloomberg.com/news/videos/2026-11-23/india-s-appeal-grows-as-global-tech-selloff-deepens-video": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/more-ai-debt-could-be-coming": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/nvidia-a-perfect-example-of-market-amplification-herro-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/nvidia-board-reinstates-jensen-huang-as-ceo-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/nvidia-reinstates-jensen-huang-as-ceo-and-president-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/odd-lots-can-huawei-challenge-nvidia-in-the-ai-arms-race": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/stocks-soar-as-huang-s-nvidia-return-fuels-ai-bets-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/trump-praises-return-of-huang-to-nvidia-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/trump-s-efforts-to-reinstate-huang-at-nvidia-pays-off-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -15896,6 +16178,12 @@
  "https://www.bloomberg.com/news/videos/2026-11-23/weride-ceo-on-earnings-and-international-markets-video": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.bloomberg.com/news/videos/2026-11-23/what-jensen-huang-s-return-means-for-nvidia-video": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -16388,6 +16676,12 @@
  "https://www.economist.com/business/2026/11/19/the-worlds-carmakers-are-revving-up-in-america": {
   "archive_url": null,
   "checked_at": "2026-11-19T14:44:04Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.economist.com/business/2026/11/23/bartleby-newsletter-valley-mentality": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -17447,6 +17741,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/08914b05-bbfa-478d-b38a-549acfc1aae6?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/0948dbc1-d5cb-4b41-adce-880ea1bf97b9?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-10T18:56:16Z",
@@ -17507,6 +17807,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/0ee5c4f7-f6c8-4dcc-b947-3770c0253faf?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/0ef40ac9-6d01-428f-98c8-a52bf5b9a787?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-15T01:22:08Z",
@@ -17533,9 +17839,9 @@
  },
  "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1": {
   "archive_url": null,
-  "checked_at": "2026-11-23T04:08:03Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
-  "wayback_url": null
+  "wayback_url": "http://web.archive.org/web/20261123111153/https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1"
  },
  "https://www.ft.com/content/0fab9ede-4fa1-4f94-b23e-e32f07a6b7df?syn-25a6b1a6=1": {
   "archive_url": null,
@@ -17837,6 +18143,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/20d2ebe3-e945-4659-a122-31bf85a4e4e5?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/20dc125b-02e0-4bee-be43-16aa7f8185d9?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-10T03:51:09Z",
@@ -17966,6 +18278,12 @@
  "https://www.ft.com/content/28228fa9-52c9-4233-9133-27145a905c0f?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-13T11:38:33Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/28cb9178-ac22-44b9-99f5-d5f25a86d366?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -18914,6 +19232,12 @@
  "https://www.ft.com/content/5640c74d-24e5-465b-8119-a2595dac7748?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:43:43Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.ft.com/content/56e2a4a7-f604-4e32-afba-32016d5c8cd1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -20309,6 +20633,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.ft.com/content/aa71d6bc-bbca-4e95-81b1-20895ac0cb59?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.ft.com/content/aa8290dc-a20a-45af-97ab-1e71f97f236a?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-19T14:44:04Z",
@@ -20380,6 +20710,12 @@
   "checked_at": "2026-11-14T16:11:01Z",
   "status": "challenge",
   "wayback_url": null
+ },
+ "https://www.ft.com/content/add25ebd-63ef-4ee0-ac76-204bde4cb2f3?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261123151017/https://www.ft.com/content/add25ebd-63ef-4ee0-ac76-204bde4cb2f3?syn-25a6b1a6=1"
  },
  "https://www.ft.com/content/ae564e09-eb0d-42c6-b61f-50a4e61d0240?syn-25a6b1a6=1": {
   "archive_url": null,
@@ -21029,6 +21365,12 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261115232034/https://www.ft.com/content/d5adde7e-68cc-455b-ba78-b39cc3676b7a?syn-25a6b1a6=1"
  },
+ "https://www.ft.com/content/d5e951e6-b5f6-4286-9de4-495c9a3c2472?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261123103530/https://www.ft.com/content/d5e951e6-b5f6-4286-9de4-495c9a3c2472?syn-25a6b1a6=1"
+ },
  "https://www.ft.com/content/d607db45-057e-4ace-9761-ab865feb8666?syn-25a6b1a6=1": {
   "archive_url": null,
   "checked_at": "2026-11-07T12:53:13Z",
@@ -21172,6 +21514,12 @@
   "checked_at": "2026-11-07T12:53:13Z",
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261004060226/https://www.ft.com/content/de27e183-c8ab-4098-946b-7c1faf5a3d8a?syn-25a6b1a6=1"
+ },
+ "https://www.ft.com/content/de3cba35-e80d-4517-b7fe-c7ebdb76716d?syn-25a6b1a6=1": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
  },
  "https://www.ft.com/content/df9e1323-8c8d-4ff4-bff5-e2734c6144b6?syn-25a6b1a6=1": {
   "archive_url": null,
@@ -26875,7 +27223,7 @@
  },
  "https://www.nytimes.com/2026/11/20/science/hiv-research-funding-nih.html": {
   "archive_url": null,
-  "checked_at": "2026-11-20T22:24:09Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -27073,7 +27421,7 @@
  },
  "https://www.nytimes.com/2026/11/21/arts/tamagotchis-comeback.html": {
   "archive_url": null,
-  "checked_at": "2026-11-22T22:52:56Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -27127,7 +27475,7 @@
  },
  "https://www.nytimes.com/2026/11/21/climate/what-to-know-about-the-planned-explosion-in-iowa.html": {
   "archive_url": null,
-  "checked_at": "2026-11-22T17:27:07Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -27265,7 +27613,7 @@
  },
  "https://www.nytimes.com/2026/11/21/world/europe/princess-kate-bbc-cancer-film.html": {
   "archive_url": null,
-  "checked_at": "2026-11-21T20:16:23Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -27308,6 +27656,12 @@
  "https://www.nytimes.com/2026/11/22/business/mortgage-rates-housing-landlords.html": {
   "archive_url": null,
   "checked_at": "2026-11-22T17:27:07Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/22/business/nvidia-stock-huang-ai-sp500-markets.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -27421,7 +27775,7 @@
  },
  "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html": {
   "archive_url": null,
-  "checked_at": "2026-11-23T04:08:03Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -27469,7 +27823,7 @@
  },
  "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html": {
   "archive_url": null,
-  "checked_at": "2026-11-23T04:08:03Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -27506,6 +27860,84 @@
  "https://www.nytimes.com/2026/11/22/world/middleeast/israeli-political-leaders-decry-jewish-terrorism-after-west-bank-attacks.html": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/business/media/marcia-ann-gillespie-dead.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/climate/cop31-collapse-what-next.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/health/measles-adults-vaccine-boosters.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/nyregion/jessica-ramos-campaign.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/opinion/national-popular-vote.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/style/paolo-bulgari-dead.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/technology/trump-nvidia-stock-purchases.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/us/politics/democrats-debates-2028-presidential-race.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/world/europe/manchester-don-toliver-concert-evacuation-uk.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -27689,6 +28121,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.nytimes.com/video/world/asia/100000011244032/thailand-snake-catcher-bangkok.html": {
   "archive_url": null,
   "checked_at": "2026-11-01T06:40:17Z",
@@ -27827,6 +28265,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/business/ai-rally-set-add-2-trillion-nasdaq-100-huang-returns-nvidia-helm-2026-11-23/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:05:28Z",
@@ -27956,6 +28400,12 @@
  "https://www.reuters.com/business/coreweave-beats-quarterly-revenue-estimates-ai-demand-defies-growing-doubts-2026-11-10/": {
   "archive_url": null,
   "checked_at": "2026-11-11T00:16:33Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -28883,6 +29333,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/": {
   "archive_url": null,
   "checked_at": "2026-11-09T20:13:23Z",
@@ -29465,6 +29921,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/markets/europe/european-stocks-recover-after-steep-technology-led-selloff-2026-11-23/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/markets/europe/new-world-development-proposes-32-billion-rights-issue-2026-11-15/": {
   "archive_url": null,
   "checked_at": "2026-11-15T22:08:14Z",
@@ -29606,6 +30068,12 @@
  "https://www.reuters.com/sports/marquez-wins-eighth-motogp-title-portugal-2026-11-22/": {
   "archive_url": null,
   "checked_at": "2026-11-22T22:52:56Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/sports/russias-sports-comeback-hits-european-wall-2026-11-23/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -29906,6 +30374,12 @@
  "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/": {
   "archive_url": null,
   "checked_at": "2026-11-11T23:44:51Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -31325,6 +31799,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.reuters.com/world/middle-east/turkish-authorities-search-animal-resembling-lion-istanbul-woodland-2026-11-23/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.reuters.com/world/middle-east/two-missiles-strike-irans-qeshm-island-tasnim-news-agency-says-2026-11-06/": {
   "archive_url": null,
   "checked_at": "2026-11-07T09:52:30Z",
@@ -31454,6 +31934,12 @@
  "https://www.reuters.com/world/russia-sets-cull-limits-help-control-bear-population-after-attacks-kill-36-2026-11-13/": {
   "archive_url": null,
   "checked_at": "2026-11-15T01:22:08Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.reuters.com/world/russia-spend-576-million-building-ferries-to-secure-supplies-to-kaliningrad-2026-11-23/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -32807,6 +33293,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.scmp.com/economy/policy/article/3375468/nothing-came-through-why-boeing-failed-land-firm-orders-during-trumps-shenzhen-trip": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.scmp.com/lifestyle/arts/article/3373342/artist-oscar-chan-examines-religion-myth-and-trauma-haunting-hong-kong-exhibition": {
   "archive_url": null,
   "checked_at": "2026-11-08T00:56:33Z",
@@ -32906,6 +33398,12 @@
  "https://www.scmp.com/lifestyle/entertainment/article/3375221/dylan-rourke-manni-l-perez-revealed-gta-6s-jason-and-lucia-voices": {
   "archive_url": null,
   "checked_at": "2026-11-22T08:55:10Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.scmp.com/lifestyle/entertainment/article/3375411/prime-video-drama-blade-runner-2099-review-michelle-yeoh-leads-provocative-sci-fi-sequel": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -33863,6 +34361,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.scmp.com/news/china/article/3375520/mexico-and-china-agree-create-working-group-boost-trade": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.scmp.com/news/china/diplomacy/article/3372823/kissinger-moment-over-us-and-china-urged-foster-new-bridge-builders": {
   "archive_url": null,
   "checked_at": "2026-10-31T13:01:24Z",
@@ -34310,6 +34814,12 @@
  "https://www.scmp.com/news/china/diplomacy/article/3375378/washingtons-missteps-narrow-us-lead-over-china-annual-asia-power-ranking": {
   "archive_url": null,
   "checked_at": "2026-11-22T17:27:07Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.scmp.com/news/china/diplomacy/article/3375490/china-us-ties-enter-more-difficult-2027-broad-stability-will-hold-expert": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -35309,6 +35819,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.scmp.com/news/hong-kong/law-and-crime/article/3375509/second-hong-kong-man-arrested-animal-cruelty-hanging-stray-dog": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.scmp.com/news/hong-kong/politics/article/3372905/former-apple-daily-publisher-joins-mainland-china-tour-rehabilitated-offenders": {
   "archive_url": null,
   "checked_at": "2026-11-01T16:33:53Z",
@@ -35612,6 +36128,18 @@
  "https://www.scmp.com/news/hong-kong/society/article/3375408/tai-po-fire-survivors-battle-grief-fear-and-trauma-first-anniversary-nears": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.scmp.com/news/hong-kong/society/article/3375510/university-hong-kong-suspends-china-human-rights-course-law-dean-steps-down": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.scmp.com/news/hong-kong/society/article/3375519/hong-kong-creates-building-maintenance-regulator-address-tai-po-fire-failings": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -36326,6 +36854,12 @@
  "https://www.scmp.com/news/world/europe/article/3375401/russian-strikes-kill-6-kyiv-region-ukraine-says": {
   "archive_url": null,
   "checked_at": "2026-11-22T22:52:56Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.scmp.com/news/world/europe/article/3375518/turkish-authorities-search-lioness-spotted-istanbuls-outskirts": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -38171,6 +38705,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.scmp.com/tech/big-tech/article/3375515/nvidia-reinstates-jensen-huang-ceo-president-and-board-director": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.scmp.com/tech/tech-trends/article/3372834/self-improving-ai-key-step-towards-agi-safety-key-zai-founder": {
   "archive_url": null,
   "checked_at": "2026-11-01T13:35:11Z",
@@ -38873,6 +39413,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/australia-news/2026/nov/24/international-students-university-funding-failures-australia-ntwnfb": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/australia-news/audio/2026/nov/06/the-crimes-of-russell-brand-full-story-podcast-ntwnfb": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:43:43Z",
@@ -38894,6 +39440,12 @@
  "https://www.theguardian.com/books/2026/nov/08/louise-cansot-paris-model-prix-goncourt-phillipe-jaenada-luc-corlouer": {
   "archive_url": null,
   "checked_at": "2026-11-08T16:23:39Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/books/2026/nov/23/pen-america-gaza-splinter-group": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -39044,6 +39596,12 @@
  "https://www.theguardian.com/business/live/2026/nov/19/anthropic-float-stock-market-nasdaq-raises-81bn-record-ipo-latest-news-updates": {
   "archive_url": null,
   "checked_at": "2026-11-19T14:44:04Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/business/live/2026/nov/23/tech-sell-off-ai-stock-market-support-measures-deployed-south-korea-taiwan-china-ftse-nasdaq-latest-news-updates": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -39533,6 +40091,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/environment/2026/nov/23/plant-based-lunches-could-cut-australia-emissions-by-15m-tonnes-new-research-shows": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/environment/2026/oct/31/john-healey-chancellor-offshore-wind-projects-veto": {
   "archive_url": null,
   "checked_at": "2026-10-31T13:01:24Z",
@@ -40007,6 +40571,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/science/2026/nov/23/pervert-glasses-meta-word-of-the-year-macquarie-dictionary-nudify-aidr": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/science/audio/2026/nov/05/ferritin-face-can-you-really-diagnose-low-iron-from-a-selfie-podcast": {
   "archive_url": null,
   "checked_at": "2026-11-07T11:59:20Z",
@@ -40130,6 +40700,12 @@
  "https://www.theguardian.com/society/2026/nov/21/campaigners-back-call-for-scrutiny-of-consent-laws-by-joanne-young": {
   "archive_url": null,
   "checked_at": "2026-11-21T13:45:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/society/2026/nov/23/smart-car-tracking-control-features-domestic-violence-warning-ntwnfb": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -40589,6 +41165,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.theguardian.com/uk-news/2026/nov/23/concertgoers-criticise-security-manchester-co-op-live-arena": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.theguardian.com/uk-news/video/2026/nov/19/option-joanne-young-statement-outside-court-video": {
   "archive_url": null,
   "checked_at": "2026-11-19T22:47:37Z",
@@ -40946,6 +41528,18 @@
  "https://www.theguardian.com/us-news/2026/nov/22/howard-lutnick-nvidia-china": {
   "archive_url": null,
   "checked_at": "2026-11-22T17:27:07Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/us-news/2026/nov/23/lax-skylink-people-mover-los-angeles": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.theguardian.com/us-news/2026/nov/23/social-media-us-politics-midterms": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -41549,6 +42143,12 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261122220751/https://www.washingtonpost.com/advice/2026/11/22/carolyn-hax-wife-overloaded-by-texts-that-spouse-calls-short-sweet/"
  },
+ "https://www.washingtonpost.com/advice/2026/11/23/our-daughter-is-missing-thanksgiving-our-son-in-laws-birthday-week/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261123140726/https://www.washingtonpost.com/advice/2026/11/23/our-daughter-is-missing-thanksgiving-our-son-in-laws-birthday-week/"
+ },
  "https://www.washingtonpost.com/business/2026/11/05/open-ai-makes-pledges-data-center-operation-after-midterm-backlash/": {
   "archive_url": null,
   "checked_at": "2026-11-07T10:43:43Z",
@@ -41894,6 +42494,18 @@
  "https://www.washingtonpost.com/business/2026/11/22/retiring-with-401k-be-sure-you-understand-rmds/": {
   "archive_url": null,
   "checked_at": "2026-11-23T04:08:03Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.washingtonpost.com/business/2026/11/23/senate-gop-leaders-signal-openness-cutting-off-iran-war-funding/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261123110636/https://www.washingtonpost.com/business/2026/11/23/senate-gop-leaders-signal-openness-cutting-off-iran-war-funding/"
+ },
+ "https://www.washingtonpost.com/business/2026/11/23/tis-season-scams-protect-yourself-while-holiday-shopping-online/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -42440,6 +43052,12 @@
  "https://www.washingtonpost.com/food/2026/11/21/16-thanksgiving-sides-recipes-that-steal-show/": {
   "archive_url": null,
   "checked_at": "2026-11-22T08:55:10Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.washingtonpost.com/food/2026/11/25/qa-ask-posts-becky-krystal-about-your-thanksgiving-recipes-kitchen-dilemmas/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -45023,6 +45641,18 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261122163351/https://www.washingtonpost.com/politics/2026/11/22/why-this-incoming-congresswoman-opposed-jeffries-speaker/"
  },
+ "https://www.washingtonpost.com/politics/2026/11/23/fight-chair-gop-tests-trumps-clout-after-midterms-wipeout/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261123101225/https://www.washingtonpost.com/politics/2026/11/23/fight-chair-gop-tests-trumps-clout-after-midterms-wipeout/"
+ },
+ "https://www.washingtonpost.com/politics/2026/11/23/who-is-ready-some-presidential-debates/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.washingtonpost.com/politics/interactive/2026/11/18/these-are-senate-democrats-backing-schumer-van-hollen-majority-leader/": {
   "archive_url": null,
   "checked_at": "2026-11-18T22:44:06Z",
@@ -45689,6 +46319,24 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261122200028/https://www.washingtonpost.com/technology/2026/11/22/spacecraft-enters-mercury-orbit-first-time-more-than-decade/"
  },
+ "https://www.washingtonpost.com/technology/2026/11/23/how-nvidia-fought-years-washington-sell-its-prized-chips-china/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261123145902/https://www.washingtonpost.com/technology/2026/11/23/how-nvidia-fought-years-washington-sell-its-prized-chips-china/"
+ },
+ "https://www.washingtonpost.com/technology/2026/11/23/nvidia-board-reinstates-jensen-huang-after-us-government-input/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.washingtonpost.com/technology/2026/11/23/trump-urges-nvidia-reinstate-jensen-huang-calling-him-best-thing-us/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.washingtonpost.com/technology/interactive/2026/11/13/timeline-president-trump-jensen-huang-close-relationship/": {
   "archive_url": null,
   "checked_at": "2026-11-13T18:49:16Z",
@@ -46022,6 +46670,12 @@
  "https://www.washingtonpost.com/wellness/2026/11/22/health-discussion-you-should-have-when-you-get-together-with-family/": {
   "archive_url": null,
   "checked_at": "2026-11-22T22:52:56Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.washingtonpost.com/wellness/2026/11/23/im-an-er-physician-here-are-5-cooking-injuries-i-see-most-during-holidays/": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -46765,7 +47419,7 @@
  },
  "https://www.wsj.com/arts-culture/food-cooking/wine-quiz-test-wine-knowledge-52087dd5": {
   "archive_url": null,
-  "checked_at": "2026-11-22T22:52:56Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -46798,6 +47452,12 @@
   "checked_at": "2026-11-16T23:04:12Z",
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261115180841/https://www.wsj.com/arts-culture/television/heartland-review-jessica-chastains-country-music-mystery-10b5e33f"
+ },
+ "https://www.wsj.com/arts-culture/television/liz-diller-ric-scofidio-architect-provocateurs-review-a-couples-urban-visions-5b0bcbe9": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
  },
  "https://www.wsj.com/business/a-reined-in-jensen-huang-is-nvidias-best-option-e79cb305": {
   "archive_url": null,
@@ -46997,6 +47657,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/business/deals/crowdstrike-to-buy-zscaler-in-43-9-billion-stock-swap-4c926031": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.wsj.com/business/deals/empower-brands-makes-unsolicited-bid-to-buy-helen-of-troy-for-1-6-billion-04261692": {
   "archive_url": null,
   "checked_at": "2026-11-08T21:23:28Z",
@@ -47008,6 +47674,12 @@
   "checked_at": "2026-11-13T11:38:33Z",
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261111151502/https://www.wsj.com/business/deals/mccormicks-65-billion-unilever-foods-merger-could-harm-competition-u-k-regulator-warns-ccd08701"
+ },
+ "https://www.wsj.com/business/deals/monte-dei-paschis-board-sends-mixed-signals-over-intesas-37-billion-offer-e2e40d9a": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
  },
  "https://www.wsj.com/business/deals/railroad-ceos-loose-lips-threaten-to-torpedo-his-72-billion-megadeal-30162207": {
   "archive_url": null,
@@ -48089,6 +48761,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.wsj.com/finance/commodities-futures/gold-rises-but-expectations-of-tighter-u-s-monetary-policy-weigh-512a4860": {
   "archive_url": null,
   "checked_at": "2026-11-02T19:55:52Z",
@@ -48148,6 +48826,12 @@
   "checked_at": "2026-11-23T04:08:03Z",
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261123034645/https://www.wsj.com/finance/commodities-futures/oil-edges-lower-as-supply-surplus-prospects-offset-mideast-tensions-cc9879f2"
+ },
+ "https://www.wsj.com/finance/commodities-futures/oil-falls-amid-risk-off-sentiment-c478ebdc": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261123005651/https://www.wsj.com/finance/commodities-futures/oil-falls-amid-risk-off-sentiment-c478ebdc"
  },
  "https://www.wsj.com/finance/commodities-futures/oil-falls-as-improving-supply-prospects-offset-mideast-tensions-3499b2f6": {
   "archive_url": null,
@@ -48329,6 +49013,12 @@
   "status": "challenge",
   "wayback_url": null
  },
+ "https://www.wsj.com/finance/currencies/yen-may-strengthen-vs-dollar-on-diminished-risk-appetite-6434fe7e": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.wsj.com/finance/deutsche-bank-shares-drop-after-wide-ranging-whistleblower-leaks-bc550948": {
   "archive_url": null,
   "checked_at": "2026-11-17T14:57:24Z",
@@ -48352,6 +49042,18 @@
   "checked_at": "2026-11-07T11:35:32Z",
   "status": "challenge",
   "wayback_url": null
+ },
+ "https://www.wsj.com/finance/investing/anthropic-committed-to-spend-900-billion-wall-street-expects-its-debt-to-be-junk-5514d55d": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261123134227/https://www.wsj.com/finance/investing/anthropic-committed-to-spend-900-billion-wall-street-expects-its-debt-to-be-junk-5514d55d"
+ },
+ "https://www.wsj.com/finance/investing/asian-equities-fall-as-anthropics-ipo-fails-to-staunch-ai-stock-selloff-c47592b0": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": "http://web.archive.org/web/20261121085521/https://www.wsj.com/finance/investing/asian-equities-fall-as-anthropics-ipo-fails-to-staunch-ai-stock-selloff-c47592b0"
  },
  "https://www.wsj.com/finance/investing/data-centers-are-the-growth-engine-of-americas-power-grid-e16e0eaa": {
   "archive_url": null,
@@ -48409,7 +49111,7 @@
  },
  "https://www.wsj.com/finance/investing/jensen-and-lori-huang-have-amassed-a-vast-fortune-we-break-down-their-wealth-3d2287b1": {
   "archive_url": null,
-  "checked_at": "2026-11-23T04:08:03Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -48583,9 +49285,9 @@
  },
  "https://www.wsj.com/finance/stocks/has-the-ai-bubble-already-burst-2f1dcca8": {
   "archive_url": null,
-  "checked_at": "2026-11-23T04:08:03Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
-  "wayback_url": null
+  "wayback_url": "http://web.archive.org/web/20261123140237/https://www.wsj.com/finance/stocks/has-the-ai-bubble-already-burst-2f1dcca8"
  },
  "https://www.wsj.com/finance/stocks/healthcare-stocks-fall-as-market-rout-spreads-f789b5c8": {
   "archive_url": null,
@@ -48685,7 +49387,7 @@
  },
  "https://www.wsj.com/finance/stocks/some-underperforming-japan-stocks-may-start-rising-after-strong-results-e6e3f434": {
   "archive_url": null,
-  "checked_at": "2026-11-23T04:08:03Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -48698,6 +49400,12 @@
  "https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988": {
   "archive_url": null,
   "checked_at": "2026-11-14T08:10:20Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/finance/stocks/stock-futures-rally-as-dust-settles-after-ai-driven-selloff-705ff2c4": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -48973,7 +49681,7 @@
  },
  "https://www.wsj.com/logistics-report/union-pacific-ceo-apologizes-as-march-remark-fuels-opposition-to-merger-028c18ec": {
   "archive_url": null,
-  "checked_at": "2026-11-23T04:08:03Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -49400,6 +50108,12 @@
  "https://www.wsj.com/personal-finance/retirement/retire-in-thailand-6853f4a7": {
   "archive_url": null,
   "checked_at": "2026-11-22T08:55:10Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/personal-finance/retirement/retirement-planning-milestones-over-50s-5d8b6bf2": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -49937,9 +50651,15 @@
   "status": "challenge",
   "wayback_url": "http://web.archive.org/web/20261121090210/https://www.wsj.com/print-edition/20261121/frontpage"
  },
+ "https://www.wsj.com/print-edition/20261123/frontpage": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
  "https://www.wsj.com/pro/bankruptcy/bankrupt-dish-wireless-strikes-525-million-settlement-deal-with-american-tower-63391fd1": {
   "archive_url": null,
-  "checked_at": "2026-11-22T22:52:56Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -50180,6 +50900,12 @@
  "https://www.wsj.com/real-estate/luxury-homes/wealthy-parents-are-spending-a-fortune-to-keep-their-adult-kids-coming-home-f089c02d": {
   "archive_url": null,
   "checked_at": "2026-11-14T00:30:14Z",
+  "status": "challenge",
+  "wayback_url": null
+ },
+ "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-ai-firms-are-hooked-on-nvidia-chips-now-comes-the-withdrawal-57391e23": {
+  "archive_url": null,
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -50563,9 +51289,9 @@
  },
  "https://www.wsj.com/tech/li-ming-megaspeed-nvidia-chips-china-6260d836": {
   "archive_url": null,
-  "checked_at": "2026-11-22T08:55:10Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
-  "wayback_url": "http://web.archive.org/web/20261122020610/https://www.wsj.com/tech/li-ming-megaspeed-nvidia-chips-china-6260d836"
+  "wayback_url": null
  },
  "https://www.wsj.com/tech/microsoft-service-restored-after-outage-dddae34b": {
   "archive_url": null,
@@ -50629,7 +51355,7 @@
  },
  "https://www.wsj.com/us-news/california-jury-convicts-man-of-starting-deadly-palisades-fire-6026666f": {
   "archive_url": null,
-  "checked_at": "2026-11-22T22:52:56Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -50785,13 +51511,13 @@
  },
  "https://www.wsj.com/world/americas/where-in-the-world-is-mark-carney-five-continents-and-32-countries-in-113-days-65e5bde0": {
   "archive_url": null,
-  "checked_at": "2026-11-22T01:43:37Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
-  "wayback_url": null
+  "wayback_url": "http://web.archive.org/web/20261122050428/https://www.wsj.com/world/americas/where-in-the-world-is-mark-carney-five-continents-and-32-countries-in-113-days-65e5bde0"
  },
  "https://www.wsj.com/world/asia/kim-jong-un-north-korea-trump-2920ff49": {
   "archive_url": null,
-  "checked_at": "2026-11-22T08:55:10Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
   "wayback_url": null
  },
@@ -50821,9 +51547,9 @@
  },
  "https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38": {
   "archive_url": null,
-  "checked_at": "2026-11-17T23:12:15Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
-  "wayback_url": null
+  "wayback_url": "http://web.archive.org/web/20261118020626/https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38"
  },
  "https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a": {
   "archive_url": null,
@@ -51049,9 +51775,9 @@
  },
  "https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e": {
   "archive_url": null,
-  "checked_at": "2026-11-22T08:55:10Z",
+  "checked_at": "2026-11-23T16:34:05Z",
   "status": "challenge",
-  "wayback_url": "http://web.archive.org/web/20261121173047/https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e"
+  "wayback_url": "http://web.archive.org/web/20261123095402/https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e"
  },
  "https://www.wsj.com/world/middle-east/to-cross-the-red-sea-shippers-email-houthi-rebels-read-their-inbox-5ecace40": {
   "archive_url": null,
@@ -53891,12 +54617,40 @@
   "checked_at": "2026-11-22T17:27:07Z",
   "image": null
  },
+ "img:https://www.bloomberg.com/news/articles/2026-11-23/braskem-creditors-reach-deal-on-out-of-court-debt-revamp": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-23/canadian-stocks-recover-as-huang-s-return-fuels-metals-tech": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-23/credit-heads-swivel-as-huang-return-ignites-tech-debt-rally": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-23/ford-invests-in-satellite-startup-in-push-beyond-auto-business": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
  "img:https://www.bloomberg.com/news/articles/2026-11-23/india-stocks-erase-yearly-losses-as-foreign-buying-spurs-rebound": {
   "checked_at": "2026-11-23T04:08:03Z",
   "image": null
  },
+ "img:https://www.bloomberg.com/news/articles/2026-11-23/new-hacked-data-puts-russian-death-toll-in-ukraine-near-500-000": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
  "img:https://www.bloomberg.com/news/articles/2026-11-23/south-korea-says-market-measures-will-ease-investor-jitters": {
   "checked_at": "2026-11-23T04:08:03Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-23/trump-says-he-expects-china-to-buy-another-250-boeing-planes": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/articles/2026-11-23/ubs-barclays-stuck-with-1-2-billion-debt-as-irca-deal-unravels": {
+  "checked_at": "2026-11-23T16:34:05Z",
   "image": null
  },
  "img:https://www.bloomberg.com/news/articles/2026-11-23/vietnam-picks-french-korean-consortium-for-high-speed-rail-deal": {
@@ -55171,12 +55925,40 @@
   "checked_at": "2026-11-22T17:27:07Z",
   "image": null
  },
+ "img:https://www.bloomberg.com/news/videos/2026-11-23/analyst-backs-huang-s-return-cautiously-video": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/videos/2026-11-23/david-herro-on-nvidia-s-ceo-shakeup-video": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
  "img:https://www.bloomberg.com/news/videos/2026-11-23/how-to-find-value-as-the-ai-trade-unravels-video": {
   "checked_at": "2026-11-23T04:08:03Z",
   "image": null
  },
+ "img:https://www.bloomberg.com/news/videos/2026-11-23/huang-s-return-to-fuel-us-ai-relevance-says-mortonson-video": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
  "img:https://www.bloomberg.com/news/videos/2026-11-23/india-s-appeal-grows-as-global-tech-selloff-deepens-video": {
   "checked_at": "2026-11-23T04:08:03Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/videos/2026-11-23/more-ai-debt-could-be-coming": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/videos/2026-11-23/odd-lots-can-huawei-challenge-nvidia-in-the-ai-arms-race": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/videos/2026-11-23/stocks-soar-as-huang-s-nvidia-return-fuels-ai-bets-video": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
+ "img:https://www.bloomberg.com/news/videos/2026-11-23/trump-s-efforts-to-reinstate-huang-at-nvidia-pays-off-video": {
+  "checked_at": "2026-11-23T16:34:05Z",
   "image": null
  },
  "img:https://www.bloomberg.com/news/videos/2026-11-23/us-ai-chip-curbs-test-southeast-asia-data-center-boom-video": {
@@ -55811,6 +56593,10 @@
   "checked_at": "2026-11-12T14:02:10Z",
   "image": null
  },
+ "img:https://www.ft.com/content/aa71d6bc-bbca-4e95-81b1-20895ac0cb59?syn-25a6b1a6=1": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
  "img:https://www.ft.com/content/ac76efa6-a309-41c6-ab51-b64225f2c18b?syn-25a6b1a6=1": {
   "checked_at": "2026-11-07T09:44:00Z",
   "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb6d10900-6ab9-45af-8414-40422c2f8c9f.jpg?source=next-barrier-page&amp;fit=scale-down&amp;quality=highest&amp;width=700&amp;dpr=1"
@@ -56339,6 +57125,10 @@
   "checked_at": "2026-11-19T14:44:04Z",
   "image": null
  },
+ "img:https://www.nytimes.com/live/2026/11/23/technology/nvidia-jensen-huang-reinstated/nvidia-jensen-huang": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": "https://static01.nyt.com/images/2026/11/23/multimedia/23ndvidio-Huang-blog-header-fjgq/23ndvidio-Huang-blog-header-fjgq-facebookJumbo.jpg"
+ },
  "img:https://www.nytimes.com/video/business/100000011219428/what-does-running-the-nyc-marathon-sound-like.html": {
   "checked_at": "2026-10-31T15:44:08Z",
   "image": null
@@ -56583,6 +57373,10 @@
   "checked_at": "2026-11-07T10:43:43Z",
   "image": null
  },
+ "img:https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
  "img:https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/": {
   "checked_at": "2026-11-09T20:13:23Z",
   "image": null
@@ -56809,6 +57603,10 @@
  },
  "img:https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/": {
   "checked_at": "2026-11-11T23:44:51Z",
+  "image": null
+ },
+ "img:https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/": {
+  "checked_at": "2026-11-23T16:34:05Z",
   "image": null
  },
  "img:https://www.reuters.com/technology/protesters-enter-microsoft-data-centre-site-amsterdam-2026-11-06/": {
@@ -57335,6 +58133,10 @@
   "checked_at": "2026-11-11T08:29:13Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/5MQ3UZKPPNC47EOER4GGCXUB7U.jpg&amp;w=1440"
  },
+ "img:https://www.washingtonpost.com/advice/2026/11/23/our-daughter-is-missing-thanksgiving-our-son-in-laws-birthday-week/": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/MNELRAI2WFGK7ERVEQBCRYTCKA.jpg&amp;w=1440"
+ },
  "img:https://www.washingtonpost.com/business/2026/10/31/heres-one-biggest-financial-mistakes-people-make-when-getting-divorced/": {
   "checked_at": "2026-10-31T14:34:20Z",
   "image": null
@@ -57478,6 +58280,10 @@
  "img:https://www.washingtonpost.com/business/2026/11/22/retiring-with-401k-be-sure-you-understand-rmds/": {
   "checked_at": "2026-11-23T04:08:03Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fwapo%2FKVUIR2AG7SJLYDWMABKLB77FHY.jpg&amp;w=1200"
+ },
+ "img:https://www.washingtonpost.com/business/2026/11/23/tis-season-scams-protect-yourself-while-holiday-shopping-online/": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/6H5IRN3D2MQ7LUJWDRHRAKNWV4.jpg&amp;w=1440"
  },
  "img:https://www.washingtonpost.com/climate-environment/2026/11/06/data-centers-may-not-be-raising-americans-electricity-bills-that-much/": {
   "checked_at": "2026-11-07T12:32:31Z",
@@ -58747,6 +59553,10 @@
   "checked_at": "2026-11-23T04:08:03Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/GIRSI4HCY2S7CBGZZ4CYC4S5LI.JPG&amp;w=1440"
  },
+ "img:https://www.washingtonpost.com/politics/2026/11/23/fight-chair-gop-tests-trumps-clout-after-midterms-wipeout/": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/O4VQMITWVXBPEW6XAP4MVRZM3A_size-normalized.jpg&amp;w=1440"
+ },
  "img:https://www.washingtonpost.com/politics/interactive/2026/11/18/these-are-senate-democrats-backing-schumer-van-hollen-majority-leader/": {
   "checked_at": "2026-11-18T22:44:06Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/G5P47BE7QFEWBKGYMYJDQ2AEIA.png&amp;w=1200"
@@ -58995,6 +59805,18 @@
   "checked_at": "2026-11-23T04:08:03Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fwapo%2FYEMJLVXGCII7DKM6WPRYAXDLRM.jpg&amp;w=1200"
  },
+ "img:https://www.washingtonpost.com/technology/2026/11/23/how-nvidia-fought-years-washington-sell-its-prized-chips-china/": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/TZWOBEQUHFCRVO5JAMSJIX7ZF4.jpg&amp;w=1440"
+ },
+ "img:https://www.washingtonpost.com/technology/2026/11/23/nvidia-board-reinstates-jensen-huang-after-us-government-input/": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/ME4XBQJQD5GMDJQ7Q6ITNLY62U.JPG&amp;w=1440"
+ },
+ "img:https://www.washingtonpost.com/technology/2026/11/23/trump-urges-nvidia-reinstate-jensen-huang-calling-him-best-thing-us/": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/ZHTUQGPYMLFVKZSLXRDPJKKEMA.JPG&amp;w=1440"
+ },
  "img:https://www.washingtonpost.com/technology/interactive/2026/11/13/timeline-president-trump-jensen-huang-close-relationship/": {
   "checked_at": "2026-11-13T18:49:16Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/HRUW3SJA6BBCHB2PHQ66DUP2EQ.jpg&amp;w=1200"
@@ -59122,6 +59944,10 @@
  "img:https://www.washingtonpost.com/wellness/2026/11/21/should-you-mask-up-holiday-travel-heres-what-experts-say/": {
   "checked_at": "2026-11-21T13:45:03Z",
   "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/NCTLQXAGAFRQQYBQZCG23CXBIU.jpg&amp;w=1440"
+ },
+ "img:https://www.washingtonpost.com/wellness/2026/11/23/im-an-er-physician-here-are-5-cooking-injuries-i-see-most-during-holidays/": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/QRIWR6W5PEAK4NRUZKOMCKMLL4_size-normalized.jpg&amp;w=1440"
  },
  "img:https://www.washingtonpost.com/world/2026/10/31/gadi-eisenkot-is-bereaved-general-trying-outmaneuver-netanyahu/": {
   "checked_at": "2026-11-01T02:27:41Z",
@@ -59393,6 +60219,10 @@
  },
  "img:https://www.wsj.com/arts-culture/television/jimmy-webb-american-songwriter-review-a-melody-line-man-on-pbs-51b8b3ce": {
   "checked_at": "2026-11-02T01:08:48Z",
+  "image": null
+ },
+ "img:https://www.wsj.com/arts-culture/television/liz-diller-ric-scofidio-architect-provocateurs-review-a-couples-urban-visions-5b0bcbe9": {
+  "checked_at": "2026-11-23T16:34:05Z",
   "image": null
  },
  "img:https://www.wsj.com/business/airlines/delta-delays-hundreds-of-flights-over-system-outage-6bbba92c": {
@@ -59755,6 +60585,10 @@
   "checked_at": "2026-11-09T08:44:55Z",
   "image": null
  },
+ "img:https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
  "img:https://www.wsj.com/finance/commodities-futures/gold-rises-but-expectations-of-tighter-u-s-monetary-policy-weigh-512a4860": {
   "checked_at": "2026-11-02T19:55:52Z",
   "image": null
@@ -59849,6 +60683,10 @@
  },
  "img:https://www.wsj.com/finance/stocks/asian-equities-fall-as-u-s-chip-maker-share-selloff-spills-over-f6edc8d5": {
   "checked_at": "2026-11-16T03:17:55Z",
+  "image": null
+ },
+ "img:https://www.wsj.com/finance/stocks/has-the-ai-bubble-already-burst-2f1dcca8": {
+  "checked_at": "2026-11-23T16:34:05Z",
   "image": null
  },
  "img:https://www.wsj.com/finance/stocks/midterms-markets-week-ai-trade-97b3fc5d": {
@@ -60315,6 +61153,10 @@
   "checked_at": "2026-11-01T21:29:04Z",
   "image": null
  },
+ "img:https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-ai-firms-are-hooked-on-nvidia-chips-now-comes-the-withdrawal-57391e23": {
+  "checked_at": "2026-11-23T16:34:05Z",
+  "image": null
+ },
  "img:https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-huangs-departure-from-nvidia-unlikely-to-mollify-congress-plaintiffs-lawyers-baf11ad1": {
   "checked_at": "2026-11-15T22:08:14Z",
   "image": null
@@ -60457,6 +61299,10 @@
  },
  "img:https://www.wsj.com/tech/the-tangled-web-of-ai-bets-is-reason-to-fear-tech-stocks-905bde86": {
   "checked_at": "2026-11-01T11:26:09Z",
+  "image": null
+ },
+ "img:https://www.wsj.com/us-news/california-jury-convicts-man-of-starting-deadly-palisades-fire-6026666f": {
+  "checked_at": "2026-11-23T16:34:05Z",
   "image": null
  },
  "img:https://www.wsj.com/us-news/faa-temporarily-halts-flights-across-u-s-b9b06e59": {
@@ -66575,6 +67421,31 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/ai-linked-stocks-take-off-after-nvidia-reinstates-jensen-huang": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/anthropic-shares-churn-defying-ai-trade-rally-on-huang-s-return": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/boe-s-pill-says-action-needed-to-maintain-inflation-credibility": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/braskem-creditors-reach-deal-on-out-of-court-debt-revamp": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/canadian-stocks-recover-as-huang-s-return-fuels-metals-tech": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/articles/2026-11-23/china-state-funds-ramp-up-etf-buying-to-record-as-rout-deepens": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 0,
@@ -66585,8 +67456,23 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/credit-heads-swivel-as-huang-return-ignites-tech-debt-rally": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/articles/2026-11-23/emerging-market-stocks-set-to-erase-2026-gains-on-ai-selloff": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/eu-targets-ex-russian-fighters-in-new-sanctions-package": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/european-farmers-set-to-plant-less-as-costs-weather-bite": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -66598,6 +67484,11 @@
   "published": "2026-11-23T11:33:29+08:00",
   "title": "European gas surges as cold snap threatens tight inventories",
   "url": "https://theedgemalaysia.com/node/826820",
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/ford-invests-in-satellite-startup-in-push-beyond-auto-business": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
   "v": 3
  },
  "synd:https://www.bloomberg.com/news/articles/2026-11-23/gold-rebounds-as-traders-pare-bets-on-near-term-fed-rate-hikes": {
@@ -66620,6 +67511,16 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/italy-warns-us-threatens-to-undermine-europe-s-protected-foods": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/mexico-s-firms-see-better-security-even-as-extortion-persists": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/articles/2026-11-23/msci-discussed-avoiding-indonesia-downgrade-with-prabowo-dalio": {
   "at": "2026-11-23T04:08:03Z",
   "image": "https://assets.theedgemarkets.com/prabowo-dalio_20261123115701_Bloomberg.jpg",
@@ -66630,6 +67531,16 @@
   "url": "https://theedgemalaysia.com/node/826823",
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/new-hacked-data-puts-russian-death-toll-in-ukraine-near-500-000": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/polar-cruise-firm-hx-expeditions-gains-time-for-creditor-talks": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/articles/2026-11-23/south-korea-s-early-exports-gain-after-1-trillion-milestone": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 0,
@@ -66637,6 +67548,11 @@
  },
  "synd:https://www.bloomberg.com/news/articles/2026-11-23/south-korea-says-market-measures-will-ease-investor-jitters": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/stellantis-pulls-out-of-auto-racing-as-ceo-ramps-up-cost-cuts": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -66655,6 +67571,16 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/trump-says-he-expects-china-to-buy-another-250-boeing-planes": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/ubs-barclays-stuck-with-1-2-billion-debt-as-irca-deal-unravels": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/articles/2026-11-23/uk-minister-to-tell-business-public-control-is-in-its-interest": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 0,
@@ -66670,8 +67596,23 @@
   "url": "https://theedgemalaysia.com/node/826801",
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/us-business-activity-expands-at-slowest-pace-in-four-months": {
+  "at": "2026-11-23T16:34:05Z",
+  "image": "https://s.yimg.com/lo/mysterio/api/1517ef4599e2b7376077738eb0ff862d95da3a24e74d57f0ad2aefba3dda3197/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbloomberg_holding_pen_162%2F9fd930a14f0d606c8c6dd9525f1a7e5f.jpg",
+  "ok": 1,
+  "provider": "Yahoo Finance",
+  "published": null,
+  "title": "US Business Activity Expands at Slowest Pace in Four Months",
+  "url": "https://uk.finance.yahoo.com/news/us-business-activity-expands-slowest-150227590.html",
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/articles/2026-11-23/vietnam-picks-french-korean-consortium-for-high-speed-rail-deal": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/articles/2026-11-23/woolworths-investors-reject-pay-report-in-shareholder-rebuke": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -70004,6 +70945,11 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/-great-to-see-huang-back-at-nvidia-ferragu-says-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/videos/2026-11-23/ai-investment-adding-to-inflation-jain-video": {
   "at": "2026-11-23T04:08:03Z",
   "image": "https://s.yimg.com/lo/mysterio/api/79a91fffdd2ce539ee8d1994dde1e084126da87438cfd8367464e1eb15bbd277/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbloomberg_markets_video_2%2Fd1e33e6966b4aa5cb8da704bf3e5e87a.jpg",
@@ -70014,8 +70960,18 @@
   "url": "https://finance.yahoo.com/video/ai-investment-adding-inflation-jain-004349927.html",
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/analyst-backs-huang-s-return-cautiously-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/videos/2026-11-23/asia-market-measures-may-buffer-stock-losses-bnp-video": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/david-herro-on-nvidia-s-ceo-shakeup-video": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -70024,8 +70980,63 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/huang-s-return-to-fuel-us-ai-relevance-says-mortonson-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/videos/2026-11-23/india-s-appeal-grows-as-global-tech-selloff-deepens-video": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/more-ai-debt-could-be-coming": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/nvidia-a-perfect-example-of-market-amplification-herro-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/nvidia-stock-surges-with-return-of-huang-as-ceo-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "image": "https://s.yimg.com/lo/mysterio/api/fdb917782b1855d9c544cfa9291f57fca6bb138d0824e10ea650867ae03fa16e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-10%2F9d1fc1c2-e102-41a6-9c92-b0ed4f355e5a",
+  "ok": 1,
+  "provider": "Yahoo Finance",
+  "published": null,
+  "title": "Nvidia reinstates Jensen Huang as CEO, stock rockets",
+  "url": "https://finance.yahoo.com/technology/article/nvidia-reinstates-jensen-huang-as-ceo-stock-rockets-more-than-30-140919049.html",
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/odd-lots-can-huawei-challenge-nvidia-in-the-ai-arms-race": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/stocks-soar-as-huang-s-nvidia-return-fuels-ai-bets-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/trump-praises-nvidia-decision-to-reinstate-huang-as-ceo-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "image": "https://assets.theedgemarkets.com/US_President_Donald_Trump_Bloomberg.jpg_20261124000234_Bloomberg.jpg",
+  "ok": 1,
+  "provider": "The Edge Malaysia",
+  "published": "2026-11-24T00:03:34+08:00",
+  "title": "Trump praises Nvidia’s decision to reinstate Huang as CEO",
+  "url": "https://theedgemalaysia.com/node/826954",
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/trump-praises-return-of-huang-to-nvidia-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/trump-s-efforts-to-reinstate-huang-at-nvidia-pays-off-video": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -70039,9 +71050,24 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/what-jensen-huang-s-return-means-for-nvidia-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.bloomberg.com/news/videos/2026-11-23/why-asia-market-stabilization-measures-may-not-be-enough-video": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.bloomberg.com/news/videos/2026-11-23/why-nvidia-reinstated-jensen-huang-as-ceo-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "image": "https://s.yimg.com/lo/mysterio/api/fdb917782b1855d9c544cfa9291f57fca6bb138d0824e10ea650867ae03fa16e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-10%2F9d1fc1c2-e102-41a6-9c92-b0ed4f355e5a",
+  "ok": 1,
+  "provider": "Yahoo Finance",
+  "published": null,
+  "title": "Nvidia reinstates Jensen Huang as CEO, stock rockets",
+  "url": "https://finance.yahoo.com/technology/article/nvidia-reinstates-jensen-huang-as-ceo-stock-rockets-more-than-30-140919049.html",
   "v": 3
  },
  "synd:https://www.bloomberg.com/news/videos/2026-11-23/why-treasuries-negative-correlation-to-stocks-is-back-video": {
@@ -70195,6 +71221,11 @@
  },
  "synd:https://www.economist.com/business/2026/11/19/the-worlds-carmakers-are-revving-up-in-america": {
   "at": "2026-11-19T14:44:04Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.economist.com/business/2026/11/23/bartleby-newsletter-valley-mentality": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -70491,6 +71522,11 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.ft.com/content/08914b05-bbfa-478d-b38a-549acfc1aae6?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.ft.com/content/0948dbc1-d5cb-4b41-adce-880ea1bf97b9?syn-25a6b1a6=1": {
   "at": "2026-11-10T18:56:16Z",
   "ok": 0,
@@ -70541,6 +71577,11 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.ft.com/content/0ee5c4f7-f6c8-4dcc-b947-3770c0253faf?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.ft.com/content/0ef40ac9-6d01-428f-98c8-a52bf5b9a787?syn-25a6b1a6=1": {
   "at": "2026-11-15T01:22:08Z",
   "ok": 0,
@@ -70562,7 +71603,7 @@
   "v": 3
  },
  "synd:https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1": {
-  "at": "2026-11-23T04:08:03Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -70752,6 +71793,11 @@
  },
  "synd:https://www.ft.com/content/20b68fe2-9d60-4c0c-b714-1f3e03015823?syn-25a6b1a6=1": {
   "at": "2026-11-15T01:22:08Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.ft.com/content/20d2ebe3-e945-4659-a122-31bf85a4e4e5?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -71527,6 +72573,11 @@
  "synd:https://www.ft.com/content/5640c74d-24e5-465b-8119-a2595dac7748?syn-25a6b1a6=1": {
   "at": "2026-11-07T11:59:20Z",
   "ok": 0
+ },
+ "synd:https://www.ft.com/content/56e2a4a7-f604-4e32-afba-32016d5c8cd1": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
  },
  "synd:https://www.ft.com/content/576640c4-8d35-4504-b1a5-f01c0ca1f5bc?syn-25a6b1a6=1": {
   "at": "2026-11-14T21:41:41Z",
@@ -72436,6 +73487,11 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.ft.com/content/aa71d6bc-bbca-4e95-81b1-20895ac0cb59?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.ft.com/content/aa8290dc-a20a-45af-97ab-1e71f97f236a?syn-25a6b1a6=1": {
   "at": "2026-11-19T14:44:04Z",
   "ok": 0,
@@ -72933,6 +73989,11 @@
  },
  "synd:https://www.ft.com/content/d5adde7e-68cc-455b-ba78-b39cc3676b7a?syn-25a6b1a6=1": {
   "at": "2026-11-15T08:29:09Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.ft.com/content/d5e951e6-b5f6-4286-9de4-495c9a3c2472?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -73508,6 +74569,16 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.wsj.com/articles/nvidia-board-reinstates-jensen-huang-as-ceo-a6b49914": {
+  "at": "2026-11-23T16:34:05Z",
+  "image": "https://s.yimg.com/lo/mysterio/api/95fd5d2c3f1e5dce86237de525c04d91b0381efc1c7aefee69965babb1a9151c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcp_finance_889%2Ffed58d9a1d0e5b3f069d0294a5dfec6d.jpg",
+  "ok": 1,
+  "provider": "Yahoo Finance",
+  "published": null,
+  "title": "Nvidia board reinstates Jensen Huang as CEO just days after rejecting his offer to return",
+  "url": "https://ca.finance.yahoo.com/news/nvidia-board-unanimously-reinstates-jensen-144412237.html",
+  "v": 3
+ },
  "synd:https://www.wsj.com/articles/praise-was-heaped-on-jensen-huang-that-might-be-part-of-the-problem-4cfa876c": {
   "at": "2026-11-15T22:08:14Z",
   "ok": 0,
@@ -73692,7 +74763,7 @@
   "v": 3
  },
  "synd:https://www.wsj.com/arts-culture/food-cooking/wine-quiz-test-wine-knowledge-52087dd5": {
-  "at": "2026-11-22T22:52:56Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -73711,6 +74782,11 @@
  },
  "synd:https://www.wsj.com/arts-culture/television/heartland-review-jessica-chastains-country-music-mystery-10b5e33f": {
   "at": "2026-11-16T23:04:12Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.wsj.com/arts-culture/television/liz-diller-ric-scofidio-architect-provocateurs-review-a-couples-urban-visions-5b0bcbe9": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -73879,6 +74955,11 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.wsj.com/business/deals/crowdstrike-to-buy-zscaler-in-43-9-billion-stock-swap-4c926031": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.wsj.com/business/deals/empower-brands-makes-unsolicited-bid-to-buy-helen-of-troy-for-1-6-billion-04261692": {
   "at": "2026-11-08T21:23:28Z",
   "ok": 0,
@@ -73886,6 +74967,11 @@
  },
  "synd:https://www.wsj.com/business/deals/mccormicks-65-billion-unilever-foods-merger-could-harm-competition-u-k-regulator-warns-ccd08701": {
   "at": "2026-11-13T11:38:33Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.wsj.com/business/deals/monte-dei-paschis-board-sends-mixed-signals-over-intesas-37-billion-offer-e2e40d9a": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -74711,6 +75797,11 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.wsj.com/finance/commodities-futures/gold-rises-in-likely-technical-rebound-f895016c": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 0,
@@ -74748,6 +75839,11 @@
  },
  "synd:https://www.wsj.com/finance/commodities-futures/oil-edges-lower-as-supply-surplus-prospects-offset-mideast-tensions-cc9879f2": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.wsj.com/finance/commodities-futures/oil-falls-amid-risk-off-sentiment-c478ebdc": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -74935,7 +76031,7 @@
   "v": 3
  },
  "synd:https://www.wsj.com/finance/investing/jensen-and-lori-huang-have-amassed-a-vast-fortune-we-break-down-their-wealth-3d2287b1": {
-  "at": "2026-11-23T04:08:03Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -75065,6 +76161,11 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.wsj.com/finance/stocks/has-the-ai-bubble-already-burst-2f1dcca8": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.wsj.com/finance/stocks/healthcare-stocks-fall-as-market-rout-spreads-f789b5c8": {
   "at": "2026-11-08T21:23:28Z",
   "ok": 0,
@@ -75162,6 +76263,11 @@
  },
  "synd:https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988": {
   "at": "2026-11-13T11:38:33Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.wsj.com/finance/stocks/stock-futures-rally-as-dust-settles-after-ai-driven-selloff-705ff2c4": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -75375,7 +76481,7 @@
   "v": 3
  },
  "synd:https://www.wsj.com/logistics-report/union-pacific-ceo-apologizes-as-march-remark-fuels-opposition-to-merger-028c18ec": {
-  "at": "2026-11-23T04:08:03Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -75673,6 +76779,11 @@
  },
  "synd:https://www.wsj.com/personal-finance/retirement/retire-in-thailand-6853f4a7": {
   "at": "2026-11-22T08:55:10Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.wsj.com/personal-finance/retirement/retirement-planning-milestones-over-50s-5d8b6bf2": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -76084,6 +77195,11 @@
   "ok": 0,
   "v": 3
  },
+ "synd:https://www.wsj.com/print-edition/20261123/frontpage": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "synd:https://www.wsj.com/pro/bankruptcy/bankrupt-dish-wireless-strikes-525-million-settlement-deal-with-american-tower-63391fd1": {
   "at": "2026-11-22T22:52:56Z",
   "ok": 0,
@@ -76245,6 +77361,11 @@
  },
  "synd:https://www.wsj.com/real-estate/luxury-homes/wealthy-parents-are-spending-a-fortune-to-keep-their-adult-kids-coming-home-f089c02d": {
   "at": "2026-11-15T01:22:08Z",
+  "ok": 0,
+  "v": 3
+ },
+ "synd:https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-ai-firms-are-hooked-on-nvidia-chips-now-comes-the-withdrawal-57391e23": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -76514,7 +77635,7 @@
   "v": 3
  },
  "synd:https://www.wsj.com/tech/li-ming-megaspeed-nvidia-chips-china-6260d836": {
-  "at": "2026-11-22T08:55:10Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -76564,7 +77685,7 @@
   "v": 3
  },
  "synd:https://www.wsj.com/us-news/california-jury-convicts-man-of-starting-deadly-palisades-fire-6026666f": {
-  "at": "2026-11-22T22:52:56Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -76678,12 +77799,12 @@
   "v": 3
  },
  "synd:https://www.wsj.com/world/americas/where-in-the-world-is-mark-carney-five-continents-and-32-countries-in-113-days-65e5bde0": {
-  "at": "2026-11-21T20:16:23Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
  "synd:https://www.wsj.com/world/asia/kim-jong-un-north-korea-trump-2920ff49": {
-  "at": "2026-11-22T08:55:10Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -76703,7 +77824,7 @@
   "v": 3
  },
  "synd:https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38": {
-  "at": "2026-11-17T23:12:15Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -76865,7 +77986,7 @@
   "ok": 0
  },
  "synd:https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e": {
-  "at": "2026-11-22T08:55:10Z",
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -83265,6 +84386,81 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://news.tvb.com/en/1208022": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208023": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208024": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208025": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208026": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208027": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208028": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208029": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208030": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208031": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208032": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208034": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208035": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208036": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://news.tvb.com/en/1208037": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://time.com/article/2026/11/01/why-doctors-are-last-to-know-what-s-in-the-drug-supply/": {
   "at": "2026-11-01T11:26:09Z",
   "ok": 1
@@ -83800,6 +84996,21 @@
  },
  "text:https://time.com/article/2026/11/22/Why-the-Worlds-Climate-Talks-Broke-Down/": {
   "at": "2026-11-22T22:52:56Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://time.com/article/2026/11/23/pardis-sabeti-interview-why-ebola-outbreak-keeps-growing/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://time.com/article/2026/11/23/thanksgiving-set-to-cost-americans-more-this-year-farm-bureau/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://time.com/article/2026/11/23/trump-nvidia-jensen-huang-reinstated/": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 1,
   "v": 3
  },
@@ -88101,6 +89312,31 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/ai-linked-stocks-take-off-after-nvidia-reinstates-jensen-huang": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/anthropic-shares-churn-defying-ai-trade-rally-on-huang-s-return": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/boe-s-pill-says-action-needed-to-maintain-inflation-credibility": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/braskem-creditors-reach-deal-on-out-of-court-debt-revamp": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/canadian-stocks-recover-as-huang-s-return-fuels-metals-tech": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/articles/2026-11-23/china-state-funds-ramp-up-etf-buying-to-record-as-rout-deepens": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 0,
@@ -88111,14 +89347,34 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/credit-heads-swivel-as-huang-return-ignites-tech-debt-rally": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/articles/2026-11-23/emerging-market-stocks-set-to-erase-2026-gains-on-ai-selloff": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/eu-targets-ex-russian-fighters-in-new-sanctions-package": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/european-farmers-set-to-plant-less-as-costs-weather-bite": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
  "text:https://www.bloomberg.com/news/articles/2026-11-23/european-gas-surges-as-cold-snap-threatens-tight-inventories": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 1,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/ford-invests-in-satellite-startup-in-push-beyond-auto-business": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
   "v": 3
  },
  "text:https://www.bloomberg.com/news/articles/2026-11-23/gold-rebounds-as-traders-pare-bets-on-near-term-fed-rate-hikes": {
@@ -88136,13 +89392,38 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/italy-warns-us-threatens-to-undermine-europe-s-protected-foods": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/mexico-s-firms-see-better-security-even-as-extortion-persists": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/articles/2026-11-23/msci-discussed-avoiding-indonesia-downgrade-with-prabowo-dalio": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 1,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/new-hacked-data-puts-russian-death-toll-in-ukraine-near-500-000": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/polar-cruise-firm-hx-expeditions-gains-time-for-creditor-talks": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/articles/2026-11-23/south-korea-says-market-measures-will-ease-investor-jitters": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/stellantis-pulls-out-of-auto-racing-as-ceo-ramps-up-cost-cuts": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -88156,13 +89437,33 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/trump-says-he-expects-china-to-buy-another-250-boeing-planes": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/ubs-barclays-stuck-with-1-2-billion-debt-as-irca-deal-unravels": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/articles/2026-11-23/uk-workers-stay-put-as-safety-trumps-pay-in-perilous-jobs-market": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 1,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/us-business-activity-expands-at-slowest-pace-in-four-months": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/articles/2026-11-23/vietnam-picks-french-korean-consortium-for-high-speed-rail-deal": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/articles/2026-11-23/woolworths-investors-reject-pay-report-in-shareholder-rebuke": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -90780,13 +92081,28 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/-great-to-see-huang-back-at-nvidia-ferragu-says-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/videos/2026-11-23/ai-investment-adding-to-inflation-jain-video": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 1,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/analyst-backs-huang-s-return-cautiously-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/videos/2026-11-23/asia-market-measures-may-buffer-stock-losses-bnp-video": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/david-herro-on-nvidia-s-ceo-shakeup-video": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -90795,8 +92111,53 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/huang-s-return-to-fuel-us-ai-relevance-says-mortonson-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/videos/2026-11-23/india-s-appeal-grows-as-global-tech-selloff-deepens-video": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/more-ai-debt-could-be-coming": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/nvidia-a-perfect-example-of-market-amplification-herro-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/nvidia-stock-surges-with-return-of-huang-as-ceo-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/odd-lots-can-huawei-challenge-nvidia-in-the-ai-arms-race": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/stocks-soar-as-huang-s-nvidia-return-fuels-ai-bets-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/trump-praises-nvidia-decision-to-reinstate-huang-as-ceo-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/trump-praises-return-of-huang-to-nvidia-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/trump-s-efforts-to-reinstate-huang-at-nvidia-pays-off-video": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -90810,9 +92171,19 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/what-jensen-huang-s-return-means-for-nvidia-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.bloomberg.com/news/videos/2026-11-23/why-asia-market-stabilization-measures-may-not-be-enough-video": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 0,
+  "v": 3
+ },
+ "text:https://www.bloomberg.com/news/videos/2026-11-23/why-nvidia-reinstated-jensen-huang-as-ceo-video": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
   "v": 3
  },
  "text:https://www.bloomberg.com/news/videos/2026-11-23/why-treasuries-negative-correlation-to-stocks-is-back-video": {
@@ -90942,6 +92313,11 @@
  },
  "text:https://www.economist.com/business/2026/11/19/the-worlds-carmakers-are-revving-up-in-america": {
   "at": "2026-11-19T14:44:04Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.economist.com/business/2026/11/23/bartleby-newsletter-valley-mentality": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -91142,6 +92518,11 @@
   "ok": 0,
   "v": 2
  },
+ "text:https://www.ft.com/content/08914b05-bbfa-478d-b38a-549acfc1aae6?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.ft.com/content/0948dbc1-d5cb-4b41-adce-880ea1bf97b9?syn-25a6b1a6=1": {
   "at": "2026-11-10T18:56:16Z",
   "ok": 0,
@@ -91184,6 +92565,11 @@
  },
  "text:https://www.ft.com/content/0ecbc732-4d5a-4a3e-97aa-86d19285bcf8?syn-25a6b1a6=1": {
   "at": "2026-11-11T17:29:53Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.ft.com/content/0ee5c4f7-f6c8-4dcc-b947-3770c0253faf?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -91348,6 +92734,11 @@
  },
  "text:https://www.ft.com/content/20b68fe2-9d60-4c0c-b714-1f3e03015823?syn-25a6b1a6=1": {
   "at": "2026-11-13T18:49:16Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.ft.com/content/20d2ebe3-e945-4659-a122-31bf85a4e4e5?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -91873,6 +93264,11 @@
   "at": "2026-11-07T12:32:31Z",
   "ok": 0,
   "v": 2
+ },
+ "text:https://www.ft.com/content/56e2a4a7-f604-4e32-afba-32016d5c8cd1": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
  },
  "text:https://www.ft.com/content/576640c4-8d35-4504-b1a5-f01c0ca1f5bc?syn-25a6b1a6=1": {
   "at": "2026-11-14T08:10:20Z",
@@ -92526,6 +93922,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.ft.com/content/aa71d6bc-bbca-4e95-81b1-20895ac0cb59?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.ft.com/content/aa8290dc-a20a-45af-97ab-1e71f97f236a?syn-25a6b1a6=1": {
   "at": "2026-11-19T14:44:04Z",
   "ok": 0,
@@ -92924,6 +94325,11 @@
  },
  "text:https://www.ft.com/content/d5adde7e-68cc-455b-ba78-b39cc3676b7a?syn-25a6b1a6=1": {
   "at": "2026-11-15T08:29:09Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.ft.com/content/d5e951e6-b5f6-4286-9de4-495c9a3c2472?syn-25a6b1a6=1": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -96778,6 +98184,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.nytimes.com/2026/11/22/business/nvidia-stock-huang-ai-sp500-markets.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.nytimes.com/2026/11/22/business/retirement-millennials-gen-z.html": {
   "at": "2026-11-22T17:27:07Z",
   "ok": 0,
@@ -96870,6 +98281,61 @@
  },
  "text:https://www.nytimes.com/2026/11/22/world/middleeast/israeli-political-leaders-decry-jewish-terrorism-after-west-bank-attacks.html": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/business/media/marcia-ann-gillespie-dead.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/climate/cop31-collapse-what-next.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/health/measles-adults-vaccine-boosters.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/nyregion/jessica-ramos-campaign.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/opinion/national-popular-vote.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/style/paolo-bulgari-dead.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/technology/trump-nvidia-stock-purchases.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/us/politics/democrats-debates-2028-presidential-race.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/world/europe/manchester-don-toliver-concert-evacuation-uk.html": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -97078,6 +98544,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.nytimes.com/live/2026/11/23/technology/nvidia-jensen-huang-reinstated/nvidia-jensen-huang": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.nytimes.com/quiz/2026/11/18/science/voyager-lightday.html": {
   "at": "2026-11-18T14:37:54Z",
   "ok": 1,
@@ -97110,6 +98581,11 @@
  },
  "text:https://www.nytimes.com/video/world/americas/100000011168848/haiti-nightclub-shelter-gang-violence.html": {
   "at": "2026-11-07T21:06:55Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -97199,6 +98675,11 @@
  },
  "text:https://www.reuters.com/business/aerospace-defense/us-rocket-fails-after-launch-payload-amazon-internet-satellites-destroyed-2026-11-15/": {
   "at": "2026-11-15T22:08:14Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.reuters.com/business/ai-rally-set-add-2-trillion-nasdaq-100-huang-returns-nvidia-helm-2026-11-23/": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -97722,6 +99203,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/": {
   "at": "2026-11-09T20:13:23Z",
   "ok": 0,
@@ -97982,6 +99468,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.reuters.com/markets/europe/european-stocks-recover-after-steep-technology-led-selloff-2026-11-23/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.reuters.com/markets/us/eu-leaders-chair-proposes-new-cuts-eu-2028-2034-budget-draft-suggests-digital-2026-11-21/": {
   "at": "2026-11-21T20:16:23Z",
   "ok": 0,
@@ -98174,6 +99665,11 @@
  },
  "text:https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/": {
   "at": "2026-11-11T23:44:51Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -100375,6 +101871,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.scmp.com/news/china/article/3375520/mexico-and-china-agree-create-working-group-boost-trade": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.scmp.com/news/china/diplomacy/article/3372870/rifles-radar-china-upgrades-its-african-arms-trade-russia-and-west-retreat": {
   "at": "2026-11-01T11:26:09Z",
   "ok": 1
@@ -101356,6 +102857,11 @@
  },
  "text:https://www.scmp.com/news/hong-kong/society/article/3375408/tai-po-fire-survivors-battle-grief-fear-and-trauma-first-anniversary-nears": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.scmp.com/news/hong-kong/society/article/3375519/hong-kong-creates-building-maintenance-regulator-address-tai-po-fire-failings": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -103880,6 +105386,16 @@
   "ok": 1,
   "v": 3
  },
+ "text:https://www.theguardian.com/business/2026/nov/23/falling-markets-will-i-lose-money-shares-tech-ai-investments": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/business/2026/nov/23/next-issues-cyber-attack-warning-after-benign-data-accessed-by-hackers": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.theguardian.com/business/grogonomics/2026/nov/19/real-wage-growth-australian-economy-workers-still-falling-behind": {
   "at": "2026-11-18T14:37:54Z",
   "ok": 1,
@@ -103903,6 +105419,11 @@
  "text:https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news": {
   "at": "2026-11-20T14:25:55Z",
   "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/business/live/2026/nov/23/tech-sell-off-ai-stock-market-support-measures-deployed-south-korea-taiwan-china-ftse-nasdaq-latest-news-updates": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
   "v": 3
  },
  "text:https://www.theguardian.com/commentisfree/2026/nov/01/midterm-elections-dan-sullivan": {
@@ -104351,6 +105872,11 @@
   "ok": 1,
   "v": 3
  },
+ "text:https://www.theguardian.com/commentisfree/2026/nov/23/landmark-reforms-benefits-disabled-people-timms-review-pip": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.theguardian.com/commentisfree/picture/2026/nov/06/electoral-politics-can-be-fun-what-turned-voters-against-trump": {
   "at": "2026-11-07T12:53:13Z",
   "ok": 0,
@@ -104683,6 +106209,11 @@
  },
  "text:https://www.theguardian.com/film/2026/nov/20/james-bond-movie-007s-death-in-no-time-to-die-robert-pattinson": {
   "at": "2026-11-20T14:25:55Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/film/2026/nov/23/musk-naza-and-you-can-see-everything-idfa-documentary-film-festival": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 1,
   "v": 3
  },
@@ -105454,6 +106985,11 @@
   "ok": 1,
   "v": 3
  },
+ "text:https://www.theguardian.com/politics/live/2026/nov/23/andy-burnham-brexit-europe-eu-uk-summit-deal-commons-cbi-farage-badenoch-haigh-politics-latest-news-updates": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.theguardian.com/politics/video/2026/nov/20/could-pete-buttigieg-win-the-white-house-in-2028-politics-weekly-america": {
   "at": "2026-11-20T14:25:55Z",
   "ok": 1,
@@ -106169,6 +107705,16 @@
   "ok": 1,
   "v": 3
  },
+ "text:https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/technology/2026/nov/23/trump-jensen-huang-nvidia-reinstated": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.theguardian.com/technology/commentisfree/2026/nov/20/big-tech-is-already-building-datacentres-in-australia-why-is-labor-desperate-to-give-them-loopholes": {
   "at": "2026-11-20T04:27:52Z",
   "ok": 1,
@@ -106286,6 +107832,11 @@
  },
  "text:https://www.theguardian.com/tv-and-radio/2026/nov/20/war-final-episode-dominic-west-sienna-miller-hbo-max-sky-atlantic-now": {
   "at": "2026-11-20T14:25:55Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/tv-and-radio/2026/nov/21/blade-runner-2099-fans-will-have-no-idea-what-is-happening-in-this-sci-fi-sequel-why-is-it-even-on-tv": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 1,
   "v": 3
  },
@@ -106647,6 +108198,26 @@
  },
  "text:https://www.theguardian.com/uk-news/2026/nov/22/man-who-killed-three-during-psychotic-episode-had-been-released-after-catalogue-of-failures-investigation-finds-alexander-lewis-ranwell": {
   "at": "2026-11-22T17:27:07Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/uk-news/2026/nov/23/children-home-office-stops-joining-father-uk-ghana": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/uk-news/2026/nov/23/ian-huntley-killed-by-inmate-court-trial": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/uk-news/2026/nov/23/lilly-jones-stabbing-park-south-wales-trial": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/uk-news/2026/nov/23/man-pleads-guilty-case-woman-drugged-husband-raped-stockport": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 1,
   "v": 3
  },
@@ -107824,6 +109395,26 @@
   "ok": 1,
   "v": 3
  },
+ "text:https://www.theguardian.com/us-news/2026/nov/23/amtrak-derailment-louisiana": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/us-news/2026/nov/23/california-high-tides-floods-weather-thanksgiving": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/us-news/2026/nov/23/concert-shooting-california-strathmore": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/us-news/2026/nov/23/cranberry-growing-climate-crisis": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.theguardian.com/us-news/2026/nov/23/father-daughter-ice-arrests-video-sparks-protests-seattle-airport": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 1,
@@ -107900,6 +109491,11 @@
  },
  "text:https://www.theguardian.com/us-news/live/2026/nov/20/donald-trump-brooke-rollins-religion-sean-cairncross-senate-alaska-white-house-press-conference-us-politics-latest-news-updates": {
   "at": "2026-11-20T22:24:09Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 1,
   "v": 3
  },
@@ -108440,6 +110036,16 @@
   "ok": 1,
   "v": 3
  },
+ "text:https://www.theguardian.com/world/2026/nov/23/leaked-data-shows-more-than-1000-russian-military-suicides-during-ukraine-war": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
+ "text:https://www.theguardian.com/world/2026/nov/23/russia-war-dead-hidden-toll-ukraine-conflict": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.theguardian.com/world/2026/oct/31/donald-tusk-defends-overhaul-poland-constitutional-court-despite-protests": {
   "at": "2026-11-01T16:33:53Z",
   "ok": 1
@@ -108504,6 +110110,11 @@
   "ok": 1,
   "v": 3
  },
+ "text:https://www.theguardian.com/world/live/2026/nov/23/russia-ukraine-war-zelenskyy-libya-benghazi-drone-attack-ship-merkury-un-nato-europe-latest-news-updates": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.theguardian.com/world/video/2026/nov/14/rare-nationwide-ground-stop-halts-us-air-traffic-video": {
   "at": "2026-11-14T16:11:01Z",
   "ok": 0,
@@ -108551,6 +110162,11 @@
  },
  "text:https://www.washingtonpost.com/advice/2026/11/11/asking-eric-granddaughter-chooses-side-after-her-parents-divorce/": {
   "at": "2026-11-11T08:29:13Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.washingtonpost.com/advice/2026/11/23/our-daughter-is-missing-thanksgiving-our-son-in-laws-birthday-week/": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -108797,6 +110413,16 @@
  "text:https://www.washingtonpost.com/business/2026/11/22/retiring-with-401k-be-sure-you-understand-rmds/": {
   "at": "2026-11-23T04:08:03Z",
   "ok": 1,
+  "v": 3
+ },
+ "text:https://www.washingtonpost.com/business/2026/11/23/senate-gop-leaders-signal-openness-cutting-off-iran-war-funding/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.washingtonpost.com/business/2026/11/23/tis-season-scams-protect-yourself-while-holiday-shopping-online/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
   "v": 3
  },
  "text:https://www.washingtonpost.com/climate-environment/2026/11/06/data-centers-may-not-be-raising-americans-electricity-bills-that-much/": {
@@ -110876,6 +112502,16 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.washingtonpost.com/politics/2026/11/23/fight-chair-gop-tests-trumps-clout-after-midterms-wipeout/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.washingtonpost.com/politics/2026/11/23/who-is-ready-some-presidential-debates/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.washingtonpost.com/politics/interactive/2026/11/18/these-are-senate-democrats-backing-schumer-van-hollen-majority-leader/": {
   "at": "2026-11-18T22:44:06Z",
   "ok": 1,
@@ -111310,6 +112946,21 @@
   "ok": 1,
   "v": 3
  },
+ "text:https://www.washingtonpost.com/technology/2026/11/23/how-nvidia-fought-years-washington-sell-its-prized-chips-china/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.washingtonpost.com/technology/2026/11/23/nvidia-board-reinstates-jensen-huang-after-us-government-input/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.washingtonpost.com/technology/2026/11/23/trump-urges-nvidia-reinstate-jensen-huang-calling-him-best-thing-us/": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.washingtonpost.com/technology/interactive/2026/11/13/timeline-president-trump-jensen-huang-close-relationship/": {
   "at": "2026-11-13T18:49:16Z",
   "ok": 1,
@@ -111532,6 +113183,11 @@
  },
  "text:https://www.washingtonpost.com/wellness/2026/11/21/should-you-mask-up-holiday-travel-heres-what-experts-say/": {
   "at": "2026-11-21T13:45:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.washingtonpost.com/wellness/2026/11/23/im-an-er-physician-here-are-5-cooking-injuries-i-see-most-during-holidays/": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -111857,6 +113513,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.wsj.com/articles/nvidia-board-reinstates-jensen-huang-as-ceo-a6b49914": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 1,
+  "v": 3
+ },
  "text:https://www.wsj.com/articles/praise-was-heaped-on-jensen-huang-that-might-be-part-of-the-problem-4cfa876c": {
   "at": "2026-11-15T22:08:14Z",
   "ok": 0,
@@ -111995,6 +113656,11 @@
   "at": "2026-11-01T13:35:11Z",
   "ok": 1
  },
+ "text:https://www.wsj.com/arts-culture/food-cooking/wine-quiz-test-wine-knowledge-52087dd5": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.wsj.com/arts-culture/television/coals-human-cost-review-black-lungs-persistence-on-pbs-77b82af6": {
   "at": "2026-11-07T13:07:55Z",
   "ok": 0,
@@ -112007,6 +113673,11 @@
  },
  "text:https://www.wsj.com/arts-culture/television/heartland-review-jessica-chastains-country-music-mystery-10b5e33f": {
   "at": "2026-11-15T08:29:09Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.wsj.com/arts-culture/television/liz-diller-ric-scofidio-architect-provocateurs-review-a-couples-urban-visions-5b0bcbe9": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -112135,6 +113806,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.wsj.com/business/deals/crowdstrike-to-buy-zscaler-in-43-9-billion-stock-swap-4c926031": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.wsj.com/business/deals/empower-brands-makes-unsolicited-bid-to-buy-helen-of-troy-for-1-6-billion-04261692": {
   "at": "2026-11-08T21:23:28Z",
   "ok": 0,
@@ -112142,6 +113818,11 @@
  },
  "text:https://www.wsj.com/business/deals/mccormicks-65-billion-unilever-foods-merger-could-harm-competition-u-k-regulator-warns-ccd08701": {
   "at": "2026-11-13T11:38:33Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.wsj.com/business/deals/monte-dei-paschis-board-sends-mixed-signals-over-intesas-37-billion-offer-e2e40d9a": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -112741,6 +114422,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.wsj.com/finance/commodities-futures/gold-rises-but-expectations-of-tighter-u-s-monetary-policy-weigh-512a4860": {
   "at": "2026-11-02T19:55:52Z",
   "ok": 1
@@ -112767,6 +114453,11 @@
  },
  "text:https://www.wsj.com/finance/commodities-futures/oil-edges-lower-as-supply-surplus-prospects-offset-mideast-tensions-cc9879f2": {
   "at": "2026-11-23T04:08:03Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.wsj.com/finance/commodities-futures/oil-falls-amid-risk-off-sentiment-c478ebdc": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -113004,6 +114695,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.wsj.com/finance/stocks/has-the-ai-bubble-already-burst-2f1dcca8": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.wsj.com/finance/stocks/healthcare-stocks-fall-as-market-rout-spreads-f789b5c8": {
   "at": "2026-11-08T21:23:28Z",
   "ok": 0,
@@ -113071,6 +114767,11 @@
  },
  "text:https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988": {
   "at": "2026-11-13T18:49:16Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.wsj.com/finance/stocks/stock-futures-rally-as-dust-settles-after-ai-driven-selloff-705ff2c4": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -113443,6 +115144,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.wsj.com/personal-finance/retirement/retirement-planning-milestones-over-50s-5d8b6bf2": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.wsj.com/personal-finance/support-grandchildren-finances-2740541f": {
   "at": "2026-11-22T22:52:56Z",
   "ok": 0,
@@ -113798,6 +115504,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.wsj.com/print-edition/20261123/frontpage": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.wsj.com/pro/bankruptcy/bankrupt-dish-wireless-strikes-525-million-settlement-deal-with-american-tower-63391fd1": {
   "at": "2026-11-22T22:52:56Z",
   "ok": 0,
@@ -113928,6 +115639,11 @@
  },
  "text:https://www.wsj.com/real-estate/luxury-homes/todd-michael-glaser-palm-beach-teardown-406fff21": {
   "at": "2026-11-16T23:04:12Z",
+  "ok": 0,
+  "v": 3
+ },
+ "text:https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-ai-firms-are-hooked-on-nvidia-chips-now-comes-the-withdrawal-57391e23": {
+  "at": "2026-11-23T16:34:05Z",
   "ok": 0,
   "v": 3
  },
@@ -114250,6 +115966,11 @@
   "ok": 0,
   "v": 3
  },
+ "text:https://www.wsj.com/world/americas/where-in-the-world-is-mark-carney-five-continents-and-32-countries-in-113-days-65e5bde0": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
+ },
  "text:https://www.wsj.com/world/asia/kim-jong-un-north-korea-trump-2920ff49": {
   "at": "2026-11-22T08:55:10Z",
   "ok": 0,
@@ -114263,6 +115984,11 @@
  "text:https://www.wsj.com/world/asia/south-koreas-chip-led-exports-accelerate-bringing-1-trln-annual-target-closer-5180b539": {
   "at": "2026-11-02T08:33:26Z",
   "ok": 1
+ },
+ "text:https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38": {
+  "at": "2026-11-23T16:34:05Z",
+  "ok": 0,
+  "v": 3
  },
  "text:https://www.wsj.com/world/china/alice-huangs-husband-built-a-data-center-empire-backed-by-the-chinese-state-78389c9a": {
   "at": "2026-11-19T04:36:59Z",
