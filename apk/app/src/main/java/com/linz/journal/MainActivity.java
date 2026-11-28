@@ -62,13 +62,35 @@ public class MainActivity extends Activity {
             "搜索所有来自此域名|根据精确网址查询存档|查询以此网址开头的网页|" +
             "You may want to|archive this url|立即存档|存档此网址|No results|not archived",
             Pattern.CASE_INSENSITIVE);
-    // archive.today 快照页正文在 iframe 里（与主页面同源），工具条文字在 body——优先取更长的那个
+    // 快照可能包含多篇文章。优先匹配标题，只读取选中文章自身的文本。
     private static final String EXTRACT_JS =
-            "(function(){var best='';var fr=document.getElementsByTagName('iframe');" +
+            "(function(title){var docs=[],fr=document.getElementsByTagName('iframe');" +
             "for(var i=0;i<fr.length;i++){try{var d=fr[i].contentDocument;" +
-            "if(d&&d.body){var t=d.body.innerText||'';if(t.length>best.length)best=t;}}catch(e){}}" +
-            "try{var b=document.body?document.body.innerText:'';if(b.length>best.length)best=b;}catch(e){}" +
-            "return best;})()";
+            "if(d&&d.body)docs.push(d);}catch(e){}}docs.push(document);" +
+            "var selector='article,[role=\"article\"]';" +
+            "function key(s){return (s||'').normalize('NFKC').replace(/[^\\p{L}\\p{N}]/gu,'').toLowerCase();}" +
+            "function owned(article,query){return Array.from(article.querySelectorAll(query))" +
+            ".filter(function(el){return el.closest(selector)===article&&!el.closest('nav,aside,footer');});}" +
+            "function read(article){var parts=owned(article,'[data-qa=\"article-body\"].type-text');" +
+            "if(!parts.length&&!article.querySelector(selector))return article.innerText||'';" +
+            "if(!parts.length)parts=owned(article,'p,h1,h2,h3,h4,li,blockquote,figcaption');" +
+            "return parts.map(function(part){return part.innerText;}).join('\\n');}" +
+            "var requested=key(title),matched='',single='',plain='';" +
+            "for(var j=0;j<docs.length;j++){" +
+            "var doc=docs[j],meta=doc.querySelector('meta[property=\"og:title\"]');" +
+            "var pageTitle=key(meta&&meta.content);" +
+            "var articles=Array.from(doc.querySelectorAll(selector))" +
+            ".filter(function(el){return !el.closest('nav,aside,footer');});" +
+            "var matches=articles.filter(function(article){return owned(article,'h1,h2,[itemprop=\"headline\"]')" +
+            ".some(function(heading){return requested&&key(heading.textContent)===requested;});});" +
+            "if(matches.length===1)return read(matches[0]);" +
+            "if(!matches.length&&pageTitle)matches=articles.filter(function(article){" +
+            "return owned(article,'h1,h2,[itemprop=\"headline\"]')" +
+            ".some(function(heading){return key(heading.textContent)===pageTitle;});});" +
+            "if(matches.length===1)matched=read(matches[0]);" +
+            "else if(articles.length===1){var text=read(articles[0]);if(text.length>single.length)single=text;}" +
+            "else if(!articles.length){var body=doc.body?doc.body.innerText||'':'';if(body.length>plain.length)plain=body;}}" +
+            "return matched||single||plain;})";
     // 无快照时 best-effort 点 “archive this url / Save this url”：只在 newest/提交页上执行一次，
     // 已有快照（/<id>/http…）绝不打扰。提交后 archive.today 会生成快照，用户再点底部提取。
     private static final String SAVE_JS =
@@ -487,7 +509,7 @@ public class MainActivity extends Activity {
             Toast.makeText(this, "请先在归档页完成人机验证后再提取", Toast.LENGTH_LONG).show();
             return;
         }
-        web.evaluateJavascript(EXTRACT_JS, value -> {
+        web.evaluateJavascript(EXTRACT_JS + "(" + JSONObject.quote(capturingTitle) + ")", value -> {
             String text = "";
             try {
                 Object o = new org.json.JSONTokener(value).nextValue();

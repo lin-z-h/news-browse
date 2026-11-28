@@ -277,14 +277,14 @@
         const u = absImg(im[1]);
         if (u) { clean.push({ img: u }); continue; }
       }
-      const head = /^#{1,3}\s/.test(b);
+      const level = b.match(/^(#{1,3})\s/)?.[1].length || 0;
       b = b.replace(/^#{1,4}\s+/gm, "")
            .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
            .replace(/\[[^\]]*\]\([^)]*\)/g, "$1")
            .replace(/\*\*([^*]+)\*\*/g, "$1")
            .replace(/^[-*]\s+/gm, "· ")
            .trim();
-      if (b) clean.push({ text: b, head });
+      if (b) clean.push({ text: b, head: level > 0, level });
     }
     const isSentence = b => /[。！？]/.test(b) || (/[.!?]/.test(b) && b.length > 90);
     const isNoiseHead = b => /^(support|sign in|sign|share|search|menu|close|fund independent|most viewed|related|live)/i.test(b);
@@ -292,7 +292,9 @@
     try { dropRes = READER_DROP[host]; } catch (e) {}
     const tnorm = norm(title);
     // 起点：首个像文章标题的标题块（较长且非站点噪音），否则首个句子块
-    let startIdx = clean.findIndex(x => x.head && x.text.length >= 25 && !isNoiseHead(x.text));
+    const wanted = articleTitleKey(title);
+    let startIdx = wanted ? clean.findIndex(x => x.head && articleTitleKey(x.text) === wanted) : -1;
+    if (startIdx < 0) startIdx = clean.findIndex(x => x.head && x.text.length >= 25 && !isNoiseHead(x.text));
     if (startIdx < 0) startIdx = clean.findIndex(x => x.text && isSentence(x.text) && x.text.length >= 20);
     let endIdx = -1;
     if (startIdx >= 0) {
@@ -305,7 +307,7 @@
     const lo = startIdx >= 0 ? startIdx : 0;
     const hi = endIdx > startIdx ? endIdx : clean.length;
     const kept = [];
-    for (const x of clean.slice(lo, hi)) {
+    for (const x of oneArticleBlocks(clean.slice(lo, hi))) {
       if (x.img) { kept.push(x); continue; }
       if (x.text.length < 14) continue;
       if (READER_NOISE_RE.test(x.text)) continue;
@@ -387,8 +389,9 @@
   }
 
   // JSON-LD articleBody（NYT / Guardian / The Edge / Yahoo 等）
-  function jsonLdBodies(doc) {
+  function jsonLdBodies(doc, matchesHeadline, allowUnmatched) {
     const out = [];
+    let articles = 0;
     doc.querySelectorAll('script[type="application/ld+json"]').forEach(sc => {
       try {
         const data = JSON.parse(sc.textContent || "");
@@ -400,14 +403,15 @@
           if (typeof x !== "object") continue;
           if (x["@graph"]) stack.push(...x["@graph"]);
           const type = Array.isArray(x["@type"]) ? x["@type"] : [x["@type"]];
-          if (type.some(t => /NewsArticle|Article|BlogPosting|ReportageNewsArticle/.test(t || ""))
-              && typeof x.articleBody === "string" && x.articleBody.length >= 200) {
-            out.push(x.articleBody);
+          if (type.some(t => /NewsArticle|Article|BlogPosting|ReportageNewsArticle/.test(t || ""))) {
+            articles++;
+            if (typeof x.articleBody === "string" && x.articleBody.length >= 200) out.push(x);
           }
         }
       } catch (e) {}
     });
-    return out;
+    return out.filter(x => (allowUnmatched && articles === 1) || matchesHeadline(x.headline || x.name))
+      .map(x => x.articleBody);
   }
 
   // TVB 文章正文在 Nuxt __NUXT_DATA__ 的 content/content_hk
@@ -428,6 +432,7 @@
     let best = null, bestLen = 0;
     for (const v of arr) {
       if (!v || typeof v !== "object" || !("content" in v) || !("title_hk" in v)) continue;
+      if (wanted !== null && Number(deref(v.id)) !== wanted) continue;
       const body = deref(v.content_hk || v.content);
       if (typeof body !== "string" || body.length < 20) continue;
       const tmp = document.createElement("div");
@@ -437,7 +442,7 @@
         .filter(t => t.length >= 10);
       if (!paras.length) continue;
       const len = paras.join("").length;
-      if (wanted !== null && Number(deref(v.id)) === wanted) return paras;
+      if (wanted !== null) return paras;
       if (len > bestLen) { best = paras; bestLen = len; }
     }
     return best;
@@ -456,7 +461,17 @@
       const blocks = tvb.map(t => ({ text: t, head: false }));
       if (readerQualityOk(blocks) && !paywallTeaser(blocks, host)) return { blocks, esc: escText };
     }
-    for (const body of jsonLdBodies(doc)) {
+    const metaTitle = doc.querySelector('meta[property="og:title"]')?.content || doc.title;
+    const titleKey = articleTitleKey(title);
+    const pageTitleKey = articleTitleKey(metaTitle);
+    const articleSelector = 'article,[role="article"]';
+    const articles = [...doc.querySelectorAll(articleSelector)]
+      .filter(article => !article.closest("nav,footer,aside"));
+    const matchesHeadline = text => {
+      const key = articleTitleKey(text);
+      return key && (key === titleKey || key === pageTitleKey);
+    };
+    for (const body of jsonLdBodies(doc, matchesHeadline, articles.length <= 1)) {
       const tmp = document.createElement("div");
       tmp.innerHTML = body;
       const paras = [...tmp.querySelectorAll("p")]
@@ -464,46 +479,154 @@
         .filter(t => t.length >= 10);
       const texts = paras.length ? paras : body.replace(/<[^>]+>/g, "\n").split(/\n{2,}/)
         .map(t => t.replace(/\s+/g, " ").trim()).filter(t => t.length >= 30);
-      const blocks = texts.map(t => ({ text: t, head: false }));
+      const blocks = oneArticleBlocks(texts.map(t => ({ text: t, head: false })));
       if (readerQualityOk(blocks) && !paywallTeaser(blocks, host)) return { blocks, esc: escText };
     }
+    const headlineKeys = articles.map(article => [...article.querySelectorAll('h1,h2,[itemprop="headline"]')]
+      .filter(heading => heading.closest(articleSelector) === article)
+      .map(heading => articleTitleKey(heading.textContent)).filter(Boolean));
+    let matching = titleKey ? articles.filter((_, i) => headlineKeys[i].includes(titleKey)) : [];
+    if (!matching.length && pageTitleKey) matching = articles.filter((_, i) => headlineKeys[i].includes(pageTitleKey));
+    const selected = matching.length === 1 ? matching[0] : articles.length === 1 ? articles[0] : null;
+    if (articles.length > 1 && !selected) return null;
     doc.querySelectorAll("script,style,noscript,iframe,svg,form,nav,header,footer,aside,#wm-ipp-base,#wm-ipp,[id^='wm-ipp']")
       .forEach(e => e.remove());
-    const root = doc.querySelector("article") || doc.querySelector("main")
+    const root = selected || doc.querySelector("main")
       || doc.querySelector("[role='main']") || doc.body;
     if (!root) return null;
-    const tnorm = String(title || "").replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
-    const seen = new Set([tnorm]);
+    const seen = new Set([titleKey]);
     const blocks = [];
     for (const el of root.querySelectorAll("p,h1,h2,h3,li,blockquote,figcaption")) {
+      if (selected && el.closest(articleSelector) !== selected) continue;
       const t = (el.textContent || "").replace(/\s+/g, " ").trim();
       if (t.length < 14 || READER_NOISE_RE.test(t) || /cookie/i.test(t)) continue;
-      const k = t.replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
+      const k = articleTitleKey(t);
       if (!k || seen.has(k)) continue;
       seen.add(k);
       blocks.push({ text: t, head: /^h[1-3]$/i.test(el.tagName) });
     }
     while (blocks.length && blocks[0].text.length < 40) blocks.shift(); // 开头家具修剪
-    if (!readerQualityOk(blocks) || paywallTeaser(blocks, host)) return null;
-    return { blocks, esc: escText };
+    const kept = oneArticleBlocks(blocks);
+    if (!readerQualityOk(kept) || paywallTeaser(kept, host)) return null;
+    return { blocks: kept, esc: escText };
   }
 
   // APK 捕获文本的垃圾特征：人机验证页 / archive 工具条 / “没有快照”帮助页。原生已做过第一道把关，这里兜底
   const CAP_GARBAGE_RE = /completing the captcha|proves you are (?:a )?human|are you a robot|verify(?:ing)? (?:that )?you are (?:a )?human|security check to access|just a moment|enable javascript and cookies/i;
   const CAP_HELP_RE = /搜索所有来自此域名|根据精确网址查询存档|查询以此网址开头的网页|You may want to|archive this url|立即存档|存档此网址|No results|not archived/i;
-  const CAP_DROP_RE = /^(https?:\/\/|www\.)\S+$|^[\w.-]+\.(?:com|net|org|ph|is|li|vn|md|fo|tc|today)(?:\/\S*)?$|^archive\.(?:ph|today|is|li|vn|md|fo|tc)\b|^webpage capture|^saved from|^all \d+|^my blogs|^telegram$|^vk$|^(search|share|report|close|menu|donate|subscribe|newsletter|advertising|cookies?)\b/i;
+  const CAP_DROP_RE = /^(https?:\/\/|www\.)\S+$|^[\w.-]+\.(?:com|net|org|ph|is|li|vn|md|fo|tc|today)(?:\/\S*)?$|^(?:archive\.(?:ph|today|is|li|vn|md|fo|tc)\b|webpage capture|saved from|no other snapshots from this url)\b|^(?:webpage\s*screenshot|all \d+(?: snapshots)?|my blogs|telegram|vk)$/i;
+  const CAP_ARCHIVE_LABEL_RE = /^(?:all snapshots(?:\s*(?:from (?:host|domain)|of this url).*)?|(?:所有|全部)\s*(?:存[档檔](?:\s*[:：]?\s*(?:来自|來自).*)?|(?:来自|來自)\s*(?:域名|网域|網域).*))[.。…]*$/i;
+  const CAP_ARCHIVE_DOMAIN_RE = /^(?:from (?:host|domain)|(?:来自|來自)\s*(?:域名|网域|網域))\s*[:：]?\s*(?:[\w-]+\.)+[\w-]+[.。…]*$/i;
+  const CAP_CONTROL_RE = /^(?:search|share|report|close|menu|donate|subscribe(?: now| today)?|newsletter|advertising|cookie(?:s| (?:settings|preferences|policy))?|(?:share|gift|listen to) this article|report (?:a )?(?:bug|abuse)(?: or abuse)?|terms of (?:service|use)|terms and conditions|privacy policy|related stories|相关阅读|相關閱讀)$/i;
+  const CAP_LEAD_RE = /^(?:(?:publish(?:ed)?(?: on)?|updated on|by)(?:\s*:.*)?$|contact us:|confidential tip\?|site feedback:|[A-Za-z]+ \d{1,2}, 20\d{2} at \d{1,2}:\d{2}(?: [AP]M)?(?: [A-Z]{2,5})?$)/i;
+  const CAP_FOOTER_RE = /^(?:(?:copyright(?:\s*©)?|(?:help\s*)?©)\s*(?:19|20)\d{2}\b|more from (?:bloomberg|news)$|top reads$|trending news$|terms of service\s*do not sell or share my personal information\b)/i;
+  const CAP_FT_FOOTER_RE = /^(?:follow the topics in this article\b|reuse this content(?:\s*\(opens in new window\))?$|(?:copyright(?:\s+©)?|©)\s*(?:\d{4}\s+)?(?:the\s+)?financial times\b)/i;
+  const CAP_POST_SUFFIX_RE = /\s+[-–—|]\s+the washington post$/i;
+  const CAP_POST_FOOTER_RE = /^(?:more from the (?:washington )?post|more for you|recommended for you)\s*[:：]?$/i;
+  const NEXT_ARTICLE_RE = /^(?:next article|read next|下一篇(?:文章)?|下一?[则則]新[闻聞])\s*[:：]?$/i;
+  const ARTICLE_MONTH = String.raw`(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?`;
+  const ARTICLE_DATE_RE = new RegExp(
+    String.raw`^(?:(?:published|updated)(?: on| at)?|(?:[发發][布佈]|刊登|更新)(?:日期|时间|時間)?)?\s*[:：]?\s*`
+    + String.raw`(?:${ARTICLE_MONTH} \d{1,2}, 20\d{2}|\d{1,2} ${ARTICLE_MONTH} 20\d{2}|20\d{2}[-/.年]\d{1,2}[-/.月]\d{1,2}日?)`
+    + String.raw`(?:(?:T|\s+(?:at\s+)?|\s*[·,|]\s*)\d{1,2}:\d{2}\b.{0,50})?$`, "i");
+  const CAP_EMAIL_RE = /[<(\[]?(?:mailto:)?[\p{L}\p{N}._%+-]+@(?:[\p{L}\p{N}-]+\.)+[\p{L}]{2,63}[>)\]]?[.。]?$/iu;
+  const CAP_CONTACT_LABEL_RE = /^(?:e-?mail|contact(?: us)?|write to us)$/i;
+  const CAP_AUTHOR_RE = /^(?:(?:By|Additional reporting by|Reporting by)\s+)?\p{Lu}[\p{L}.'’-]*(?:\s+\p{Lu}[\p{L}.'’-]*){1,5}$/u;
 
-  // 清洗 APK 提取的纯文本：去 URL 行/工具条行/重复行/与标题重复的行。
-  // 达不到正文量（≥3 段且 ≥120 字，中文短讯也覆盖）返回空 = 拒绝渲染
-  function cleanCaptureText(text, title) {
+  function articleTitleKey(title) {
+    const text = String(title || "").trim().replace(/\s+[-–—|]\s+([^-–—|]+)$/, (suffix, name) =>
+      INDEX_PUBLICATIONS.includes(name.toLowerCase()) ? "" : suffix);
+    return text.normalize("NFKC").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase();
+  }
+
+  function articleByline(line) {
+    if (/^(?:作者|[记記]者|撰文|[采採][访訪])\s*[:：]\s*\S.{0,59}$/.test(line)) return true;
+    return /^By\s+/.test(line) && line.replace(/^By\s+/, "")
+      .split(/,\s*(?:and\s+)?|\s+(?:and|&)\s+/).every(name => CAP_AUTHOR_RE.test(name));
+  }
+
+  // 纯文本没有文章容器时，优先使用明确的下一篇标签，其次识别新标题、日期与署名的组合。
+  function articleContinuation(lines) {
+    const sentenceEnd = /[.!?。！？]["”’」』)]?$/;
+    const titleEnd = /[.!。！]["”’」』)]?$/;
+    const han = /\p{Script=Han}/u;
+    let hasBody = false;
+    for (let i = 0; i < lines.length; i++) {
+      if (hasBody && NEXT_ARTICLE_RE.test(lines[i])) return i;
+      if (lines[i].length >= 24 && sentenceEnd.test(lines[i])) hasBody = true;
+      if (!hasBody || !ARTICLE_DATE_RE.test(lines[i])) continue;
+      let metadataStart = i;
+      if (!lines.slice(i + 1, i + 6).some(articleByline)) {
+        const nearby = lines.slice(Math.max(0, i - 4), i);
+        const bylineIndex = nearby.findIndex(articleByline);
+        if (bylineIndex < 0) continue;
+        metadataStart = Math.max(0, i - 4) + bylineIndex;
+      }
+      let headline = metadataStart - 1;
+      // 标题和发布日期之间可有一行副标题。
+      if (titleEnd.test(lines[headline] || "") && lines[headline].length <= 250) headline--;
+      const candidate = lines[headline];
+      if (!candidate || candidate.length < (han.test(candidate) ? 6 : 14) || candidate.length > 180
+        || titleEnd.test(candidate) || articleByline(candidate)) continue;
+      const preceding = lines.slice(0, headline).filter(line => line.length >= (han.test(line) ? 24 : 40) && sentenceEnd.test(line));
+      if (preceding.length >= 3 || preceding.filter(line => han.test(line)).length >= 2) return headline;
+    }
+    return lines.length;
+  }
+
+  function oneArticleBlocks(blocks) {
+    const lines = blocks.flatMap((block, index) => String(block.text || "").split("\n")
+      .map((text, offset) => ({ text: text.trim(), index, offset })).filter(line => line.text));
+    const boundary = lines[articleContinuation(lines.map(line => line.text))];
+    const firstHeading = blocks.findIndex(block => block.level === 1);
+    const nextHeading = firstHeading < 0 ? -1 : blocks.findIndex((block, index) =>
+      index > firstHeading && block.level === 1 && blocks.slice(firstHeading + 1, index)
+        .some(previous => previous.text && previous.text.length >= 40 && !previous.head));
+    if (nextHeading >= 0 && (!boundary || nextHeading <= boundary.index)) return blocks.slice(0, nextHeading);
+    if (!boundary) return blocks;
+    const kept = blocks.slice(0, boundary.index);
+    if (boundary.offset) {
+      const block = blocks[boundary.index];
+      const text = block.text.split("\n").slice(0, boundary.offset).join("\n").trim();
+      if (text) kept.push({ ...block, text });
+    }
+    return kept;
+  }
+
+  // 清洗新提取和本地缓存的纯文本，先丢掉外层归档工具条，再检查正文量。
+  function cleanCaptureText(text, title, url) {
     if (CAP_GARBAGE_RE.test(text) || CAP_HELP_RE.test(text) || looksLikePaywall(text)) return [];
-    const tnorm = String(title || "").replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
+    const host = _host(url);
+    const isFt = /(?:^|\.)ft\.com$/i.test(host);
+    const isBloomberg = /(?:^|\.)bloomberg\.com$/i.test(host);
+    const isPost = /(?:^|\.)washingtonpost\.com$/i.test(host) || CAP_POST_SUFFIX_RE.test(String(title || "").trim());
+    const tnorm = articleTitleKey(title);
+    const lines = text.split(/\n+/).map(line => line.trim()).filter(Boolean);
+    const titleIndex = tnorm ? lines.findIndex(line => articleTitleKey(line) === tnorm) : -1;
+    const articleLines = lines.slice(titleIndex + 1);
+    const end = articleContinuation(articleLines);
     const seen = new Set([tnorm]);
     const out = [];
-    for (let line of String(text).split(/\n+/)) {
-      line = line.trim();
-      if (line.length < 14 || CAP_DROP_RE.test(line)) continue;
-      const k = line.replace(/[\s·—–,.。！？!?]/g, "").toLowerCase();
+    for (const line of articleLines.slice(0, end)) {
+      const label = line.normalize("NFKC");
+      if (CAP_ARCHIVE_LABEL_RE.test(label) || CAP_ARCHIVE_DOMAIN_RE.test(label)) continue;
+      // 部分快照将站点导航直接拼进正文，TVB 还会在下一条新闻前重复面包屑。
+      if (CAP_FOOTER_RE.test(label) || (isFt && CAP_FT_FOOTER_RE.test(label))
+        || (isPost && CAP_POST_FOOTER_RE.test(label))
+        || (isBloomberg && /^home\s*btv\+/i.test(label))
+        || (host === "news.tvb.com" && /^(?:\d+[.)]\s*)?channel 83$/i.test(label))) {
+        if (out.length) break;
+        continue;
+      }
+      if (!out.length && (CAP_LEAD_RE.test(label) || (/^By\s+/.test(label) && CAP_AUTHOR_RE.test(label))
+        || ARTICLE_DATE_RE.test(label) || articleByline(label))) continue;
+      if (line.length < 14 || CAP_DROP_RE.test(label) || CAP_CONTROL_RE.test(label)) continue;
+      const email = CAP_EMAIL_RE.exec(label);
+      if (email) {
+        const prefix = label.slice(0, email.index).replace(/[\s:|–—-]+$/g, "");
+        if (!prefix || CAP_CONTACT_LABEL_RE.test(prefix) || (isFt && CAP_AUTHOR_RE.test(prefix))) continue;
+      }
+      const k = articleTitleKey(line);
       if (!k || seen.has(k)) continue;
       seen.add(k);
       out.push(line);
@@ -627,10 +750,17 @@
     const paywalled = PAYWALL_SOURCES.has(it.source);
     // 1) 人工捕获正文（APK 提取并清洗过）优先——用户亲验内容，最可信且零延迟
     const cap = capCache[it.id];
-    if (cap && cap.paras && cap.paras.length) {
-      rMeta.textContent += " · 提取正文 " + relTime(cap.ts);
-      renderPlainParas(cap.paras);
-      return;
+    if (Array.isArray(cap?.paras) && cap.paras.length) {
+      const paras = cleanCaptureText(cap.paras.join("\n"), it.title, it.url);
+      if (paras.length !== cap.paras.length) {
+        cap.paras = paras;
+        persistCaps();
+      }
+      if (paras.length) {
+        rMeta.textContent += " · 提取正文 " + relTime(cap.ts);
+        renderPlainParas(paras);
+        return;
+      }
     }
     // 2) 本地抓取缓存（md=jina markdown；kind=wb 存的是 wayback HTML）
     const hit = readCache[it.url];
@@ -651,8 +781,11 @@
           const j = JSON.parse(r.text);
           // v3 缓存才信：v1/v2 可能把同题旧文缓存进来，直接忽略走实时链路
           if (Array.isArray(j.blocks) && j.blocks.length && j.v === 3) {
-            renderReaderBody({ blocks: j.blocks, esc: escText });
-            return;
+            const blocks = oneArticleBlocks(j.blocks);
+            if (blocks === j.blocks || (readerQualityOk(blocks) && !paywallTeaser(blocks, host))) {
+              renderReaderBody({ blocks, esc: escText });
+              return;
+            }
           }
         }
       } catch (e) { /* 缓存不可用则照旧走链 */ }
@@ -1067,7 +1200,7 @@
     if (capRaw) {
       localStorage.removeItem("journal.captureRaw");
       const cap = JSON.parse(capRaw);
-      const paras = cleanCaptureText(cap.text || "", cap.title);
+      const paras = cleanCaptureText(cap.text || "", cap.title, cap.url);
       if (cap.id && paras.length) {
         capCache[cap.id] = { ts: Date.now(), title: cap.title || "", paras };
         const ces = Object.entries(capCache).sort((a, b) => a[1].ts - b[1].ts);
